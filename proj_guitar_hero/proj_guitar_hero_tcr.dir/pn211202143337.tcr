@@ -1,0 +1,5 @@
+#Start recording tcl command: 12/2/2021 14:33:37
+#Project Location: C:/Users/npower03/Documents/es4/proj_guitar_hero; Project name: proj_guitar_hero
+prj_create -name "proj_guitar_hero" -impl "impl_1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_save 
+#Stop recording: 12/2/2021 14:33:37
