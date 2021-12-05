@@ -9,7 +9,7 @@ use IEEE.std_logic_unsigned.all;
 
 entity draw_game is
     port (
-		clk : in std_logic;
+		--clk : in std_logic;
         row : in unsigned(9 downto 0);
         col : in unsigned(9 downto 0);
 		valid : in std_logic;
@@ -23,8 +23,15 @@ entity draw_game is
 		col_orange  : in std_logic_vector(479 downto 0)
     );
 end draw_game;
+
 architecture synth of draw_game is
 
+constant BOX_HEIGHT : unsigned(9 downto 0) := 10d"40";
+constant BOX_WIDTH  : unsigned(9 downto 0) := 10d"40";
+constant BOX_RAD    : unsigned(9 downto 0) := 10d"20";
+
+constant TOP_BAR_ROW    : unsigned(9 downto 0) := 10d"40";
+constant BOTTOM_BAR_ROW : unsigned(9 downto 0) := 10d"440";
 
 signal draw_green  : std_logic;
 signal draw_red    : std_logic;
@@ -32,14 +39,32 @@ signal draw_yellow : std_logic;
 signal draw_blue   : std_logic;
 signal draw_orange : std_logic;
 
+-- signal draw_score : std_logic;
+signal draw_top_bar    : std_logic;
+signal draw_bottom_bar : std_logic;
+
 begin
+	-- Indicate a box should be drawn based on current position
+	draw_green  <= '1' when (col_green (to_integer(col)) = '1' and (10d"64" - BOX_RAD <= col and col <= 10d"64" + BOX_RAD)) else '0';
+	draw_red    <= '1' when (col_red   (to_integer(col)) = '1' and (10d"192" - BOX_RAD <= col and col <= 10d"192" + BOX_RAD)) else '0';
+	draw_yellow <= '1' when (col_yellow(to_integer(col)) = '1' and (10d"320" - BOX_RAD <= col and col <= 10d"320" + BOX_RAD)) else '0';
+	draw_blue   <= '1' when (col_blue  (to_integer(col)) = '1' and (10d"448" - BOX_RAD <= col and col <= 10d"448" + BOX_RAD)) else '0';
+	draw_orange <= '1' when (col_orange(to_integer(col)) = '1' and (10d"576" - BOX_RAD <= col and col <= 10d"576" + BOX_RAD)) else '0';
 
-	draw_green  <= col_green(to_integer(col));
-	draw_red    <= col_red(to_integer(col));
-	draw_yellow <= col_yellow(to_integer(col));
-	draw_blue   <= col_blue(to_integer(col));
-	draw_orange <= col_orange(to_integer(col));
-
+	-- TODO: Display the score in the top bar
+	draw_top_bar <= '1' when (row >= TOP_BAR_ROW) else '0';
+	draw_bottom_bar <= '1' when (row >= BOTTOM_BAR_ROW) else '0';
 	
+	-- Add draw score to beginning
+	rgb <= "000000" when valid = '0' else
+		   "101111" when col = BOTTOM_BAR_ROW else    -- Draw where user hits
+		   "000000" when draw_top_bar else            -- Draw blacked out top bar
+		   --"000000" when draw_bottom_bar else
+		   "001100" when draw_green else		      -- Draw boxes
+		   "110000" when draw_red else
+		   "111100" when draw_yellow else
+		   "000011" when draw_blue else
+		   "110100" when draw_orange else
+		   "000000";
 end;
 

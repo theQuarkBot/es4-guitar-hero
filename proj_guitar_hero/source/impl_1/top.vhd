@@ -11,8 +11,8 @@ entity top is
 	port (
 		-- TODO: GUITAR INPUT
 		reset : in std_logic;
-		start : in std_logic
-		-- TODO: VGA OUTPUT
+		start : in std_logic;
+		rgb   : out std_logic_vector(5 downto 0)
 	);
 end top;
 
@@ -27,6 +27,25 @@ port(
 	CLKHFEN : in std_logic := 'X'; -- Set to 1 to enable output
 	CLKHF : out std_logic := 'X'); -- Clock output
 end component;
+
+-- Get the RGB value for the current pixel
+component draw_game
+	port (
+		--clk : in std_logic;
+        row : in unsigned(9 downto 0);
+        col : in unsigned(9 downto 0);
+		valid : in std_logic;
+        rgb : out std_logic_vector(5 downto 0);
+		
+		-- Game state (arrays to represent where boxes are)
+		col_green   : in std_logic_vector(479 downto 0);
+		col_red     : in std_logic_vector(479 downto 0);
+		col_yellow  : in std_logic_vector(479 downto 0);
+		col_blue    : in std_logic_vector(479 downto 0);
+		col_orange  : in std_logic_vector(479 downto 0)
+    );
+end component;
+
 
 --COMPONENT FOR VGA DISPLAY
 -------------------------------
@@ -56,12 +75,24 @@ signal col_blue    : std_logic_vector(479 downto 0);
 signal col_orange  : std_logic_vector(479 downto 0);
 
 -- Output color
-signal rgb_out : std_logic_vector(5 downto 0);
-signal row : in unsigned(9 downto 0);
-signal col : in unsigned(9 downto 0);
+--signal rgb_out : std_logic_vector(5 downto 0); TODO: Is this needed?
+signal row : unsigned(9 downto 0);
+signal col : unsigned(9 downto 0);
 
 begin
 	clock : HSOSC port map('1', '1', clk);
+	
+	get_color : draw_game port map(
+		row=> row,
+		col=> col,
+		valid=> '1',    -- TODO: Make sure this is right
+		rgb=> rgb,
+		col_green=>  col_green,
+		col_red=>    col_red,
+		col_yellow=> col_yellow,
+		col_blue=>   col_blue,
+		col_orange=> col_orange
+	);
 	
 	process (clk) begin
 		if rising_edge(clk) then
