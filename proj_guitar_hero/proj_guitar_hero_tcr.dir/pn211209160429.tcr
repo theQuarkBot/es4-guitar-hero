@@ -1,0 +1,5 @@
+#Start recording tcl command: 12/9/2021 13:44:18
+#Project Location: Z:/GitHub/es4-guitar-hero/proj_guitar_hero; Project name: proj_guitar_hero
+prj_open "Z:/GitHub/es4-guitar-hero/proj_guitar_hero/proj_guitar_hero.rdf"
+prj_add_source "Z:/GitHub/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd"
+#Stop recording: 12/9/2021 16:04:29
