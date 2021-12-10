@@ -10,11 +10,13 @@ use IEEE.std_logic_unsigned.all;
 entity top is
 	port (
 		-- Which buttons are being pressewd
-		pressing : in std_logic_vector(4 downto 0);
+		pressing : in std_logic_vector(5 downto 0);
 		
 		reset : in std_logic;
 		start : in std_logic;
 		rgb   : out std_logic_vector(5 downto 0)
+		
+		
 	);
 end top;
 
@@ -57,10 +59,15 @@ end component;
 
 ------------------------------------------------------------------------------------------
 
--- TODO: COMPONENT FOR VGA DISPLAY
--------------------------------
--------------------------------
--------------------------------
+component vga
+  port(
+	  pllin : in std_logic;
+	  RGB : out std_logic_vector(5 downto 0) := "001100";
+	  HSYNC : out std_logic;
+	  VSYNC : out std_logic;
+	  pllpinout : out std_logic
+  );
+end component;
 
 ------------------------------------------------------------------------------------------
 
@@ -81,6 +88,7 @@ signal press_red    : std_logic;
 signal press_yellow : std_logic;
 signal press_blue   : std_logic;
 signal press_orange : std_logic;
+signal press_strum  : std_logic;
 
 -- signal to "randomly" generate notes
 signal rand : std_logic_vector(63 downto 0) := 64x"100000";
@@ -109,7 +117,7 @@ signal col : unsigned(9 downto 0);
 
 begin
 	clock : HSOSC port map('1', '1', clk);
-	
+	vga : 
 	------------------------------------------------------------------------------------------
 	-- Given the current game state and a row/column. Give the color of the current pixel
 	get_color : draw_game port map(
@@ -136,6 +144,7 @@ begin
 			press_yellow <= not pressing(2);
 			press_blue   <= not pressing(3);
 			press_orange <= not pressing(4);
+			press_strum  <= not pressing(5);
 		end if;
 	end process;
 	

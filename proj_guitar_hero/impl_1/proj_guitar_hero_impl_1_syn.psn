@@ -1,0 +1,21 @@
+POSTSYN: Post Synthesis Process Radiant Software (64-bit) 3.0.0.24.1
+Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o proj_guitar_hero_impl_1_syn.udb -ldc //vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/impl_1/proj_guitar_hero_impl_1.ldc -gui -msgset //vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/promote.xml proj_guitar_hero_impl_1.vm 
+   Architecture:     iCE40UP
+   Device:           iCE40UP5K
+   Package:          SG48
+   Performance:      High-Performance_1.2V
+Reading input file 'proj_guitar_hero_impl_1.vm' ...
+Reading constraint file '//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/impl_1/proj_guitar_hero_impl_1.ldc' ...
+Removing unused logic ...
+Starting design annotation....
+WARNING - No master clock for
+	generated clock	create_generated_clock -name {clk} -source [get_pins {clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+WARNING - No master clock for
+	generated clock	create_generated_clock -name {pllpinout_c} -source [get_pins {clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {clock/lscc_pll_inst/u_PLL_B/OUTCORE }] .
+WARNING - Missing master pin for instance 'u_PLL_B'.
+WARNING - Missing master pin for instance 'u_PLL_B'.
+Writing output file 'proj_guitar_hero_impl_1_syn.udb'.
+POSTSYN finished successfully.
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 33 MB
