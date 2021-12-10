@@ -45,6 +45,7 @@ signal draw_bottom_bar : std_logic;
 
 begin
 	-- Indicate a box should be drawn based on current position
+	-- Draw a box pixel when            there is a box         and           the (x,y) is in the area the box is             else don't
 	draw_green  <= '1' when (col_green (to_integer(col)) = '1' and (10d"64" - BOX_RAD <= col and col <= 10d"64" + BOX_RAD)) else '0';
 	draw_red    <= '1' when (col_red   (to_integer(col)) = '1' and (10d"192" - BOX_RAD <= col and col <= 10d"192" + BOX_RAD)) else '0';
 	draw_yellow <= '1' when (col_yellow(to_integer(col)) = '1' and (10d"320" - BOX_RAD <= col and col <= 10d"320" + BOX_RAD)) else '0';
