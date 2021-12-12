@@ -1,39 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BuildStatus>
     <Strategy name="Strategy1">
-        <Milestone name="Export" build_result="2" build_time="1639265194">
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1639265194"/>
-            <Task name="IBIS" build_result="2" update_result="0" update_time="1639265194"/>
-            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1639265195"/>
+        <Milestone name="Export" build_result="2" build_time="1639277655">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1639277655"/>
+            <Task name="IBIS" build_result="2" update_result="0" update_time="1639277655"/>
+            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1639277655"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1639265187">
-            <Task name="Map" build_result="2" update_result="0" update_time="1639265187"/>
-            <Task name="MapTrace" build_result="2" update_result="0" update_time="1639265187"/>
+        <Milestone name="Map" build_result="2" build_time="1639277647">
+            <Task name="Map" build_result="2" update_result="0" update_time="1639277647"/>
+            <Task name="MapTrace" build_result="2" update_result="0" update_time="1639277648"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1639265193">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1639265193"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1639265193"/>
+        <Milestone name="PAR" build_result="2" build_time="1639277653">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1639277653"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1639277654"/>
             <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1639265186">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1639265186"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1639265186"/>
-            <Task name="SynTrace" build_result="2" update_result="0" update_time="1639265186"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1639277643">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1639277643"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1639277643"/>
+            <Task name="SynTrace" build_result="2" update_result="0" update_time="1639277643"/>
             <Task name="SynVerilogSimFile" build_result="0" update_result="2" update_time="1639082905"/>
         </Milestone>
-        <Report name="IBIS/proj_guitar_hero_impl_1.ibs" last_build_time="1639265194" last_build_size="54254"/>
-        <Report name="proj_guitar_hero_impl_1.bgn" last_build_time="1639265194" last_build_size="1040"/>
-        <Report name="proj_guitar_hero_impl_1.bin" last_build_time="1639265194" last_build_size="104156"/>
+        <Report name="IBIS/proj_guitar_hero_impl_1.ibs" last_build_time="1639277655" last_build_size="54254"/>
+        <Report name="proj_guitar_hero_impl_1.bgn" last_build_time="1639277655" last_build_size="1040"/>
+        <Report name="proj_guitar_hero_impl_1.bin" last_build_time="1639277655" last_build_size="104156"/>
         <Report name="proj_guitar_hero_impl_1.lsedata" last_build_time="0" last_build_size="0"/>
-        <Report name="proj_guitar_hero_impl_1.tw1.html" last_build_time="1639265187" last_build_size="14467"/>
-        <Report name="proj_guitar_hero_impl_1.twr.html" last_build_time="1639265193" last_build_size="14471"/>
-        <Report name="proj_guitar_hero_impl_1.tws.html" last_build_time="1639265186" last_build_size="14045"/>
-        <Report name="proj_guitar_hero_impl_1.udb" last_build_time="1639265193" last_build_size="11534"/>
-        <Report name="proj_guitar_hero_impl_1_map.udb" last_build_time="1639265187" last_build_size="7993"/>
-        <Report name="proj_guitar_hero_impl_1_rtl.udb" last_build_time="1639265183" last_build_size="67945"/>
-        <Report name="proj_guitar_hero_impl_1_syn.udb" last_build_time="1639265186" last_build_size="5789"/>
-        <Report name="proj_guitar_hero_impl_1_vo.sdf" last_build_time="1639265195" last_build_size="47337"/>
-        <Report name="proj_guitar_hero_impl_1_vo.vo" last_build_time="1639265195" last_build_size="50398"/>
+        <Report name="proj_guitar_hero_impl_1.tw1.html" last_build_time="1639277648" last_build_size="14307"/>
+        <Report name="proj_guitar_hero_impl_1.twr.html" last_build_time="1639277654" last_build_size="14311"/>
+        <Report name="proj_guitar_hero_impl_1.tws.html" last_build_time="1639277643" last_build_size="14045"/>
+        <Report name="proj_guitar_hero_impl_1.udb" last_build_time="1639277653" last_build_size="9954"/>
+        <Report name="proj_guitar_hero_impl_1_map.udb" last_build_time="1639277647" last_build_size="6959"/>
+        <Report name="proj_guitar_hero_impl_1_rtl.udb" last_build_time="1639277640" last_build_size="67889"/>
+        <Report name="proj_guitar_hero_impl_1_syn.udb" last_build_time="1639277643" last_build_size="5051"/>
+        <Report name="proj_guitar_hero_impl_1_vo.sdf" last_build_time="1639277655" last_build_size="38357"/>
+        <Report name="proj_guitar_hero_impl_1_vo.vo" last_build_time="1639277655" last_build_size="40434"/>
     </Strategy>
 </BuildStatus>
-          

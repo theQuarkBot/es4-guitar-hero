@@ -5,7 +5,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Sat Dec 11 18:26:26 2021
+Mapped on: Sat Dec 11 21:54:07 2021
 
 Design Information
 ------------------
@@ -19,10 +19,9 @@ Design Summary
 --------------
 
    Number of slice registers:  22 out of  5280 (<1%)
-   Number of I/O registers:      6 out of   117 (5%)
-   Number of LUT4s:            56 out of  5280 (1%)
-      Number of logic LUT4s:              31
-      Number of replicated LUT4s:          1
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:            46 out of  5280 (1%)
+      Number of logic LUT4s:              22
       Number of ripple logic:             12 (24 LUT4s)
    Number of IO sites used:   9 out of 39 (23%)
       Number of IO sites used for general PIO: 9
@@ -46,20 +45,21 @@ Design Summary
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             1 out of 1 (100%)
    Number of Clocks:  2
-      Net vgaout.clk: 20 loads, 20 rising, 0 falling (Driver: Pin
+      Net vgaout.clk: 14 loads, 14 rising, 0 falling (Driver: Pin
      vgaout.clock.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
       Net oscillatorin_c: 1 loads, 1 rising, 0 falling (Driver: Port
      oscillatorin)
-   Number of Clock Enables:  3
-      Net vgaout.n12095: 6 loads, 6 SLICEs
-      Net vgaout.n12097: 1 loads, 1 SLICEs
-      Net vgaout.n12688: 1 loads, 1 SLICEs
+   Number of Clock Enables:  1
+      Net vgaout.column_9__N_64: 7 loads, 7 SLICEs
    Number of LSRs:  4
-      Net vgaout.n12355: 6 loads, 6 SLICEs
-      Net vgaout.n11961: 6 loads, 6 SLICEs
-      Net vgaout.n12772: 1 loads, 1 SLICEs
-      Net vgaout.n8: 1 loads, 1 SLICEs
+      Net vgaout.n12457: 1 loads, 1 SLICEs
+      Net vgaout.n12089: 6 loads, 6 SLICEs
+      Net vgaout.n11962: 6 loads, 6 SLICEs
+      Net vgaout.n196: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
+      Net vgaout.column_9__N_64: 8 loads
+      Net vgaout.n11962: 6 loads
+      Net vgaout.n12089: 6 loads
 
                                     Page 1
 
@@ -69,16 +69,13 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net vgaout.n12095: 8 loads
-      Net vgaout.row[8]: 8 loads
-      Net vgaout.row[9]: 8 loads
-      Net vgaout.column[9]: 7 loads
-      Net vgaout.row[5]: 7 loads
-      Net vgaout.row[7]: 7 loads
-      Net vgaout.n11961: 6 loads
-      Net vgaout.n12355: 6 loads
-      Net vgaout.column[4]: 5 loads
-      Net vgaout.column[5]: 4 loads
+      Net vgaout.row[4]: 6 loads
+      Net vgaout.row[7]: 6 loads
+      Net vgaout.row[5]: 5 loads
+      Net vgaout.row[6]: 5 loads
+      Net vgaout.row[8]: 5 loads
+      Net vgaout.row[9]: 5 loads
+      Net vgaout.column[2]: 4 loads
 
 
 
@@ -113,19 +110,22 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[3]           | OUTPUT    | LVCMOS33  | O     |       |           |
+| RGBout[4]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[4]           | OUTPUT    | LVCMOS33  | O     |       |           |
+| RGBout[3]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[5]           | OUTPUT    | LVCMOS33  | O     |       |           |
+| RGBout[5]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[2]           | OUTPUT    | LVCMOS33  | O     |       |           |
+| RGBout[2]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[1]           | OUTPUT    | LVCMOS33  | O     |       |           |
+| RGBout[1]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[0]           | OUTPUT    | LVCMOS33  | O     |       |           |
+| RGBout[0]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | HSYNCout            | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| VSYNCout            | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 
                                     Page 2
 
@@ -135,16 +135,8 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
-+---------------------+-----------+-----------+-------+-------+-----------+
-| VSYNCout            | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 | oscillatorin        | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-
-Removed logic
--------------
-
-Block i1 was optimized away.
 
 PLL/DLL Summary
 ---------------
@@ -185,23 +177,6 @@ PLL 1:                                 Pin/Node Value
 ASIC Components
 ---------------
 
-Instance Name: vgaout/RGB_i4
-         Type: IOLOGIC
-Instance Name: vgaout/RGB_i2
-         Type: IOLOGIC
-Instance Name: vgaout/RGB_i3
-         Type: IOLOGIC
-Instance Name: vgaout/RGB_i0
-
-                                    Page 3
-
-
-
-
-
-ASIC Components (cont)
-----------------------
-         Type: IOLOGIC
 Instance Name: vgaout/clock/lscc_pll_inst/u_PLL_B
          Type: PLL
 
@@ -218,48 +193,7 @@ Run Time and Memory Usage
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    Page 4
+                                    Page 3
 
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.

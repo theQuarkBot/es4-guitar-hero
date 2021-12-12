@@ -582,6 +582,38 @@
             <Navigation>27</Navigation>
         </Message>
         <Message>
+            <ID>35929000</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(140): </Dynamic>
+            <Dynamic>row</Dynamic>
+            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>140</Navigation>
+        </Message>
+        <Message>
+            <ID>35921259</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(50): </Dynamic>
+            <Dynamic>row</Dynamic>
+            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35929000</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(140): </Dynamic>
+            <Dynamic>col</Dynamic>
+            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>140</Navigation>
+        </Message>
+        <Message>
+            <ID>35921259</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(51): </Dynamic>
+            <Dynamic>col</Dynamic>
+            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>51</Navigation>
+        </Message>
+        <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
             <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10): </Dynamic>
@@ -624,10 +656,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(15): </Dynamic>
+            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): </Dynamic>
             <Dynamic>sim</Dynamic>
             <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
-            <Navigation>15</Navigation>
+            <Navigation>18</Navigation>
         </Message>
         <Message>
             <ID>35001200</ID>
@@ -945,6 +977,38 @@
             <Navigation>27</Navigation>
         </Message>
         <Message>
+            <ID>35929000</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(140): </Dynamic>
+            <Dynamic>row</Dynamic>
+            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>140</Navigation>
+        </Message>
+        <Message>
+            <ID>35921259</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(50): </Dynamic>
+            <Dynamic>row</Dynamic>
+            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>50</Navigation>
+        </Message>
+        <Message>
+            <ID>35929000</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(140): </Dynamic>
+            <Dynamic>col</Dynamic>
+            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>140</Navigation>
+        </Message>
+        <Message>
+            <ID>35921259</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(51): </Dynamic>
+            <Dynamic>col</Dynamic>
+            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>51</Navigation>
+        </Message>
+        <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
             <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10): </Dynamic>
@@ -987,10 +1051,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(15): </Dynamic>
+            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): </Dynamic>
             <Dynamic>sim</Dynamic>
             <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
-            <Navigation>15</Navigation>
+            <Navigation>18</Navigation>
         </Message>
         <Message>
             <ID>35001200</ID>
@@ -1085,6 +1149,42 @@
             <Navigation>140</Navigation>
         </Message>
         <Message>
+            <ID>35001747</ID>
+            <Severity>16</Severity>
+            <Dynamic>5</Dynamic>
+            <Dynamic>\vgaout/RGB</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>16</Severity>
+            <Dynamic>4</Dynamic>
+            <Dynamic>\vgaout/RGB</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>16</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>\vgaout/RGB</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>16</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>\vgaout/RGB</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>16</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\vgaout/RGB</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>16</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\vgaout/RGB</Dynamic>
+        </Message>
+        <Message>
             <ID>35002028</ID>
             <Severity>16</Severity>
             <Dynamic>pressing[5]</Dynamic>
@@ -1123,10 +1223,6 @@
             <ID>35002028</ID>
             <Severity>16</Severity>
             <Dynamic>start</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002039</ID>
-            <Severity>1</Severity>
         </Message>
         <Message>
             <ID>70001944</ID>

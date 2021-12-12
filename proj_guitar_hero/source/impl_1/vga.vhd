@@ -5,10 +5,13 @@ use IEEE.numeric_std.all;
 entity vga is
   port(
 	  pllin : in std_logic;
-	  RGB : out std_logic_vector(5 downto 0) := "001100";
+	  RGBin : in std_logic_vector(5 downto 0);
+	  RGB : out std_logic_vector(5 downto 0);
 	  HSYNC : out std_logic;
 	  VSYNC : out std_logic;
-	  pllpinout : out std_logic
+	  pllpinout : out std_logic;
+	  rowout : out unsigned(9 downto 0);
+	  colout : out unsigned(9 downto 0)
   );
 end vga;
 
@@ -42,10 +45,12 @@ begin
 			column <= column + '1';
 		  elsif column = "1000001101" then
 			column <= "0000000000";	
+			VSYNC <= '1';
 		  else
 			VSYNC <= '1';
 			column <= column + '1';
 		  end if;
+		  HSYNC <= '1';
 		  row <= row + '1';
 		  --visible + frony
 	  elsif row < "1010010000" then
@@ -57,14 +62,15 @@ begin
 		--If it is 800
 	  elsif row = "1100100000" then
 		row <= "0000000000";	
+		HSYNC <= '1';
       else
 	    HSYNC <= '1';
 		row <= row + '1';
       end if;
 	  
-	  if column < "0110010000" then
-	    if row < "0110010000" then
-		  RGB <= "100111";
+	  if column < "111100000" then
+	    if row < "1010000000" then
+		  RGB <= RGBin;
 		  
 		else
 		  RGB <= "000000";

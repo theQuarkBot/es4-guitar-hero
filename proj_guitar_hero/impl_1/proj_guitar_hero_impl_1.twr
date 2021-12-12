@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Sat Dec 11 18:26:33 2021
+Sat Dec 11 21:54:14 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -134,23 +134,21 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-vgaout/column_75__i9/D                  |    No arrival or required
-vgaout/column_75__i9/SP                 |    No arrival or required
-vgaout/column_75__i9/SR                 |    No arrival or required
-vgaout/row_76__i6/D                     |    No arrival or required
-vgaout/row_76__i5/D                     |    No arrival or required
-{vgaout/row_76__i5/SR   vgaout/row_76__i6/SR}                           
+vgaout/column_66__i0/D                  |    No arrival or required
+vgaout/column_66__i0/SP                 |    No arrival or required
+vgaout/column_66__i0/SR                 |    No arrival or required
+vgaout/row_67__i9/D                     |    No arrival or required
+vgaout/row_67__i9/SR                    |    No arrival or required
+vgaout/row_67__i2/D                     |    No arrival or required
+vgaout/row_67__i1/D                     |    No arrival or required
+{vgaout/row_67__i1/SR   vgaout/row_67__i2/SR}                           
                                         |    No arrival or required
-vgaout/column_75__i8/D                  |    No arrival or required
-vgaout/column_75__i7/D                  |    No arrival or required
-{vgaout/column_75__i7/SP   vgaout/column_75__i8/SP}                           
-                                        |    No arrival or required
-{vgaout/column_75__i7/SR   vgaout/column_75__i8/SR}                           
-                                        |    No arrival or required
+vgaout/column_66__i4/D                  |    No arrival or required
+vgaout/column_66__i3/D                  |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                        48
+ts                                      |                        43
                                         |                          
 -------------------------------------------------------------------
 
@@ -179,10 +177,10 @@ pressing[1]                             |                     input
 pressing[0]                             |                     input
 reset                                   |                     input
 start                                   |                     input
-RGBout[3]                               |                    output
+HSYNCout                                |                    output
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                        17
+Number of I/O ports without constraint  |                        11
                                         |                          
 -------------------------------------------------------------------
 

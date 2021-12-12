@@ -41,7 +41,7 @@ if (a)
 
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Par"></A>Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Sat Dec 11 18:26:27 2021
+Sat Dec 11 21:54:08 2021
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	proj_guitar_hero_impl_1_map.udb proj_guitar_hero_impl_1.udb 
@@ -54,12 +54,12 @@ Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Ti
 5_1   *      0            -2147483.648 0            -2147483.648 0            05           Completed
 * : Design saved.
 
-Total (real) run time for 1-seed: 6 secs 
+Total (real) run time for 1-seed: 5 secs 
 
 par done!
 
 Lattice Place and Route Report for Design &quot;proj_guitar_hero_impl_1_map.udb&quot;
-Sat Dec 11 18:26:27 2021
+Sat Dec 11 21:54:08 2021
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
@@ -114,19 +114,19 @@ WARNING - par: Top module port &apos;pressing[1]&apos; does not connect to anyth
 WARNING - par: Top module port &apos;pressing[0]&apos; does not connect to anything.
 WARNING - par: Top module port &apos;reset&apos; does not connect to anything.
 WARNING - par: Top module port &apos;start&apos; does not connect to anything.
-Number of Signals: 105
-Number of Connections: 250
+Number of Signals: 89
+Number of Connections: 205
 WARNING - par: Placement timing constraints are hard to meet. However, placement will continue. Use static timing analysis to identify errors. For more information, see online help subjects &apos;Place and Route Timing Report&apos; or the &apos;Timing&apos; application
 
 
 <A name="par_dus"></A><B><U><big>Device utilization summary:</big></U></B>
 
-   SLICE (est.)      31/2640          1% used
-     LUT             56/5280          1% used
+   SLICE (est.)      25/2640         &lt;1% used
+     LUT             46/5280         &lt;1% used
      REG             22/5280         &lt;1% used
    PIO                9/56           16% used
                       9/36           25% bonded
-   IOLOGIC            6/56           10% used
+   IOLOGIC            0/56            0% used
    DSP                0/8             0% used
    I2C                0/2             0% used
    HFOSC              0/1             0% used
@@ -156,28 +156,28 @@ Starting Placer Phase 1. CPU time: 0 secs , REAL time: 0 secs
 ..  ..
 ....................
 
-Placer score = 7915.
+Placer score = 6278.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE             30/2640          1% used
+   SLICE             25/2640         &lt;1% used
 
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: Missing master pin for instance &apos;vgaout.clock.lscc_pll_inst.u_PLL_B&apos;.
-Finished Placer Phase 1. CPU time: 4 secs , REAL time: 5 secs 
+Finished Placer Phase 1. CPU time: 4 secs , REAL time: 4 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  11115
-Finished Placer Phase 2.  CPU time: 4 secs , REAL time: 5 secs 
+Placer score =  10694
+Finished Placer Phase 2.  CPU time: 4 secs , REAL time: 4 secs 
 
 
 
 <A name="par_clk"></A><B><U><big>Clock Report</big></U></B>
 
 Global Clocks :
-  PRIMARY &quot;vgaout.clk&quot; from OUTGLOBAL on comp &quot;vgaout.clock.lscc_pll_inst.u_PLL_B&quot; on site &quot;PLL_R13C32&quot;, clk load = 20, ce load = 0, sr load = 0
+  PRIMARY &quot;vgaout.clk&quot; from OUTGLOBAL on comp &quot;vgaout.clock.lscc_pll_inst.u_PLL_B&quot; on site &quot;PLL_R13C32&quot;, clk load = 14, ce load = 0, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
 
@@ -199,12 +199,12 @@ I/O Bank Usage Summary:
 | 2        | 0 / 8 (  0%)  | OFF        |            |            |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 4 secs , REAL time: 5 secs 
+Total Placer CPU time: 4 secs , REAL time: 4 secs 
 
 Writing design to file proj_guitar_hero_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 18:26:32 12/11/21
+Start NBR router at 21:54:12 12/11/21
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -222,14 +222,14 @@ Note: NBR uses a different method to calculate timing slacks. The
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-49 connections routed with dedicated routing resources
+43 connections routed with dedicated routing resources
 1 global clock signals routed
-69 connections routed (of 250 total) (27.60%)
+57 connections routed (of 205 total) (27.80%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (1 used out of 8 available):
 #7  Signal &quot;vgaout.clk&quot;
-       Clock   loads: 20    out of    20 routed (100.00%)
+       Clock   loads: 14    out of    14 routed (100.00%)
 Other clocks:
     Signal &quot;oscillatorin_c&quot;
        Clock   loads: 0     out of     1 routed (  0.00%)
@@ -242,18 +242,18 @@ WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: Missing master pin for instance &apos;vgaout.clock.lscc_pll_inst.u_PLL_B&apos;.
 
-Start NBR section for initial routing at 18:26:32 12/11/21
+Start NBR section for initial routing at 21:54:12 12/11/21
 Level 4, iteration 1
-3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
+4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 18:26:32 12/11/21
+Start NBR section for normal routing at 21:54:13 12/11/21
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
 
-Start NBR section for post-routing at 18:26:32 12/11/21
+Start NBR section for post-routing at 21:54:13 12/11/21
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: Missing master pin for instance &apos;vgaout.clock.lscc_pll_inst.u_PLL_B&apos;.
@@ -276,7 +276,7 @@ Starting full timing analysis...
 Total CPU time 0 secs 
 Total REAL time: 0 secs 
 Completely routed.
-End of route.  250 routed (100.00%); 0 unrouted.
+End of route.  205 routed (100.00%); 0 unrouted.
 
 Writing design to file proj_guitar_hero_impl_1_par.dir/5_1.udb ...
 
@@ -293,8 +293,8 @@ PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = 0.000
 PAR_SUMMARY::Number of errors = 0
 
 Total CPU  Time: 5 secs 
-Total REAL Time: 6 secs 
-Peak Memory Usage: 97 MB
+Total REAL Time: 5 secs 
+Peak Memory Usage: 98 MB
 
 
 par done!

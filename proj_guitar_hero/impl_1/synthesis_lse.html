@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Dec 11 18:26:20 2021
+Sat Dec 11 21:53:57 2021
 
 
 Command Line:  D:\Apps\Lattice Radiant\ispfpga\bin\nt64\synthesis.exe -f proj_guitar_hero_impl_1_lattice.synproj -gui -msgset C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/promote.xml 
@@ -178,6 +178,10 @@ Analyzing VHDL file c:/users/philip lengyel/documents/es4final/es4-guitar-hero/p
 
 INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(10): analyzing entity top. VHDL-1012
 INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(27): analyzing architecture synth. VHDL-1010
+INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(140): input pin row has no actual or default value. VHDL-9000
+INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(50): row is declared here. VHDL-1259
+INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(140): input pin col has no actual or default value. VHDL-9000
+INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(51): col is declared here. VHDL-1259
 Analyzing VHDL file c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd. VHDL-1481
 Analyzing VHDL file c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd
 
@@ -192,7 +196,7 @@ Analyzing VHDL file c:/users/philip lengyel/documents/es4final/es4-guitar-hero/p
 Analyzing VHDL file c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd
 
 INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
-INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(15): analyzing architecture sim. VHDL-1010
+INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): analyzing architecture sim. VHDL-1010
 WARNING - synthesis: Setting top as the top-level module. To specify the top-level module explicitly, go to View->Set Views->Hierarchy or Project->Active Implementation->Set Top-Level Unit.
 INFO - synthesis: The default VHDL library search path is now "C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/impl_1". VHDL-1504
 Top module language type = VHDL.
@@ -242,6 +246,12 @@ WARNING - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/
 
 
 
+WARNING - synthesis: Bit 5 of Register \vgaout/RGB is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \vgaout/RGB is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \vgaout/RGB is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \vgaout/RGB is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \vgaout/RGB is stuck at Zero
+WARNING - synthesis: Bit 0 of Register \vgaout/RGB is stuck at Zero
 WARNING - synthesis: I/O Port pressing[5] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port pressing[4] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port pressing[3] 's net has no driver and is unused.
@@ -250,9 +260,6 @@ WARNING - synthesis: I/O Port pressing[1] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port pressing[0] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port reset 's net has no driver and is unused.
 WARNING - synthesis: I/O Port start 's net has no driver and is unused.
-Duplicate register/latch removal. \vgaout/RGB_i1 is a one-to-one match with \vgaout/RGB_i5.
-Duplicate register/latch removal. \vgaout/RGB_i0 is a one-to-one match with \vgaout/RGB_i1.
-INFO - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 
 
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
@@ -262,8 +269,7 @@ Number of register bits => 22 of 5280 (0 % )
 CCU2 => 12
 FD1P3XZ => 22
 IB => 1
-IOL_B => 4
-LUT4 => 30
+LUT4 => 20
 OB => 8
 PLL_B => 1
 ################### End Area Report ##################
@@ -282,23 +288,23 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : vgaout/n12095, loads : 12
-  Net : vgaout/n12355, loads : 10
-  Net : vgaout/n11961, loads : 10
-  Net : vgaout/row[8], loads : 8
-  Net : vgaout/row[9], loads : 8
-  Net : vgaout/row[7], loads : 7
-  Net : vgaout/row[5], loads : 7
-  Net : vgaout/column[9], loads : 6
-  Net : vgaout/column[8], loads : 4
-  Net : vgaout/column[7], loads : 4
+  Net : vgaout/column_9__N_64, loads : 12
+  Net : vgaout/n12089, loads : 10
+  Net : vgaout/n11962, loads : 10
+  Net : vgaout/row[8], loads : 5
+  Net : vgaout/row[9], loads : 5
+  Net : vgaout/row[6], loads : 5
+  Net : vgaout/row[5], loads : 5
+  Net : vgaout/row[4], loads : 5
+  Net : vgaout/row[7], loads : 5
+  Net : vgaout/column[4], loads : 4
 ################### End Clock Report ##################
 
-Peak Memory Usage: 509 MB
+Peak Memory Usage: 510 MB
 
 --------------------------------------------------------------
 Total CPU Time: 5 secs 
-Total REAL Time: 6 secs 
+Total REAL Time: 5 secs 
 --------------------------------------------------------------
 
 
