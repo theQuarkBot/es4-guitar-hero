@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
+    <Task name="Export">
+        <Message>
+            <ID>1191031</ID>
+            <Severity>1</Severity>
+        </Message>
+    </Task>
     <Task name="Synthesis">
         <Message>
             <ID>35831026</ID>
@@ -576,42 +582,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(27): </Dynamic>
+            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
-            <Navigation>27</Navigation>
-        </Message>
-        <Message>
-            <ID>35929000</ID>
-            <Severity>1</Severity>
-            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(140): </Dynamic>
-            <Dynamic>row</Dynamic>
-            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
-            <Navigation>140</Navigation>
-        </Message>
-        <Message>
-            <ID>35921259</ID>
-            <Severity>1</Severity>
-            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(50): </Dynamic>
-            <Dynamic>row</Dynamic>
-            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
-            <Navigation>50</Navigation>
-        </Message>
-        <Message>
-            <ID>35929000</ID>
-            <Severity>1</Severity>
-            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(140): </Dynamic>
-            <Dynamic>col</Dynamic>
-            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
-            <Navigation>140</Navigation>
-        </Message>
-        <Message>
-            <ID>35921259</ID>
-            <Severity>1</Severity>
-            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(51): </Dynamic>
-            <Dynamic>col</Dynamic>
-            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
-            <Navigation>51</Navigation>
+            <Navigation>28</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -657,7 +631,7 @@
             <ID>35921010</ID>
             <Severity>1</Severity>
             <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): </Dynamic>
-            <Dynamic>sim</Dynamic>
+            <Dynamic>synth</Dynamic>
             <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
             <Navigation>18</Navigation>
         </Message>
@@ -971,42 +945,10 @@
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(27): </Dynamic>
+            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28): </Dynamic>
             <Dynamic>synth</Dynamic>
             <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
-            <Navigation>27</Navigation>
-        </Message>
-        <Message>
-            <ID>35929000</ID>
-            <Severity>1</Severity>
-            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(140): </Dynamic>
-            <Dynamic>row</Dynamic>
-            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
-            <Navigation>140</Navigation>
-        </Message>
-        <Message>
-            <ID>35921259</ID>
-            <Severity>1</Severity>
-            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(50): </Dynamic>
-            <Dynamic>row</Dynamic>
-            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
-            <Navigation>50</Navigation>
-        </Message>
-        <Message>
-            <ID>35929000</ID>
-            <Severity>1</Severity>
-            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(140): </Dynamic>
-            <Dynamic>col</Dynamic>
-            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
-            <Navigation>140</Navigation>
-        </Message>
-        <Message>
-            <ID>35921259</ID>
-            <Severity>1</Severity>
-            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(51): </Dynamic>
-            <Dynamic>col</Dynamic>
-            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
-            <Navigation>51</Navigation>
+            <Navigation>28</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
@@ -1052,7 +994,7 @@
             <ID>35921010</ID>
             <Severity>1</Severity>
             <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): </Dynamic>
-            <Dynamic>sim</Dynamic>
+            <Dynamic>synth</Dynamic>
             <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
             <Navigation>18</Navigation>
         </Message>
@@ -1133,6 +1075,52 @@
             <Dynamic>start</Dynamic>
         </Message>
         <Message>
+            <ID>35002028</ID>
+            <Severity>16</Severity>
+            <Dynamic>rgb[5]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002028</ID>
+            <Severity>16</Severity>
+            <Dynamic>rgb[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002028</ID>
+            <Severity>16</Severity>
+            <Dynamic>rgb[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002028</ID>
+            <Severity>16</Severity>
+            <Dynamic>rgb[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002028</ID>
+            <Severity>16</Severity>
+            <Dynamic>rgb[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002028</ID>
+            <Severity>16</Severity>
+            <Dynamic>rgb[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(123): </Dynamic>
+            <Dynamic>row[9]</Dynamic>
+            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>123</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>16</Severity>
+            <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(124): </Dynamic>
+            <Dynamic>col[9]</Dynamic>
+            <Navigation>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>124</Navigation>
+        </Message>
+        <Message>
             <ID>35931002</ID>
             <Severity>16</Severity>
             <Dynamic>c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(139): </Dynamic>
@@ -1152,37 +1140,31 @@
             <ID>35001747</ID>
             <Severity>16</Severity>
             <Dynamic>5</Dynamic>
-            <Dynamic>\vgaout/RGB</Dynamic>
+            <Dynamic>\vgaout/RGB_</Dynamic>
         </Message>
         <Message>
             <ID>35001747</ID>
             <Severity>16</Severity>
             <Dynamic>4</Dynamic>
-            <Dynamic>\vgaout/RGB</Dynamic>
+            <Dynamic>\vgaout/RGB_</Dynamic>
         </Message>
         <Message>
             <ID>35001747</ID>
             <Severity>16</Severity>
             <Dynamic>3</Dynamic>
-            <Dynamic>\vgaout/RGB</Dynamic>
+            <Dynamic>\vgaout/RGB_</Dynamic>
         </Message>
         <Message>
             <ID>35001747</ID>
             <Severity>16</Severity>
             <Dynamic>2</Dynamic>
-            <Dynamic>\vgaout/RGB</Dynamic>
+            <Dynamic>\vgaout/RGB_</Dynamic>
         </Message>
         <Message>
             <ID>35001747</ID>
             <Severity>16</Severity>
             <Dynamic>1</Dynamic>
-            <Dynamic>\vgaout/RGB</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001747</ID>
-            <Severity>16</Severity>
-            <Dynamic>0</Dynamic>
-            <Dynamic>\vgaout/RGB</Dynamic>
+            <Dynamic>\vgaout/RGB_</Dynamic>
         </Message>
         <Message>
             <ID>35002028</ID>
@@ -1225,30 +1207,28 @@
             <Dynamic>start</Dynamic>
         </Message>
         <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001934</ID>
-            <Severity>16</Severity>
-            <Dynamic>u_PLL_B</Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001934</ID>
-            <Severity>16</Severity>
-            <Dynamic>u_PLL_B</Dynamic>
-        </Message>
-    </Task>
-    <Task name="Export">
-        <Message>
-            <ID>1191031</ID>
+            <ID>35002039</ID>
             <Severity>1</Severity>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001934</ID>
+            <Severity>16</Severity>
+            <Dynamic>u_PLL_B</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001934</ID>
+            <Severity>16</Severity>
+            <Dynamic>u_PLL_B</Dynamic>
         </Message>
     </Task>
     <Task name="PAR">

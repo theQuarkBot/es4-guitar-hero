@@ -15,7 +15,7 @@ entity vga is
   );
 end vga;
 
-architecture sim of vga is
+architecture synth of vga is
 
 component mypll is
 	port(

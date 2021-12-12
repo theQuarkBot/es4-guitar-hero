@@ -17,6 +17,7 @@ entity top is
 		
 		--VGA
 		RGBout   : out std_logic_vector(5 downto 0);
+		rgb   : out std_logic_vector(5 downto 0);
 		oscillatorin : in std_logic;
 		HSYNCout : out std_logic;
 		VSYNCout : out std_logic
@@ -88,7 +89,6 @@ end component;
 
 ------------------------------------------------------------------------------------------
 --VGA pins
-signal rgbi  : std_logic_vector(5 downto 0);
 
 -- Which buttons are being pressed
 signal press_green  : std_logic;
@@ -105,11 +105,11 @@ signal clk : std_logic;
 signal counter : std_logic_vector(25 downto 0);
 
 -- Game state (arrays to represent where boxes are)
-signal col_greens   : std_logic_vector(479 downto 0) := 480b"0";
-signal col_reds     : std_logic_vector(479 downto 0) := 480b"0";
-signal col_yellows  : std_logic_vector(479 downto 0) := 480b"0";
-signal col_blues    : std_logic_vector(479 downto 0) := 480b"0";
-signal col_oranges  : std_logic_vector(479 downto 0) := 480b"0";
+signal col_green   : std_logic_vector(479 downto 0) := 480b"0";
+signal col_red     : std_logic_vector(479 downto 0) := 480b"0";
+signal col_yellow  : std_logic_vector(479 downto 0) := 480b"0";
+signal col_blue   : std_logic_vector(479 downto 0) := 480b"0";
+signal col_orange  : std_logic_vector(479 downto 0) := 480b"0";
 
 -- Signals to determine whether a box should be generated for each column
 signal gen_g : std_logic := '0';
@@ -122,21 +122,24 @@ signal gen_o : std_logic := '0';
 --signal rgb_out : std_logic_vector(5 downto 0); TODO: Is this needed?
 signal row : unsigned(9 downto 0);
 signal col : unsigned(9 downto 0);
+signal intergb : std_logic_vector(5 downto 0);
 
 begin
 	clock : HSOSC port map('1', '1', clk);
-	vgaout : vga port map(pllin => oscillatorin, RGB => RGBout, HSYNC => HSYNCout, VSYNC => VSYNCout, RGBin => rgbi, rowout => row, colout => col);
+	--vgaout : vga port map(pllin => oscillatorin, RGB => RGBout, HSYNC => HSYNCout, VSYNC => VSYNCout, RGBin => rgbi, rowout => row, colout => col);
+	vgaout : vga port map(pllin => oscillatorin, RGB => RGBout, HSYNC => HSYNCout, VSYNC => VSYNCout, RGBin => intergb, rowout => row, colout => col);
 	------------------------------------------------------------------------------------------
 	-- Given the current game state and a row/column. Give the color of the current pixel
 	get_color : draw_game port map(
-		--row=> row,
-		--col=> col,
-		valid => '1',    -- TODO: Make sure this is right		rgb => rgbi,
-		col_green=>  col_greens,
-		col_red=>    col_reds,
-		col_yellow=> col_yellows,
-		col_blue=>   col_blues,
-		col_orange=> col_oranges
+		row=> row,
+		col=> col,
+		valid=> '1',    -- TODO: Make sure this is right
+		rgb=> intergb,
+		col_green=>  col_green,
+		col_red=>    col_red,
+		col_yellow=> col_yellow,
+		col_blue=>   col_blue,
+		col_orange=> col_orange
 	);
 	------------------------------------------------------------------------------------------
 	process (clk) begin
@@ -155,11 +158,11 @@ begin
 	end process;
 	
 	-- Generate new row when needed
-	make_green_note  : generate_notes port map(col_greens , rand(7 downto 0), gen_g, counter(20));
-	make_red_note    : generate_notes port map(col_reds   , rand(7 downto 0), gen_r, counter(20));
-	make_yellow_note : generate_notes port map(col_yellows, rand(7 downto 0), gen_y, counter(20));
-	make_blue_note   : generate_notes port map(col_blues  , rand(7 downto 0), gen_b, counter(20));
-	make_orange_note : generate_notes port map(col_oranges, rand(7 downto 0), gen_o, counter(20));
+	make_green_note  : generate_notes port map(col_green , rand(7 downto 0), gen_g, counter(20));
+	make_red_note    : generate_notes port map(col_red   , rand(7 downto 0), gen_r, counter(20));
+	make_yellow_note : generate_notes port map(col_yellow, rand(7 downto 0), gen_y, counter(20));
+	make_blue_note   : generate_notes port map(col_blue  , rand(7 downto 0), gen_b, counter(20));
+	make_orange_note : generate_notes port map(col_orange, rand(7 downto 0), gen_o, counter(20));
 	
 	------------------------------------------------------------------------------------------
 	-- Shift the notes down one row
@@ -167,11 +170,11 @@ begin
 		if rising_edge(counter(20)) then
 			
 		
-			col_greens  <= gen_g & col_greens(479 downto 1);
-			col_reds    <= gen_r & col_reds(479 downto 1);
-			col_yellows <= gen_y & col_yellows(479 downto 1);
-			col_blues   <= gen_b & col_blues(479 downto 1);
-			col_oranges <= gen_o & col_oranges(479 downto 1);
+			col_green  <= gen_g & col_green(479 downto 1);
+			col_red    <= gen_r & col_red(479 downto 1);
+			col_yellow <= gen_y & col_yellow(479 downto 1);
+			col_blue   <= gen_b & col_blue(479 downto 1);
+			col_orange <= gen_o & col_orange(479 downto 1);
 		end if;
 	end process;
 	------------------------------------------------------------------------------------------

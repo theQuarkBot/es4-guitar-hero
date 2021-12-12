@@ -4,13 +4,13 @@
     <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Strategy1">
         <Options def_top="vga"/>
         <Source name="source/impl_1/top.vhd" type="VHDL" type_short="VHDL">
-            <Options/>
+            <Options top_module="top"/>
         </Source>
         <Source name="source/impl_1/draw_game.vhd" type="VHDL" type_short="VHDL">
-            <Options top_module="draw_game"/>
+            <Options/>
         </Source>
         <Source name="source/impl_1/generate_notes.vhd" type="VHDL" type_short="VHDL">
-            <Options top_module="generate_notes"/>
+            <Options/>
         </Source>
         <Source name="source/impl_1/vga.vhd" type="VHDL" type_short="VHDL">
             <Options top_module="vga"/>

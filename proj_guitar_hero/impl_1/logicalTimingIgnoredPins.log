@@ -1,7 +1,27 @@
-FA2/A0 input column_66_add_4_7is connected to a constant net
-FA2/A1 input column_66_add_4_7is connected to a constant net
-FA2/A0 input row_67_add_4_5is connected to a constant net
-FA2/A1 input row_67_add_4_5is connected to a constant net
+FA2/A0 input row_137_add_4_1is connected to a constant net
+FA2/A1 input row_137_add_4_1is connected to a constant net
+FA2/A0 input row_137_add_4_5is connected to a constant net
+FA2/A1 input row_137_add_4_5is connected to a constant net
+FA2/A0 input row_137_add_4_3is connected to a constant net
+FA2/A1 input row_137_add_4_3is connected to a constant net
+FA2/A0 input column_136_add_4_11is connected to a constant net
+FA2/A1 input column_136_add_4_11is connected to a constant net
+FA2/B1 input column_136_add_4_11is connected to a constant net
+FA2/C1 input column_136_add_4_11is connected to a constant net
+FA2/D1 input column_136_add_4_11 has no outgoing device arc
+FA2/CI1 input column_136_add_4_11 has no outgoing device arc
+     ** vgaout/column_136_add_4_11/CO0 is driving a pin on an incomplete path
+FA2/B0 input column_136_add_4_11is connected to a constant net
+FA2/C0 input column_136_add_4_11 is on an incomplete path
+FA2/CI0 input column_136_add_4_11 is on an incomplete path
+FA2/A0 input column_136_add_4_7is connected to a constant net
+FA2/A1 input column_136_add_4_7is connected to a constant net
+FA2/A0 input column_136_add_4_9is connected to a constant net
+FA2/A1 input column_136_add_4_9is connected to a constant net
+FA2/A0 input column_136_add_4_5is connected to a constant net
+FA2/A1 input column_136_add_4_5is connected to a constant net
+FA2/A0 input column_136_add_4_3is connected to a constant net
+FA2/A1 input column_136_add_4_3is connected to a constant net
 PLL_B/DYNAMICDELAY7 input u_PLL_Bis connected to a constant net
 PLL_B/DYNAMICDELAY6 input u_PLL_Bis connected to a constant net
 PLL_B/DYNAMICDELAY5 input u_PLL_Bis connected to a constant net
@@ -17,89 +37,86 @@ PLL_B/SDI input u_PLL_Bis connected to a constant net
 PLL_B/LATCH input u_PLL_Bis connected to a constant net
 PLL_B/INTFBOUT output  u_PLL_B has no incoming device arc
      *** vgaout/clock/lscc_pll_inst/u_PLL_B/FEEDBACK is driven by constant or a pin on an incomplete path
-FA2/A0 input column_66_add_4_3is connected to a constant net
-FA2/A1 input column_66_add_4_3is connected to a constant net
+FA2/A0 input column_136_add_4_1is connected to a constant net
+FA2/A1 input column_136_add_4_1is connected to a constant net
 VLO/Z GND  i1
-     *** vgaout/column_66_add_4_1/A0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_1/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_1/C0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_1/A1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_11/A0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_11/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_11/A1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_11/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_11/C1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_3/A0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_3/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_3/A1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_3/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_5/A0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_5/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_5/A1 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_5/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_9/A0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_9/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_9/A1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_9/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_1/A0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_1/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_1/C0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_1/A1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_7/A0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_7/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_7/A1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_7/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_11/A0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_11/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_11/A1 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_11/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_11/C1 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_9/A0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_9/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_9/A1 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_9/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_7/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_7/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_5/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_5/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_3/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_66_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/RGB__i1/PADDI is driven by constant or a pin on an incomplete path
+     *** vgaout/RGB__i1/DO1 is driven by constant or a pin on an incomplete path
+     *** vgaout/RGB__i1/IOLTO is driven by constant or a pin on an incomplete path
+     *** vgaout/RGB__i1/HOLD is driven by constant or a pin on an incomplete path
+     *** vgaout/RGB__i1/INCLK is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_11/A0 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_11/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_11/A1 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_11/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_11/C1 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_9/A0 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_9/A1 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_7/A0 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_7/A1 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_136_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_136_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_136_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_136_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_136_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_136_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_136_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_136_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_136_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_136_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** RGBout_pad[2].bb_inst/I is driven by constant or a pin on an incomplete path
+     *** RGBout_pad[1].bb_inst/I is driven by constant or a pin on an incomplete path
+     *** rgb_pad[5].bb_inst/I is driven by constant or a pin on an incomplete path
+     *** rgb_pad[4].bb_inst/I is driven by constant or a pin on an incomplete path
+     *** rgb_pad[3].bb_inst/I is driven by constant or a pin on an incomplete path
+     *** rgb_pad[2].bb_inst/I is driven by constant or a pin on an incomplete path
+     *** rgb_pad[1].bb_inst/I is driven by constant or a pin on an incomplete path
+     *** rgb_pad[0].bb_inst/I is driven by constant or a pin on an incomplete path
+     *** oscillatorin_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** RGBout_pad[4].bb_inst/I is driven by constant or a pin on an incomplete path
      *** RGBout_pad[3].bb_inst/I is driven by constant or a pin on an incomplete path
      *** RGBout_pad[5].bb_inst/I is driven by constant or a pin on an incomplete path
-     *** RGBout_pad[2].bb_inst/I is driven by constant or a pin on an incomplete path
-     *** RGBout_pad[1].bb_inst/I is driven by constant or a pin on an incomplete path
-     *** RGBout_pad[0].bb_inst/I is driven by constant or a pin on an incomplete path
-     *** oscillatorin_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
-FA2/D1 input column_66_add_4_11 has no outgoing device arc
-FA2/CI1 input column_66_add_4_11 has no outgoing device arc
-     ** vgaout/column_66_add_4_11/CO0 is driving a pin on an incomplete path
-FA2/C0 input column_66_add_4_11 is on an incomplete path
-FA2/CI0 input column_66_add_4_11 is on an incomplete path
+FA2/D1 input row_137_add_4_11 has no outgoing device arc
+FA2/CI1 input row_137_add_4_11 has no outgoing device arc
+     ** vgaout/row_137_add_4_11/CO0 is driving a pin on an incomplete path
+FA2/C0 input row_137_add_4_11 is on an incomplete path
+FA2/CI0 input row_137_add_4_11 is on an incomplete path
 VHI/Z VCC  i2
-     *** vgaout/column_66_add_4_1/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67_add_4_1/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67__i9/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/RGB__i1/CE is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137__i8/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137__i7/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137__i6/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137__i5/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137__i4/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137__i3/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137__i2/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137__i1/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137__i0/SP is driven by constant or a pin on an incomplete path
      *** vgaout/HSYNC/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67__i8/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67__i7/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67__i6/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67__i5/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67__i4/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67__i3/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67__i2/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67__i1/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_67__i0/SP is driven by constant or a pin on an incomplete path
-     *** RGBout_pad[4].bb_inst/T_N is driven by constant or a pin on an incomplete path
-     *** RGBout_pad[3].bb_inst/T_N is driven by constant or a pin on an incomplete path
-     *** RGBout_pad[5].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137__i9/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_137_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_136_add_4_1/B1 is driven by constant or a pin on an incomplete path
      *** RGBout_pad[2].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** RGBout_pad[1].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** RGBout_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** rgb_pad[5].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** rgb_pad[4].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** rgb_pad[3].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** rgb_pad[2].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** rgb_pad[1].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** rgb_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** HSYNCout_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** VSYNCout_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
-FA2/D1 input row_67_add_4_11 has no outgoing device arc
-FA2/CI1 input row_67_add_4_11 has no outgoing device arc
-     ** vgaout/row_67_add_4_11/CO0 is driving a pin on an incomplete path
-FA2/C0 input row_67_add_4_11 is on an incomplete path
-FA2/CI0 input row_67_add_4_11 is on an incomplete path
+     *** RGBout_pad[4].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** RGBout_pad[3].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** RGBout_pad[5].bb_inst/T_N is driven by constant or a pin on an incomplete path

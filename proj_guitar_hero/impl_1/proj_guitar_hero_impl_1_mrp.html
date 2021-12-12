@@ -47,7 +47,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Sat Dec 11 21:54:07 2021
+Mapped on: Sat Dec 11 23:48:37 2021
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -59,19 +59,19 @@ Command line:   map proj_guitar_hero_impl_1_syn.udb C:/Users/Philip
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
    Number of slice registers:  22 out of  5280 (<1%)
-   Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            46 out of  5280 (1%)
-      Number of logic LUT4s:              22
+   Number of I/O registers:      1 out of   117 (1%)
+   Number of LUT4s:            47 out of  5280 (1%)
+      Number of logic LUT4s:              23
       Number of ripple logic:             12 (24 LUT4s)
-   Number of IO sites used:   9 out of 39 (23%)
-      Number of IO sites used for general PIO: 9
+   Number of IO sites used:   15 out of 39 (38%)
+      Number of IO sites used for general PIO: 15
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 9 out of 36 (25%)
+      Number of IO sites used for PIO+I3C: 15 out of 36 (42%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 9 out of 39 (23%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 15 out of 39 (38%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  0 out of 1 (0%)
@@ -85,29 +85,29 @@ Command line:   map proj_guitar_hero_impl_1_syn.udb C:/Users/Philip
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             1 out of 1 (100%)
    Number of Clocks:  2
-      Net vgaout.clk: 14 loads, 14 rising, 0 falling (Driver: Pin
+      Net vgaout.clk: 15 loads, 15 rising, 0 falling (Driver: Pin
      vgaout.clock.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
       Net oscillatorin_c: 1 loads, 1 rising, 0 falling (Driver: Port
      oscillatorin)
    Number of Clock Enables:  1
       Net vgaout.column_9__N_64: 7 loads, 7 SLICEs
    Number of LSRs:  4
-      Net vgaout.n12457: 1 loads, 1 SLICEs
-      Net vgaout.n12089: 6 loads, 6 SLICEs
-      Net vgaout.n11962: 6 loads, 6 SLICEs
-      Net vgaout.n196: 1 loads, 1 SLICEs
+      Net vgaout.n10631: 6 loads, 6 SLICEs
+      Net vgaout.n10814: 1 loads, 1 SLICEs
+      Net vgaout.n10417: 6 loads, 6 SLICEs
+      Net vgaout.n11039: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net vgaout.column_9__N_64: 8 loads
-      Net vgaout.n11962: 6 loads
-      Net vgaout.n12089: 6 loads
+      Net vgaout.column_9__N_64: 9 loads
+      Net vgaout.n10417: 6 loads
+      Net vgaout.n10631: 6 loads
 
-      Net vgaout.row[4]: 6 loads
       Net vgaout.row[7]: 6 loads
+      Net vgaout.row[8]: 6 loads
+      Net vgaout.row[9]: 6 loads
+      Net vgaout.column[9]: 5 loads
       Net vgaout.row[5]: 5 loads
       Net vgaout.row[6]: 5 loads
-      Net vgaout.row[8]: 5 loads
-      Net vgaout.row[9]: 5 loads
-      Net vgaout.column[2]: 4 loads
+      Net vgaout.column[4]: 4 loads
 
 
 
@@ -145,24 +145,36 @@ WARNING - map: Top module port 'start' does not connect to anything.
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[4]           | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[3]           | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[5]           | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 | RGBout[2]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGBout[1]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[0]           | OUTPUT    | LVCMOS33  |       |       |           |
+| RGBout[0]           | OUTPUT    | LVCMOS33  | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb[5]              | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb[4]              | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb[3]              | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb[2]              | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rgb[1]              | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+| rgb[0]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | HSYNCout            | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | VSYNCout            | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-
 | oscillatorin        | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGBout[4]           | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGBout[3]           | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGBout[5]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
 
@@ -208,7 +220,10 @@ PLL 1:                                 Pin/Node Value
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 ---------------
 
+Instance Name: vgaout/RGB__i1
+         Type: IOLOGIC
 Instance Name: vgaout/clock/lscc_pll_inst/u_PLL_B
+
          Type: PLL
 
 
@@ -219,6 +234,49 @@ Instance Name: vgaout/clock/lscc_pll_inst/u_PLL_B
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 54 MB
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

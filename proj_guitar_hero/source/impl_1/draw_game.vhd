@@ -47,6 +47,7 @@ begin
 	-- Indicate a box should be drawn based on current position
 	-- Draw a box pixel when            there is a box         and           the (x,y) is in the area the box is             else don't
 	--draw_green  <= '1' when (col_green (to_integer(col)) = '1' and (10d"64" - BOX_RAD <= col and col <= 10d"64" + BOX_RAD)) else '0';
+	draw_green  <= '1' when (10d"64" - BOX_RAD <= col and col <= 10d"64" + BOX_RAD) else '0';
 	draw_red    <= '1' when (col_red   (to_integer(col)) = '1' and (10d"192" - BOX_RAD <= col and col <= 10d"192" + BOX_RAD)) else '0';
 	draw_yellow <= '1' when (col_yellow(to_integer(col)) = '1' and (10d"320" - BOX_RAD <= col and col <= 10d"320" + BOX_RAD)) else '0';
 	draw_blue   <= '1' when (col_blue  (to_integer(col)) = '1' and (10d"448" - BOX_RAD <= col and col <= 10d"448" + BOX_RAD)) else '0';
@@ -56,18 +57,16 @@ begin
 	draw_top_bar <= '1' when (row >= TOP_BAR_ROW) else '0';
 	draw_bottom_bar <= '1' when (row >= BOTTOM_BAR_ROW) else '0';
 	
-	--draw_green  <= '1';
-	-- Add draw score to beginning
-	--rgb <= "000000" when valid = '0' else
-		   --"101111" when col = BOTTOM_BAR_ROW else    -- Draw where user hits
-		   --"000000" when draw_top_bar else            -- Draw blacked out top bar
-		   ----"000000" when draw_bottom_bar else
-		   --"001100" when draw_green else		      -- Draw boxes
-		   --"110000" when draw_red else
-		   --"111100" when draw_yellow else
-		   --"000011" when draw_blue else
-		   --"110100" when draw_orange else
-		   --"000000";
-	rgb <= "011000";
+	 --Add draw score to beginning
+	rgb <= "000000" when valid = '0' else
+		   "101111" when col = BOTTOM_BAR_ROW else    -- Draw where user hits
+		   "000000" when draw_top_bar else            -- Draw blacked out top bar
+		   "000000" when draw_bottom_bar else
+		   "001100" when draw_green else		      -- Draw boxes
+		   "110000" when draw_red else
+		   "111100" when draw_yellow else
+		   "000011" when draw_blue else
+		   "110100" when draw_orange else
+		   "000001";
 end;
 
