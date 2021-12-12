@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Sat Dec 11 23:48:36 2021
+Sun Dec 12 14:07:35 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -11,7 +11,7 @@ Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
 Command line:    timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt proj_guitar_hero_impl_1.tws proj_guitar_hero_impl_1_syn.udb -gui
 
 -----------------------------------------
-Design:          top
+Design:          generate_notes
 Family:          iCE40UP
 Device:          iCE40UP5K
 Package:         SG48
@@ -27,7 +27,6 @@ Package Status:                     Preliminary    Version 1.5
         1.1  SDC Constraints
         1.2  Combinational Loop
     2  CLOCK SUMMARY
-        2.1  Clock vgaout/clk
     3  TIMING ANALYSIS SUMMARY
         3.1  Overall (Setup and Hold)
             3.1.1  Constraint Coverage
@@ -52,7 +51,6 @@ Package Status:                     Preliminary    Version 1.5
 
 1.1  SDC Constraints
 =====================
-[IGNORED:]create_generated_clock -name {vgaout/clk} -source [get_pins vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL]
 
 1.2  Combinational Loop
 ========================
@@ -61,20 +59,6 @@ None
 ==============================================
 2  CLOCK SUMMARY
 ==============================================
-
-2.1 Clock "vgaout/clk"
-=======================
-create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] 
-
-Single Clock Domain
--------------------------------------------------------------------------------------------------------
-            Clock vgaout/clk            |                    |       Period       |     Frequency      
--------------------------------------------------------------------------------------------------------
- From vgaout/clk                        |             Target |               +INF |          0.000 MHz 
-                                        | Actual (all paths) |               ---- |               ---- 
--------------------------------------------------------------------------------------------------------
-
-Clock Domain Crossing
 
 ==============================================
 3  TIMING ANALYSIS SUMMARY
@@ -125,25 +109,9 @@ There is no start point satisfying reporting criteria
 
 
 Clocked but unconstrained timing end points
--------------------------------------------------------------------
-         Listing 10 End Points          |           Type           
--------------------------------------------------------------------
-vgaout/column_136__i0/D                 |    No arrival or required
-vgaout/column_136__i0/SP                |    No arrival or required
-vgaout/column_136__i0/SR                |    No arrival or required
-vgaout/VSYNC/D                          |    No arrival or required
-vgaout/VSYNC/SP                         |    No arrival or required
-vgaout/VSYNC/SR                         |    No arrival or required
-vgaout/RGB__i1/DO0                      |    No arrival or required
-vgaout/row_137__i8/D                    |    No arrival or required
-vgaout/row_137__i8/SR                   |    No arrival or required
-vgaout/row_137__i7/D                    |    No arrival or required
--------------------------------------------------------------------
-                                        |                          
-Number of unconstrained timing end poin |                          
-ts                                      |                        56
-                                        |                          
--------------------------------------------------------------------
+--------------------------------------------------
+There is no end point satisfying reporting criteria
+
 
 3.4.2  Start/End Points Without Timing Constraints
 ---------------------------------------------------
@@ -161,27 +129,36 @@ create_generated_clock,
 -------------------------------------------------------------------
      Listing 10 Start or End Points     |           Type           
 -------------------------------------------------------------------
-pressing[5]                             |                     input
-pressing[4]                             |                     input
-pressing[3]                             |                     input
-pressing[2]                             |                     input
-pressing[1]                             |                     input
-pressing[0]                             |                     input
-reset                                   |                     input
-start                                   |                     input
-oscillatorin                            |                     input
-RGBout[0]                               |                    output
+col_state[479]                          |                     input
+col_state[478]                          |                     input
+col_state[477]                          |                     input
+col_state[476]                          |                     input
+col_state[475]                          |                     input
+col_state[474]                          |                     input
+col_state[473]                          |                     input
+col_state[472]                          |                     input
+col_state[471]                          |                     input
+col_state[470]                          |                     input
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                        12
+Number of I/O ports without constraint  |                       490
                                         |                          
 -------------------------------------------------------------------
 
 Registers without clock definition
 Define the clock for these registers.
---------------------------------------------------
-There is no instance satisfying reporting criteria
-
+-------------------------------------------------------------------
+         Listing 3 Instance(s)          |           Type           
+-------------------------------------------------------------------
+is_box_c                                |                  No Clock
+new_box_c                               |                  No Clock
+gen_i0                                  |                  No Clock
+-------------------------------------------------------------------
+                                        |                          
+Number of registers without clock defin |                          
+ition                                   |                         3
+                                        |                          
+-------------------------------------------------------------------
 
 ==============================================
 4  DETAILED REPORT

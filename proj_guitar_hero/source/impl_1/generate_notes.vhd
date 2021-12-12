@@ -26,11 +26,10 @@ signal is_box : std_logic;
 signal new_box : std_logic;
 
 begin
-	is_box <= '1' when (col_state(479) = '1' and col_state(479 - BOX_HEIGHT) = '0') else '0';
-	new_box <= '1' when (col_state(479 - (2 * BOX_HEIGHT) + 1) = '1') and (rand(2 downto 0) = "000") else '0';
-
 	process (update) begin
 		if rising_edge(update) then
+			is_box <= '1' when (col_state(479) = '1' and col_state(479 - BOX_HEIGHT) = '0') else '0';
+			new_box <= '1' when (col_state(479 - (2 * BOX_HEIGHT) + 1) = '1') and (rand(1 downto 0) = "00") else '0';
 			gen <= is_box or new_box;
 		end if;
 	end process;

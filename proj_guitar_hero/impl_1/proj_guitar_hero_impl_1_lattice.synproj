@@ -35,18 +35,19 @@
 -use_io_insertion 1
 -resolve_mixed_drivers 0
 -sdc "proj_guitar_hero_impl_1_cpe.ldc"
--path "C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/mypll"
--path "D:/Apps/Lattice Radiant/ispfpga/ice40tp/data" "C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/impl_1" "C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero"
--ver "D:/Apps/Lattice Radiant/ip/pmi/pmi_iCE40UP.v"
--lib pmi -vhd "D:/Apps/Lattice Radiant/ip/pmi/pmi_iCE40UP.vhd"
--lib "work" -vhd "C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd"
-"C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd"
-"C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd"
-"C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd"
--ver "C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v"
+-path "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll"
+-path "C:/Program Files/lscc/radiant/3.0/ispfpga/ice40tp/data" "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1" "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero"
+-ver "C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd"
+-lib "work" -vhd "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd"
+"//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd"
+"//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd"
+"//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd"
+-ver "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v"
 
 
--path "C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero"
+-path "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero"
+-top generate_notes
 -udb "proj_guitar_hero_impl_1_rtl.udb"
 -output_hdl "proj_guitar_hero_impl_1.vm"
 

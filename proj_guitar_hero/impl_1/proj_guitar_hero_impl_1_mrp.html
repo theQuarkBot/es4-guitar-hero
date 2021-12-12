@@ -1,8 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE>Map Report</TITLE>
-<link href="file:///D:/Apps/Lattice Radiant/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="file:///D:/Apps/Lattice Radiant/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
 <style type="text/css">
 #toc {
   position: fixed;
@@ -47,31 +47,32 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Sat Dec 11 23:48:37 2021
+Mapped on: Sun Dec 12 14:07:36 2021
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
-Command line:   map proj_guitar_hero_impl_1_syn.udb C:/Users/Philip
-     Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/vga.pdc -o
+Command line:   map proj_guitar_hero_impl_1_syn.udb
+     //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/vga.pdc -o
      proj_guitar_hero_impl_1_map.udb -mp proj_guitar_hero_impl_1.mrp -hierrpt
      -gui
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of slice registers:  22 out of  5280 (<1%)
-   Number of I/O registers:      1 out of   117 (1%)
-   Number of LUT4s:            47 out of  5280 (1%)
-      Number of logic LUT4s:              23
-      Number of ripple logic:             12 (24 LUT4s)
-   Number of IO sites used:   15 out of 39 (38%)
-      Number of IO sites used for general PIO: 15
+   Number of slice registers:   3 out of  5280 (<1%)
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:             4 out of  5280 (<1%)
+      Number of logic LUT4s:               2
+      Number of inserted feedthru LUT4s:   2
+      Number of ripple logic:              0 (0 LUT4s)
+   Number of IO sites used:   7 out of 39 (18%)
+      Number of IO sites used for general PIO: 7
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 15 out of 36 (42%)
+      Number of IO sites used for PIO+I3C: 7 out of 36 (19%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 15 out of 39 (38%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 7 out of 39 (18%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  0 out of 1 (0%)
@@ -83,36 +84,31 @@ Command line:   map proj_guitar_hero_impl_1_syn.udb C:/Users/Philip
    Number of WARMBOOTs:        0 out of 1 (0%)
    Number of SPIs:             0 out of 2 (0%)
    Number of EBRs:             0 out of 30 (0%)
-   Number of PLLs:             1 out of 1 (100%)
-   Number of Clocks:  2
-      Net vgaout.clk: 15 loads, 15 rising, 0 falling (Driver: Pin
-     vgaout.clock.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
-      Net oscillatorin_c: 1 loads, 1 rising, 0 falling (Driver: Port
-     oscillatorin)
-   Number of Clock Enables:  1
-      Net vgaout.column_9__N_64: 7 loads, 7 SLICEs
-   Number of LSRs:  4
-      Net vgaout.n10631: 6 loads, 6 SLICEs
-      Net vgaout.n10814: 1 loads, 1 SLICEs
-      Net vgaout.n10417: 6 loads, 6 SLICEs
-      Net vgaout.n11039: 1 loads, 1 SLICEs
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  1
+      Net update_c: 3 loads, 3 rising, 0 falling (Driver: Port update)
+   Number of Clock Enables:  0
+   Number of LSRs:  3
+      Net n23: 1 loads, 1 SLICEs
+      Pin col_state[439]: 1 loads, 1 SLICEs (Net: col_state_c_439)
+      Net is_box: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net vgaout.column_9__N_64: 9 loads
-      Net vgaout.n10417: 6 loads
-      Net vgaout.n10631: 6 loads
+      Net col_state_c_400: 1 loads
+      Net col_state_c_439: 1 loads
+      Net col_state_c_479: 1 loads
+      Net gen_c: 1 loads
+      Net is_box: 1 loads
+      Net n23: 1 loads
+      Net new_box: 1 loads
 
-      Net vgaout.row[7]: 6 loads
-      Net vgaout.row[8]: 6 loads
-      Net vgaout.row[9]: 6 loads
-      Net vgaout.column[9]: 5 loads
-      Net vgaout.row[5]: 5 loads
-      Net vgaout.row[6]: 5 loads
-      Net vgaout.column[4]: 4 loads
-
-
+      Net new_box_N_6: 1 loads
+      Net rand_c_0: 1 loads
+      Net rand_c_1: 1 loads
 
 
-   Number of warnings:  16
+
+
+   Number of warnings:  993
    Number of errors:    0
 
 
@@ -120,22 +116,1036 @@ Command line:   map proj_guitar_hero_impl_1_syn.udb C:/Users/Philip
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: Top module port 'pressing[5]' does not connect to anything.
-WARNING - map: Top module port 'pressing[4]' does not connect to anything.
-WARNING - map: Top module port 'pressing[3]' does not connect to anything.
-WARNING - map: Top module port 'pressing[2]' does not connect to anything.
-WARNING - map: Top module port 'pressing[1]' does not connect to anything.
-WARNING - map: Top module port 'pressing[0]' does not connect to anything.
-WARNING - map: Top module port 'reset' does not connect to anything.
-WARNING - map: Top module port 'start' does not connect to anything.
-WARNING - map: Top module port 'pressing[5]' does not connect to anything.
-WARNING - map: Top module port 'pressing[4]' does not connect to anything.
-WARNING - map: Top module port 'pressing[3]' does not connect to anything.
-WARNING - map: Top module port 'pressing[2]' does not connect to anything.
-WARNING - map: Top module port 'pressing[1]' does not connect to anything.
-WARNING - map: Top module port 'pressing[0]' does not connect to anything.
-WARNING - map: Top module port 'reset' does not connect to anything.
-WARNING - map: Top module port 'start' does not connect to anything.
+WARNING - map: No port matched 'oscillatorin'.
+WARNING - map: Can't resolve object 'oscillatorin' in constraint
+     'ldc_set_location -site {20} [get_ports oscillatorin]'.
+WARNING - map: No port matched 'RGBout[0]'.
+WARNING - map: Can't resolve object 'RGBout[0]' in constraint 'ldc_set_location
+     -site {31} [get_ports {RGBout[0]}]'.
+WARNING - map: No port matched 'RGBout[1]'.
+WARNING - map: Can't resolve object 'RGBout[1]' in constraint 'ldc_set_location
+     -site {37} [get_ports {RGBout[1]}]'.
+WARNING - map: No port matched 'RGBout[2]'.
+WARNING - map: Can't resolve object 'RGBout[2]' in constraint 'ldc_set_location
+     -site {32} [get_ports {RGBout[2]}]'.
+WARNING - map: No port matched 'RGBout[3]'.
+WARNING - map: Can't resolve object 'RGBout[3]' in constraint 'ldc_set_location
+     -site {35} [get_ports {RGBout[3]}]'.
+WARNING - map: No port matched 'RGBout[4]'.
+WARNING - map: Can't resolve object 'RGBout[4]' in constraint 'ldc_set_location
+     -site {28} [get_ports {RGBout[4]}]'.
+WARNING - map: No port matched 'RGBout[5]'.
+WARNING - map: Can't resolve object 'RGBout[5]' in constraint 'ldc_set_location
+     -site {27} [get_ports {RGBout[5]}]'.
+WARNING - map: No port matched 'HSYNCout'.
+WARNING - map: Can't resolve object 'HSYNCout' in constraint 'ldc_set_location
+     -site {25} [get_ports HSYNCout]'.
+WARNING - map: No port matched 'VSYNCout'.
+WARNING - map: Can't resolve object 'VSYNCout' in constraint 'ldc_set_location
+     -site {23} [get_ports VSYNCout]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {20} [get_ports
+     oscillatorin]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {31} [get_ports
+     {RGBout[0]}]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {37} [get_ports
+     {RGBout[1]}]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {32} [get_ports
+     {RGBout[2]}]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {35} [get_ports
+     {RGBout[3]}]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {28} [get_ports
+     {RGBout[4]}]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {27} [get_ports
+     {RGBout[5]}]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {25} [get_ports
+     HSYNCout]'.
+WARNING - map: Remove invalid constraint 'ldc_set_location -site {23} [get_ports
+
+     VSYNCout]'.
+WARNING - map: Top module port 'col_state[478]' does not connect to anything.
+WARNING - map: Top module port 'col_state[477]' does not connect to anything.
+WARNING - map: Top module port 'col_state[476]' does not connect to anything.
+WARNING - map: Top module port 'col_state[475]' does not connect to anything.
+WARNING - map: Top module port 'col_state[474]' does not connect to anything.
+WARNING - map: Top module port 'col_state[473]' does not connect to anything.
+WARNING - map: Top module port 'col_state[472]' does not connect to anything.
+WARNING - map: Top module port 'col_state[471]' does not connect to anything.
+WARNING - map: Top module port 'col_state[470]' does not connect to anything.
+WARNING - map: Top module port 'col_state[469]' does not connect to anything.
+WARNING - map: Top module port 'col_state[468]' does not connect to anything.
+WARNING - map: Top module port 'col_state[467]' does not connect to anything.
+WARNING - map: Top module port 'col_state[466]' does not connect to anything.
+WARNING - map: Top module port 'col_state[465]' does not connect to anything.
+WARNING - map: Top module port 'col_state[464]' does not connect to anything.
+WARNING - map: Top module port 'col_state[463]' does not connect to anything.
+WARNING - map: Top module port 'col_state[462]' does not connect to anything.
+WARNING - map: Top module port 'col_state[461]' does not connect to anything.
+WARNING - map: Top module port 'col_state[460]' does not connect to anything.
+WARNING - map: Top module port 'col_state[459]' does not connect to anything.
+WARNING - map: Top module port 'col_state[458]' does not connect to anything.
+WARNING - map: Top module port 'col_state[457]' does not connect to anything.
+WARNING - map: Top module port 'col_state[456]' does not connect to anything.
+WARNING - map: Top module port 'col_state[455]' does not connect to anything.
+WARNING - map: Top module port 'col_state[454]' does not connect to anything.
+WARNING - map: Top module port 'col_state[453]' does not connect to anything.
+WARNING - map: Top module port 'col_state[452]' does not connect to anything.
+WARNING - map: Top module port 'col_state[451]' does not connect to anything.
+WARNING - map: Top module port 'col_state[450]' does not connect to anything.
+WARNING - map: Top module port 'col_state[449]' does not connect to anything.
+WARNING - map: Top module port 'col_state[448]' does not connect to anything.
+WARNING - map: Top module port 'col_state[447]' does not connect to anything.
+WARNING - map: Top module port 'col_state[446]' does not connect to anything.
+WARNING - map: Top module port 'col_state[445]' does not connect to anything.
+WARNING - map: Top module port 'col_state[444]' does not connect to anything.
+WARNING - map: Top module port 'col_state[443]' does not connect to anything.
+WARNING - map: Top module port 'col_state[442]' does not connect to anything.
+WARNING - map: Top module port 'col_state[441]' does not connect to anything.
+WARNING - map: Top module port 'col_state[440]' does not connect to anything.
+WARNING - map: Top module port 'col_state[438]' does not connect to anything.
+WARNING - map: Top module port 'col_state[437]' does not connect to anything.
+WARNING - map: Top module port 'col_state[436]' does not connect to anything.
+WARNING - map: Top module port 'col_state[435]' does not connect to anything.
+WARNING - map: Top module port 'col_state[434]' does not connect to anything.
+WARNING - map: Top module port 'col_state[433]' does not connect to anything.
+WARNING - map: Top module port 'col_state[432]' does not connect to anything.
+WARNING - map: Top module port 'col_state[431]' does not connect to anything.
+WARNING - map: Top module port 'col_state[430]' does not connect to anything.
+WARNING - map: Top module port 'col_state[429]' does not connect to anything.
+WARNING - map: Top module port 'col_state[428]' does not connect to anything.
+WARNING - map: Top module port 'col_state[427]' does not connect to anything.
+WARNING - map: Top module port 'col_state[426]' does not connect to anything.
+WARNING - map: Top module port 'col_state[425]' does not connect to anything.
+WARNING - map: Top module port 'col_state[424]' does not connect to anything.
+WARNING - map: Top module port 'col_state[423]' does not connect to anything.
+WARNING - map: Top module port 'col_state[422]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[421]' does not connect to anything.
+WARNING - map: Top module port 'col_state[420]' does not connect to anything.
+WARNING - map: Top module port 'col_state[419]' does not connect to anything.
+WARNING - map: Top module port 'col_state[418]' does not connect to anything.
+WARNING - map: Top module port 'col_state[417]' does not connect to anything.
+WARNING - map: Top module port 'col_state[416]' does not connect to anything.
+WARNING - map: Top module port 'col_state[415]' does not connect to anything.
+WARNING - map: Top module port 'col_state[414]' does not connect to anything.
+WARNING - map: Top module port 'col_state[413]' does not connect to anything.
+WARNING - map: Top module port 'col_state[412]' does not connect to anything.
+WARNING - map: Top module port 'col_state[411]' does not connect to anything.
+WARNING - map: Top module port 'col_state[410]' does not connect to anything.
+WARNING - map: Top module port 'col_state[409]' does not connect to anything.
+WARNING - map: Top module port 'col_state[408]' does not connect to anything.
+WARNING - map: Top module port 'col_state[407]' does not connect to anything.
+WARNING - map: Top module port 'col_state[406]' does not connect to anything.
+WARNING - map: Top module port 'col_state[405]' does not connect to anything.
+WARNING - map: Top module port 'col_state[404]' does not connect to anything.
+WARNING - map: Top module port 'col_state[403]' does not connect to anything.
+WARNING - map: Top module port 'col_state[402]' does not connect to anything.
+WARNING - map: Top module port 'col_state[401]' does not connect to anything.
+WARNING - map: Top module port 'col_state[399]' does not connect to anything.
+WARNING - map: Top module port 'col_state[398]' does not connect to anything.
+WARNING - map: Top module port 'col_state[397]' does not connect to anything.
+WARNING - map: Top module port 'col_state[396]' does not connect to anything.
+WARNING - map: Top module port 'col_state[395]' does not connect to anything.
+WARNING - map: Top module port 'col_state[394]' does not connect to anything.
+WARNING - map: Top module port 'col_state[393]' does not connect to anything.
+WARNING - map: Top module port 'col_state[392]' does not connect to anything.
+WARNING - map: Top module port 'col_state[391]' does not connect to anything.
+WARNING - map: Top module port 'col_state[390]' does not connect to anything.
+WARNING - map: Top module port 'col_state[389]' does not connect to anything.
+WARNING - map: Top module port 'col_state[388]' does not connect to anything.
+WARNING - map: Top module port 'col_state[387]' does not connect to anything.
+WARNING - map: Top module port 'col_state[386]' does not connect to anything.
+WARNING - map: Top module port 'col_state[385]' does not connect to anything.
+WARNING - map: Top module port 'col_state[384]' does not connect to anything.
+WARNING - map: Top module port 'col_state[383]' does not connect to anything.
+WARNING - map: Top module port 'col_state[382]' does not connect to anything.
+WARNING - map: Top module port 'col_state[381]' does not connect to anything.
+WARNING - map: Top module port 'col_state[380]' does not connect to anything.
+WARNING - map: Top module port 'col_state[379]' does not connect to anything.
+WARNING - map: Top module port 'col_state[378]' does not connect to anything.
+WARNING - map: Top module port 'col_state[377]' does not connect to anything.
+WARNING - map: Top module port 'col_state[376]' does not connect to anything.
+WARNING - map: Top module port 'col_state[375]' does not connect to anything.
+WARNING - map: Top module port 'col_state[374]' does not connect to anything.
+WARNING - map: Top module port 'col_state[373]' does not connect to anything.
+WARNING - map: Top module port 'col_state[372]' does not connect to anything.
+WARNING - map: Top module port 'col_state[371]' does not connect to anything.
+WARNING - map: Top module port 'col_state[370]' does not connect to anything.
+WARNING - map: Top module port 'col_state[369]' does not connect to anything.
+WARNING - map: Top module port 'col_state[368]' does not connect to anything.
+WARNING - map: Top module port 'col_state[367]' does not connect to anything.
+WARNING - map: Top module port 'col_state[366]' does not connect to anything.
+WARNING - map: Top module port 'col_state[365]' does not connect to anything.
+WARNING - map: Top module port 'col_state[364]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[363]' does not connect to anything.
+WARNING - map: Top module port 'col_state[362]' does not connect to anything.
+WARNING - map: Top module port 'col_state[361]' does not connect to anything.
+WARNING - map: Top module port 'col_state[360]' does not connect to anything.
+WARNING - map: Top module port 'col_state[359]' does not connect to anything.
+WARNING - map: Top module port 'col_state[358]' does not connect to anything.
+WARNING - map: Top module port 'col_state[357]' does not connect to anything.
+WARNING - map: Top module port 'col_state[356]' does not connect to anything.
+WARNING - map: Top module port 'col_state[355]' does not connect to anything.
+WARNING - map: Top module port 'col_state[354]' does not connect to anything.
+WARNING - map: Top module port 'col_state[353]' does not connect to anything.
+WARNING - map: Top module port 'col_state[352]' does not connect to anything.
+WARNING - map: Top module port 'col_state[351]' does not connect to anything.
+WARNING - map: Top module port 'col_state[350]' does not connect to anything.
+WARNING - map: Top module port 'col_state[349]' does not connect to anything.
+WARNING - map: Top module port 'col_state[348]' does not connect to anything.
+WARNING - map: Top module port 'col_state[347]' does not connect to anything.
+WARNING - map: Top module port 'col_state[346]' does not connect to anything.
+WARNING - map: Top module port 'col_state[345]' does not connect to anything.
+WARNING - map: Top module port 'col_state[344]' does not connect to anything.
+WARNING - map: Top module port 'col_state[343]' does not connect to anything.
+WARNING - map: Top module port 'col_state[342]' does not connect to anything.
+WARNING - map: Top module port 'col_state[341]' does not connect to anything.
+WARNING - map: Top module port 'col_state[340]' does not connect to anything.
+WARNING - map: Top module port 'col_state[339]' does not connect to anything.
+WARNING - map: Top module port 'col_state[338]' does not connect to anything.
+WARNING - map: Top module port 'col_state[337]' does not connect to anything.
+WARNING - map: Top module port 'col_state[336]' does not connect to anything.
+WARNING - map: Top module port 'col_state[335]' does not connect to anything.
+WARNING - map: Top module port 'col_state[334]' does not connect to anything.
+WARNING - map: Top module port 'col_state[333]' does not connect to anything.
+WARNING - map: Top module port 'col_state[332]' does not connect to anything.
+WARNING - map: Top module port 'col_state[331]' does not connect to anything.
+WARNING - map: Top module port 'col_state[330]' does not connect to anything.
+WARNING - map: Top module port 'col_state[329]' does not connect to anything.
+WARNING - map: Top module port 'col_state[328]' does not connect to anything.
+WARNING - map: Top module port 'col_state[327]' does not connect to anything.
+WARNING - map: Top module port 'col_state[326]' does not connect to anything.
+WARNING - map: Top module port 'col_state[325]' does not connect to anything.
+WARNING - map: Top module port 'col_state[324]' does not connect to anything.
+WARNING - map: Top module port 'col_state[323]' does not connect to anything.
+WARNING - map: Top module port 'col_state[322]' does not connect to anything.
+WARNING - map: Top module port 'col_state[321]' does not connect to anything.
+WARNING - map: Top module port 'col_state[320]' does not connect to anything.
+WARNING - map: Top module port 'col_state[319]' does not connect to anything.
+WARNING - map: Top module port 'col_state[318]' does not connect to anything.
+WARNING - map: Top module port 'col_state[317]' does not connect to anything.
+WARNING - map: Top module port 'col_state[316]' does not connect to anything.
+WARNING - map: Top module port 'col_state[315]' does not connect to anything.
+WARNING - map: Top module port 'col_state[314]' does not connect to anything.
+WARNING - map: Top module port 'col_state[313]' does not connect to anything.
+WARNING - map: Top module port 'col_state[312]' does not connect to anything.
+WARNING - map: Top module port 'col_state[311]' does not connect to anything.
+WARNING - map: Top module port 'col_state[310]' does not connect to anything.
+WARNING - map: Top module port 'col_state[309]' does not connect to anything.
+WARNING - map: Top module port 'col_state[308]' does not connect to anything.
+WARNING - map: Top module port 'col_state[307]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[306]' does not connect to anything.
+WARNING - map: Top module port 'col_state[305]' does not connect to anything.
+WARNING - map: Top module port 'col_state[304]' does not connect to anything.
+WARNING - map: Top module port 'col_state[303]' does not connect to anything.
+WARNING - map: Top module port 'col_state[302]' does not connect to anything.
+WARNING - map: Top module port 'col_state[301]' does not connect to anything.
+WARNING - map: Top module port 'col_state[300]' does not connect to anything.
+WARNING - map: Top module port 'col_state[299]' does not connect to anything.
+WARNING - map: Top module port 'col_state[298]' does not connect to anything.
+WARNING - map: Top module port 'col_state[297]' does not connect to anything.
+WARNING - map: Top module port 'col_state[296]' does not connect to anything.
+WARNING - map: Top module port 'col_state[295]' does not connect to anything.
+WARNING - map: Top module port 'col_state[294]' does not connect to anything.
+WARNING - map: Top module port 'col_state[293]' does not connect to anything.
+WARNING - map: Top module port 'col_state[292]' does not connect to anything.
+WARNING - map: Top module port 'col_state[291]' does not connect to anything.
+WARNING - map: Top module port 'col_state[290]' does not connect to anything.
+WARNING - map: Top module port 'col_state[289]' does not connect to anything.
+WARNING - map: Top module port 'col_state[288]' does not connect to anything.
+WARNING - map: Top module port 'col_state[287]' does not connect to anything.
+WARNING - map: Top module port 'col_state[286]' does not connect to anything.
+WARNING - map: Top module port 'col_state[285]' does not connect to anything.
+WARNING - map: Top module port 'col_state[284]' does not connect to anything.
+WARNING - map: Top module port 'col_state[283]' does not connect to anything.
+WARNING - map: Top module port 'col_state[282]' does not connect to anything.
+WARNING - map: Top module port 'col_state[281]' does not connect to anything.
+WARNING - map: Top module port 'col_state[280]' does not connect to anything.
+WARNING - map: Top module port 'col_state[279]' does not connect to anything.
+WARNING - map: Top module port 'col_state[278]' does not connect to anything.
+WARNING - map: Top module port 'col_state[277]' does not connect to anything.
+WARNING - map: Top module port 'col_state[276]' does not connect to anything.
+WARNING - map: Top module port 'col_state[275]' does not connect to anything.
+WARNING - map: Top module port 'col_state[274]' does not connect to anything.
+WARNING - map: Top module port 'col_state[273]' does not connect to anything.
+WARNING - map: Top module port 'col_state[272]' does not connect to anything.
+WARNING - map: Top module port 'col_state[271]' does not connect to anything.
+WARNING - map: Top module port 'col_state[270]' does not connect to anything.
+WARNING - map: Top module port 'col_state[269]' does not connect to anything.
+WARNING - map: Top module port 'col_state[268]' does not connect to anything.
+WARNING - map: Top module port 'col_state[267]' does not connect to anything.
+WARNING - map: Top module port 'col_state[266]' does not connect to anything.
+WARNING - map: Top module port 'col_state[265]' does not connect to anything.
+WARNING - map: Top module port 'col_state[264]' does not connect to anything.
+WARNING - map: Top module port 'col_state[263]' does not connect to anything.
+WARNING - map: Top module port 'col_state[262]' does not connect to anything.
+WARNING - map: Top module port 'col_state[261]' does not connect to anything.
+WARNING - map: Top module port 'col_state[260]' does not connect to anything.
+WARNING - map: Top module port 'col_state[259]' does not connect to anything.
+WARNING - map: Top module port 'col_state[258]' does not connect to anything.
+WARNING - map: Top module port 'col_state[257]' does not connect to anything.
+WARNING - map: Top module port 'col_state[256]' does not connect to anything.
+WARNING - map: Top module port 'col_state[255]' does not connect to anything.
+WARNING - map: Top module port 'col_state[254]' does not connect to anything.
+WARNING - map: Top module port 'col_state[253]' does not connect to anything.
+WARNING - map: Top module port 'col_state[252]' does not connect to anything.
+WARNING - map: Top module port 'col_state[251]' does not connect to anything.
+WARNING - map: Top module port 'col_state[250]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[249]' does not connect to anything.
+WARNING - map: Top module port 'col_state[248]' does not connect to anything.
+WARNING - map: Top module port 'col_state[247]' does not connect to anything.
+WARNING - map: Top module port 'col_state[246]' does not connect to anything.
+WARNING - map: Top module port 'col_state[245]' does not connect to anything.
+WARNING - map: Top module port 'col_state[244]' does not connect to anything.
+WARNING - map: Top module port 'col_state[243]' does not connect to anything.
+WARNING - map: Top module port 'col_state[242]' does not connect to anything.
+WARNING - map: Top module port 'col_state[241]' does not connect to anything.
+WARNING - map: Top module port 'col_state[240]' does not connect to anything.
+WARNING - map: Top module port 'col_state[239]' does not connect to anything.
+WARNING - map: Top module port 'col_state[238]' does not connect to anything.
+WARNING - map: Top module port 'col_state[237]' does not connect to anything.
+WARNING - map: Top module port 'col_state[236]' does not connect to anything.
+WARNING - map: Top module port 'col_state[235]' does not connect to anything.
+WARNING - map: Top module port 'col_state[234]' does not connect to anything.
+WARNING - map: Top module port 'col_state[233]' does not connect to anything.
+WARNING - map: Top module port 'col_state[232]' does not connect to anything.
+WARNING - map: Top module port 'col_state[231]' does not connect to anything.
+WARNING - map: Top module port 'col_state[230]' does not connect to anything.
+WARNING - map: Top module port 'col_state[229]' does not connect to anything.
+WARNING - map: Top module port 'col_state[228]' does not connect to anything.
+WARNING - map: Top module port 'col_state[227]' does not connect to anything.
+WARNING - map: Top module port 'col_state[226]' does not connect to anything.
+WARNING - map: Top module port 'col_state[225]' does not connect to anything.
+WARNING - map: Top module port 'col_state[224]' does not connect to anything.
+WARNING - map: Top module port 'col_state[223]' does not connect to anything.
+WARNING - map: Top module port 'col_state[222]' does not connect to anything.
+WARNING - map: Top module port 'col_state[221]' does not connect to anything.
+WARNING - map: Top module port 'col_state[220]' does not connect to anything.
+WARNING - map: Top module port 'col_state[219]' does not connect to anything.
+WARNING - map: Top module port 'col_state[218]' does not connect to anything.
+WARNING - map: Top module port 'col_state[217]' does not connect to anything.
+WARNING - map: Top module port 'col_state[216]' does not connect to anything.
+WARNING - map: Top module port 'col_state[215]' does not connect to anything.
+WARNING - map: Top module port 'col_state[214]' does not connect to anything.
+WARNING - map: Top module port 'col_state[213]' does not connect to anything.
+WARNING - map: Top module port 'col_state[212]' does not connect to anything.
+WARNING - map: Top module port 'col_state[211]' does not connect to anything.
+WARNING - map: Top module port 'col_state[210]' does not connect to anything.
+WARNING - map: Top module port 'col_state[209]' does not connect to anything.
+WARNING - map: Top module port 'col_state[208]' does not connect to anything.
+WARNING - map: Top module port 'col_state[207]' does not connect to anything.
+WARNING - map: Top module port 'col_state[206]' does not connect to anything.
+WARNING - map: Top module port 'col_state[205]' does not connect to anything.
+WARNING - map: Top module port 'col_state[204]' does not connect to anything.
+WARNING - map: Top module port 'col_state[203]' does not connect to anything.
+WARNING - map: Top module port 'col_state[202]' does not connect to anything.
+WARNING - map: Top module port 'col_state[201]' does not connect to anything.
+WARNING - map: Top module port 'col_state[200]' does not connect to anything.
+WARNING - map: Top module port 'col_state[199]' does not connect to anything.
+WARNING - map: Top module port 'col_state[198]' does not connect to anything.
+WARNING - map: Top module port 'col_state[197]' does not connect to anything.
+WARNING - map: Top module port 'col_state[196]' does not connect to anything.
+WARNING - map: Top module port 'col_state[195]' does not connect to anything.
+WARNING - map: Top module port 'col_state[194]' does not connect to anything.
+WARNING - map: Top module port 'col_state[193]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[192]' does not connect to anything.
+WARNING - map: Top module port 'col_state[191]' does not connect to anything.
+WARNING - map: Top module port 'col_state[190]' does not connect to anything.
+WARNING - map: Top module port 'col_state[189]' does not connect to anything.
+WARNING - map: Top module port 'col_state[188]' does not connect to anything.
+WARNING - map: Top module port 'col_state[187]' does not connect to anything.
+WARNING - map: Top module port 'col_state[186]' does not connect to anything.
+WARNING - map: Top module port 'col_state[185]' does not connect to anything.
+WARNING - map: Top module port 'col_state[184]' does not connect to anything.
+WARNING - map: Top module port 'col_state[183]' does not connect to anything.
+WARNING - map: Top module port 'col_state[182]' does not connect to anything.
+WARNING - map: Top module port 'col_state[181]' does not connect to anything.
+WARNING - map: Top module port 'col_state[180]' does not connect to anything.
+WARNING - map: Top module port 'col_state[179]' does not connect to anything.
+WARNING - map: Top module port 'col_state[178]' does not connect to anything.
+WARNING - map: Top module port 'col_state[177]' does not connect to anything.
+WARNING - map: Top module port 'col_state[176]' does not connect to anything.
+WARNING - map: Top module port 'col_state[175]' does not connect to anything.
+WARNING - map: Top module port 'col_state[174]' does not connect to anything.
+WARNING - map: Top module port 'col_state[173]' does not connect to anything.
+WARNING - map: Top module port 'col_state[172]' does not connect to anything.
+WARNING - map: Top module port 'col_state[171]' does not connect to anything.
+WARNING - map: Top module port 'col_state[170]' does not connect to anything.
+WARNING - map: Top module port 'col_state[169]' does not connect to anything.
+WARNING - map: Top module port 'col_state[168]' does not connect to anything.
+WARNING - map: Top module port 'col_state[167]' does not connect to anything.
+WARNING - map: Top module port 'col_state[166]' does not connect to anything.
+WARNING - map: Top module port 'col_state[165]' does not connect to anything.
+WARNING - map: Top module port 'col_state[164]' does not connect to anything.
+WARNING - map: Top module port 'col_state[163]' does not connect to anything.
+WARNING - map: Top module port 'col_state[162]' does not connect to anything.
+WARNING - map: Top module port 'col_state[161]' does not connect to anything.
+WARNING - map: Top module port 'col_state[160]' does not connect to anything.
+WARNING - map: Top module port 'col_state[159]' does not connect to anything.
+WARNING - map: Top module port 'col_state[158]' does not connect to anything.
+WARNING - map: Top module port 'col_state[157]' does not connect to anything.
+WARNING - map: Top module port 'col_state[156]' does not connect to anything.
+WARNING - map: Top module port 'col_state[155]' does not connect to anything.
+WARNING - map: Top module port 'col_state[154]' does not connect to anything.
+WARNING - map: Top module port 'col_state[153]' does not connect to anything.
+WARNING - map: Top module port 'col_state[152]' does not connect to anything.
+WARNING - map: Top module port 'col_state[151]' does not connect to anything.
+WARNING - map: Top module port 'col_state[150]' does not connect to anything.
+WARNING - map: Top module port 'col_state[149]' does not connect to anything.
+WARNING - map: Top module port 'col_state[148]' does not connect to anything.
+WARNING - map: Top module port 'col_state[147]' does not connect to anything.
+WARNING - map: Top module port 'col_state[146]' does not connect to anything.
+WARNING - map: Top module port 'col_state[145]' does not connect to anything.
+WARNING - map: Top module port 'col_state[144]' does not connect to anything.
+WARNING - map: Top module port 'col_state[143]' does not connect to anything.
+WARNING - map: Top module port 'col_state[142]' does not connect to anything.
+WARNING - map: Top module port 'col_state[141]' does not connect to anything.
+WARNING - map: Top module port 'col_state[140]' does not connect to anything.
+WARNING - map: Top module port 'col_state[139]' does not connect to anything.
+WARNING - map: Top module port 'col_state[138]' does not connect to anything.
+WARNING - map: Top module port 'col_state[137]' does not connect to anything.
+WARNING - map: Top module port 'col_state[136]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[135]' does not connect to anything.
+WARNING - map: Top module port 'col_state[134]' does not connect to anything.
+WARNING - map: Top module port 'col_state[133]' does not connect to anything.
+WARNING - map: Top module port 'col_state[132]' does not connect to anything.
+WARNING - map: Top module port 'col_state[131]' does not connect to anything.
+WARNING - map: Top module port 'col_state[130]' does not connect to anything.
+WARNING - map: Top module port 'col_state[129]' does not connect to anything.
+WARNING - map: Top module port 'col_state[128]' does not connect to anything.
+WARNING - map: Top module port 'col_state[127]' does not connect to anything.
+WARNING - map: Top module port 'col_state[126]' does not connect to anything.
+WARNING - map: Top module port 'col_state[125]' does not connect to anything.
+WARNING - map: Top module port 'col_state[124]' does not connect to anything.
+WARNING - map: Top module port 'col_state[123]' does not connect to anything.
+WARNING - map: Top module port 'col_state[122]' does not connect to anything.
+WARNING - map: Top module port 'col_state[121]' does not connect to anything.
+WARNING - map: Top module port 'col_state[120]' does not connect to anything.
+WARNING - map: Top module port 'col_state[119]' does not connect to anything.
+WARNING - map: Top module port 'col_state[118]' does not connect to anything.
+WARNING - map: Top module port 'col_state[117]' does not connect to anything.
+WARNING - map: Top module port 'col_state[116]' does not connect to anything.
+WARNING - map: Top module port 'col_state[115]' does not connect to anything.
+WARNING - map: Top module port 'col_state[114]' does not connect to anything.
+WARNING - map: Top module port 'col_state[113]' does not connect to anything.
+WARNING - map: Top module port 'col_state[112]' does not connect to anything.
+WARNING - map: Top module port 'col_state[111]' does not connect to anything.
+WARNING - map: Top module port 'col_state[110]' does not connect to anything.
+WARNING - map: Top module port 'col_state[109]' does not connect to anything.
+WARNING - map: Top module port 'col_state[108]' does not connect to anything.
+WARNING - map: Top module port 'col_state[107]' does not connect to anything.
+WARNING - map: Top module port 'col_state[106]' does not connect to anything.
+WARNING - map: Top module port 'col_state[105]' does not connect to anything.
+WARNING - map: Top module port 'col_state[104]' does not connect to anything.
+WARNING - map: Top module port 'col_state[103]' does not connect to anything.
+WARNING - map: Top module port 'col_state[102]' does not connect to anything.
+WARNING - map: Top module port 'col_state[101]' does not connect to anything.
+WARNING - map: Top module port 'col_state[100]' does not connect to anything.
+WARNING - map: Top module port 'col_state[99]' does not connect to anything.
+WARNING - map: Top module port 'col_state[98]' does not connect to anything.
+WARNING - map: Top module port 'col_state[97]' does not connect to anything.
+WARNING - map: Top module port 'col_state[96]' does not connect to anything.
+WARNING - map: Top module port 'col_state[95]' does not connect to anything.
+WARNING - map: Top module port 'col_state[94]' does not connect to anything.
+WARNING - map: Top module port 'col_state[93]' does not connect to anything.
+WARNING - map: Top module port 'col_state[92]' does not connect to anything.
+WARNING - map: Top module port 'col_state[91]' does not connect to anything.
+WARNING - map: Top module port 'col_state[90]' does not connect to anything.
+WARNING - map: Top module port 'col_state[89]' does not connect to anything.
+WARNING - map: Top module port 'col_state[88]' does not connect to anything.
+WARNING - map: Top module port 'col_state[87]' does not connect to anything.
+WARNING - map: Top module port 'col_state[86]' does not connect to anything.
+WARNING - map: Top module port 'col_state[85]' does not connect to anything.
+WARNING - map: Top module port 'col_state[84]' does not connect to anything.
+WARNING - map: Top module port 'col_state[83]' does not connect to anything.
+WARNING - map: Top module port 'col_state[82]' does not connect to anything.
+WARNING - map: Top module port 'col_state[81]' does not connect to anything.
+WARNING - map: Top module port 'col_state[80]' does not connect to anything.
+WARNING - map: Top module port 'col_state[79]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[78]' does not connect to anything.
+WARNING - map: Top module port 'col_state[77]' does not connect to anything.
+WARNING - map: Top module port 'col_state[76]' does not connect to anything.
+WARNING - map: Top module port 'col_state[75]' does not connect to anything.
+WARNING - map: Top module port 'col_state[74]' does not connect to anything.
+WARNING - map: Top module port 'col_state[73]' does not connect to anything.
+WARNING - map: Top module port 'col_state[72]' does not connect to anything.
+WARNING - map: Top module port 'col_state[71]' does not connect to anything.
+WARNING - map: Top module port 'col_state[70]' does not connect to anything.
+WARNING - map: Top module port 'col_state[69]' does not connect to anything.
+WARNING - map: Top module port 'col_state[68]' does not connect to anything.
+WARNING - map: Top module port 'col_state[67]' does not connect to anything.
+WARNING - map: Top module port 'col_state[66]' does not connect to anything.
+WARNING - map: Top module port 'col_state[65]' does not connect to anything.
+WARNING - map: Top module port 'col_state[64]' does not connect to anything.
+WARNING - map: Top module port 'col_state[63]' does not connect to anything.
+WARNING - map: Top module port 'col_state[62]' does not connect to anything.
+WARNING - map: Top module port 'col_state[61]' does not connect to anything.
+WARNING - map: Top module port 'col_state[60]' does not connect to anything.
+WARNING - map: Top module port 'col_state[59]' does not connect to anything.
+WARNING - map: Top module port 'col_state[58]' does not connect to anything.
+WARNING - map: Top module port 'col_state[57]' does not connect to anything.
+WARNING - map: Top module port 'col_state[56]' does not connect to anything.
+WARNING - map: Top module port 'col_state[55]' does not connect to anything.
+WARNING - map: Top module port 'col_state[54]' does not connect to anything.
+WARNING - map: Top module port 'col_state[53]' does not connect to anything.
+WARNING - map: Top module port 'col_state[52]' does not connect to anything.
+WARNING - map: Top module port 'col_state[51]' does not connect to anything.
+WARNING - map: Top module port 'col_state[50]' does not connect to anything.
+WARNING - map: Top module port 'col_state[49]' does not connect to anything.
+WARNING - map: Top module port 'col_state[48]' does not connect to anything.
+WARNING - map: Top module port 'col_state[47]' does not connect to anything.
+WARNING - map: Top module port 'col_state[46]' does not connect to anything.
+WARNING - map: Top module port 'col_state[45]' does not connect to anything.
+WARNING - map: Top module port 'col_state[44]' does not connect to anything.
+WARNING - map: Top module port 'col_state[43]' does not connect to anything.
+WARNING - map: Top module port 'col_state[42]' does not connect to anything.
+WARNING - map: Top module port 'col_state[41]' does not connect to anything.
+WARNING - map: Top module port 'col_state[40]' does not connect to anything.
+WARNING - map: Top module port 'col_state[39]' does not connect to anything.
+WARNING - map: Top module port 'col_state[38]' does not connect to anything.
+WARNING - map: Top module port 'col_state[37]' does not connect to anything.
+WARNING - map: Top module port 'col_state[36]' does not connect to anything.
+WARNING - map: Top module port 'col_state[35]' does not connect to anything.
+WARNING - map: Top module port 'col_state[34]' does not connect to anything.
+WARNING - map: Top module port 'col_state[33]' does not connect to anything.
+WARNING - map: Top module port 'col_state[32]' does not connect to anything.
+WARNING - map: Top module port 'col_state[31]' does not connect to anything.
+WARNING - map: Top module port 'col_state[30]' does not connect to anything.
+WARNING - map: Top module port 'col_state[29]' does not connect to anything.
+WARNING - map: Top module port 'col_state[28]' does not connect to anything.
+WARNING - map: Top module port 'col_state[27]' does not connect to anything.
+WARNING - map: Top module port 'col_state[26]' does not connect to anything.
+WARNING - map: Top module port 'col_state[25]' does not connect to anything.
+WARNING - map: Top module port 'col_state[24]' does not connect to anything.
+WARNING - map: Top module port 'col_state[23]' does not connect to anything.
+WARNING - map: Top module port 'col_state[22]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[21]' does not connect to anything.
+WARNING - map: Top module port 'col_state[20]' does not connect to anything.
+WARNING - map: Top module port 'col_state[19]' does not connect to anything.
+WARNING - map: Top module port 'col_state[18]' does not connect to anything.
+WARNING - map: Top module port 'col_state[17]' does not connect to anything.
+WARNING - map: Top module port 'col_state[16]' does not connect to anything.
+WARNING - map: Top module port 'col_state[15]' does not connect to anything.
+WARNING - map: Top module port 'col_state[14]' does not connect to anything.
+WARNING - map: Top module port 'col_state[13]' does not connect to anything.
+WARNING - map: Top module port 'col_state[12]' does not connect to anything.
+WARNING - map: Top module port 'col_state[11]' does not connect to anything.
+WARNING - map: Top module port 'col_state[10]' does not connect to anything.
+WARNING - map: Top module port 'col_state[9]' does not connect to anything.
+WARNING - map: Top module port 'col_state[8]' does not connect to anything.
+WARNING - map: Top module port 'col_state[7]' does not connect to anything.
+WARNING - map: Top module port 'col_state[6]' does not connect to anything.
+WARNING - map: Top module port 'col_state[5]' does not connect to anything.
+WARNING - map: Top module port 'col_state[4]' does not connect to anything.
+WARNING - map: Top module port 'col_state[3]' does not connect to anything.
+WARNING - map: Top module port 'col_state[2]' does not connect to anything.
+WARNING - map: Top module port 'col_state[1]' does not connect to anything.
+WARNING - map: Top module port 'col_state[0]' does not connect to anything.
+WARNING - map: Top module port 'rand[7]' does not connect to anything.
+WARNING - map: Top module port 'rand[6]' does not connect to anything.
+WARNING - map: Top module port 'rand[5]' does not connect to anything.
+WARNING - map: Top module port 'rand[4]' does not connect to anything.
+WARNING - map: Top module port 'rand[3]' does not connect to anything.
+WARNING - map: Top module port 'rand[2]' does not connect to anything.
+WARNING - map: Top module port 'col_state[478]' does not connect to anything.
+WARNING - map: Top module port 'col_state[477]' does not connect to anything.
+WARNING - map: Top module port 'col_state[476]' does not connect to anything.
+WARNING - map: Top module port 'col_state[475]' does not connect to anything.
+WARNING - map: Top module port 'col_state[474]' does not connect to anything.
+WARNING - map: Top module port 'col_state[473]' does not connect to anything.
+WARNING - map: Top module port 'col_state[472]' does not connect to anything.
+WARNING - map: Top module port 'col_state[471]' does not connect to anything.
+WARNING - map: Top module port 'col_state[470]' does not connect to anything.
+WARNING - map: Top module port 'col_state[469]' does not connect to anything.
+WARNING - map: Top module port 'col_state[468]' does not connect to anything.
+WARNING - map: Top module port 'col_state[467]' does not connect to anything.
+WARNING - map: Top module port 'col_state[466]' does not connect to anything.
+WARNING - map: Top module port 'col_state[465]' does not connect to anything.
+WARNING - map: Top module port 'col_state[464]' does not connect to anything.
+WARNING - map: Top module port 'col_state[463]' does not connect to anything.
+WARNING - map: Top module port 'col_state[462]' does not connect to anything.
+WARNING - map: Top module port 'col_state[461]' does not connect to anything.
+WARNING - map: Top module port 'col_state[460]' does not connect to anything.
+WARNING - map: Top module port 'col_state[459]' does not connect to anything.
+WARNING - map: Top module port 'col_state[458]' does not connect to anything.
+WARNING - map: Top module port 'col_state[457]' does not connect to anything.
+WARNING - map: Top module port 'col_state[456]' does not connect to anything.
+WARNING - map: Top module port 'col_state[455]' does not connect to anything.
+WARNING - map: Top module port 'col_state[454]' does not connect to anything.
+WARNING - map: Top module port 'col_state[453]' does not connect to anything.
+WARNING - map: Top module port 'col_state[452]' does not connect to anything.
+WARNING - map: Top module port 'col_state[451]' does not connect to anything.
+WARNING - map: Top module port 'col_state[450]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[449]' does not connect to anything.
+WARNING - map: Top module port 'col_state[448]' does not connect to anything.
+WARNING - map: Top module port 'col_state[447]' does not connect to anything.
+WARNING - map: Top module port 'col_state[446]' does not connect to anything.
+WARNING - map: Top module port 'col_state[445]' does not connect to anything.
+WARNING - map: Top module port 'col_state[444]' does not connect to anything.
+WARNING - map: Top module port 'col_state[443]' does not connect to anything.
+WARNING - map: Top module port 'col_state[442]' does not connect to anything.
+WARNING - map: Top module port 'col_state[441]' does not connect to anything.
+WARNING - map: Top module port 'col_state[440]' does not connect to anything.
+WARNING - map: Top module port 'col_state[438]' does not connect to anything.
+WARNING - map: Top module port 'col_state[437]' does not connect to anything.
+WARNING - map: Top module port 'col_state[436]' does not connect to anything.
+WARNING - map: Top module port 'col_state[435]' does not connect to anything.
+WARNING - map: Top module port 'col_state[434]' does not connect to anything.
+WARNING - map: Top module port 'col_state[433]' does not connect to anything.
+WARNING - map: Top module port 'col_state[432]' does not connect to anything.
+WARNING - map: Top module port 'col_state[431]' does not connect to anything.
+WARNING - map: Top module port 'col_state[430]' does not connect to anything.
+WARNING - map: Top module port 'col_state[429]' does not connect to anything.
+WARNING - map: Top module port 'col_state[428]' does not connect to anything.
+WARNING - map: Top module port 'col_state[427]' does not connect to anything.
+WARNING - map: Top module port 'col_state[426]' does not connect to anything.
+WARNING - map: Top module port 'col_state[425]' does not connect to anything.
+WARNING - map: Top module port 'col_state[424]' does not connect to anything.
+WARNING - map: Top module port 'col_state[423]' does not connect to anything.
+WARNING - map: Top module port 'col_state[422]' does not connect to anything.
+WARNING - map: Top module port 'col_state[421]' does not connect to anything.
+WARNING - map: Top module port 'col_state[420]' does not connect to anything.
+WARNING - map: Top module port 'col_state[419]' does not connect to anything.
+WARNING - map: Top module port 'col_state[418]' does not connect to anything.
+WARNING - map: Top module port 'col_state[417]' does not connect to anything.
+WARNING - map: Top module port 'col_state[416]' does not connect to anything.
+WARNING - map: Top module port 'col_state[415]' does not connect to anything.
+WARNING - map: Top module port 'col_state[414]' does not connect to anything.
+WARNING - map: Top module port 'col_state[413]' does not connect to anything.
+WARNING - map: Top module port 'col_state[412]' does not connect to anything.
+WARNING - map: Top module port 'col_state[411]' does not connect to anything.
+WARNING - map: Top module port 'col_state[410]' does not connect to anything.
+WARNING - map: Top module port 'col_state[409]' does not connect to anything.
+WARNING - map: Top module port 'col_state[408]' does not connect to anything.
+WARNING - map: Top module port 'col_state[407]' does not connect to anything.
+WARNING - map: Top module port 'col_state[406]' does not connect to anything.
+WARNING - map: Top module port 'col_state[405]' does not connect to anything.
+WARNING - map: Top module port 'col_state[404]' does not connect to anything.
+WARNING - map: Top module port 'col_state[403]' does not connect to anything.
+WARNING - map: Top module port 'col_state[402]' does not connect to anything.
+WARNING - map: Top module port 'col_state[401]' does not connect to anything.
+WARNING - map: Top module port 'col_state[399]' does not connect to anything.
+WARNING - map: Top module port 'col_state[398]' does not connect to anything.
+WARNING - map: Top module port 'col_state[397]' does not connect to anything.
+WARNING - map: Top module port 'col_state[396]' does not connect to anything.
+WARNING - map: Top module port 'col_state[395]' does not connect to anything.
+WARNING - map: Top module port 'col_state[394]' does not connect to anything.
+WARNING - map: Top module port 'col_state[393]' does not connect to anything.
+WARNING - map: Top module port 'col_state[392]' does not connect to anything.
+WARNING - map: Top module port 'col_state[391]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[390]' does not connect to anything.
+WARNING - map: Top module port 'col_state[389]' does not connect to anything.
+WARNING - map: Top module port 'col_state[388]' does not connect to anything.
+WARNING - map: Top module port 'col_state[387]' does not connect to anything.
+WARNING - map: Top module port 'col_state[386]' does not connect to anything.
+WARNING - map: Top module port 'col_state[385]' does not connect to anything.
+WARNING - map: Top module port 'col_state[384]' does not connect to anything.
+WARNING - map: Top module port 'col_state[383]' does not connect to anything.
+WARNING - map: Top module port 'col_state[382]' does not connect to anything.
+WARNING - map: Top module port 'col_state[381]' does not connect to anything.
+WARNING - map: Top module port 'col_state[380]' does not connect to anything.
+WARNING - map: Top module port 'col_state[379]' does not connect to anything.
+WARNING - map: Top module port 'col_state[378]' does not connect to anything.
+WARNING - map: Top module port 'col_state[377]' does not connect to anything.
+WARNING - map: Top module port 'col_state[376]' does not connect to anything.
+WARNING - map: Top module port 'col_state[375]' does not connect to anything.
+WARNING - map: Top module port 'col_state[374]' does not connect to anything.
+WARNING - map: Top module port 'col_state[373]' does not connect to anything.
+WARNING - map: Top module port 'col_state[372]' does not connect to anything.
+WARNING - map: Top module port 'col_state[371]' does not connect to anything.
+WARNING - map: Top module port 'col_state[370]' does not connect to anything.
+WARNING - map: Top module port 'col_state[369]' does not connect to anything.
+WARNING - map: Top module port 'col_state[368]' does not connect to anything.
+WARNING - map: Top module port 'col_state[367]' does not connect to anything.
+WARNING - map: Top module port 'col_state[366]' does not connect to anything.
+WARNING - map: Top module port 'col_state[365]' does not connect to anything.
+WARNING - map: Top module port 'col_state[364]' does not connect to anything.
+WARNING - map: Top module port 'col_state[363]' does not connect to anything.
+WARNING - map: Top module port 'col_state[362]' does not connect to anything.
+WARNING - map: Top module port 'col_state[361]' does not connect to anything.
+WARNING - map: Top module port 'col_state[360]' does not connect to anything.
+WARNING - map: Top module port 'col_state[359]' does not connect to anything.
+WARNING - map: Top module port 'col_state[358]' does not connect to anything.
+WARNING - map: Top module port 'col_state[357]' does not connect to anything.
+WARNING - map: Top module port 'col_state[356]' does not connect to anything.
+WARNING - map: Top module port 'col_state[355]' does not connect to anything.
+WARNING - map: Top module port 'col_state[354]' does not connect to anything.
+WARNING - map: Top module port 'col_state[353]' does not connect to anything.
+WARNING - map: Top module port 'col_state[352]' does not connect to anything.
+WARNING - map: Top module port 'col_state[351]' does not connect to anything.
+WARNING - map: Top module port 'col_state[350]' does not connect to anything.
+WARNING - map: Top module port 'col_state[349]' does not connect to anything.
+WARNING - map: Top module port 'col_state[348]' does not connect to anything.
+WARNING - map: Top module port 'col_state[347]' does not connect to anything.
+WARNING - map: Top module port 'col_state[346]' does not connect to anything.
+WARNING - map: Top module port 'col_state[345]' does not connect to anything.
+WARNING - map: Top module port 'col_state[344]' does not connect to anything.
+WARNING - map: Top module port 'col_state[343]' does not connect to anything.
+WARNING - map: Top module port 'col_state[342]' does not connect to anything.
+WARNING - map: Top module port 'col_state[341]' does not connect to anything.
+WARNING - map: Top module port 'col_state[340]' does not connect to anything.
+WARNING - map: Top module port 'col_state[339]' does not connect to anything.
+WARNING - map: Top module port 'col_state[338]' does not connect to anything.
+WARNING - map: Top module port 'col_state[337]' does not connect to anything.
+WARNING - map: Top module port 'col_state[336]' does not connect to anything.
+WARNING - map: Top module port 'col_state[335]' does not connect to anything.
+WARNING - map: Top module port 'col_state[334]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[333]' does not connect to anything.
+WARNING - map: Top module port 'col_state[332]' does not connect to anything.
+WARNING - map: Top module port 'col_state[331]' does not connect to anything.
+WARNING - map: Top module port 'col_state[330]' does not connect to anything.
+WARNING - map: Top module port 'col_state[329]' does not connect to anything.
+WARNING - map: Top module port 'col_state[328]' does not connect to anything.
+WARNING - map: Top module port 'col_state[327]' does not connect to anything.
+WARNING - map: Top module port 'col_state[326]' does not connect to anything.
+WARNING - map: Top module port 'col_state[325]' does not connect to anything.
+WARNING - map: Top module port 'col_state[324]' does not connect to anything.
+WARNING - map: Top module port 'col_state[323]' does not connect to anything.
+WARNING - map: Top module port 'col_state[322]' does not connect to anything.
+WARNING - map: Top module port 'col_state[321]' does not connect to anything.
+WARNING - map: Top module port 'col_state[320]' does not connect to anything.
+WARNING - map: Top module port 'col_state[319]' does not connect to anything.
+WARNING - map: Top module port 'col_state[318]' does not connect to anything.
+WARNING - map: Top module port 'col_state[317]' does not connect to anything.
+WARNING - map: Top module port 'col_state[316]' does not connect to anything.
+WARNING - map: Top module port 'col_state[315]' does not connect to anything.
+WARNING - map: Top module port 'col_state[314]' does not connect to anything.
+WARNING - map: Top module port 'col_state[313]' does not connect to anything.
+WARNING - map: Top module port 'col_state[312]' does not connect to anything.
+WARNING - map: Top module port 'col_state[311]' does not connect to anything.
+WARNING - map: Top module port 'col_state[310]' does not connect to anything.
+WARNING - map: Top module port 'col_state[309]' does not connect to anything.
+WARNING - map: Top module port 'col_state[308]' does not connect to anything.
+WARNING - map: Top module port 'col_state[307]' does not connect to anything.
+WARNING - map: Top module port 'col_state[306]' does not connect to anything.
+WARNING - map: Top module port 'col_state[305]' does not connect to anything.
+WARNING - map: Top module port 'col_state[304]' does not connect to anything.
+WARNING - map: Top module port 'col_state[303]' does not connect to anything.
+WARNING - map: Top module port 'col_state[302]' does not connect to anything.
+WARNING - map: Top module port 'col_state[301]' does not connect to anything.
+WARNING - map: Top module port 'col_state[300]' does not connect to anything.
+WARNING - map: Top module port 'col_state[299]' does not connect to anything.
+WARNING - map: Top module port 'col_state[298]' does not connect to anything.
+WARNING - map: Top module port 'col_state[297]' does not connect to anything.
+WARNING - map: Top module port 'col_state[296]' does not connect to anything.
+WARNING - map: Top module port 'col_state[295]' does not connect to anything.
+WARNING - map: Top module port 'col_state[294]' does not connect to anything.
+WARNING - map: Top module port 'col_state[293]' does not connect to anything.
+WARNING - map: Top module port 'col_state[292]' does not connect to anything.
+WARNING - map: Top module port 'col_state[291]' does not connect to anything.
+WARNING - map: Top module port 'col_state[290]' does not connect to anything.
+WARNING - map: Top module port 'col_state[289]' does not connect to anything.
+WARNING - map: Top module port 'col_state[288]' does not connect to anything.
+WARNING - map: Top module port 'col_state[287]' does not connect to anything.
+WARNING - map: Top module port 'col_state[286]' does not connect to anything.
+WARNING - map: Top module port 'col_state[285]' does not connect to anything.
+WARNING - map: Top module port 'col_state[284]' does not connect to anything.
+WARNING - map: Top module port 'col_state[283]' does not connect to anything.
+WARNING - map: Top module port 'col_state[282]' does not connect to anything.
+WARNING - map: Top module port 'col_state[281]' does not connect to anything.
+WARNING - map: Top module port 'col_state[280]' does not connect to anything.
+WARNING - map: Top module port 'col_state[279]' does not connect to anything.
+WARNING - map: Top module port 'col_state[278]' does not connect to anything.
+WARNING - map: Top module port 'col_state[277]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[276]' does not connect to anything.
+WARNING - map: Top module port 'col_state[275]' does not connect to anything.
+WARNING - map: Top module port 'col_state[274]' does not connect to anything.
+WARNING - map: Top module port 'col_state[273]' does not connect to anything.
+WARNING - map: Top module port 'col_state[272]' does not connect to anything.
+WARNING - map: Top module port 'col_state[271]' does not connect to anything.
+WARNING - map: Top module port 'col_state[270]' does not connect to anything.
+WARNING - map: Top module port 'col_state[269]' does not connect to anything.
+WARNING - map: Top module port 'col_state[268]' does not connect to anything.
+WARNING - map: Top module port 'col_state[267]' does not connect to anything.
+WARNING - map: Top module port 'col_state[266]' does not connect to anything.
+WARNING - map: Top module port 'col_state[265]' does not connect to anything.
+WARNING - map: Top module port 'col_state[264]' does not connect to anything.
+WARNING - map: Top module port 'col_state[263]' does not connect to anything.
+WARNING - map: Top module port 'col_state[262]' does not connect to anything.
+WARNING - map: Top module port 'col_state[261]' does not connect to anything.
+WARNING - map: Top module port 'col_state[260]' does not connect to anything.
+WARNING - map: Top module port 'col_state[259]' does not connect to anything.
+WARNING - map: Top module port 'col_state[258]' does not connect to anything.
+WARNING - map: Top module port 'col_state[257]' does not connect to anything.
+WARNING - map: Top module port 'col_state[256]' does not connect to anything.
+WARNING - map: Top module port 'col_state[255]' does not connect to anything.
+WARNING - map: Top module port 'col_state[254]' does not connect to anything.
+WARNING - map: Top module port 'col_state[253]' does not connect to anything.
+WARNING - map: Top module port 'col_state[252]' does not connect to anything.
+WARNING - map: Top module port 'col_state[251]' does not connect to anything.
+WARNING - map: Top module port 'col_state[250]' does not connect to anything.
+WARNING - map: Top module port 'col_state[249]' does not connect to anything.
+WARNING - map: Top module port 'col_state[248]' does not connect to anything.
+WARNING - map: Top module port 'col_state[247]' does not connect to anything.
+WARNING - map: Top module port 'col_state[246]' does not connect to anything.
+WARNING - map: Top module port 'col_state[245]' does not connect to anything.
+WARNING - map: Top module port 'col_state[244]' does not connect to anything.
+WARNING - map: Top module port 'col_state[243]' does not connect to anything.
+WARNING - map: Top module port 'col_state[242]' does not connect to anything.
+WARNING - map: Top module port 'col_state[241]' does not connect to anything.
+WARNING - map: Top module port 'col_state[240]' does not connect to anything.
+WARNING - map: Top module port 'col_state[239]' does not connect to anything.
+WARNING - map: Top module port 'col_state[238]' does not connect to anything.
+WARNING - map: Top module port 'col_state[237]' does not connect to anything.
+WARNING - map: Top module port 'col_state[236]' does not connect to anything.
+WARNING - map: Top module port 'col_state[235]' does not connect to anything.
+WARNING - map: Top module port 'col_state[234]' does not connect to anything.
+WARNING - map: Top module port 'col_state[233]' does not connect to anything.
+WARNING - map: Top module port 'col_state[232]' does not connect to anything.
+WARNING - map: Top module port 'col_state[231]' does not connect to anything.
+WARNING - map: Top module port 'col_state[230]' does not connect to anything.
+WARNING - map: Top module port 'col_state[229]' does not connect to anything.
+WARNING - map: Top module port 'col_state[228]' does not connect to anything.
+WARNING - map: Top module port 'col_state[227]' does not connect to anything.
+WARNING - map: Top module port 'col_state[226]' does not connect to anything.
+WARNING - map: Top module port 'col_state[225]' does not connect to anything.
+WARNING - map: Top module port 'col_state[224]' does not connect to anything.
+WARNING - map: Top module port 'col_state[223]' does not connect to anything.
+WARNING - map: Top module port 'col_state[222]' does not connect to anything.
+WARNING - map: Top module port 'col_state[221]' does not connect to anything.
+WARNING - map: Top module port 'col_state[220]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[219]' does not connect to anything.
+WARNING - map: Top module port 'col_state[218]' does not connect to anything.
+WARNING - map: Top module port 'col_state[217]' does not connect to anything.
+WARNING - map: Top module port 'col_state[216]' does not connect to anything.
+WARNING - map: Top module port 'col_state[215]' does not connect to anything.
+WARNING - map: Top module port 'col_state[214]' does not connect to anything.
+WARNING - map: Top module port 'col_state[213]' does not connect to anything.
+WARNING - map: Top module port 'col_state[212]' does not connect to anything.
+WARNING - map: Top module port 'col_state[211]' does not connect to anything.
+WARNING - map: Top module port 'col_state[210]' does not connect to anything.
+WARNING - map: Top module port 'col_state[209]' does not connect to anything.
+WARNING - map: Top module port 'col_state[208]' does not connect to anything.
+WARNING - map: Top module port 'col_state[207]' does not connect to anything.
+WARNING - map: Top module port 'col_state[206]' does not connect to anything.
+WARNING - map: Top module port 'col_state[205]' does not connect to anything.
+WARNING - map: Top module port 'col_state[204]' does not connect to anything.
+WARNING - map: Top module port 'col_state[203]' does not connect to anything.
+WARNING - map: Top module port 'col_state[202]' does not connect to anything.
+WARNING - map: Top module port 'col_state[201]' does not connect to anything.
+WARNING - map: Top module port 'col_state[200]' does not connect to anything.
+WARNING - map: Top module port 'col_state[199]' does not connect to anything.
+WARNING - map: Top module port 'col_state[198]' does not connect to anything.
+WARNING - map: Top module port 'col_state[197]' does not connect to anything.
+WARNING - map: Top module port 'col_state[196]' does not connect to anything.
+WARNING - map: Top module port 'col_state[195]' does not connect to anything.
+WARNING - map: Top module port 'col_state[194]' does not connect to anything.
+WARNING - map: Top module port 'col_state[193]' does not connect to anything.
+WARNING - map: Top module port 'col_state[192]' does not connect to anything.
+WARNING - map: Top module port 'col_state[191]' does not connect to anything.
+WARNING - map: Top module port 'col_state[190]' does not connect to anything.
+WARNING - map: Top module port 'col_state[189]' does not connect to anything.
+WARNING - map: Top module port 'col_state[188]' does not connect to anything.
+WARNING - map: Top module port 'col_state[187]' does not connect to anything.
+WARNING - map: Top module port 'col_state[186]' does not connect to anything.
+WARNING - map: Top module port 'col_state[185]' does not connect to anything.
+WARNING - map: Top module port 'col_state[184]' does not connect to anything.
+WARNING - map: Top module port 'col_state[183]' does not connect to anything.
+WARNING - map: Top module port 'col_state[182]' does not connect to anything.
+WARNING - map: Top module port 'col_state[181]' does not connect to anything.
+WARNING - map: Top module port 'col_state[180]' does not connect to anything.
+WARNING - map: Top module port 'col_state[179]' does not connect to anything.
+WARNING - map: Top module port 'col_state[178]' does not connect to anything.
+WARNING - map: Top module port 'col_state[177]' does not connect to anything.
+WARNING - map: Top module port 'col_state[176]' does not connect to anything.
+WARNING - map: Top module port 'col_state[175]' does not connect to anything.
+WARNING - map: Top module port 'col_state[174]' does not connect to anything.
+WARNING - map: Top module port 'col_state[173]' does not connect to anything.
+WARNING - map: Top module port 'col_state[172]' does not connect to anything.
+WARNING - map: Top module port 'col_state[171]' does not connect to anything.
+WARNING - map: Top module port 'col_state[170]' does not connect to anything.
+WARNING - map: Top module port 'col_state[169]' does not connect to anything.
+WARNING - map: Top module port 'col_state[168]' does not connect to anything.
+WARNING - map: Top module port 'col_state[167]' does not connect to anything.
+WARNING - map: Top module port 'col_state[166]' does not connect to anything.
+WARNING - map: Top module port 'col_state[165]' does not connect to anything.
+WARNING - map: Top module port 'col_state[164]' does not connect to anything.
+WARNING - map: Top module port 'col_state[163]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[162]' does not connect to anything.
+WARNING - map: Top module port 'col_state[161]' does not connect to anything.
+WARNING - map: Top module port 'col_state[160]' does not connect to anything.
+WARNING - map: Top module port 'col_state[159]' does not connect to anything.
+WARNING - map: Top module port 'col_state[158]' does not connect to anything.
+WARNING - map: Top module port 'col_state[157]' does not connect to anything.
+WARNING - map: Top module port 'col_state[156]' does not connect to anything.
+WARNING - map: Top module port 'col_state[155]' does not connect to anything.
+WARNING - map: Top module port 'col_state[154]' does not connect to anything.
+WARNING - map: Top module port 'col_state[153]' does not connect to anything.
+WARNING - map: Top module port 'col_state[152]' does not connect to anything.
+WARNING - map: Top module port 'col_state[151]' does not connect to anything.
+WARNING - map: Top module port 'col_state[150]' does not connect to anything.
+WARNING - map: Top module port 'col_state[149]' does not connect to anything.
+WARNING - map: Top module port 'col_state[148]' does not connect to anything.
+WARNING - map: Top module port 'col_state[147]' does not connect to anything.
+WARNING - map: Top module port 'col_state[146]' does not connect to anything.
+WARNING - map: Top module port 'col_state[145]' does not connect to anything.
+WARNING - map: Top module port 'col_state[144]' does not connect to anything.
+WARNING - map: Top module port 'col_state[143]' does not connect to anything.
+WARNING - map: Top module port 'col_state[142]' does not connect to anything.
+WARNING - map: Top module port 'col_state[141]' does not connect to anything.
+WARNING - map: Top module port 'col_state[140]' does not connect to anything.
+WARNING - map: Top module port 'col_state[139]' does not connect to anything.
+WARNING - map: Top module port 'col_state[138]' does not connect to anything.
+WARNING - map: Top module port 'col_state[137]' does not connect to anything.
+WARNING - map: Top module port 'col_state[136]' does not connect to anything.
+WARNING - map: Top module port 'col_state[135]' does not connect to anything.
+WARNING - map: Top module port 'col_state[134]' does not connect to anything.
+WARNING - map: Top module port 'col_state[133]' does not connect to anything.
+WARNING - map: Top module port 'col_state[132]' does not connect to anything.
+WARNING - map: Top module port 'col_state[131]' does not connect to anything.
+WARNING - map: Top module port 'col_state[130]' does not connect to anything.
+WARNING - map: Top module port 'col_state[129]' does not connect to anything.
+WARNING - map: Top module port 'col_state[128]' does not connect to anything.
+WARNING - map: Top module port 'col_state[127]' does not connect to anything.
+WARNING - map: Top module port 'col_state[126]' does not connect to anything.
+WARNING - map: Top module port 'col_state[125]' does not connect to anything.
+WARNING - map: Top module port 'col_state[124]' does not connect to anything.
+WARNING - map: Top module port 'col_state[123]' does not connect to anything.
+WARNING - map: Top module port 'col_state[122]' does not connect to anything.
+WARNING - map: Top module port 'col_state[121]' does not connect to anything.
+WARNING - map: Top module port 'col_state[120]' does not connect to anything.
+WARNING - map: Top module port 'col_state[119]' does not connect to anything.
+WARNING - map: Top module port 'col_state[118]' does not connect to anything.
+WARNING - map: Top module port 'col_state[117]' does not connect to anything.
+WARNING - map: Top module port 'col_state[116]' does not connect to anything.
+WARNING - map: Top module port 'col_state[115]' does not connect to anything.
+WARNING - map: Top module port 'col_state[114]' does not connect to anything.
+WARNING - map: Top module port 'col_state[113]' does not connect to anything.
+WARNING - map: Top module port 'col_state[112]' does not connect to anything.
+WARNING - map: Top module port 'col_state[111]' does not connect to anything.
+WARNING - map: Top module port 'col_state[110]' does not connect to anything.
+WARNING - map: Top module port 'col_state[109]' does not connect to anything.
+WARNING - map: Top module port 'col_state[108]' does not connect to anything.
+WARNING - map: Top module port 'col_state[107]' does not connect to anything.
+WARNING - map: Top module port 'col_state[106]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[105]' does not connect to anything.
+WARNING - map: Top module port 'col_state[104]' does not connect to anything.
+WARNING - map: Top module port 'col_state[103]' does not connect to anything.
+WARNING - map: Top module port 'col_state[102]' does not connect to anything.
+WARNING - map: Top module port 'col_state[101]' does not connect to anything.
+WARNING - map: Top module port 'col_state[100]' does not connect to anything.
+WARNING - map: Top module port 'col_state[99]' does not connect to anything.
+WARNING - map: Top module port 'col_state[98]' does not connect to anything.
+WARNING - map: Top module port 'col_state[97]' does not connect to anything.
+WARNING - map: Top module port 'col_state[96]' does not connect to anything.
+WARNING - map: Top module port 'col_state[95]' does not connect to anything.
+WARNING - map: Top module port 'col_state[94]' does not connect to anything.
+WARNING - map: Top module port 'col_state[93]' does not connect to anything.
+WARNING - map: Top module port 'col_state[92]' does not connect to anything.
+WARNING - map: Top module port 'col_state[91]' does not connect to anything.
+WARNING - map: Top module port 'col_state[90]' does not connect to anything.
+WARNING - map: Top module port 'col_state[89]' does not connect to anything.
+WARNING - map: Top module port 'col_state[88]' does not connect to anything.
+WARNING - map: Top module port 'col_state[87]' does not connect to anything.
+WARNING - map: Top module port 'col_state[86]' does not connect to anything.
+WARNING - map: Top module port 'col_state[85]' does not connect to anything.
+WARNING - map: Top module port 'col_state[84]' does not connect to anything.
+WARNING - map: Top module port 'col_state[83]' does not connect to anything.
+WARNING - map: Top module port 'col_state[82]' does not connect to anything.
+WARNING - map: Top module port 'col_state[81]' does not connect to anything.
+WARNING - map: Top module port 'col_state[80]' does not connect to anything.
+WARNING - map: Top module port 'col_state[79]' does not connect to anything.
+WARNING - map: Top module port 'col_state[78]' does not connect to anything.
+WARNING - map: Top module port 'col_state[77]' does not connect to anything.
+WARNING - map: Top module port 'col_state[76]' does not connect to anything.
+WARNING - map: Top module port 'col_state[75]' does not connect to anything.
+WARNING - map: Top module port 'col_state[74]' does not connect to anything.
+WARNING - map: Top module port 'col_state[73]' does not connect to anything.
+WARNING - map: Top module port 'col_state[72]' does not connect to anything.
+WARNING - map: Top module port 'col_state[71]' does not connect to anything.
+WARNING - map: Top module port 'col_state[70]' does not connect to anything.
+WARNING - map: Top module port 'col_state[69]' does not connect to anything.
+WARNING - map: Top module port 'col_state[68]' does not connect to anything.
+WARNING - map: Top module port 'col_state[67]' does not connect to anything.
+WARNING - map: Top module port 'col_state[66]' does not connect to anything.
+WARNING - map: Top module port 'col_state[65]' does not connect to anything.
+WARNING - map: Top module port 'col_state[64]' does not connect to anything.
+WARNING - map: Top module port 'col_state[63]' does not connect to anything.
+WARNING - map: Top module port 'col_state[62]' does not connect to anything.
+WARNING - map: Top module port 'col_state[61]' does not connect to anything.
+WARNING - map: Top module port 'col_state[60]' does not connect to anything.
+WARNING - map: Top module port 'col_state[59]' does not connect to anything.
+WARNING - map: Top module port 'col_state[58]' does not connect to anything.
+WARNING - map: Top module port 'col_state[57]' does not connect to anything.
+WARNING - map: Top module port 'col_state[56]' does not connect to anything.
+WARNING - map: Top module port 'col_state[55]' does not connect to anything.
+WARNING - map: Top module port 'col_state[54]' does not connect to anything.
+WARNING - map: Top module port 'col_state[53]' does not connect to anything.
+WARNING - map: Top module port 'col_state[52]' does not connect to anything.
+WARNING - map: Top module port 'col_state[51]' does not connect to anything.
+WARNING - map: Top module port 'col_state[50]' does not connect to anything.
+WARNING - map: Top module port 'col_state[49]' does not connect to anything.
+
+WARNING - map: Top module port 'col_state[48]' does not connect to anything.
+WARNING - map: Top module port 'col_state[47]' does not connect to anything.
+WARNING - map: Top module port 'col_state[46]' does not connect to anything.
+WARNING - map: Top module port 'col_state[45]' does not connect to anything.
+WARNING - map: Top module port 'col_state[44]' does not connect to anything.
+WARNING - map: Top module port 'col_state[43]' does not connect to anything.
+WARNING - map: Top module port 'col_state[42]' does not connect to anything.
+WARNING - map: Top module port 'col_state[41]' does not connect to anything.
+WARNING - map: Top module port 'col_state[40]' does not connect to anything.
+WARNING - map: Top module port 'col_state[39]' does not connect to anything.
+WARNING - map: Top module port 'col_state[38]' does not connect to anything.
+WARNING - map: Top module port 'col_state[37]' does not connect to anything.
+WARNING - map: Top module port 'col_state[36]' does not connect to anything.
+WARNING - map: Top module port 'col_state[35]' does not connect to anything.
+WARNING - map: Top module port 'col_state[34]' does not connect to anything.
+WARNING - map: Top module port 'col_state[33]' does not connect to anything.
+WARNING - map: Top module port 'col_state[32]' does not connect to anything.
+WARNING - map: Top module port 'col_state[31]' does not connect to anything.
+WARNING - map: Top module port 'col_state[30]' does not connect to anything.
+WARNING - map: Top module port 'col_state[29]' does not connect to anything.
+WARNING - map: Top module port 'col_state[28]' does not connect to anything.
+WARNING - map: Top module port 'col_state[27]' does not connect to anything.
+WARNING - map: Top module port 'col_state[26]' does not connect to anything.
+WARNING - map: Top module port 'col_state[25]' does not connect to anything.
+WARNING - map: Top module port 'col_state[24]' does not connect to anything.
+WARNING - map: Top module port 'col_state[23]' does not connect to anything.
+WARNING - map: Top module port 'col_state[22]' does not connect to anything.
+WARNING - map: Top module port 'col_state[21]' does not connect to anything.
+WARNING - map: Top module port 'col_state[20]' does not connect to anything.
+WARNING - map: Top module port 'col_state[19]' does not connect to anything.
+WARNING - map: Top module port 'col_state[18]' does not connect to anything.
+WARNING - map: Top module port 'col_state[17]' does not connect to anything.
+WARNING - map: Top module port 'col_state[16]' does not connect to anything.
+WARNING - map: Top module port 'col_state[15]' does not connect to anything.
+WARNING - map: Top module port 'col_state[14]' does not connect to anything.
+WARNING - map: Top module port 'col_state[13]' does not connect to anything.
+WARNING - map: Top module port 'col_state[12]' does not connect to anything.
+WARNING - map: Top module port 'col_state[11]' does not connect to anything.
+WARNING - map: Top module port 'col_state[10]' does not connect to anything.
+WARNING - map: Top module port 'col_state[9]' does not connect to anything.
+WARNING - map: Top module port 'col_state[8]' does not connect to anything.
+WARNING - map: Top module port 'col_state[7]' does not connect to anything.
+WARNING - map: Top module port 'col_state[6]' does not connect to anything.
+WARNING - map: Top module port 'col_state[5]' does not connect to anything.
+WARNING - map: Top module port 'col_state[4]' does not connect to anything.
+WARNING - map: Top module port 'col_state[3]' does not connect to anything.
+WARNING - map: Top module port 'col_state[2]' does not connect to anything.
+WARNING - map: Top module port 'col_state[1]' does not connect to anything.
+WARNING - map: Top module port 'col_state[0]' does not connect to anything.
+WARNING - map: Top module port 'rand[7]' does not connect to anything.
+WARNING - map: Top module port 'rand[6]' does not connect to anything.
+WARNING - map: Top module port 'rand[5]' does not connect to anything.
+WARNING - map: Top module port 'rand[4]' does not connect to anything.
+WARNING - map: Top module port 'rand[3]' does not connect to anything.
+WARNING - map: Top module port 'rand[2]' does not connect to anything.
+
+
 
 
 
@@ -145,86 +1155,27 @@ WARNING - map: Top module port 'start' does not connect to anything.
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[2]           | OUTPUT    | LVCMOS33  |       |       |           |
+| col_state[400]      | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[1]           | OUTPUT    | LVCMOS33  |       |       |           |
+| col_state[439]      | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[0]           | OUTPUT    | LVCMOS33  | O     |       |           |
+| gen                 | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| rgb[5]              | OUTPUT    | LVCMOS33  |       |       |           |
+| col_state[479]      | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| rgb[4]              | OUTPUT    | LVCMOS33  |       |       |           |
+| rand[1]             | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| rgb[3]              | OUTPUT    | LVCMOS33  |       |       |           |
+| rand[0]             | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| rgb[2]              | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| rgb[1]              | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-
-| rgb[0]              | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| HSYNCout            | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| VSYNCout            | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| oscillatorin        | INPUT     | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[4]           | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[3]           | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[5]           | OUTPUT    | LVCMOS33  |       |       |           |
+| update              | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 
 
 
-<A name="mrp_pll"></A><B><U><big>PLL/DLL Summary</big></U></B>
----------------
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
-PLL 1:                                 Pin/Node Value
-  PLL Instance Name:
-       vgaout/clock/lscc_pll_inst/u_PLL_B
-  Input Reference Clock:               PIN      oscillatorin_c
-  Output Clock(CoreA):                          NONE
-  Output Clock(GlobalA):               NODE     vgaout.clk
-  Output Clock(CoreB):                          NONE
-  Output Clock(GlobalB):                        NONE
-  Feedback input:                      NODE
-       vgaout.clock.lscc_pll_inst.feedback_w
-  Internal Feedback output:            NODE
-       vgaout.clock.lscc_pll_inst.feedback_w
-  BYPASS signal:                                GND
-  LATCH signal:                                 GND
-  Lock Signal:                                  NONE
-  Input Clock Frequency (MHz):                  NA
-  Reference Divider:                            0
-  Feedback Divider:                             0
-  VCO Divider:                                  1
-  ENABLE_ICEGATE_PORTA:                         0
-  ENABLE_ICEGATE_PORTB:                         0
-  PLLOUT_SELECT_PORTA:                          SHIFTREG_0deg
-  PLLOUT_SELECT_PORTB:                          SHIFTREG_0deg
-  SHIFTREG_DIV_MODE:                            0
-  DELAY_ADJUSTMENT_MODE_RELATIVE:               FIXED
-  FDA_RELATIVE:                                 0
-  FEEDBACK_PATH:                                SIMPLE
-  DELAY_ADJUSTMENT_MODE_FEEDBACK:               FIXED
-  FDA_FEEDBACK:                                 0
-  FILTER_RANGE:                                 0
-  EXTERNAL_DIVIDE_FACTOR:                       NONE
-  TEST Mode:                                    0
-
-
-
-<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
----------------
-
-Instance Name: vgaout/RGB__i1
-         Type: IOLOGIC
-Instance Name: vgaout/clock/lscc_pll_inst/u_PLL_B
-
-         Type: PLL
+Block col_state_pad[400].vlo_inst was optimized away.
+Block i33 was optimized away.
 
 
 
@@ -233,31 +1184,7 @@ Instance Name: vgaout/clock/lscc_pll_inst/u_PLL_B
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 54 MB
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   Peak Memory Usage: 55 MB
 
 
 
@@ -356,8 +1283,7 @@ Copyright (c) 2002-2021 Lattice Semiconductor
 <LI><A href=#mrp_ds>Design Summary</A></LI>
 <LI><A href=#mrp_dwe>Design Errors/Warnings</A></LI>
 <LI><A href=#mrp_ioa>IO (PIO) Attributes</A></LI>
-<LI><A href=#mrp_pll>PLL/DLL Summary</A></LI>
-<LI><A href=#mrp_asic>ASIC Components</A></LI>
+<LI><A href=#mrp_rm>Removed logic</A></LI>
 <LI><A href=#mrp_runtime>Run Time and Memory Usage</A></LI>
 </UL>
 </DIV>
