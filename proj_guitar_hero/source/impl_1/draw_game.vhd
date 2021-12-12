@@ -16,11 +16,11 @@ entity draw_game is
         rgb : out std_logic_vector(5 downto 0);
 		
 		-- Game state (arrays to represent where boxes are)
-		col_green   : in std_logic;
-		col_red     : in std_logic;
-		col_yellow  : in std_logic;
-		col_blue    : in std_logic;
-		col_orange  : in std_logic
+		col_green   : in std_logic_vector(479 downto 0);
+		col_red     : in std_logic_vector(479 downto 0);
+		col_yellow  : in std_logic_vector(479 downto 0);
+		col_blue    : in std_logic_vector(479 downto 0);
+		col_orange  : in std_logic_vector(479 downto 0)
     );
 end draw_game;
 
@@ -47,11 +47,11 @@ begin
 	-- Indicate a box should be drawn based on current position
 	-- Draw a box pixel when            there is a box         and           the (x,y) is in the area the box is             else don't
 	--draw_green  <= '1' when (col_green (to_integer(col)) = '1' and (10d"64" - BOX_RAD <= col and col <= 10d"64" + BOX_RAD)) else '0';
-	draw_green  <= '1' when (col_green  = '1') and (10d"64"  - BOX_RAD <= col and col <= 10d"64"  + BOX_RAD) else '0';
-	draw_red    <= '1' when (col_red    = '1') and (10d"192" - BOX_RAD <= col and col <= 10d"192" + BOX_RAD) else '0';
-	draw_yellow <= '1' when (col_yellow = '1') and (10d"320" - BOX_RAD <= col and col <= 10d"320" + BOX_RAD) else '0';
-	draw_blue   <= '1' when (col_blue   = '1') and (10d"448" - BOX_RAD <= col and col <= 10d"448" + BOX_RAD) else '0';
-	draw_orange <= '1' when (col_orange = '1') and (10d"576" - BOX_RAD <= col and col <= 10d"576" + BOX_RAD) else '0';
+	draw_green  <= '1' when (10d"64" - BOX_RAD <= col and col <= 10d"64" + BOX_RAD) else '0';
+	draw_red    <= '1' when (col_red   (to_integer(col)) = '1' and (10d"192" - BOX_RAD <= col and col <= 10d"192" + BOX_RAD)) else '0';
+	draw_yellow <= '1' when (col_yellow(to_integer(col)) = '1' and (10d"320" - BOX_RAD <= col and col <= 10d"320" + BOX_RAD)) else '0';
+	draw_blue   <= '1' when (col_blue  (to_integer(col)) = '1' and (10d"448" - BOX_RAD <= col and col <= 10d"448" + BOX_RAD)) else '0';
+	draw_orange <= '1' when (col_orange(to_integer(col)) = '1' and (10d"576" - BOX_RAD <= col and col <= 10d"576" + BOX_RAD)) else '0';
 
 	-- TODO: Display the score in the top bar
 	draw_top_bar <= '1' when (row >= TOP_BAR_ROW) else '0';

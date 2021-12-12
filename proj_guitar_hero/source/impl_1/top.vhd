@@ -54,11 +54,11 @@ component draw_game
         rgb : out std_logic_vector(5 downto 0);
 		
 		-- Game state (arrays to represent where boxes are)
-		col_green   : in std_logic;
-		col_red     : in std_logic;
-		col_yellow  : in std_logic;
-		col_blue    : in std_logic;
-		col_orange  : in std_logic
+		col_green   : in std_logic_vector(479 downto 0);
+		col_red     : in std_logic_vector(479 downto 0);
+		col_yellow  : in std_logic_vector(479 downto 0);
+		col_blue    : in std_logic_vector(479 downto 0);
+		col_orange  : in std_logic_vector(479 downto 0)
     );
 end component;
 
@@ -126,30 +126,20 @@ signal intergb : std_logic_vector(5 downto 0);
 
 begin
 	clock : HSOSC port map('1', '1', clk);
-	
 	--vgaout : vga port map(pllin => oscillatorin, RGB => RGBout, HSYNC => HSYNCout, VSYNC => VSYNCout, RGBin => rgbi, rowout => row, colout => col);
-	vgaout : vga port map(
-		pllin => oscillatorin, 
-		RGB => RGBout, 
-		HSYNC => HSYNCout, 
-		VSYNC => VSYNCout, 
-		RGBin => intergb, 
-		rowout => row, 
-		colout => col
-	);
-	
+	vgaout : vga port map(pllin => oscillatorin, RGB => RGBout, HSYNC => HSYNCout, VSYNC => VSYNCout, RGBin => intergb, rowout => row, colout => col);
 	------------------------------------------------------------------------------------------
 	-- Given the current game state and a row/column. Give the color of the current pixel
 	get_color : draw_game port map(
-		row        => row,
-		col        => col,
-		valid      => '1',    -- TODO: Make sure this is right
-		rgb        => intergb,
-		col_green  => col_green(to_integer(row)),
-		col_red    => col_red(to_integer(row)),
-		col_yellow => col_yellow(to_integer(row)),
-		col_blue   => col_blue(to_integer(row)),
-		col_orange => col_orange(to_integer(row))
+		row=> row,
+		col=> col,
+		valid=> '1',    -- TODO: Make sure this is right
+		rgb=> intergb,
+		col_green=>  col_green,
+		col_red=>    col_red,
+		col_yellow=> col_yellow,
+		col_blue=>   col_blue,
+		col_orange=> col_orange
 	);
 	------------------------------------------------------------------------------------------
 	process (clk) begin
@@ -164,32 +154,27 @@ begin
 			press_blue   <= not pressing(3);
 			press_orange <= not pressing(4);
 			press_strum  <= not pressing(5);
-			
-			-- TODO: Remove when note generation is working
-			col_green(0) <= press_green;
-			col_red(0) <= press_red;
-			col_yellow(0) <= press_yellow;
-			col_blue(0) <= press_blue;
-			col_orange(0) <= press_orange;
 		end if;
 	end process;
 	
 	-- Generate new row when needed
-	--make_green_note  : generate_notes port map(col_green , rand(7 downto 0), gen_g, counter(20));
-	--make_red_note    : generate_notes port map(col_red   , rand(7 downto 0), gen_r, counter(20));
-	--make_yellow_note : generate_notes port map(col_yellow, rand(7 downto 0), gen_y, counter(20));
-	--make_blue_note   : generate_notes port map(col_blue  , rand(7 downto 0), gen_b, counter(20));
-	--make_orange_note : generate_notes port map(col_orange, rand(7 downto 0), gen_o, counter(20));
+	make_green_note  : generate_notes port map(col_green , rand(7 downto 0), gen_g, counter(20));
+	make_red_note    : generate_notes port map(col_red   , rand(7 downto 0), gen_r, counter(20));
+	make_yellow_note : generate_notes port map(col_yellow, rand(7 downto 0), gen_y, counter(20));
+	make_blue_note   : generate_notes port map(col_blue  , rand(7 downto 0), gen_b, counter(20));
+	make_orange_note : generate_notes port map(col_orange, rand(7 downto 0), gen_o, counter(20));
 	
 	------------------------------------------------------------------------------------------
 	-- Shift the notes down one row
 	process (counter(20)) begin
 		if rising_edge(counter(20)) then
-			col_green  <= col_green(478 downto 0)  & gen_g;
-			col_red    <= col_red(478 downto 0)    & gen_r;
-			col_yellow <= col_yellow(478 downto 0) & gen_y;
-			col_blue   <= col_blue(478 downto 0)   & gen_b;
-			col_orange <= col_orange(478 downto 0) & gen_o;
+			
+		
+			col_green  <= gen_g & col_green(479 downto 1);
+			col_red    <= gen_r & col_red(479 downto 1);
+			col_yellow <= gen_y & col_yellow(479 downto 1);
+			col_blue   <= gen_b & col_blue(479 downto 1);
+			col_orange <= gen_o & col_orange(479 downto 1);
 		end if;
 	end process;
 	------------------------------------------------------------------------------------------

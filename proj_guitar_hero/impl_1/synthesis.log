@@ -5,12 +5,13 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Dec 12 14:07:31 2021
+Sat Dec 11 23:48:31 2021
 
 
-Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f proj_guitar_hero_impl_1_lattice.synproj -gui -msgset //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/promote.xml 
+Command Line:  D:\Apps\Lattice Radiant\ispfpga\bin\nt64\synthesis.exe -f proj_guitar_hero_impl_1_lattice.synproj -gui -msgset C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/promote.xml 
 
 Synthesis options:
+The -top option is not used.
 The -a option is iCE40UP.
 The -t option is SG48.
 The -sp option is High-Performance_1.2V.
@@ -38,7 +39,6 @@ The -p option is iCE40UP5K.
 
 INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Area
-Top-level module name = generate_notes.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -70,90 +70,91 @@ The -syn option is FALSE.
 -sdc option: SDC file input is proj_guitar_hero_impl_1_cpe.ldc.
 -vh2008
 
--path //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero (searchpath added)
--path //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1 (searchpath added)
--path //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll (searchpath added)
--path C:/Program Files/lscc/radiant/3.0/ispfpga/ice40tp/data (searchpath added)
+-path C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero (searchpath added)
+-path C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/impl_1 (searchpath added)
+-path C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/mypll (searchpath added)
+-path D:/Apps/Lattice Radiant/ispfpga/ice40tp/data (searchpath added)
 Mixed language design
-Verilog design file = C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v
-Verilog design file = //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v
+WARNING - synthesis: A top-level module has not been specified for the mixed language design.
+Verilog design file = D:/Apps/Lattice Radiant/ip/pmi/pmi_iCE40UP.v
+Verilog design file = C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v
 VHDL library = pmi
-VHDL design file = C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd
+VHDL design file = D:/Apps/Lattice Radiant/ip/pmi/pmi_iCE40UP.vhd
 VHDL library = work
-VHDL design file = //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd
+VHDL design file = C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd
 VHDL library = work
-VHDL design file = //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd
+VHDL design file = C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd
 VHDL library = work
-VHDL design file = //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd
+VHDL design file = C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd
 VHDL library = work
-VHDL design file = //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd
+VHDL design file = C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Compile design.
 Compile Design Begin
-Analyzing Verilog file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v. VERI-1482
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(1): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_addsub.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_addsub.v(40): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(2): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_add.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_add.v(50): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(3): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_complex_mult.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_complex_mult.v(52): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(4): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_counter.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_counter.v(39): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(5): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_fifo.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_fifo.v(44): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(6): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_fifo_dc.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_fifo_dc.v(47): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(7): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_mac.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_mac.v(52): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(8): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_multaddsubsum.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(9): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_multaddsub.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_multaddsub.v(52): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(10): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_mult.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_mult.v(51): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(11): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dp.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dp.v(48): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(12): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dq.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dq.v(45): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(13): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_rom.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_rom.v(45): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(14): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_sub.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_sub.v(50): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(15): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dp_be.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_dsp.v. VERI-1328
-Analyzing Verilog file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v. VERI-1482
-Analyzing VHDL file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd. VHDL-1481
-Analyzing VHDL file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd
+Analyzing Verilog file d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v. VERI-1482
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(1): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_addsub.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_addsub.v(40): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/adder_subtractor/rtl/lscc_add_sub.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(2): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_add.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_add.v(50): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/adder/rtl/lscc_adder.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(3): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_complex_mult.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_complex_mult.v(52): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/complex_mult/rtl/lscc_complex_mult.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(4): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_counter.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_counter.v(39): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/counter/rtl/lscc_cntr.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(5): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_fifo.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_fifo.v(44): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/fifo/rtl/lscc_fifo.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(6): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_fifo_dc.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_fifo_dc.v(47): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/fifo_dc/rtl/lscc_fifo_dc.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(7): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_mac.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_mac.v(52): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/mult_accumulate/rtl/lscc_mult_accumulate.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(8): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_multaddsubsum.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_multaddsubsum.v(53): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(9): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_multaddsub.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_multaddsub.v(52): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/mult_add_sub/rtl/lscc_mult_add_sub.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(10): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_mult.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_mult.v(51): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/multiplier/rtl/lscc_multiplier.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(11): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_ram_dp.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ram_dp.v(48): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(12): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_ram_dq.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ram_dq.v(45): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(13): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_rom.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_rom.v(45): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/rom/rtl/lscc_rom.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(14): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_sub.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_sub.v(50): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/subtractor/rtl/lscc_subtractor.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(15): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_ram_dp_be.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ram_dp_be.v(49): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/ram_dp/rtl/lscc_ram_dp.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(16): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_ram_dq_be.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file d:/apps/lattice radiant/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.v(17): analyzing included file d:/apps/lattice radiant/ip/pmi/pmi_dsp.v. VERI-1328
+Analyzing Verilog file c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v. VERI-1482
+Analyzing VHDL file d:/apps/lattice radiant/ip/pmi/pmi_ice40up.vhd. VHDL-1481
+Analyzing VHDL file d:/apps/lattice radiant/ip/pmi/pmi_ice40up.vhd
 
-INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd
+INFO - synthesis: d:/apps/lattice radiant/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
+Analyzing VHDL file c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd. VHDL-1481
+Analyzing VHDL file c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd
 
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(10): analyzing entity top. VHDL-1012
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd
+INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(10): analyzing entity top. VHDL-1012
+INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd. VHDL-1481
+Analyzing VHDL file c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd
 
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10): analyzing entity draw_game. VHDL-1012
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(27): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd
+INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10): analyzing entity draw_game. VHDL-1012
+INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(27): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd. VHDL-1481
+Analyzing VHDL file c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd
 
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(9): analyzing entity generate_notes. VHDL-1012
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(18): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd
+INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(9): analyzing entity generate_notes. VHDL-1012
+INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(18): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd. VHDL-1481
+Analyzing VHDL file c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd
 
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): analyzing architecture synth. VHDL-1010
-INFO - synthesis: The default VHDL library search path is now "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1". VHDL-1504
+INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
+INFO - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): analyzing architecture synth. VHDL-1010
+WARNING - synthesis: Setting top as the top-level module. To specify the top-level module explicitly, go to View->Set Views->Hierarchy or Project->Active Implementation->Set Top-Level Unit.
+INFO - synthesis: The default VHDL library search path is now "C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/impl_1". VHDL-1504
 Top module language type = VHDL.
-WARNING - synthesis: Net col_green[0] has following drivers :
-unit generate_notes is not yet analyzed. VHDL-1485
-Top module name (VHDL, mixed language): generate_notes
+unit top is not yet analyzed. VHDL-1485
+Top module name (VHDL, mixed language): top
                                                          
 
 
@@ -178,1009 +179,112 @@ Top module name (VHDL, mixed language): generate_notes
                                                          
 
 
-WARNING - synthesis: I/O Port col_state[478] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[477] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[476] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[475] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[474] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[473] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[472] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[471] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[470] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[469] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[468] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[467] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[466] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[465] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[464] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[463] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[462] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[461] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[460] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[459] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[458] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[457] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[456] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[455] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[454] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[453] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[452] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[451] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[450] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[449] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[448] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[447] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[446] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[445] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[444] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[443] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[442] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[441] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[440] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[438] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[437] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[436] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[435] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[434] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[433] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[432] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[431] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[430] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[429] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[428] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[427] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[426] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[425] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[424] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[423] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[422] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[421] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[420] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[419] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[418] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[417] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[416] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[415] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[414] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[413] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[412] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[411] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[410] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[409] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[408] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[407] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[406] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[405] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[404] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[403] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[402] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[401] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[399] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[398] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[397] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[396] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[395] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[394] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[393] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[392] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[391] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[390] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[389] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[388] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[387] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[386] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[385] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[384] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[383] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[382] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[381] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[380] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[379] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[378] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[377] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[376] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[375] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[374] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[373] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[372] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[371] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[370] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[369] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[368] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[367] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[366] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[365] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[364] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[363] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[362] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[361] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[360] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[359] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[358] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[357] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[356] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[355] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[354] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[353] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[352] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[351] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[350] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[349] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[348] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[347] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[346] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[345] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[344] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[343] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[342] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[341] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[340] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[339] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[338] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[337] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[336] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[335] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[334] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[333] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[332] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[331] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[330] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[329] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[328] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[327] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[326] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[325] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[324] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[323] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[322] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[321] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[320] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[319] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[318] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[317] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[316] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[315] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[314] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[313] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[312] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[311] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[310] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[309] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[308] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[307] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[306] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[305] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[304] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[303] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[302] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[301] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[300] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[299] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[298] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[297] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[296] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[295] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[294] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[293] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[292] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[291] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[290] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[289] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[288] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[287] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[286] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[285] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[284] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[283] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[282] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[281] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[280] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[279] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[278] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[277] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[276] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[275] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[274] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[273] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[272] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[271] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[270] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[269] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[268] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[267] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[266] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[265] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[264] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[263] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[262] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[261] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[260] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[259] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[258] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[257] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[256] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[255] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[254] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[253] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[252] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[251] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[250] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[249] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[248] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[247] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[246] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[245] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[244] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[243] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[242] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[241] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[240] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[239] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[238] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[237] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[236] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[235] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[234] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[233] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[232] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[231] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[230] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[229] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[228] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[227] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[226] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[225] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[224] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[223] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[222] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[221] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[220] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[219] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[218] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[217] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[216] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[215] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[214] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[213] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[212] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[211] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[210] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[209] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[208] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[207] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[206] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[205] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[204] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[203] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[202] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[201] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[200] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[199] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[198] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[197] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[196] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[195] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[194] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[193] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[192] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[191] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[190] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[189] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[188] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[187] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[186] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[185] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[184] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[183] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[182] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[181] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[180] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[179] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[178] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[177] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[176] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[175] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[174] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[173] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[172] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[171] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[170] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[169] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[168] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[167] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[166] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[165] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[164] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[163] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[162] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[161] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[160] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[159] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[158] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[157] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[156] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[155] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[154] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[153] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[152] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[151] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[150] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[149] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[148] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[147] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[146] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[145] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[144] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[143] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[142] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[141] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[140] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[139] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[138] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[137] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[136] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[135] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[134] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[133] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[132] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[131] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[130] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[129] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[128] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[127] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[126] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[125] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[124] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[123] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[122] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[121] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[120] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[119] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[118] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[117] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[116] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[115] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[114] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[113] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[112] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[111] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[110] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[109] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[108] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[107] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[106] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[105] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[104] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[103] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[102] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[101] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[100] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[99] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[98] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[97] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[96] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[95] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[94] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[93] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[92] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[91] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[90] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[89] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[88] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[87] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[86] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[85] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[84] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[83] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[82] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[81] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[80] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[79] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[78] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[77] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[76] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[75] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[74] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[73] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[72] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[71] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[70] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[69] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[68] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[67] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[66] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[65] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[64] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[63] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[62] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[61] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[60] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[59] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[58] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[57] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[56] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[55] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[54] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[53] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[52] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[51] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[50] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[49] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[48] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[47] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[46] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[45] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[44] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[43] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[42] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[41] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[40] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[39] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[38] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[37] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[36] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[35] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[34] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[33] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[32] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[31] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[30] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[29] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[28] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[27] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[26] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[25] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[24] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[23] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[22] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[21] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[20] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[19] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[18] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[17] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[16] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[15] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[14] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[13] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[12] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[11] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[10] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[9] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[8] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[7] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[6] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[5] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[4] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[3] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[2] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[1] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[0] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port rand[7] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port rand[6] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port rand[5] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port rand[4] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port rand[3] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port rand[2] 's net has no driver and is unused.
+WARNING - synthesis: Initial value found on net gen_g will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net gen_r will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net gen_y will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net gen_b will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net gen_o will be ignored due to unrecognized driver type
+WARNING - synthesis: I/O Port pressing[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port pressing[4] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port pressing[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port pressing[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port pressing[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port pressing[0] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port reset 's net has no driver and is unused.
+WARNING - synthesis: I/O Port start 's net has no driver and is unused.
+WARNING - synthesis: I/O Port rgb[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port rgb[4] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port rgb[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port rgb[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port rgb[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port rgb[0] 's net has no driver and is unused.
+WARNING - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(123): net row[9] does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(124): net col[9] does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(139): net \vgaout/clock/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
+WARNING - synthesis: c:/users/philip lengyel/documents/es4final/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(140): net \vgaout/clock/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
+######## Missing driver on net rgb[5]. Patching with GND.
+######## Missing driver on net rgb[4]. Patching with GND.
+######## Missing driver on net rgb[3]. Patching with GND.
+######## Missing driver on net rgb[2]. Patching with GND.
+######## Missing driver on net rgb[1]. Patching with GND.
+######## Missing driver on net rgb[0]. Patching with GND.
+######## Missing driver on net row[9]. Patching with GND.
+######## Missing driver on net row[8]. Patching with GND.
+######## Missing driver on net row[7]. Patching with GND.
+######## Missing driver on net row[6]. Patching with GND.
+######## Missing driver on net row[5]. Patching with GND.
+######## Missing driver on net row[4]. Patching with GND.
+######## Missing driver on net row[3]. Patching with GND.
+######## Missing driver on net row[2]. Patching with GND.
+######## Missing driver on net row[1]. Patching with GND.
+######## Missing driver on net row[0]. Patching with GND.
+######## Missing driver on net col[9]. Patching with GND.
+######## Missing driver on net col[8]. Patching with GND.
+######## Missing driver on net col[7]. Patching with GND.
+######## Missing driver on net col[6]. Patching with GND.
+######## Missing driver on net col[5]. Patching with GND.
+######## Missing driver on net col[4]. Patching with GND.
+######## Missing driver on net col[3]. Patching with GND.
+######## Missing driver on net col[2]. Patching with GND.
+######## Missing driver on net col[1]. Patching with GND.
+######## Missing driver on net col[0]. Patching with GND.
+######## Missing driver on net \vgaout/clock/lscc_pll_inst/sclk_i. Patching with GND.
+######## Missing driver on net \vgaout/clock/lscc_pll_inst/sdi_i. Patching with GND.
 
 
 
-WARNING - synthesis: I/O Port col_state[478] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[477] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[476] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[475] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[474] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[473] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[472] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[471] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[470] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[469] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[468] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[467] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[466] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[465] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[464] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[463] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[462] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[461] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[460] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[459] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[458] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[457] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[456] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[455] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[454] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[453] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[452] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[451] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[450] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[449] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[448] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[447] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[446] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[445] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[444] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[443] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[442] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[441] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[440] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[438] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[437] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[436] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[435] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[434] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[433] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[432] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[431] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[430] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[429] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[428] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[427] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[426] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[425] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[424] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[423] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[422] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[421] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[420] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[419] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[418] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[417] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[416] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[415] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[414] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[413] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[412] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[411] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[410] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[409] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[408] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[407] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[406] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[405] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[404] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[403] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[402] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[401] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[399] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[398] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[397] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[396] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[395] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[394] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[393] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[392] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[391] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[390] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[389] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[388] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[387] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[386] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[385] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[384] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[383] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[382] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[381] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[380] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[379] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[378] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[377] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[376] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[375] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[374] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[373] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[372] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[371] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[370] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[369] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[368] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[367] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[366] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[365] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[364] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[363] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[362] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[361] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[360] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[359] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[358] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[357] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[356] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[355] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[354] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[353] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[352] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[351] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[350] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[349] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[348] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[347] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[346] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[345] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[344] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[343] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[342] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[341] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[340] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[339] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[338] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[337] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[336] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[335] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[334] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[333] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[332] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[331] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[330] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[329] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[328] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[327] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[326] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[325] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[324] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[323] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[322] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[321] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[320] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[319] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[318] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[317] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[316] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[315] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[314] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[313] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[312] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[311] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[310] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[309] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[308] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[307] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[306] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[305] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[304] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[303] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[302] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[301] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[300] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[299] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[298] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[297] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[296] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[295] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[294] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[293] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[292] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[291] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[290] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[289] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[288] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[287] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[286] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[285] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[284] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[283] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[282] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[281] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[280] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[279] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[278] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[277] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[276] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[275] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[274] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[273] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[272] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[271] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[270] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[269] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[268] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[267] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[266] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[265] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[264] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[263] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[262] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[261] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[260] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[259] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[258] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[257] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[256] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[255] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[254] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[253] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[252] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[251] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[250] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[249] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[248] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[247] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[246] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[245] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[244] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[243] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[242] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[241] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[240] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[239] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[238] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[237] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[236] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[235] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[234] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[233] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[232] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[231] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[230] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[229] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[228] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[227] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[226] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[225] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[224] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[223] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[222] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[221] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[220] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[219] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[218] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[217] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[216] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[215] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[214] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[213] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[212] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[211] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[210] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[209] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[208] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[207] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[206] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[205] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[204] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[203] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[202] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[201] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[200] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[199] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[198] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[197] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[196] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[195] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[194] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[193] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[192] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[191] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[190] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[189] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[188] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[187] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[186] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[185] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[184] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[183] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[182] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[181] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[180] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[179] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[178] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[177] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[176] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[175] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[174] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[173] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[172] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[171] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[170] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[169] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[168] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[167] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[166] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[165] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[164] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[163] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[162] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[161] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[160] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[159] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[158] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[157] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[156] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[155] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[154] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[153] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[152] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[151] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[150] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[149] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[148] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[147] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[146] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[145] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[144] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[143] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[142] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[141] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[140] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[139] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[138] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[137] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[136] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[135] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[134] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[133] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[132] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[131] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[130] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[129] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[128] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[127] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[126] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[125] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[124] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[123] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[122] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[121] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[120] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[119] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[118] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[117] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[116] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[115] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[114] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[113] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[112] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[111] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[110] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[109] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[108] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[107] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[106] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[105] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[104] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[103] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[102] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[101] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[100] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[99] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[98] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[97] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[96] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[95] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[94] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[93] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[92] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[91] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[90] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[89] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[88] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[87] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[86] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[85] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[84] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[83] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[82] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[81] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[80] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[79] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[78] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[77] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[76] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[75] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[74] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[73] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[72] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[71] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[70] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[69] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[68] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[67] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[66] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[65] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[64] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[63] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[62] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[61] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[60] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[59] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[58] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[57] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[56] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[55] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[54] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[53] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[52] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[51] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[50] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[49] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[48] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[47] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[46] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[45] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[44] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[43] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[42] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[41] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[40] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[39] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[38] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[37] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[36] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[35] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[34] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[33] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[32] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[31] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[30] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[29] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[28] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[27] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[26] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[25] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[24] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[23] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[22] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[21] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[20] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[19] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[18] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[17] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[16] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[15] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[14] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[13] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[12] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[11] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[10] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[9] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[8] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[7] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[6] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[5] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[4] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[3] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[2] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[1] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port col_state[0] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port rand[7] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port rand[6] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port rand[5] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port rand[4] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port rand[3] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port rand[2] 's net has no driver and is unused.
+WARNING - synthesis: Bit 5 of Register \vgaout/RGB_ is stuck at Zero
+WARNING - synthesis: Bit 4 of Register \vgaout/RGB_ is stuck at Zero
+WARNING - synthesis: Bit 3 of Register \vgaout/RGB_ is stuck at Zero
+WARNING - synthesis: Bit 2 of Register \vgaout/RGB_ is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \vgaout/RGB_ is stuck at Zero
+WARNING - synthesis: I/O Port pressing[5] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port pressing[4] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port pressing[3] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port pressing[2] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port pressing[1] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port pressing[0] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port reset 's net has no driver and is unused.
+WARNING - synthesis: I/O Port start 's net has no driver and is unused.
+INFO - synthesis: Special Primitives IFD1P3AZ and OFD1P3AZ for ThunderPlus are synthesized using IOL_B.
 
-################### Begin Area Report (generate_notes)######################
-Number of register bits => 3 of 5280 (0 % )
-FD1P3XZ => 3
-IB => 6
-LUT4 => 2
-OB => 1
+################### Begin Area Report (top)######################
+Number of register bits => 22 of 5280 (0 % )
+CCU2 => 12
+FD1P3XZ => 22
+IB => 1
+IOL_B => 1
+LUT4 => 21
+OB => 14
+PLL_B => 1
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
-Number of even-length carry chains : 0
+Number of even-length carry chains : 2
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 1
-  Net : update_c, loads : 0
+Number of Clocks: 2
+  Net : oscillatorin_c, loads : 1
+  Net : vgaout/clock/lscc_pll_inst/clk, loads : 0
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : col_state_c_479, loads : 1
-  Net : col_state_c_439, loads : 1
-  Net : col_state_c_400, loads : 1
-  Net : rand_c_1, loads : 1
-  Net : rand_c_0, loads : 1
-  Net : gen_c, loads : 1
-  Net : is_box, loads : 1
-  Net : new_box, loads : 1
-  Net : new_box_N_6, loads : 1
-  Net : n23, loads : 1
+  Net : vgaout/column_9__N_64, loads : 13
+  Net : vgaout/n10631, loads : 10
+  Net : vgaout/n10417, loads : 10
+  Net : vgaout/row[8], loads : 6
+  Net : vgaout/row[7], loads : 6
+  Net : vgaout/row[9], loads : 6
+  Net : vgaout/row[6], loads : 5
+  Net : vgaout/row[5], loads : 5
+  Net : vgaout/column[9], loads : 5
+  Net : vgaout/column[4], loads : 4
 ################### End Clock Report ##################
 
-Peak Memory Usage: 107 MB
+Peak Memory Usage: 515 MB
 
 --------------------------------------------------------------
-Total CPU Time: 2 secs 
-Total REAL Time: 3 secs 
+Total CPU Time: 4 secs 
+Total REAL Time: 5 secs 
 --------------------------------------------------------------

@@ -1,8 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE>Place & Route Report</TITLE>
-<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="file:///D:/Apps/Lattice Radiant/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///D:/Apps/Lattice Radiant/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
 <style type="text/css">
 #toc {
   position: fixed;
@@ -41,7 +41,7 @@ if (a)
 
 <DIV id="content" onclick="hideTocList()"><PRE>
 <A name="Par"></A>Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Sun Dec 12 14:07:38 2021
+Sat Dec 11 23:48:38 2021
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	proj_guitar_hero_impl_1_map.udb proj_guitar_hero_impl_1.udb 
@@ -51,7 +51,7 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 Level/       Number       Worst        Timing       Worst        Timing       Run          Run
 Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -            -            -            -            05           Completed
+5_1   *      0            -2147483.648 0            -2147483.648 0            05           Completed
 * : Design saved.
 
 Total (real) run time for 1-seed: 5 secs 
@@ -59,7 +59,7 @@ Total (real) run time for 1-seed: 5 secs
 par done!
 
 Lattice Place and Route Report for Design &quot;proj_guitar_hero_impl_1_map.udb&quot;
-Sun Dec 12 14:07:38 2021
+Sat Dec 11 23:48:38 2021
 
 
 <A name="par_best"></A><B><U><big>Best Par Run</big></U></B>
@@ -68,1960 +68,65 @@ Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
 	proj_guitar_hero_impl_1_map.udb proj_guitar_hero_impl_1_par.dir/5_1.udb 
 
 Loading proj_guitar_hero_impl_1_map.udb ...
-Loading device for application GENERIC from file &apos;itpa08.nph&apos; in environment: C:/Program Files/lscc/radiant/3.0/ispfpga.
+Loading device for application GENERIC from file &apos;itpa08.nph&apos; in environment: D:/Apps/Lattice Radiant/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
 Performance Hardware Data Status:   Advanced       Version 1.0.
 
 
 
-Design:  generate_notes
+Design:  top
 Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
-WARNING - par: Top module port &apos;col_state[478]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[477]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[476]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[475]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[474]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[473]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[472]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[471]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[470]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[469]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[468]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[467]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[466]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[465]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[464]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[463]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[462]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[461]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[460]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[459]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[458]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[457]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[456]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[455]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[454]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[453]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[452]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[451]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[450]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[449]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[448]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[447]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[446]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[445]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[444]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[443]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[442]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[441]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[440]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[438]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[437]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[436]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[435]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[434]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[433]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[432]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[431]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[430]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[429]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[428]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[427]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[426]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[425]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[424]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[423]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[422]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[421]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[420]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[419]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[418]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[417]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[416]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[415]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[414]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[413]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[412]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[411]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[410]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[409]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[408]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[407]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[406]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[405]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[404]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[403]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[402]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[401]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[399]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[398]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[397]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[396]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[395]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[394]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[393]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[392]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[391]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[390]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[389]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[388]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[387]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[386]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[385]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[384]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[383]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[382]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[381]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[380]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[379]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[378]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[377]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[376]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[375]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[374]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[373]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[372]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[371]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[370]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[369]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[368]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[367]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[366]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[365]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[364]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[363]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[362]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[361]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[360]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[359]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[358]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[357]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[356]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[355]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[354]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[353]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[352]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[351]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[350]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[349]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[348]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[347]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[346]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[345]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[344]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[343]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[342]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[341]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[340]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[339]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[338]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[337]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[336]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[335]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[334]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[333]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[332]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[331]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[330]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[329]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[328]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[327]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[326]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[325]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[324]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[323]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[322]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[321]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[320]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[319]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[318]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[317]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[316]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[315]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[314]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[313]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[312]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[311]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[310]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[309]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[308]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[307]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[306]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[305]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[304]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[303]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[302]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[301]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[300]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[299]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[298]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[297]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[296]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[295]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[294]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[293]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[292]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[291]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[290]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[289]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[288]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[287]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[286]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[285]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[284]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[283]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[282]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[281]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[280]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[279]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[278]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[277]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[276]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[275]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[274]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[273]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[272]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[271]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[270]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[269]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[268]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[267]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[266]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[265]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[264]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[263]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[262]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[261]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[260]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[259]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[258]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[257]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[256]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[255]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[254]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[253]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[252]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[251]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[250]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[249]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[248]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[247]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[246]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[245]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[244]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[243]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[242]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[241]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[240]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[239]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[238]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[237]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[236]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[235]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[234]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[233]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[232]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[231]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[230]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[229]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[228]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[227]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[226]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[225]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[224]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[223]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[222]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[221]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[220]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[219]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[218]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[217]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[216]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[215]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[214]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[213]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[212]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[211]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[210]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[209]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[208]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[207]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[206]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[205]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[204]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[203]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[202]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[201]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[200]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[199]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[198]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[197]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[196]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[195]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[194]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[193]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[192]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[191]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[190]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[189]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[188]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[187]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[186]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[185]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[184]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[183]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[182]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[181]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[180]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[179]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[178]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[177]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[176]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[175]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[174]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[173]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[172]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[171]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[170]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[169]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[168]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[167]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[166]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[165]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[164]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[163]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[162]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[161]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[160]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[159]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[158]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[157]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[156]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[155]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[154]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[153]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[152]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[151]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[150]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[149]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[148]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[147]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[146]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[145]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[144]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[143]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[142]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[141]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[140]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[139]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[138]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[137]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[136]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[135]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[134]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[133]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[132]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[131]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[130]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[129]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[128]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[127]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[126]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[125]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[124]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[123]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[122]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[121]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[120]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[119]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[118]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[117]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[116]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[115]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[114]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[113]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[112]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[111]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[110]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[109]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[108]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[107]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[106]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[105]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[104]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[103]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[102]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[101]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[100]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[99]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[98]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[97]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[96]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[95]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[94]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[93]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[92]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[91]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[90]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[89]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[88]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[87]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[86]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[85]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[84]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[83]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[82]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[81]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[80]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[79]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[78]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[77]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[76]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[75]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[74]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[73]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[72]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[71]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[70]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[69]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[68]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[67]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[66]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[65]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[64]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[63]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[62]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[61]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[60]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[59]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[58]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[57]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[56]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[55]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[54]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[53]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[52]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[51]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[50]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[49]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[48]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[47]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[46]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[45]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[44]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[43]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[42]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[41]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[40]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[39]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[38]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[37]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[36]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[35]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[34]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[33]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[32]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[31]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[30]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[29]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[28]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[27]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[26]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[25]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[24]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[23]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[22]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[21]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[20]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[19]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[18]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[17]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[16]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[15]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[14]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[13]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[12]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[11]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[10]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[9]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[8]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[7]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[6]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[5]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[4]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[3]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[2]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[1]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[0]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[7]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[6]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[5]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[4]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[3]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[2]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[478]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[477]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[476]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[475]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[474]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[473]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[472]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[471]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[470]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[469]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[468]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[467]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[466]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[465]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[464]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[463]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[462]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[461]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[460]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[459]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[458]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[457]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[456]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[455]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[454]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[453]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[452]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[451]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[450]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[449]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[448]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[447]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[446]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[445]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[444]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[443]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[442]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[441]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[440]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[438]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[437]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[436]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[435]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[434]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[433]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[432]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[431]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[430]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[429]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[428]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[427]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[426]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[425]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[424]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[423]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[422]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[421]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[420]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[419]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[418]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[417]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[416]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[415]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[414]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[413]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[412]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[411]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[410]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[409]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[408]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[407]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[406]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[405]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[404]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[403]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[402]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[401]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[399]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[398]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[397]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[396]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[395]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[394]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[393]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[392]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[391]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[390]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[389]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[388]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[387]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[386]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[385]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[384]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[383]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[382]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[381]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[380]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[379]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[378]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[377]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[376]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[375]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[374]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[373]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[372]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[371]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[370]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[369]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[368]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[367]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[366]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[365]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[364]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[363]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[362]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[361]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[360]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[359]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[358]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[357]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[356]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[355]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[354]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[353]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[352]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[351]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[350]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[349]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[348]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[347]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[346]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[345]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[344]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[343]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[342]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[341]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[340]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[339]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[338]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[337]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[336]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[335]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[334]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[333]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[332]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[331]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[330]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[329]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[328]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[327]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[326]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[325]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[324]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[323]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[322]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[321]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[320]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[319]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[318]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[317]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[316]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[315]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[314]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[313]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[312]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[311]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[310]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[309]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[308]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[307]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[306]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[305]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[304]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[303]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[302]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[301]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[300]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[299]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[298]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[297]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[296]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[295]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[294]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[293]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[292]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[291]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[290]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[289]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[288]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[287]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[286]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[285]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[284]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[283]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[282]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[281]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[280]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[279]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[278]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[277]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[276]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[275]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[274]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[273]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[272]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[271]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[270]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[269]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[268]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[267]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[266]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[265]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[264]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[263]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[262]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[261]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[260]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[259]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[258]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[257]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[256]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[255]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[254]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[253]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[252]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[251]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[250]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[249]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[248]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[247]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[246]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[245]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[244]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[243]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[242]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[241]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[240]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[239]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[238]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[237]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[236]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[235]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[234]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[233]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[232]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[231]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[230]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[229]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[228]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[227]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[226]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[225]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[224]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[223]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[222]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[221]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[220]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[219]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[218]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[217]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[216]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[215]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[214]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[213]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[212]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[211]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[210]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[209]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[208]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[207]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[206]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[205]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[204]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[203]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[202]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[201]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[200]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[199]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[198]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[197]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[196]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[195]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[194]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[193]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[192]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[191]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[190]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[189]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[188]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[187]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[186]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[185]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[184]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[183]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[182]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[181]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[180]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[179]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[178]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[177]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[176]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[175]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[174]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[173]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[172]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[171]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[170]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[169]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[168]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[167]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[166]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[165]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[164]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[163]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[162]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[161]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[160]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[159]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[158]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[157]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[156]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[155]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[154]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[153]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[152]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[151]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[150]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[149]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[148]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[147]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[146]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[145]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[144]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[143]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[142]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[141]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[140]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[139]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[138]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[137]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[136]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[135]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[134]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[133]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[132]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[131]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[130]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[129]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[128]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[127]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[126]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[125]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[124]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[123]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[122]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[121]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[120]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[119]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[118]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[117]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[116]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[115]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[114]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[113]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[112]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[111]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[110]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[109]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[108]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[107]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[106]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[105]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[104]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[103]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[102]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[101]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[100]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[99]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[98]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[97]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[96]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[95]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[94]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[93]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[92]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[91]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[90]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[89]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[88]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[87]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[86]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[85]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[84]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[83]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[82]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[81]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[80]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[79]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[78]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[77]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[76]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[75]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[74]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[73]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[72]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[71]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[70]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[69]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[68]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[67]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[66]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[65]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[64]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[63]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[62]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[61]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[60]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[59]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[58]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[57]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[56]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[55]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[54]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[53]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[52]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[51]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[50]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[49]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[48]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[47]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[46]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[45]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[44]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[43]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[42]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[41]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[40]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[39]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[38]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[37]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[36]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[35]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[34]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[33]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[32]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[31]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[30]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[29]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[28]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[27]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[26]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[25]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[24]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[23]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[22]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[21]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[20]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[19]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[18]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[17]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[16]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[15]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[14]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[13]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[12]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[11]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[10]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[9]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[8]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[7]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[6]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[5]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[4]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[3]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[2]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[1]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[0]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[7]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[6]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[5]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[4]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[3]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[2]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[478]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[477]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[476]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[475]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[474]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[473]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[472]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[471]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[470]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[469]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[468]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[467]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[466]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[465]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[464]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[463]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[462]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[461]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[460]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[459]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[458]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[457]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[456]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[455]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[454]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[453]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[452]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[451]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[450]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[449]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[448]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[447]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[446]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[445]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[444]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[443]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[442]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[441]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[440]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[438]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[437]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[436]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[435]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[434]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[433]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[432]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[431]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[430]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[429]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[428]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[427]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[426]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[425]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[424]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[423]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[422]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[421]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[420]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[419]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[418]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[417]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[416]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[415]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[414]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[413]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[412]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[411]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[410]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[409]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[408]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[407]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[406]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[405]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[404]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[403]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[402]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[401]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[399]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[398]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[397]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[396]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[395]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[394]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[393]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[392]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[391]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[390]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[389]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[388]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[387]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[386]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[385]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[384]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[383]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[382]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[381]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[380]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[379]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[378]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[377]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[376]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[375]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[374]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[373]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[372]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[371]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[370]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[369]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[368]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[367]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[366]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[365]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[364]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[363]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[362]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[361]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[360]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[359]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[358]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[357]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[356]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[355]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[354]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[353]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[352]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[351]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[350]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[349]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[348]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[347]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[346]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[345]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[344]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[343]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[342]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[341]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[340]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[339]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[338]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[337]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[336]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[335]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[334]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[333]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[332]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[331]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[330]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[329]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[328]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[327]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[326]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[325]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[324]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[323]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[322]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[321]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[320]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[319]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[318]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[317]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[316]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[315]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[314]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[313]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[312]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[311]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[310]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[309]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[308]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[307]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[306]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[305]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[304]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[303]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[302]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[301]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[300]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[299]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[298]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[297]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[296]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[295]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[294]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[293]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[292]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[291]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[290]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[289]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[288]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[287]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[286]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[285]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[284]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[283]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[282]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[281]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[280]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[279]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[278]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[277]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[276]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[275]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[274]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[273]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[272]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[271]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[270]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[269]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[268]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[267]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[266]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[265]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[264]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[263]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[262]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[261]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[260]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[259]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[258]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[257]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[256]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[255]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[254]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[253]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[252]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[251]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[250]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[249]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[248]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[247]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[246]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[245]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[244]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[243]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[242]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[241]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[240]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[239]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[238]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[237]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[236]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[235]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[234]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[233]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[232]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[231]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[230]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[229]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[228]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[227]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[226]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[225]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[224]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[223]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[222]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[221]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[220]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[219]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[218]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[217]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[216]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[215]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[214]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[213]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[212]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[211]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[210]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[209]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[208]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[207]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[206]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[205]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[204]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[203]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[202]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[201]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[200]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[199]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[198]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[197]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[196]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[195]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[194]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[193]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[192]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[191]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[190]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[189]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[188]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[187]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[186]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[185]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[184]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[183]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[182]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[181]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[180]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[179]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[178]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[177]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[176]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[175]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[174]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[173]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[172]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[171]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[170]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[169]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[168]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[167]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[166]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[165]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[164]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[163]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[162]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[161]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[160]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[159]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[158]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[157]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[156]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[155]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[154]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[153]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[152]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[151]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[150]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[149]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[148]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[147]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[146]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[145]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[144]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[143]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[142]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[141]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[140]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[139]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[138]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[137]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[136]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[135]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[134]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[133]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[132]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[131]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[130]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[129]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[128]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[127]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[126]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[125]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[124]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[123]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[122]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[121]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[120]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[119]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[118]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[117]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[116]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[115]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[114]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[113]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[112]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[111]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[110]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[109]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[108]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[107]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[106]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[105]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[104]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[103]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[102]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[101]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[100]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[99]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[98]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[97]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[96]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[95]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[94]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[93]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[92]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[91]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[90]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[89]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[88]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[87]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[86]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[85]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[84]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[83]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[82]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[81]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[80]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[79]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[78]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[77]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[76]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[75]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[74]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[73]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[72]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[71]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[70]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[69]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[68]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[67]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[66]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[65]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[64]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[63]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[62]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[61]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[60]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[59]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[58]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[57]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[56]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[55]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[54]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[53]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[52]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[51]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[50]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[49]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[48]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[47]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[46]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[45]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[44]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[43]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[42]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[41]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[40]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[39]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[38]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[37]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[36]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[35]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[34]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[33]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[32]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[31]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[30]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[29]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[28]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[27]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[26]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[25]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[24]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[23]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[22]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[21]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[20]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[19]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[18]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[17]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[16]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[15]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[14]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[13]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[12]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[11]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[10]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[9]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[8]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[7]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[6]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[5]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[4]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[3]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[2]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[1]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[0]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[7]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[6]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[5]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[4]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[3]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[2]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[478]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[477]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[476]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[475]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[474]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[473]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[472]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[471]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[470]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[469]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[468]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[467]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[466]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[465]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[464]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[463]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[462]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[461]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[460]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[459]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[458]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[457]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[456]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[455]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[454]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[453]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[452]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[451]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[450]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[449]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[448]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[447]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[446]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[445]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[444]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[443]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[442]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[441]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[440]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[438]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[437]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[436]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[435]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[434]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[433]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[432]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[431]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[430]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[429]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[428]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[427]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[426]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[425]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[424]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[423]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[422]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[421]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[420]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[419]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[418]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[417]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[416]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[415]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[414]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[413]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[412]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[411]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[410]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[409]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[408]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[407]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[406]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[405]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[404]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[403]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[402]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[401]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[399]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[398]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[397]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[396]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[395]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[394]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[393]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[392]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[391]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[390]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[389]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[388]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[387]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[386]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[385]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[384]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[383]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[382]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[381]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[380]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[379]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[378]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[377]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[376]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[375]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[374]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[373]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[372]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[371]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[370]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[369]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[368]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[367]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[366]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[365]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[364]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[363]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[362]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[361]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[360]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[359]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[358]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[357]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[356]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[355]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[354]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[353]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[352]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[351]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[350]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[349]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[348]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[347]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[346]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[345]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[344]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[343]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[342]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[341]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[340]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[339]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[338]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[337]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[336]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[335]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[334]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[333]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[332]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[331]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[330]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[329]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[328]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[327]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[326]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[325]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[324]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[323]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[322]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[321]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[320]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[319]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[318]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[317]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[316]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[315]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[314]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[313]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[312]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[311]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[310]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[309]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[308]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[307]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[306]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[305]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[304]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[303]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[302]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[301]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[300]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[299]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[298]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[297]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[296]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[295]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[294]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[293]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[292]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[291]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[290]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[289]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[288]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[287]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[286]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[285]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[284]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[283]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[282]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[281]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[280]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[279]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[278]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[277]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[276]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[275]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[274]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[273]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[272]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[271]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[270]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[269]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[268]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[267]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[266]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[265]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[264]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[263]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[262]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[261]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[260]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[259]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[258]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[257]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[256]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[255]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[254]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[253]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[252]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[251]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[250]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[249]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[248]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[247]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[246]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[245]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[244]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[243]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[242]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[241]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[240]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[239]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[238]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[237]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[236]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[235]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[234]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[233]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[232]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[231]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[230]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[229]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[228]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[227]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[226]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[225]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[224]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[223]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[222]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[221]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[220]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[219]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[218]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[217]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[216]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[215]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[214]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[213]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[212]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[211]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[210]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[209]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[208]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[207]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[206]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[205]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[204]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[203]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[202]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[201]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[200]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[199]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[198]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[197]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[196]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[195]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[194]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[193]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[192]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[191]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[190]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[189]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[188]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[187]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[186]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[185]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[184]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[183]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[182]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[181]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[180]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[179]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[178]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[177]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[176]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[175]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[174]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[173]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[172]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[171]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[170]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[169]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[168]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[167]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[166]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[165]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[164]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[163]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[162]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[161]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[160]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[159]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[158]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[157]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[156]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[155]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[154]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[153]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[152]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[151]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[150]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[149]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[148]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[147]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[146]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[145]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[144]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[143]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[142]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[141]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[140]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[139]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[138]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[137]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[136]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[135]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[134]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[133]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[132]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[131]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[130]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[129]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[128]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[127]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[126]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[125]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[124]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[123]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[122]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[121]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[120]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[119]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[118]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[117]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[116]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[115]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[114]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[113]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[112]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[111]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[110]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[109]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[108]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[107]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[106]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[105]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[104]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[103]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[102]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[101]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[100]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[99]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[98]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[97]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[96]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[95]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[94]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[93]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[92]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[91]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[90]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[89]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[88]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[87]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[86]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[85]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[84]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[83]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[82]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[81]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[80]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[79]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[78]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[77]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[76]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[75]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[74]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[73]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[72]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[71]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[70]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[69]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[68]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[67]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[66]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[65]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[64]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[63]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[62]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[61]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[60]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[59]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[58]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[57]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[56]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[55]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[54]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[53]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[52]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[51]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[50]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[49]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[48]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[47]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[46]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[45]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[44]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[43]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[42]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[41]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[40]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[39]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[38]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[37]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[36]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[35]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[34]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[33]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[32]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[31]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[30]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[29]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[28]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[27]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[26]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[25]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[24]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[23]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[22]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[21]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[20]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[19]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[18]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[17]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[16]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[15]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[14]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[13]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[12]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[11]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[10]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[9]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[8]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[7]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[6]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[5]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[4]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[3]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[2]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[1]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;col_state[0]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[7]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[6]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[5]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[4]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[3]&apos; does not connect to anything.
-WARNING - par: Top module port &apos;rand[2]&apos; does not connect to anything.
-Number of Signals: 13
-Number of Connections: 15
+WARNING - par: No master clock for
+	generated clock	create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+WARNING - par: Missing master pin for instance &apos;vgaout.clock.lscc_pll_inst.u_PLL_B&apos;.
+WARNING - par: Top module port &apos;pressing[5]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[4]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[3]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[2]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[1]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[0]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;reset&apos; does not connect to anything.
+WARNING - par: Top module port &apos;start&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[5]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[4]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[3]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[2]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[1]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[0]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;reset&apos; does not connect to anything.
+WARNING - par: Top module port &apos;start&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[5]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[4]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[3]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[2]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[1]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[0]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;reset&apos; does not connect to anything.
+WARNING - par: Top module port &apos;start&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[5]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[4]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[3]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[2]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[1]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;pressing[0]&apos; does not connect to anything.
+WARNING - par: Top module port &apos;reset&apos; does not connect to anything.
+WARNING - par: Top module port &apos;start&apos; does not connect to anything.
+Number of Signals: 91
+Number of Connections: 214
+WARNING - par: Placement timing constraints are hard to meet. However, placement will continue. Use static timing analysis to identify errors. For more information, see online help subjects &apos;Place and Route Timing Report&apos; or the &apos;Timing&apos; application
+
 
 <A name="par_dus"></A><B><U><big>Device utilization summary:</big></U></B>
 
-   SLICE (est.)       4/2640         &lt;1% used
-     LUT              4/5280         &lt;1% used
-     REG              3/5280         &lt;1% used
-   PIO                7/56           12% used
-                      7/36           19% bonded
-   IOLOGIC            0/56            0% used
+   SLICE (est.)      25/2640         &lt;1% used
+     LUT             47/5280         &lt;1% used
+     REG             22/5280         &lt;1% used
+   PIO               15/56           26% used
+                     15/36           41% bonded
+   IOLOGIC            1/56            1% used
    DSP                0/8             0% used
    I2C                0/2             0% used
    HFOSC              0/1             0% used
@@ -2033,15 +138,15 @@ Number of Connections: 15
    WARMBOOT           0/1             0% used
    SPI                0/2             0% used
    EBR                0/30            0% used
-   PLL                0/1             0% used
+   PLL                1/1           100% used
    RGBOUTBUF          0/3             0% used
    I3C                0/2             0% used
    OPENDRAIN          0/3             0% used
 
 Pin Constraint Summary:
-   0 out of 7 pins locked (0% locked).
+   9 out of 15 pins locked (60% locked).
 .
-...........
+..........
 Finished Placer Phase 0 (HIER). CPU time: 0 secs , REAL time: 0 secs 
 
 
@@ -2052,56 +157,55 @@ Starting Placer Phase 1. CPU time: 0 secs , REAL time: 0 secs
 ..  ..
 ....................
 
-Placer score = 1032.
+Placer score = 8706.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE              3/2640         &lt;1% used
+   SLICE             25/2640         &lt;1% used
 
-Finished Placer Phase 1. CPU time: 4 secs , REAL time: 5 secs 
+WARNING - par: No master clock for
+	generated clock	create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+WARNING - par: Missing master pin for instance &apos;vgaout.clock.lscc_pll_inst.u_PLL_B&apos;.
+Finished Placer Phase 1. CPU time: 4 secs , REAL time: 4 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  2064
-Finished Placer Phase 2.  CPU time: 4 secs , REAL time: 5 secs 
+Placer score =  11906
+Finished Placer Phase 2.  CPU time: 4 secs , REAL time: 4 secs 
 
 
 
 <A name="par_clk"></A><B><U><big>Clock Report</big></U></B>
 
 Global Clocks :
+  PRIMARY &quot;vgaout.clk&quot; from OUTGLOBAL on comp &quot;vgaout.clock.lscc_pll_inst.u_PLL_B&quot; on site &quot;PLL_R13C32&quot;, clk load = 15, ce load = 0, sr load = 0
 
-  PRIMARY  : 0 out of 8 (0%)
+  PRIMARY  : 1 out of 8 (12%)
 
 
 
 
 I/O Usage Summary (final):
-   7 out of 56 (12.5%) I/O sites used.
-   7 out of 36 (19.4%) bonded I/O sites used.
-   Number of I/O comps: 7; differential: 0
+   15 out of 56 (26.8%) I/O sites used.
+   15 out of 36 (41.7%) bonded I/O sites used.
+   Number of I/O comps: 15; differential: 0
    Number of Vref pins used: 0
 
 I/O Bank Usage Summary:
 +----------+---------------+------------+------------+------------+
 | I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
 +----------+---------------+------------+------------+------------+
-| 0        | 0 / 14 (  0%) | OFF        |            |            |
-| 1        | 7 / 14 ( 50%) | 3.3V       |            |            |
+| 0        | 9 / 14 ( 64%) | 3.3V       |            |            |
+| 1        | 6 / 14 ( 42%) | 3.3V       |            |            |
 | 2        | 0 / 8 (  0%)  | OFF        |            |            |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 4 secs , REAL time: 5 secs 
+Total Placer CPU time: 4 secs , REAL time: 4 secs 
 
 Writing design to file proj_guitar_hero_impl_1_par.dir/5_1.udb ...
 
 
------------------------------------------------------------------
-INFO - par: ASE feature is off due to non timing-driven settings.  
------------------------------------------------------------------
-
-
-Start NBR router at 14:07:43 12/12/21
+Start NBR router at 23:48:42 12/11/21
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -2119,29 +223,41 @@ Note: NBR uses a different method to calculate timing slacks. The
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-3 connections routed with dedicated routing resources
-3 connections routed (of 15 total) (20.00%)
+44 connections routed with dedicated routing resources
+1 global clock signals routed
+59 connections routed (of 214 total) (27.57%)
 ---------------------------------------------------------
 Clock routing summary:
+Primary clocks (1 used out of 8 available):
+#7  Signal &quot;vgaout.clk&quot;
+       Clock   loads: 15    out of    15 routed (100.00%)
 Other clocks:
-    Signal &quot;update_c&quot;
-       Clock   loads: 0     out of     3 routed (  0.00%)
+    Signal &quot;oscillatorin_c&quot;
+       Clock   loads: 0     out of     1 routed (  0.00%)
+    Signal &quot;vgaout.clock.lscc_pll_inst.feedback_w&quot;
+       Clock   loads: 1     out of     1 routed (100.00%)
 ---------------------------------------------------------
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
+WARNING - par: No master clock for
+	generated clock	create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+WARNING - par: Missing master pin for instance &apos;vgaout.clock.lscc_pll_inst.u_PLL_B&apos;.
 
-Start NBR section for initial routing at 14:07:43 12/12/21
+Start NBR section for initial routing at 23:48:43 12/11/21
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 14:07:43 12/12/21
+Start NBR section for normal routing at 23:48:43 12/11/21
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; real time: 0 secs 
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
 
-Start NBR section for post-routing at 14:07:43 12/12/21
+Start NBR section for post-routing at 23:48:43 12/11/21
+WARNING - par: No master clock for
+	generated clock	create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+WARNING - par: Missing master pin for instance &apos;vgaout.clock.lscc_pll_inst.u_PLL_B&apos;.
 
 End NBR router with 0 unrouted connection
 
@@ -2156,10 +272,12 @@ End NBR router with 0 unrouted connection
 Notes: The timing info is calculated for SETUP only.
 
 
+
+Starting full timing analysis...
 Total CPU time 0 secs 
 Total REAL time: 0 secs 
 Completely routed.
-End of route.  15 routed (100.00%); 0 unrouted.
+End of route.  214 routed (100.00%); 0 unrouted.
 
 Writing design to file proj_guitar_hero_impl_1_par.dir/5_1.udb ...
 
@@ -2169,15 +287,15 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack&lt;setup/&lt;ns&gt;&gt; = &lt;n/a&gt;
-PAR_SUMMARY::Timing score&lt;setup/&lt;ns&gt;&gt; = &lt;n/a&gt;
-PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = &lt;n/a&gt;
-PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = &lt;n/a&gt;
+PAR_SUMMARY::Worst  slack&lt;setup/&lt;ns&gt;&gt; = -2147483.648
+PAR_SUMMARY::Timing score&lt;setup/&lt;ns&gt;&gt; = 0.000
+PAR_SUMMARY::Worst  slack&lt;hold /&lt;ns&gt;&gt; = -2147483.648
+PAR_SUMMARY::Timing score&lt;hold /&lt;ns&gt;&gt; = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 4 secs 
+Total CPU  Time: 5 secs 
 Total REAL Time: 5 secs 
-Peak Memory Usage: 68 MB
+Peak Memory Usage: 97 MB
 
 
 par done!
