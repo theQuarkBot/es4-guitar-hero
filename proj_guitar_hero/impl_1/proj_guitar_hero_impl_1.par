@@ -1,5 +1,5 @@
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Fri Dec 10 15:54:55 2021
+Sat Dec 11 18:26:27 2021
 
 Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 	proj_guitar_hero_impl_1_map.udb proj_guitar_hero_impl_1.udb 
@@ -8,51 +8,80 @@ Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -exp parPathBased=ON \
 Level/       Number       Worst        Timing       Worst        Timing       Run          Run
 Cost [udb]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -2147483.648 0            -2147483.648 0            06           Completed
+5_1   *      0            -2147483.648 0            -2147483.648 0            05           Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 7 secs 
+Total (real) run time for 1-seed: 6 secs 
 
 par done!
 
 Lattice Place and Route Report for Design "proj_guitar_hero_impl_1_map.udb"
-Fri Dec 10 15:54:55 2021
+Sat Dec 11 18:26:27 2021
 
 PAR: Place And Route Radiant Software (64-bit) 3.0.0.24.1.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
 	proj_guitar_hero_impl_1_map.udb proj_guitar_hero_impl_1_par.dir/5_1.udb 
 
 Loading proj_guitar_hero_impl_1_map.udb ...
-Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/Program Files/lscc/radiant/3.0/ispfpga.
+Loading device for application GENERIC from file 'itpa08.nph' in environment: D:/Apps/Lattice Radiant/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
 Performance Hardware Data Status:   Advanced       Version 1.0.
 
 
 
-Design:  vga
+Design:  top
 Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
 WARNING - par: No master clock for
-	generated clock	create_generated_clock -name {clk} -source [get_pins {clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
-WARNING - par: No master clock for
-	generated clock	create_generated_clock -name {pllpinout_c} -source [get_pins {clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {clock/lscc_pll_inst/u_PLL_B/OUTCORE }] .
-WARNING - par: Missing master pin for instance 'clock.lscc_pll_inst.u_PLL_B'.
-WARNING - par: Missing master pin for instance 'clock.lscc_pll_inst.u_PLL_B'.
-Number of Signals: 86
-Number of Connections: 189
+	generated clock	create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+WARNING - par: Missing master pin for instance 'vgaout.clock.lscc_pll_inst.u_PLL_B'.
+WARNING - par: Top module port 'pressing[5]' does not connect to anything.
+WARNING - par: Top module port 'pressing[4]' does not connect to anything.
+WARNING - par: Top module port 'pressing[3]' does not connect to anything.
+WARNING - par: Top module port 'pressing[2]' does not connect to anything.
+WARNING - par: Top module port 'pressing[1]' does not connect to anything.
+WARNING - par: Top module port 'pressing[0]' does not connect to anything.
+WARNING - par: Top module port 'reset' does not connect to anything.
+WARNING - par: Top module port 'start' does not connect to anything.
+WARNING - par: Top module port 'pressing[5]' does not connect to anything.
+WARNING - par: Top module port 'pressing[4]' does not connect to anything.
+WARNING - par: Top module port 'pressing[3]' does not connect to anything.
+WARNING - par: Top module port 'pressing[2]' does not connect to anything.
+WARNING - par: Top module port 'pressing[1]' does not connect to anything.
+WARNING - par: Top module port 'pressing[0]' does not connect to anything.
+WARNING - par: Top module port 'reset' does not connect to anything.
+WARNING - par: Top module port 'start' does not connect to anything.
+WARNING - par: Top module port 'pressing[5]' does not connect to anything.
+WARNING - par: Top module port 'pressing[4]' does not connect to anything.
+WARNING - par: Top module port 'pressing[3]' does not connect to anything.
+WARNING - par: Top module port 'pressing[2]' does not connect to anything.
+WARNING - par: Top module port 'pressing[1]' does not connect to anything.
+WARNING - par: Top module port 'pressing[0]' does not connect to anything.
+WARNING - par: Top module port 'reset' does not connect to anything.
+WARNING - par: Top module port 'start' does not connect to anything.
+WARNING - par: Top module port 'pressing[5]' does not connect to anything.
+WARNING - par: Top module port 'pressing[4]' does not connect to anything.
+WARNING - par: Top module port 'pressing[3]' does not connect to anything.
+WARNING - par: Top module port 'pressing[2]' does not connect to anything.
+WARNING - par: Top module port 'pressing[1]' does not connect to anything.
+WARNING - par: Top module port 'pressing[0]' does not connect to anything.
+WARNING - par: Top module port 'reset' does not connect to anything.
+WARNING - par: Top module port 'start' does not connect to anything.
+Number of Signals: 105
+Number of Connections: 250
 WARNING - par: Placement timing constraints are hard to meet. However, placement will continue. Use static timing analysis to identify errors. For more information, see online help subjects 'Place and Route Timing Report' or the 'Timing' application
 
 Device utilization summary:
 
-   SLICE (est.)      23/2640         <1% used
-     LUT             42/5280         <1% used
+   SLICE (est.)      31/2640          1% used
+     LUT             56/5280          1% used
      REG             22/5280         <1% used
-   PIO               10/56           17% used
-                     10/36           27% bonded
-   IOLOGIC            0/56            0% used
+   PIO                9/56           16% used
+                      9/36           25% bonded
+   IOLOGIC            6/56           10% used
    DSP                0/8             0% used
    I2C                0/2             0% used
    HFOSC              0/1             0% used
@@ -70,9 +99,8 @@ Device utilization summary:
    OPENDRAIN          0/3             0% used
 
 Pin Constraint Summary:
-   0 out of 10 pins locked (0% locked).
-.
-............
+   9 out of 9 pins locked (100% locked).
+
 Finished Placer Phase 0 (HIER). CPU time: 0 secs , REAL time: 0 secs 
 
 
@@ -83,30 +111,27 @@ Starting Placer Phase 1. CPU time: 0 secs , REAL time: 0 secs
 ..  ..
 ....................
 
-Placer score = 3812.
+Placer score = 7915.
 
 Device SLICE utilization summary after final SLICE packing:
-   SLICE             23/2640         <1% used
+   SLICE             30/2640          1% used
 
 WARNING - par: No master clock for
-	generated clock	create_generated_clock -name {clk} -source [get_pins {clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
-WARNING - par: No master clock for
-	generated clock	create_generated_clock -name {pllpinout_c} -source [get_pins {clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {clock/lscc_pll_inst/u_PLL_B/OUTCORE }] .
-WARNING - par: Missing master pin for instance 'clock.lscc_pll_inst.u_PLL_B'.
-WARNING - par: Missing master pin for instance 'clock.lscc_pll_inst.u_PLL_B'.
-Finished Placer Phase 1. CPU time: 5 secs , REAL time: 6 secs 
+	generated clock	create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+WARNING - par: Missing master pin for instance 'vgaout.clock.lscc_pll_inst.u_PLL_B'.
+Finished Placer Phase 1. CPU time: 4 secs , REAL time: 5 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  7083
-Finished Placer Phase 2.  CPU time: 5 secs , REAL time: 6 secs 
+Placer score =  11115
+Finished Placer Phase 2.  CPU time: 4 secs , REAL time: 5 secs 
 
 
 ------------------ Clock Report ------------------
 
 Global Clocks :
-  PRIMARY "clk" from OUTGLOBAL on comp "clock.lscc_pll_inst.u_PLL_B" on site "PLL_R13C32", clk load = 14, ce load = 0, sr load = 0
+  PRIMARY "vgaout.clk" from OUTGLOBAL on comp "vgaout.clock.lscc_pll_inst.u_PLL_B" on site "PLL_R13C32", clk load = 20, ce load = 0, sr load = 0
 
   PRIMARY  : 1 out of 8 (12%)
 
@@ -114,26 +139,26 @@ Global Clocks :
 
 
 I/O Usage Summary (final):
-   10 out of 56 (17.9%) I/O sites used.
-   10 out of 36 (27.8%) bonded I/O sites used.
-   Number of I/O comps: 10; differential: 0
+   9 out of 56 (16.1%) I/O sites used.
+   9 out of 36 (25.0%) bonded I/O sites used.
+   Number of I/O comps: 9; differential: 0
    Number of Vref pins used: 0
 
 I/O Bank Usage Summary:
 +----------+---------------+------------+------------+------------+
 | I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
 +----------+---------------+------------+------------+------------+
-| 0        | 6 / 14 ( 42%) | 3.3V       |            |            |
-| 1        | 4 / 14 ( 28%) | 3.3V       |            |            |
+| 0        | 8 / 14 ( 57%) | 3.3V       |            |            |
+| 1        | 1 / 14 (  7%) | 3.3V       |            |            |
 | 2        | 0 / 8 (  0%)  | OFF        |            |            |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 5 secs , REAL time: 6 secs 
+Total Placer CPU time: 4 secs , REAL time: 5 secs 
 
 Writing design to file proj_guitar_hero_impl_1_par.dir/5_1.udb ...
 
 
-Start NBR router at 15:55:01 12/10/21
+Start NBR router at 18:26:32 12/11/21
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -151,47 +176,41 @@ Note: NBR uses a different method to calculate timing slacks. The
 Starting routing resource preassignment
 Preassignment Summary:
 --------------------------------------------------------------------------------
-44 connections routed with dedicated routing resources
+49 connections routed with dedicated routing resources
 1 global clock signals routed
-58 connections routed (of 189 total) (30.69%)
+69 connections routed (of 250 total) (27.60%)
 ---------------------------------------------------------
 Clock routing summary:
 Primary clocks (1 used out of 8 available):
-#7  Signal "clk"
-       Clock   loads: 14    out of    14 routed (100.00%)
+#7  Signal "vgaout.clk"
+       Clock   loads: 20    out of    20 routed (100.00%)
 Other clocks:
-    Signal "pllin_c"
-       Clock   loads: 1     out of     1 routed (100.00%)
-    Signal "clock.lscc_pll_inst.feedback_w"
+    Signal "oscillatorin_c"
+       Clock   loads: 0     out of     1 routed (  0.00%)
+    Signal "vgaout.clock.lscc_pll_inst.feedback_w"
        Clock   loads: 1     out of     1 routed (100.00%)
 ---------------------------------------------------------
 --------------------------------------------------------------------------------
 Completed routing resource preassignment
 WARNING - par: No master clock for
-	generated clock	create_generated_clock -name {clk} -source [get_pins {clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
-WARNING - par: No master clock for
-	generated clock	create_generated_clock -name {pllpinout_c} -source [get_pins {clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {clock/lscc_pll_inst/u_PLL_B/OUTCORE }] .
-WARNING - par: Missing master pin for instance 'clock.lscc_pll_inst.u_PLL_B'.
-WARNING - par: Missing master pin for instance 'clock.lscc_pll_inst.u_PLL_B'.
+	generated clock	create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+WARNING - par: Missing master pin for instance 'vgaout.clock.lscc_pll_inst.u_PLL_B'.
 
-Start NBR section for initial routing at 15:55:01 12/10/21
+Start NBR section for initial routing at 18:26:32 12/11/21
 Level 4, iteration 1
 3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 15:55:01 12/10/21
+Start NBR section for normal routing at 18:26:32 12/11/21
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 0 (nbr) score; real time: 0 secs 
 
-Start NBR section for post-routing at 15:55:01 12/10/21
+Start NBR section for post-routing at 18:26:32 12/11/21
 WARNING - par: No master clock for
-	generated clock	create_generated_clock -name {clk} -source [get_pins {clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
-WARNING - par: No master clock for
-	generated clock	create_generated_clock -name {pllpinout_c} -source [get_pins {clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {clock/lscc_pll_inst/u_PLL_B/OUTCORE }] .
-WARNING - par: Missing master pin for instance 'clock.lscc_pll_inst.u_PLL_B'.
-WARNING - par: Missing master pin for instance 'clock.lscc_pll_inst.u_PLL_B'.
+	generated clock	create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
+WARNING - par: Missing master pin for instance 'vgaout.clock.lscc_pll_inst.u_PLL_B'.
 
 End NBR router with 0 unrouted connection
 
@@ -210,7 +229,7 @@ Starting full timing analysis...
 Total CPU time 0 secs 
 Total REAL time: 0 secs 
 Completely routed.
-End of route.  189 routed (100.00%); 0 unrouted.
+End of route.  250 routed (100.00%); 0 unrouted.
 
 Writing design to file proj_guitar_hero_impl_1_par.dir/5_1.udb ...
 
@@ -226,9 +245,9 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = -2147483.648
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 6 secs 
-Total REAL Time: 7 secs 
-Peak Memory Usage: 100 MB
+Total CPU  Time: 5 secs 
+Total REAL Time: 6 secs 
+Peak Memory Usage: 97 MB
 
 
 par done!

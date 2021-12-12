@@ -1,6 +1,6 @@
--ver "C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v"
--lib pmi -vhd "C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd"
--lib "work" -vhd "//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd" "//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd" "//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd" "//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd"
+-ver "D:/Apps/Lattice Radiant/ip/pmi/pmi_iCE40UP.v"
+-lib pmi -vhd "D:/Apps/Lattice Radiant/ip/pmi/pmi_iCE40UP.vhd"
+-lib "work" -vhd "C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd" "C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd" "C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd" "C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd"
 -vh2008
 -isTop
 -a "iCE40UP"

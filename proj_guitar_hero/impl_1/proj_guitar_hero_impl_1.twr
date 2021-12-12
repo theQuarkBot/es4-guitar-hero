@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Fri Dec 10 15:55:02 2021
+Sat Dec 11 18:26:33 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -11,7 +11,7 @@ Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
 Command line:    timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt proj_guitar_hero_impl_1.twr proj_guitar_hero_impl_1.udb -gui
 
 -----------------------------------------
-Design:          vga
+Design:          top
 Family:          iCE40UP
 Device:          iCE40UP5K
 Package:         SG48
@@ -28,8 +28,7 @@ Package Status:                     Preliminary    Version 1.5
         1.1  SDC Constraints
         1.2  Combinational Loop
     2  CLOCK SUMMARY
-        2.1  Clock clk
-        2.2  Clock pllpinout_c
+        2.1  Clock vgaout/clk
     3  TIMING ANALYSIS SUMMARY
         3.1  Overall (Setup and Hold)
             3.1.1  Constraint Coverage
@@ -54,8 +53,7 @@ Package Status:                     Preliminary    Version 1.5
 
 1.1  SDC Constraints
 =====================
-[IGNORED:]create_generated_clock -name {pllpinout_c} -source [get_pins clock.lscc_pll_inst.u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins clock.lscc_pll_inst.u_PLL_B/OUTCORE]
-[IGNORED:]create_generated_clock -name {clk} -source [get_pins clock.lscc_pll_inst.u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins clock.lscc_pll_inst.u_PLL_B/OUTGLOBAL]
+[IGNORED:]create_generated_clock -name {vgaout/clk} -source [get_pins vgaout.clock.lscc_pll_inst.u_PLL_B/REFERENCECLK] -divide_by 32 -multiply_by 67 [get_pins vgaout.clock.lscc_pll_inst.u_PLL_B/OUTGLOBAL]
 
 Operating conditions:
 --------------------
@@ -70,43 +68,19 @@ None
 2  CLOCK SUMMARY
 ==============================================
 
-2.1 Clock "clk"
+2.1 Clock "vgaout/clk"
 =======================
-create_generated_clock -name {clk} -source [get_pins {clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] 
+create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] 
 
 Single Clock Domain
 -------------------------------------------------------------------------------------------------------
-               Clock clk                |                    |       Period       |     Frequency      
+            Clock vgaout/clk            |                    |       Period       |     Frequency      
 -------------------------------------------------------------------------------------------------------
- From clk                               |             Target |               +INF |          0.000 MHz 
+ From vgaout/clk                        |             Target |               +INF |          0.000 MHz 
                                         | Actual (all paths) |               ---- |               ---- 
 -------------------------------------------------------------------------------------------------------
 
 Clock Domain Crossing
-------------------------------------------------------------------------------------------------------
-               Clock clk                |   Worst Time Between Edges   |           Comment            
-------------------------------------------------------------------------------------------------------
- From pllpinout_c                       |                         ---- |                      No path 
-------------------------------------------------------------------------------------------------------
-
-2.2 Clock "pllpinout_c"
-=======================
-create_generated_clock -name {pllpinout_c} -source [get_pins {clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {clock/lscc_pll_inst/u_PLL_B/OUTCORE }] 
-
-Single Clock Domain
--------------------------------------------------------------------------------------------------------
-           Clock pllpinout_c            |                    |       Period       |     Frequency      
--------------------------------------------------------------------------------------------------------
- From pllpinout_c                       |             Target |               +INF |          0.000 MHz 
-                                        | Actual (all paths) |               ---- |               ---- 
--------------------------------------------------------------------------------------------------------
-
-Clock Domain Crossing
-------------------------------------------------------------------------------------------------------
-           Clock pllpinout_c            |   Worst Time Between Edges   |           Comment            
-------------------------------------------------------------------------------------------------------
- From clk                               |                         ---- |                      No path 
-------------------------------------------------------------------------------------------------------
 
 ==============================================
 3  TIMING ANALYSIS SUMMARY
@@ -160,20 +134,23 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-column_60__i9/D                         |    No arrival or required
-column_60__i9/SP                        |    No arrival or required
-column_60__i9/SR                        |    No arrival or required
-column_60__i8/D                         |    No arrival or required
-column_60__i7/D                         |    No arrival or required
-{column_60__i7/SP   column_60__i8/SP}   |    No arrival or required
-{column_60__i7/SR   column_60__i8/SR}   |    No arrival or required
-column_60__i6/D                         |    No arrival or required
-column_60__i5/D                         |    No arrival or required
-{column_60__i5/SP   column_60__i6/SP}   |    No arrival or required
+vgaout/column_75__i9/D                  |    No arrival or required
+vgaout/column_75__i9/SP                 |    No arrival or required
+vgaout/column_75__i9/SR                 |    No arrival or required
+vgaout/row_76__i6/D                     |    No arrival or required
+vgaout/row_76__i5/D                     |    No arrival or required
+{vgaout/row_76__i5/SR   vgaout/row_76__i6/SR}                           
+                                        |    No arrival or required
+vgaout/column_75__i8/D                  |    No arrival or required
+vgaout/column_75__i7/D                  |    No arrival or required
+{vgaout/column_75__i7/SP   vgaout/column_75__i8/SP}                           
+                                        |    No arrival or required
+{vgaout/column_75__i7/SR   vgaout/column_75__i8/SR}                           
+                                        |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                        40
+ts                                      |                        48
                                         |                          
 -------------------------------------------------------------------
 
@@ -191,14 +168,21 @@ create_generated_clock,
 ...
 
 -------------------------------------------------------------------
-     Listing 3 Start or End Points      |           Type           
+     Listing 10 Start or End Points     |           Type           
 -------------------------------------------------------------------
-pllin                                   |                     input
-HSYNC                                   |                    output
-VSYNC                                   |                    output
+oscillatorin                            |                     input
+pressing[5]                             |                     input
+pressing[4]                             |                     input
+pressing[3]                             |                     input
+pressing[2]                             |                     input
+pressing[1]                             |                     input
+pressing[0]                             |                     input
+reset                                   |                     input
+start                                   |                     input
+RGBout[3]                               |                    output
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                         3
+Number of I/O ports without constraint  |                        17
                                         |                          
 -------------------------------------------------------------------
 

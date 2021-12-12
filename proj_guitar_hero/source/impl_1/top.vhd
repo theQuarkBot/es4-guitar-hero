@@ -14,8 +14,12 @@ entity top is
 		
 		reset : in std_logic;
 		start : in std_logic;
-		rgb   : out std_logic_vector(5 downto 0)
 		
+		--VGA
+		RGBout   : out std_logic_vector(5 downto 0);
+		oscillatorin : in std_logic;
+		HSYNCout : out std_logic;
+		VSYNCout : out std_logic
 		
 	);
 end top;
@@ -81,6 +85,8 @@ component generate_notes
 end component;
 
 ------------------------------------------------------------------------------------------
+--VGA pins
+signal rgbi  : std_logic;
 
 -- Which buttons are being pressed
 signal press_green  : std_logic;
@@ -117,14 +123,14 @@ signal col : unsigned(9 downto 0);
 
 begin
 	clock : HSOSC port map('1', '1', clk);
-	vga : 
+	vgaout : vga port map(pllin => oscillatorin, RGB => RGBout, HSYNC => HSYNCout, VSYNC => VSYNCout);
 	------------------------------------------------------------------------------------------
 	-- Given the current game state and a row/column. Give the color of the current pixel
 	get_color : draw_game port map(
 		row=> row,
 		col=> col,
 		valid=> '1',    -- TODO: Make sure this is right
-		rgb=> rgb,
+		--rgbi=> rgbi,
 		col_green=>  col_green,
 		col_red=>    col_red,
 		col_yellow=> col_yellow,

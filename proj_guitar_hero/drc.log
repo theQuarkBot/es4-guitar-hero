@@ -1,0 +1,11 @@
+DRC: Design Rule Check Radiant Software (64-bit) 3.0.0.24.1
+Sat Dec 11 18:18:32 2021
+
+WARNING - Top module port 'pressing[5]' does not connect to anything.
+WARNING - Top module port 'pressing[4]' does not connect to anything.
+WARNING - Top module port 'pressing[3]' does not connect to anything.
+WARNING - Top module port 'pressing[2]' does not connect to anything.
+WARNING - Top module port 'pressing[1]' does not connect to anything.
+WARNING - Top module port 'pressing[0]' does not connect to anything.
+WARNING - Top module port 'reset' does not connect to anything.
+WARNING - Top module port 'start' does not connect to anything.
