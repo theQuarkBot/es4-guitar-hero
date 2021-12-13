@@ -1075,12 +1075,29 @@
             <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1</Dynamic>
         </Message>
         <Message>
-            <ID>35935034</ID>
+            <ID>35001771</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(146): </Dynamic>
-            <Dynamic>clock</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
-            <Navigation>146</Navigation>
+            <Dynamic>gen_g</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>gen_r</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>gen_y</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>gen_b</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>16</Severity>
+            <Dynamic>gen_o</Dynamic>
         </Message>
         <Message>
             <ID>35002028</ID>
@@ -1155,18 +1172,18 @@
         <Message>
             <ID>35931002</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(139): </Dynamic>
-            <Dynamic>\vgaout/clock/lscc_pll_inst/sclk_i</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
-            <Navigation>139</Navigation>
-        </Message>
-        <Message>
-            <ID>35931002</ID>
-            <Severity>16</Severity>
             <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(140): </Dynamic>
             <Dynamic>\vgaout/clock/lscc_pll_inst/sdi_i</Dynamic>
             <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
             <Navigation>140</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(139): </Dynamic>
+            <Dynamic>\vgaout/clock/lscc_pll_inst/sclk_i</Dynamic>
+            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
+            <Navigation>139</Navigation>
         </Message>
         <Message>
             <ID>35002028</ID>
@@ -1399,10 +1416,6 @@
             <ID>71003020</ID>
             <Severity>16</Severity>
             <Dynamic>start</Dynamic>
-        </Message>
-        <Message>
-            <ID>61001000</ID>
-            <Severity>16</Severity>
         </Message>
         <Message>
             <ID>70001944</ID>

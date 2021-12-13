@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Dec 12 20:29:12 2021
+Sun Dec 12 21:05:11 2021
 
 
 Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f proj_guitar_hero_impl_1_lattice.synproj -gui -msgset //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/promote.xml 
@@ -220,7 +220,11 @@ Top module name (VHDL, mixed language): top
                                                          
 
 
-WARNING - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(146): Removing unused instance clock. VDB-5034
+WARNING - synthesis: Initial value found on net gen_g will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net gen_r will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net gen_y will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net gen_b will be ignored due to unrecognized driver type
+WARNING - synthesis: Initial value found on net gen_o will be ignored due to unrecognized driver type
 WARNING - synthesis: I/O Port pressing[5] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port pressing[4] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port pressing[3] 's net has no driver and is unused.
@@ -235,16 +239,16 @@ WARNING - synthesis: I/O Port rgb[3] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port rgb[2] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port rgb[1] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port rgb[0] 's net has no driver and is unused.
-WARNING - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(139): net \vgaout/clock/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
 WARNING - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(140): net \vgaout/clock/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
+WARNING - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(139): net \vgaout/clock/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
 ######## Missing driver on net rgb[5]. Patching with GND.
 ######## Missing driver on net rgb[4]. Patching with GND.
 ######## Missing driver on net rgb[3]. Patching with GND.
 ######## Missing driver on net rgb[2]. Patching with GND.
 ######## Missing driver on net rgb[1]. Patching with GND.
 ######## Missing driver on net rgb[0]. Patching with GND.
-######## Missing driver on net \vgaout/clock/lscc_pll_inst/sclk_i. Patching with GND.
 ######## Missing driver on net \vgaout/clock/lscc_pll_inst/sdi_i. Patching with GND.
+######## Missing driver on net \vgaout/clock/lscc_pll_inst/sclk_i. Patching with GND.
 
 
 
@@ -256,56 +260,139 @@ WARNING - synthesis: I/O Port pressing[1] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port pressing[0] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port reset 's net has no driver and is unused.
 WARNING - synthesis: I/O Port start 's net has no driver and is unused.
-Duplicate register/latch removal. \vgaout/RGB__i4 is a one-to-one match with \vgaout/RGB__i3.
-Duplicate register/latch removal. \vgaout/RGB__i2 is a one-to-one match with \vgaout/RGB__i5.
-Duplicate register/latch removal. \vgaout/RGB__i6 is a one-to-one match with \vgaout/RGB__i1.
-Duplicate register/latch removal. \vgaout/RGB__i4 is a one-to-one match with \vgaout/RGB__i6.
-Duplicate register/latch removal. \vgaout/RGB__i2 is a one-to-one match with \vgaout/RGB__i4.
+Combinational loop found : 1
+
+	Net addr[2] 
+
+	Instance addr_2__I_0_2_i3 
+
+Combinational loop found : 2
+
+	Net addr[0] 
+
+	Instance addr_2__I_0_2_i1 
+
+Combinational loop found : 3
+
+	Net addr[1] 
+
+	Instance addr_2__I_0_2_i2 
+
+Combinational loop found : 4
+
+	Net rand1 
+
+	Instance rand1_I_0 
+
+Combinational loop found : 5
+
+	Net rand2 
+
+	Instance rand2_I_0_2 
+
+	Net rand2_N_209 
+
+	Instance rand2_I_0 
+
+Combinational loop found : 6
+
+	Net rand3 
+
+	Instance rand3_I_0_2 
+
+	Net rand3_N_211 
+
+	Instance rand3_I_31 
+
+	Net rand3_N_212 
+
+	Instance rand3_I_0 
+
+Combinational loop found : 7
+
+	Net rand4 
+
+	Instance mux_239_i1 
+
+Combinational loop found : 8
+
+	Net rand5 
+
+	Instance i234 
+
+Duplicate register/latch removal. data_i17 is a one-to-one match with data_i2.
+Duplicate register/latch removal. data_i35 is a one-to-one match with data_i7.
+Duplicate register/latch removal. data_i31 is a one-to-one match with data_i46.
+Duplicate register/latch removal. data_i44 is a one-to-one match with data_i1.
+Duplicate register/latch removal. data_i41 is a one-to-one match with data_i35.
+Duplicate register/latch removal. data_i14 is a one-to-one match with data_i13.
+Duplicate register/latch removal. data_i39 is a one-to-one match with data_i37.
+Duplicate register/latch removal. data_i33 is a one-to-one match with data_i18.
+Duplicate register/latch removal. data_i21 is a one-to-one match with data_i0.
+Duplicate register/latch removal. \vgaout/RGB__i1 is a one-to-one match with \vgaout/RGB__i2.
+Duplicate register/latch removal. data_i20 is a one-to-one match with data_i12.
+Duplicate register/latch removal. data_i34 is a one-to-one match with data_i33.
+Duplicate register/latch removal. data_i32 is a one-to-one match with data_i16.
+Duplicate register/latch removal. data_i28 is a one-to-one match with data_i47.
+Duplicate register/latch removal. data_i26 is a one-to-one match with data_i10.
+Duplicate register/latch removal. \vgaout/RGB__i5 is a one-to-one match with \vgaout/RGB__i6.
+Duplicate register/latch removal. data_i32 is a one-to-one match with data_i26.
+Duplicate register/latch removal. data_i27 is a one-to-one match with data_i8.
+Duplicate register/latch removal. data_i25 is a one-to-one match with data_i20.
+Duplicate register/latch removal. data_i24 is a one-to-one match with data_i49.
+Duplicate register/latch removal. data_i36 is a one-to-one match with data_i11.
+Duplicate register/latch removal. data_i34 is a one-to-one match with data_i40.
+Duplicate register/latch removal. data_i32 is a one-to-one match with data_i4.
+Duplicate register/latch removal. data_i30 is a one-to-one match with data_i6.
+Duplicate register/latch removal. data_i19 is a one-to-one match with data_i9.
 
 
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
 ################### Begin Area Report (top)######################
-Number of register bits => 33 of 5280 (0 % )
-CCU2 => 12
-FD1P3XZ => 33
+Number of register bits => 141 of 5280 (2 % )
+CCU2 => 44
+FD1P3XZ => 141
+HSOSC_CORE => 1
 IB => 1
-LUT4 => 25
+LUT4 => 147
 OB => 14
 PLL_B => 1
 ################### End Area Report ##################
 Number of odd-length carry chains : 0
-Number of even-length carry chains : 2
+Number of even-length carry chains : 5
 
 
 <A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 2
+Number of Clocks: 4
+  Net : update, loads : 1
+  Net : clk, loads : 0
   Net : oscillatorin_c, loads : 1
   Net : vgaout/clock/lscc_pll_inst/clk, loads : 0
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : vgaout/column_9__N_37, loads : 13
-  Net : vgaout/n5568, loads : 10
-  Net : vgaout/n5795, loads : 10
-  Net : vgaout/column[9], loads : 6
-  Net : vgaout/row[9], loads : 6
-  Net : vgaout/row[8], loads : 6
-  Net : vgaout/row[7], loads : 6
-  Net : vgaout/RGBout_c_3, loads : 5
-  Net : vgaout/column[4], loads : 5
-  Net : vgaout/column[3], loads : 5
+  Net : to_next_note_31__N_174, loads : 33
+  Net : addr[2], loads : 27
+  Net : addr[1], loads : 26
+  Net : addr[0], loads : 25
+  Net : cur_note[0], loads : 21
+  Net : cur_note[1], loads : 14
+  Net : vgaout/column_9__N_259, loads : 12
+  Net : cur_note[2], loads : 10
+  Net : vgaout/n6872, loads : 10
+  Net : vgaout/n5625, loads : 10
 ################### End Clock Report ##################
 
-Peak Memory Usage: 109 MB
+Peak Memory Usage: 119 MB
 
 --------------------------------------------------------------
 Total CPU Time: 2 secs 
-Total REAL Time: 3 secs 
+Total REAL Time: 4 secs 
 --------------------------------------------------------------
 
 

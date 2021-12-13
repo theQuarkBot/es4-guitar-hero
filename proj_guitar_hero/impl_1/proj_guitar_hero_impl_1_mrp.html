@@ -47,7 +47,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Sun Dec 12 20:29:18 2021
+Mapped on: Sun Dec 12 21:05:28 2021
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -58,12 +58,12 @@ Command line:   map proj_guitar_hero_impl_1_syn.udb
      -gui
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of slice registers:  33 out of  5280 (1%)
+   Number of slice registers: 141 out of  5280 (3%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            61 out of  5280 (1%)
-      Number of logic LUT4s:              27
-      Number of inserted feedthru LUT4s:  10
-      Number of ripple logic:             12 (24 LUT4s)
+   Number of LUT4s:           262 out of  5280 (5%)
+      Number of logic LUT4s:             149
+      Number of inserted feedthru LUT4s:  25
+      Number of ripple logic:             44 (88 LUT4s)
    Number of IO sites used:   15 out of 39 (38%)
       Number of IO sites used for general PIO: 15
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -75,7 +75,7 @@ Command line:   map proj_guitar_hero_impl_1_syn.udb
       Number of IO sites used for PIO+I3C+OD+RGB: 15 out of 39 (38%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
-   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of High Speed OSCs:  1 out of 1 (100%)
    Number of Low Speed OSCs:   0 out of 1 (0%)
    Number of RGB PWM:          0 out of 1 (0%)
    Number of RGB Drivers:      0 out of 1 (0%)
@@ -85,31 +85,38 @@ Command line:   map proj_guitar_hero_impl_1_syn.udb
    Number of SPIs:             0 out of 2 (0%)
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             1 out of 1 (100%)
-   Number of Clocks:  2
-      Net vgaout.clk: 25 loads, 25 rising, 0 falling (Driver: Pin
+   Number of Clocks:  4
+      Net vgaout.clk: 38 loads, 38 rising, 0 falling (Driver: Pin
      vgaout.clock.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
       Net oscillatorin_c: 1 loads, 1 rising, 0 falling (Driver: Port
      oscillatorin)
-   Number of Clock Enables:  1
-      Net vgaout.column_9__N_37: 7 loads, 7 SLICEs
-   Number of LSRs:  5
-      Net vgaout.n5962: 1 loads, 1 SLICEs
-      Net vgaout.n6173: 1 loads, 1 SLICEs
-      Net vgaout.n6251: 1 loads, 1 SLICEs
-      Net vgaout.n5795: 6 loads, 6 SLICEs
-      Net vgaout.n5568: 6 loads, 6 SLICEs
-   Top 10 highest fanout non-clock nets:
-      Net vgaout.column_9__N_37: 9 loads
+      Net update: 31 loads, 31 rising, 0 falling (Driver: Pin
+     counter_292_341__i20/Q)
+      Net clk: 38 loads, 38 rising, 0 falling (Driver: Pin clock/CLKHF)
+   Number of Clock Enables:  2
+      Net VCC_net: 1 loads, 0 SLICEs
+      Net vgaout.column_9__N_259: 7 loads, 7 SLICEs
+   Number of LSRs:  8
+      Net vgaout.n6872: 6 loads, 6 SLICEs
+      Net vgaout.n5631: 4 loads, 4 SLICEs
+      Net vgaout.n141: 1 loads, 1 SLICEs
 
-      Net RGBout_c_3: 6 loads
-      Net vgaout.column[9]: 6 loads
-      Net vgaout.n5568: 6 loads
-      Net vgaout.n5795: 6 loads
-      Net vgaout.row[7]: 6 loads
-      Net vgaout.row[8]: 6 loads
-      Net vgaout.row[9]: 6 loads
-      Net vgaout.column[2]: 5 loads
-      Net vgaout.column[3]: 5 loads
+      Net vgaout.n8010: 1 loads, 1 SLICEs
+      Net vgaout.n5625: 6 loads, 6 SLICEs
+      Net addr[1]: 1 loads, 1 SLICEs
+      Net addr[2]: 2 loads, 2 SLICEs
+      Net to_next_note_31__N_174: 17 loads, 17 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net addr[2]: 27 loads
+      Net addr[1]: 26 loads
+      Net addr[0]: 25 loads
+      Net cur_note[0]: 21 loads
+      Net to_next_note_31__N_174: 18 loads
+      Net cur_note[1]: 14 loads
+      Net cur_note[2]: 10 loads
+      Net to_next_note[0]: 8 loads
+      Net vgaout.column_9__N_259: 8 loads
+      Net VCC_net: 7 loads
 
 
 
@@ -147,21 +154,21 @@ WARNING - map: Top module port 'start' does not connect to anything.
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[4]           | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[5]           | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[3]           | OUTPUT    | LVCMOS33  |       |       |           |
+| RGBout[1]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGBout[2]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[1]           | OUTPUT    | LVCMOS33  |       |       |           |
+| RGBout[3]           | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGBout[4]           | OUTPUT    | LVCMOS33  |       |       |           |
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGBout[5]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGBout[0]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | rgb[5]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-
 | rgb[4]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | rgb[3]              | OUTPUT    | LVCMOS33  |       |       |           |
@@ -214,8 +221,19 @@ PLL 1:                                 Pin/Node Value
   DELAY_ADJUSTMENT_MODE_FEEDBACK:               FIXED
   FDA_FEEDBACK:                                 0
   FILTER_RANGE:                                 0
+
   EXTERNAL_DIVIDE_FACTOR:                       NONE
   TEST Mode:                                    0
+
+OSC Summary
+-----------
+
+OSC 1:                                 Pin/Node Value
+  OSC Instance Name:                            clock
+  Power UP:                            NODE     VCC_net
+  Enable Signal:                       NODE     VCC_net
+  OSC Output:                          NODE     clk
+  DIV Setting:                                  00
 
 
 
@@ -223,8 +241,9 @@ PLL 1:                                 Pin/Node Value
 ---------------
 
 Instance Name: vgaout/clock/lscc_pll_inst/u_PLL_B
-
          Type: PLL
+Instance Name: clock
+         Type: HFOSC
 
 
 
@@ -233,26 +252,7 @@ Instance Name: vgaout/clock/lscc_pll_inst/u_PLL_B
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 54 MB
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   Peak Memory Usage: 57 MB
 
 
 
