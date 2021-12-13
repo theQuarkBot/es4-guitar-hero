@@ -3,25 +3,25 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        262        100.0
+                                  LUT4	       4450        100.0
                                  IOBUF	         15        100.0
-                                PFUREG	        141        100.0
+                                PFUREG	       2536        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                             draw_game	          1         7.6
+                             draw_game	          1        40.7
                         generate_notes	          1         0.0
                      generate_notes_U0	          1         0.0
                      generate_notes_U1	          1         0.0
                      generate_notes_U2	          1         0.0
                      generate_notes_U3	          1         0.0
-                                   vga	          1        20.6
+                                   vga	          1         1.0
 ---------------------------------------------------
 Report for cell vga
    Instance path: top/vgaout
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         54        20.6
-                                PFUREG	         46        32.6
+                                  LUT4	         45         1.0
+                                PFUREG	         46         1.8
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
                                  mypll	          1         0.0
@@ -43,34 +43,39 @@ Report for cell generate_notes
    Instance path: top/make_yellow_note
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                PFUREG	          1         0.7
+                                  LUT4	          2         0.0
+                                PFUREG	          1         0.0
 ---------------------------------------------------
 Report for cell generate_notes_U2
    Instance path: top/make_green_note
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                PFUREG	          1         0.7
+                                  LUT4	          2         0.0
+                                PFUREG	          1         0.0
 ---------------------------------------------------
 Report for cell draw_game
    Instance path: top/get_color
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         20         7.6
+                                  LUT4	       1813        40.7
 ---------------------------------------------------
 Report for cell generate_notes_U0
    Instance path: top/make_red_note
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                PFUREG	          1         0.7
+                                  LUT4	          2         0.0
+                                PFUREG	          1         0.0
 ---------------------------------------------------
 Report for cell generate_notes_U1
    Instance path: top/make_orange_note
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                PFUREG	          1         0.7
+                                  LUT4	          2         0.0
+                                PFUREG	          1         0.0
 ---------------------------------------------------
 Report for cell generate_notes_U3
    Instance path: top/make_blue_note
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                PFUREG	          1         0.7
+                                  LUT4	          2         0.0
+                                PFUREG	          1         0.0

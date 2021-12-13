@@ -1,14 +1,14 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
-Register bits:  141 of 5280 (2.670%)
+Register bits:  2536 of 5280 (48.030%)
 I/O cells:      15
                                   Cell usage:
                                cell     count   Res Usage(%)
                                CCU2        44          100.0
-                            FD1P3XZ       141          100.0
+                            FD1P3XZ      2536          100.0
                          HSOSC_CORE         1          100.0
                                  IB         1          100.0
-                               LUT4       147          100.0
+                               LUT4      1940          100.0
                                  OB        14          100.0
                               PLL_B         1          100.0
 SUB MODULES
@@ -21,20 +21,20 @@ SUB MODULES
                               mypll         1
 mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
                                 vga         1
-                              TOTAL       358
+                              TOTAL      4546
 ----------------------------------------------------------------------
 Report for cell vga.v1
 Instance Path : vgaout
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 FA2        12           27.3
-                            FD1P3XZ        46           32.6
-                               LUT4        30           20.4
+                            FD1P3XZ        46            1.8
+                               LUT4        21            1.1
                               PLL_B         1          100.0
 SUB MODULES
                               mypll         1
 mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
-                              TOTAL        91
+                              TOTAL        82
 ----------------------------------------------------------------------
 Report for cell mypll.v1
 Instance Path : vgaout.clock
@@ -56,40 +56,45 @@ Report for cell generate_notes.v1
 Instance Path : make_yellow_note
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3XZ         1            0.7
-                              TOTAL         1
+                            FD1P3XZ         1            0.0
+                               LUT4         2            0.1
+                              TOTAL         3
 ----------------------------------------------------------------------
 Report for cell generate_notes_U2.v1
 Instance Path : make_green_note
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3XZ         1            0.7
-                              TOTAL         1
+                            FD1P3XZ         1            0.0
+                               LUT4         2            0.1
+                              TOTAL         3
 ----------------------------------------------------------------------
 Report for cell draw_game.v1
 Instance Path : get_color
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4        20           13.6
-                              TOTAL        20
+                               LUT4      1813           93.5
+                              TOTAL      1813
 ----------------------------------------------------------------------
 Report for cell generate_notes_U0.v1
 Instance Path : make_red_note
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3XZ         1            0.7
-                              TOTAL         1
+                            FD1P3XZ         1            0.0
+                               LUT4         2            0.1
+                              TOTAL         3
 ----------------------------------------------------------------------
 Report for cell generate_notes_U1.v1
 Instance Path : make_orange_note
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3XZ         1            0.7
-                              TOTAL         1
+                            FD1P3XZ         1            0.0
+                               LUT4         2            0.1
+                              TOTAL         3
 ----------------------------------------------------------------------
 Report for cell generate_notes_U3.v1
 Instance Path : make_blue_note
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3XZ         1            0.7
-                              TOTAL         1
+                            FD1P3XZ         1            0.0
+                               LUT4         2            0.1
+                              TOTAL         3

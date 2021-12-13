@@ -124,7 +124,8 @@ signal gen_b : std_logic := '0';
 signal gen_o : std_logic := '0';
 
 signal cur_note : integer := 0;
-signal to_next_note : integer;
+signal to_next_note : integer := 0;
+signal num_pixels : integer := 0;
 
 signal counterzz  : unsigned(479 downto 0) := 480d"0";
 
@@ -196,47 +197,54 @@ begin
 
 	process (update) begin
 		if rising_edge(update) then
-			if (to_next_note >= 80) then
-				to_next_note <= 0;
-				cur_note <= cur_note + 1;
-			else
-				to_next_note <= to_next_note + 1;
-			end if;
+			--num_pixels <= num_pixels + 1;
+			--if (to_next_note >= 80) then
+				--to_next_note <= 0;
+				--cur_note <= cur_note + 1;
+			--else
+				--to_next_note <= to_next_note + 1;
+			--end if;
 			
-			col_green  <= col_green(479 downto 1)  & gen_g;
-			col_red    <= col_red(479 downto 1)    & gen_r;
-			col_yellow <= col_yellow(479 downto 1) & gen_y;
-			col_blue   <= col_blue(479 downto 1)   & gen_b;
-			col_orange <= col_orange(479 downto 1) & gen_o;
+			col_green  <= col_green(478 downto 0)  & gen_g;
+			col_red    <= col_red(478 downto 0)    & gen_r;
+			col_yellow <= col_yellow(478 downto 0) & gen_y;
+			col_blue   <= col_blue(478 downto 0)   & gen_b;
+			col_orange <= col_orange(478 downto 0) & gen_o;
 		end if;
 	end process;
 
-	process (to_next_note) begin
-		if to_next_note < 5 then
-			addr <= std_logic_vector(to_unsigned(to_next_note, 3));
-		end if;
-	end process;
+	--process (num_pixels) begin
+		--if rising_edge(num_pixels) then
+			
+		--end if;
+	--end process;
+
+	--process (to_next_note) begin
+		--if to_next_note < 5 then
+			--addr <= std_logic_vector(to_unsigned(to_next_note, 3));
+		--end if;
+	--end process;
 	
 	--addr <= "000";
-	--rand1 <= '1';
-	--rand2 <= '1';
-	--rand3 <= '1';
-	--rand4 <= '1';
-	--rand5 <= '1';
+	rand1 <= '1';
+	rand2 <= '1';
+	rand3 <= '1';
+	rand4 <= '1';
+	rand5 <= '1';
 	
-	process (data) begin
-		if (to_next_note = 1) then
-			rand1 <= data(cur_note);
-		elsif (to_next_note = 2) then
-			rand2 <= data(cur_note);
-		elsif (to_next_note = 3) then
-			rand3 <= data(cur_note);
-		elsif (to_next_note = 4) then
-			rand4 <= data(cur_note);
-		elsif (to_next_note = 5) then
-			rand5 <= data(cur_note);
-		end if;
-	end process;
+	--process (data) begin
+		--if (to_next_note = 1) then
+			--rand1 <= data(cur_note);
+		--elsif (to_next_note = 2) then
+			--rand2 <= data(cur_note);
+		--elsif (to_next_note = 3) then
+			--rand3 <= data(cur_note);
+		--elsif (to_next_note = 4) then
+			--rand4 <= data(cur_note);
+		--elsif (to_next_note = 5) then
+			--rand5 <= data(cur_note);
+		--end if;
+	--end process;
 
 	-- Generate new row when needed
 	make_green_note  : generate_notes port map(col_green , rand1, gen_g, update);

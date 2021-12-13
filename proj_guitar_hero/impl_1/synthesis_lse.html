@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Dec 12 21:05:11 2021
+Sun Dec 12 21:23:06 2021
 
 
 Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f proj_guitar_hero_impl_1_lattice.synproj -gui -msgset //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/promote.xml 
@@ -239,16 +239,16 @@ WARNING - synthesis: I/O Port rgb[3] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port rgb[2] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port rgb[1] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port rgb[0] 's net has no driver and is unused.
-WARNING - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(140): net \vgaout/clock/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
 WARNING - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(139): net \vgaout/clock/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
+WARNING - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(140): net \vgaout/clock/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
 ######## Missing driver on net rgb[5]. Patching with GND.
 ######## Missing driver on net rgb[4]. Patching with GND.
 ######## Missing driver on net rgb[3]. Patching with GND.
 ######## Missing driver on net rgb[2]. Patching with GND.
 ######## Missing driver on net rgb[1]. Patching with GND.
 ######## Missing driver on net rgb[0]. Patching with GND.
-######## Missing driver on net \vgaout/clock/lscc_pll_inst/sdi_i. Patching with GND.
 ######## Missing driver on net \vgaout/clock/lscc_pll_inst/sclk_i. Patching with GND.
+######## Missing driver on net \vgaout/clock/lscc_pll_inst/sdi_i. Patching with GND.
 
 
 
@@ -302,7 +302,7 @@ Combinational loop found : 6
 
 	Net rand3_N_211 
 
-	Instance rand3_I_31 
+	Instance rand3_I_1 
 
 	Net rand3_N_212 
 
@@ -312,17 +312,17 @@ Combinational loop found : 7
 
 	Net rand4 
 
-	Instance mux_239_i1 
+	Instance mux_234_i1 
 
 Combinational loop found : 8
 
 	Net rand5 
 
-	Instance i234 
+	Instance i229 
 
 Duplicate register/latch removal. data_i17 is a one-to-one match with data_i2.
-Duplicate register/latch removal. data_i35 is a one-to-one match with data_i7.
 Duplicate register/latch removal. data_i31 is a one-to-one match with data_i46.
+Duplicate register/latch removal. data_i35 is a one-to-one match with data_i7.
 Duplicate register/latch removal. data_i44 is a one-to-one match with data_i1.
 Duplicate register/latch removal. data_i41 is a one-to-one match with data_i35.
 Duplicate register/latch removal. data_i14 is a one-to-one match with data_i13.
@@ -341,7 +341,7 @@ Duplicate register/latch removal. data_i27 is a one-to-one match with data_i8.
 Duplicate register/latch removal. data_i25 is a one-to-one match with data_i20.
 Duplicate register/latch removal. data_i24 is a one-to-one match with data_i49.
 Duplicate register/latch removal. data_i36 is a one-to-one match with data_i11.
-Duplicate register/latch removal. data_i34 is a one-to-one match with data_i40.
+Duplicate register/latch removal. data_i40 is a one-to-one match with data_i34.
 Duplicate register/latch removal. data_i32 is a one-to-one match with data_i4.
 Duplicate register/latch removal. data_i30 is a one-to-one match with data_i6.
 Duplicate register/latch removal. data_i19 is a one-to-one match with data_i9.
@@ -350,12 +350,12 @@ Duplicate register/latch removal. data_i19 is a one-to-one match with data_i9.
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
 ################### Begin Area Report (top)######################
-Number of register bits => 141 of 5280 (2 % )
+Number of register bits => 2536 of 5280 (48 % )
 CCU2 => 44
-FD1P3XZ => 141
+FD1P3XZ => 2536
 HSOSC_CORE => 1
 IB => 1
-LUT4 => 147
+LUT4 => 1940
 OB => 14
 PLL_B => 1
 ################### End Area Report ##################
@@ -376,23 +376,23 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
+  Net : vgaout/col[1], loads : 840
+  Net : vgaout/col[0], loads : 840
+  Net : vgaout/col[2], loads : 348
+  Net : vgaout/col[3], loads : 195
+  Net : vgaout/col[4], loads : 81
+  Net : vgaout/col[5], loads : 61
   Net : to_next_note_31__N_174, loads : 33
   Net : addr[2], loads : 27
   Net : addr[1], loads : 26
   Net : addr[0], loads : 25
-  Net : cur_note[0], loads : 21
-  Net : cur_note[1], loads : 14
-  Net : vgaout/column_9__N_259, loads : 12
-  Net : cur_note[2], loads : 10
-  Net : vgaout/n6872, loads : 10
-  Net : vgaout/n5625, loads : 10
 ################### End Clock Report ##################
 
-Peak Memory Usage: 119 MB
+Peak Memory Usage: 128 MB
 
 --------------------------------------------------------------
-Total CPU Time: 2 secs 
-Total REAL Time: 4 secs 
+Total CPU Time: 5 secs 
+Total REAL Time: 13 secs 
 --------------------------------------------------------------
 
 

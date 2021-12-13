@@ -5,7 +5,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Sun Dec 12 21:05:28 2021
+Mapped on: Sun Dec 12 21:23:33 2021
 
 Design Information
 ------------------
@@ -18,11 +18,11 @@ Command line:   map proj_guitar_hero_impl_1_syn.udb
 Design Summary
 --------------
 
-   Number of slice registers: 141 out of  5280 (3%)
+   Number of slice registers: 2536 out of  5280 (48%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           262 out of  5280 (5%)
-      Number of logic LUT4s:             149
-      Number of inserted feedthru LUT4s:  25
+   Number of LUT4s:           4450 out of  5280 (84%)
+      Number of logic LUT4s:             1942
+      Number of inserted feedthru LUT4s: 2420
       Number of ripple logic:             44 (88 LUT4s)
    Number of IO sites used:   15 out of 39 (38%)
       Number of IO sites used for general PIO: 15
@@ -50,16 +50,16 @@ Design Summary
      vgaout.clock.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
       Net oscillatorin_c: 1 loads, 1 rising, 0 falling (Driver: Port
      oscillatorin)
-      Net update: 31 loads, 31 rising, 0 falling (Driver: Pin
-     counter_292_341__i20/Q)
+      Net update: 2426 loads, 2426 rising, 0 falling (Driver: Pin
+     counter_287_336__i20/Q)
       Net clk: 38 loads, 38 rising, 0 falling (Driver: Pin clock/CLKHF)
    Number of Clock Enables:  2
       Net VCC_net: 1 loads, 0 SLICEs
       Net vgaout.column_9__N_259: 7 loads, 7 SLICEs
-   Number of LSRs:  8
-      Net vgaout.n6872: 6 loads, 6 SLICEs
-      Net vgaout.n5631: 4 loads, 4 SLICEs
-      Net vgaout.n141: 1 loads, 1 SLICEs
+   Number of LSRs:  13
+      Net vgaout.n41: 1 loads, 1 SLICEs
+      Net vgaout.n10425: 6 loads, 6 SLICEs
+      Net vgaout.n11436: 6 loads, 6 SLICEs
 
                                     Page 1
 
@@ -69,22 +69,27 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
-      Net vgaout.n8010: 1 loads, 1 SLICEs
-      Net vgaout.n5625: 6 loads, 6 SLICEs
-      Net addr[1]: 1 loads, 1 SLICEs
-      Net addr[2]: 2 loads, 2 SLICEs
+      Net vgaout.n10431: 4 loads, 4 SLICEs
+      Net vgaout.n16058: 1 loads, 1 SLICEs
+      Net make_yellow_note.new_box: 1 loads, 1 SLICEs
       Net to_next_note_31__N_174: 17 loads, 17 SLICEs
+      Net addr[2]: 2 loads, 2 SLICEs
+      Net addr[1]: 1 loads, 1 SLICEs
+      Net make_green_note.new_box: 1 loads, 1 SLICEs
+      Net make_red_note.new_box: 1 loads, 1 SLICEs
+      Net make_orange_note.new_box: 1 loads, 1 SLICEs
+      Net make_blue_note.new_box: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
+      Net col[0]: 841 loads
+      Net col[1]: 841 loads
+      Net col[2]: 349 loads
+      Net col[3]: 196 loads
+      Net col[4]: 82 loads
+      Net col[5]: 62 loads
       Net addr[2]: 27 loads
       Net addr[1]: 26 loads
       Net addr[0]: 25 loads
-      Net cur_note[0]: 21 loads
-      Net to_next_note_31__N_174: 18 loads
-      Net cur_note[1]: 14 loads
-      Net cur_note[2]: 10 loads
-      Net to_next_note[0]: 8 loads
-      Net vgaout.column_9__N_259: 8 loads
-      Net VCC_net: 7 loads
+      Net col[7]: 21 loads
 
 
 
@@ -121,11 +126,6 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGBout[1]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[2]           | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[3]           | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[4]           | OUTPUT    | LVCMOS33  |       |       |           |
 
                                     Page 2
 
@@ -135,6 +135,11 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
+| RGBout[2]           | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGBout[3]           | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| RGBout[4]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGBout[5]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -187,11 +192,6 @@ PLL 1:                                 Pin/Node Value
   PLLOUT_SELECT_PORTB:                          SHIFTREG_0deg
   SHIFTREG_DIV_MODE:                            0
   DELAY_ADJUSTMENT_MODE_RELATIVE:               FIXED
-  FDA_RELATIVE:                                 0
-  FEEDBACK_PATH:                                SIMPLE
-  DELAY_ADJUSTMENT_MODE_FEEDBACK:               FIXED
-  FDA_FEEDBACK:                                 0
-  FILTER_RANGE:                                 0
 
                                     Page 3
 
@@ -201,6 +201,11 @@ PLL 1:                                 Pin/Node Value
 
 PLL/DLL Summary (cont)
 ----------------------
+  FDA_RELATIVE:                                 0
+  FEEDBACK_PATH:                                SIMPLE
+  DELAY_ADJUSTMENT_MODE_FEEDBACK:               FIXED
+  FDA_FEEDBACK:                                 0
+  FILTER_RANGE:                                 0
   EXTERNAL_DIVIDE_FACTOR:                       NONE
   TEST Mode:                                    0
 
@@ -225,14 +230,9 @@ Instance Name: clock
 Run Time and Memory Usage
 -------------------------
 
-   Total CPU Time: 0 secs
-   Total REAL Time: 0 secs
-   Peak Memory Usage: 57 MB
-
-
-
-
-
+   Total CPU Time: 1 secs
+   Total REAL Time: 2 secs
+   Peak Memory Usage: 116 MB
 
 
 
