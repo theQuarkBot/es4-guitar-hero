@@ -1,0 +1,45 @@
+#Start recording tcl command: 12/13/2021 10:13:11
+#Project Location: //vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero; Project name: proj_guitar_hero
+prj_open "//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/proj_guitar_hero.rdf"
+prj_add_source "//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd"
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+launch_programmer_prj "C:/Program Files/lscc/radiant/3.0"
+prj_disable_source "//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Export -impl impl_1
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 12/13/2021 12:15:42
