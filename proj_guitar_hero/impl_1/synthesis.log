@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Dec 12 21:23:06 2021
+Sun Dec 12 21:34:52 2021
 
 
 Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f proj_guitar_hero_impl_1_lattice.synproj -gui -msgset //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/promote.xml 
@@ -309,7 +309,7 @@ CCU2 => 44
 FD1P3XZ => 2536
 HSOSC_CORE => 1
 IB => 1
-LUT4 => 1940
+LUT4 => 1919
 OB => 14
 PLL_B => 1
 ################### End Area Report ##################
@@ -327,12 +327,12 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : vgaout/col[1], loads : 840
-  Net : vgaout/col[0], loads : 840
-  Net : vgaout/col[2], loads : 348
-  Net : vgaout/col[3], loads : 195
-  Net : vgaout/col[4], loads : 81
-  Net : vgaout/col[5], loads : 61
+  Net : vgaout/col[1], loads : 882
+  Net : vgaout/col[0], loads : 812
+  Net : vgaout/col[2], loads : 334
+  Net : vgaout/col[3], loads : 187
+  Net : vgaout/col[4], loads : 93
+  Net : vgaout/col[5], loads : 57
   Net : to_next_note_31__N_174, loads : 33
   Net : addr[2], loads : 27
   Net : addr[1], loads : 26

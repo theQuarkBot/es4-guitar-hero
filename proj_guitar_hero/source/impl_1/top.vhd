@@ -125,7 +125,6 @@ signal gen_o : std_logic := '0';
 
 signal cur_note : integer := 0;
 signal to_next_note : integer := 0;
-signal num_pixels : integer := 0;
 
 signal counterzz  : unsigned(479 downto 0) := 480d"0";
 
@@ -197,13 +196,12 @@ begin
 
 	process (update) begin
 		if rising_edge(update) then
-			--num_pixels <= num_pixels + 1;
-			--if (to_next_note >= 80) then
-				--to_next_note <= 0;
-				--cur_note <= cur_note + 1;
-			--else
-				--to_next_note <= to_next_note + 1;
-			--end if;
+			if (to_next_note >= 80) then
+				to_next_note <= 0;
+				cur_note <= cur_note + 1;
+			else
+				to_next_note <= to_next_note + 1;
+			end if;
 			
 			col_green  <= col_green(478 downto 0)  & gen_g;
 			col_red    <= col_red(478 downto 0)    & gen_r;
@@ -213,38 +211,25 @@ begin
 		end if;
 	end process;
 
-	--process (num_pixels) begin
-		--if rising_edge(num_pixels) then
-			
-		--end if;
-	--end process;
-
-	--process (to_next_note) begin
-		--if to_next_note < 5 then
-			--addr <= std_logic_vector(to_unsigned(to_next_note, 3));
-		--end if;
-	--end process;
+	process (to_next_note) begin
+		if to_next_note < 5 then
+			addr <= std_logic_vector(to_unsigned(to_next_note, 3));
+		end if;
+	end process;
 	
-	--addr <= "000";
-	rand1 <= '1';
-	rand2 <= '1';
-	rand3 <= '1';
-	rand4 <= '1';
-	rand5 <= '1';
-	
-	--process (data) begin
-		--if (to_next_note = 1) then
-			--rand1 <= data(cur_note);
-		--elsif (to_next_note = 2) then
-			--rand2 <= data(cur_note);
-		--elsif (to_next_note = 3) then
-			--rand3 <= data(cur_note);
-		--elsif (to_next_note = 4) then
-			--rand4 <= data(cur_note);
-		--elsif (to_next_note = 5) then
-			--rand5 <= data(cur_note);
-		--end if;
-	--end process;
+	process (data) begin
+		if (to_next_note = 0) then
+			rand1 <= data(cur_note);
+		elsif (to_next_note = 1) then
+			rand2 <= data(cur_note);
+		elsif (to_next_note = 2) then
+			rand3 <= data(cur_note);
+		elsif (to_next_note = 3) then
+			rand4 <= data(cur_note);
+		elsif (to_next_note = 4) then
+			rand5 <= data(cur_note);
+		end if;
+	end process;
 
 	-- Generate new row when needed
 	make_green_note  : generate_notes port map(col_green , rand1, gen_g, update);
@@ -252,41 +237,6 @@ begin
 	make_yellow_note : generate_notes port map(col_yellow, rand3, gen_y, update);
 	make_blue_note   : generate_notes port map(col_blue  , rand4, gen_b, update);
 	make_orange_note : generate_notes port map(col_orange, rand5, gen_o, update);
-	
-	
-	
-	------------------------------------------------------------------------------------------
-	-- Shift the notes down one row
-	--process (update) begin
-		--if rising_edge(update) then
-			
-			--counterzz <= counterzz + '1';
-			--if (addrcountlogic = "000") then
-				--addr <= "000";
-				--col_green  <= col_green(478 downto 0)  & data(to_integer(counterzz));
-				--addrcounter <= addrcounter + '1';
-			--elsif (addrcountlogic = "001") then
-				--addr <= "001";
-				--col_red    <= col_red(478 downto 0)    & data(to_integer(counterzz));
-				--addrcounter <= addrcounter + '1';
-			--elsif (addrcountlogic = "010") then
-				--addr <= "010";
-				--col_yellow <= col_yellow(478 downto 0) & data(to_integer(counterzz));
-				--addrcounter <= addrcounter + '1';
-			--elsif (addrcountlogic = "011") then
-				--addr <= "011";
-				--col_blue   <= col_blue(478 downto 0)   & data(to_integer(counterzz));
-				--addrcounter <= addrcounter + '1';
-			--elsif (addrcountlogic = "100") then
-				--addr <= "100";
-				--col_orange <= col_orange(478 downto 0) & data(to_integer(counterzz));
-				--addrcounter <= addrcounter + '1';
-			--elsif (addrcountlogic = "101") then
-				--addrcounter <= "000";
-			--end if;
-			
-		--end if;
-	--end process;
 
 	------------------------------------------------------------------------------------------
 	
