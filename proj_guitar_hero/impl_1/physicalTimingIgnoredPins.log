@@ -1,34 +1,29 @@
-SLICE/D1 input vgaout.SLICE_0 has no outgoing device arc
-SLICE/CIN1 input vgaout.SLICE_0 has no outgoing device arc
-     ** vgaout.SLICE_0/COUT0 is driving a pin on an incomplete path
-SLICE/C0 input vgaout.SLICE_0 is on an incomplete path
-SLICE/CIN0 input vgaout.SLICE_0 is on an incomplete path
-SLICE/D1 input vgaout.SLICE_6 has no outgoing device arc
-SLICE/CIN1 input vgaout.SLICE_6 has no outgoing device arc
-     ** vgaout.SLICE_6/COUT0 is driving a pin on an incomplete path
-SLICE/C0 input vgaout.SLICE_6 is on an incomplete path
-SLICE/CIN0 input vgaout.SLICE_6 is on an incomplete path
-SLICE/COUT0 GND  vgaout.SLICE_5
-     *** vgaout.SLICE_5/D1 is driven by constant or a pin on an incomplete path
-     *** vgaout.SLICE_5/CIN1 is driven by constant or a pin on an incomplete path
-SLICE/COUT0 GND  vgaout.SLICE_11
-     *** vgaout.SLICE_11/D1 is driven by constant or a pin on an incomplete path
-     *** vgaout.SLICE_11/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/COUT0 GND  vgaout.SLICE_8
+     *** vgaout.SLICE_8/D1 is driven by constant or a pin on an incomplete path
+     *** vgaout.SLICE_8/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/D1 input vgaout.SLICE_9 has no outgoing device arc
+SLICE/CIN1 input vgaout.SLICE_9 has no outgoing device arc
+     ** vgaout.SLICE_9/COUT0 is driving a pin on an incomplete path
+SLICE/C0 input vgaout.SLICE_9 is on an incomplete path
+SLICE/CIN0 input vgaout.SLICE_9 is on an incomplete path
+SLICE/COUT0 GND  vgaout.SLICE_7
+     *** vgaout.SLICE_7/D1 is driven by constant or a pin on an incomplete path
+     *** vgaout.SLICE_7/CIN1 is driven by constant or a pin on an incomplete path
+SLICE/D1 input vgaout.SLICE_11 has no outgoing device arc
+SLICE/CIN1 input vgaout.SLICE_11 has no outgoing device arc
+     ** vgaout.SLICE_11/COUT0 is driving a pin on an incomplete path
+SLICE/C0 input vgaout.SLICE_11 is on an incomplete path
+SLICE/CIN0 input vgaout.SLICE_11 is on an incomplete path
 PLL/RESET_N input vgaout.clock.lscc_pll_inst.u_PLL_Bis connected to a constant net
 PLL/INTFBOUT output  vgaout.clock.lscc_pll_inst.u_PLL_B has no incoming device arc
      *** vgaout.clock.lscc_pll_inst.u_PLL_B/FEEDBACK is driven by constant or a pin on an incomplete path
-SLICE/F0 VCC  SLICE_32
-     *** vgaout.SLICE_5/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout.SLICE_11/B1 is driven by constant or a pin on an incomplete path
-SLICE/F0 GND  SLICE_34
-     *** RGBout_pad[2].bb_inst/PADDO is driven by constant or a pin on an incomplete path
-     *** RGBout_pad[1].bb_inst/PADDO is driven by constant or a pin on an incomplete path
+SLICE/F0 VCC  SLICE_45
+     *** vgaout.SLICE_7/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout.SLICE_8/B1 is driven by constant or a pin on an incomplete path
+SLICE/F0 GND  SLICE_48
      *** rgb_pad[5].bb_inst/PADDO is driven by constant or a pin on an incomplete path
      *** rgb_pad[4].bb_inst/PADDO is driven by constant or a pin on an incomplete path
      *** rgb_pad[3].bb_inst/PADDO is driven by constant or a pin on an incomplete path
      *** rgb_pad[2].bb_inst/PADDO is driven by constant or a pin on an incomplete path
      *** rgb_pad[1].bb_inst/PADDO is driven by constant or a pin on an incomplete path
      *** rgb_pad[0].bb_inst/PADDO is driven by constant or a pin on an incomplete path
-     *** RGBout_pad[4].bb_inst/PADDO is driven by constant or a pin on an incomplete path
-     *** RGBout_pad[3].bb_inst/PADDO is driven by constant or a pin on an incomplete path
-     *** RGBout_pad[5].bb_inst/PADDO is driven by constant or a pin on an incomplete path

@@ -9,6 +9,3 @@ WARNING - Top module port 'pressing[1]' does not connect to anything.
 WARNING - Top module port 'pressing[0]' does not connect to anything.
 WARNING - Top module port 'reset' does not connect to anything.
 WARNING - Top module port 'start' does not connect to anything.
-Starting: parse design source files
-INFO - //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28,14-28,19) (VHDL-1201) re-analyze unit 'synth' since unit 'hsosc_uniq_1' is overwritten or removed
-INFO - //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18,14-18,19) (VHDL-1201) re-analyze unit 'synth' since unit 'mypll_uniq_1' is overwritten or removed

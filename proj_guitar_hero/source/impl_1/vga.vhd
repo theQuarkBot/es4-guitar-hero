@@ -33,7 +33,8 @@ begin
   clock : mypll port map (ref_clk_i => pllin, rst_n_i => a, outcore_o => pllpinout, outglobal_o => clk);
   process(clk) begin
     if rising_edge(clk) then
-	  
+	  rowout <= row;
+	  colout <= column;
 	  
 	  if row = "0000000000" then
 	    if column < "111101010" then

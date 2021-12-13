@@ -1,8 +1,8 @@
 <HTML>
 <HEAD>
 <TITLE>PAD Specification File</TITLE>
-<link href="file:///D:/Apps/Lattice Radiant/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
-<link href="file:///D:/Apps/Lattice Radiant/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/Program Files/lscc/radiant/3.0/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
 <style type="text/css">
 #toc {
   position: fixed;
@@ -48,27 +48,27 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Sat Dec 11 23:48:42 2021
+Sun Dec 12 20:29:25 2021
 
 Pinout by Port Name:
 +--------------+----------+--------------+-------+--------------------+
 | Port Name    | Pin/Bank | Buffer Type  | Site  | Properties         |
 +--------------+----------+--------------+-------+--------------------+
 | HSYNCout     | 25/0     | LVCMOS33_OUT | PR20B | DRIVE:8mA PULL:NA  |
-| RGBout[0]    | 31/0     | LVCMOS33_OUT | PR17B | DRIVE:8mA PULL:NA  |
-| RGBout[1]    | 37/0     | LVCMOS33_OUT | PR14A | DRIVE:8mA PULL:NA  |
+| RGBout[0]    | 28/0     | LVCMOS33_OUT | PR18A | DRIVE:8mA PULL:NA  |
+| RGBout[1]    | 27/0     | LVCMOS33_OUT | PR19B | DRIVE:8mA PULL:NA  |
 | RGBout[2]    | 32/0     | LVCMOS33_OUT | PR17A | DRIVE:8mA PULL:NA  |
 | RGBout[3]    | 35/0     | LVCMOS33_OUT | PR13B | DRIVE:8mA PULL:NA  |
-| RGBout[4]    | 28/0     | LVCMOS33_OUT | PR18A | DRIVE:8mA PULL:NA  |
-| RGBout[5]    | 27/0     | LVCMOS33_OUT | PR19B | DRIVE:8mA PULL:NA  |
+| RGBout[4]    | 31/0     | LVCMOS33_OUT | PR17B | DRIVE:8mA PULL:NA  |
+| RGBout[5]    | 37/0     | LVCMOS33_OUT | PR14A | DRIVE:8mA PULL:NA  |
 | VSYNCout     | 23/0     | LVCMOS33_OUT | PR20A | DRIVE:8mA PULL:NA  |
 | oscillatorin | 20/1     | LVCMOS33_IN  | PL20B | PULL:100K          |
-| rgb[0]       | 10/1     | LVCMOS33_OUT | PL17A | DRIVE:8mA PULL:NA  |
-| rgb[1]       | 9/1      | LVCMOS33_OUT | PL16A | DRIVE:8mA PULL:NA  |
-| rgb[2]       | 34/0     | LVCMOS33_OUT | PR14B | DRIVE:8mA PULL:NA  |
-| rgb[3]       | 21/1     | LVCMOS33_OUT | PL19B | DRIVE:8mA PULL:NA  |
-| rgb[4]       | 12/1     | LVCMOS33_OUT | PL19A | DRIVE:8mA PULL:NA  |
-| rgb[5]       | 6/1      | LVCMOS33_OUT | PL14B | DRIVE:8mA PULL:NA  |
+| rgb[0]       | 17/1     | LVCMOS33_OUT | PL24B | DRIVE:8mA PULL:NA  |
+| rgb[1]       | 19/1     | LVCMOS33_OUT | PL22B | DRIVE:8mA PULL:NA  |
+| rgb[2]       | 14/1     | LVCMOS33_OUT | PL24A | DRIVE:8mA PULL:NA  |
+| rgb[3]       | 16/1     | LVCMOS33_OUT | PL25B | DRIVE:8mA PULL:NA  |
+| rgb[4]       | 18/1     | LVCMOS33_OUT | PL23B | DRIVE:8mA PULL:NA  |
+| rgb[5]       | 15/1     | LVCMOS33_OUT | PL25A | DRIVE:8mA PULL:NA  |
 +--------------+----------+--------------+-------+--------------------+
 
 Vccio by Bank:
@@ -86,31 +86,31 @@ Vccio by Bank:
 | 2/2      |     unused, PULL:UP |            |              | PL9A  |                  |
 | 3/2      |     unused, PULL:UP |            |              | PL10B |                  |
 | 4/2      |     unused, PULL:UP |            |              | PL10A |                  |
-| 6/1      | rgb[5]              |            | LVCMOS33_OUT | PL14B |                  |
-| 9/1      | rgb[1]              |            | LVCMOS33_OUT | PL16A |                  |
-| 10/1     | rgb[0]              |            | LVCMOS33_OUT | PL17A |                  |
+| 6/1      |     unused, PULL:UP |            |              | PL14B |                  |
+| 9/1      |     unused, PULL:UP |            |              | PL16A |                  |
+| 10/1     |     unused, PULL:UP |            |              | PL17A |                  |
 | 11/1     |     unused, PULL:UP |            |              | PL18A |                  |
-| 12/1     | rgb[4]              |            | LVCMOS33_OUT | PL19A |                  |
+| 12/1     |     unused, PULL:UP |            |              | PL19A |                  |
 | 13/1     |     unused, PULL:UP |            |              | PL20A |                  |
-| 14/1     |     unused, PULL:UP |            |              | PL24A | SPI_SO           |
-| 15/1     |     unused, PULL:UP |            |              | PL25A | SPISCK           |
-| 16/1     |     unused, PULL:UP |            |              | PL25B | SPI_SS           |
-| 17/1     |     unused, PULL:UP |            |              | PL24B | SPI_SI           |
-| 18/1     |     unused, PULL:UP |            |              | PL23B |                  |
-| 19/1     |     unused, PULL:UP |            |              | PL22B |                  |
+| 14/1     | rgb[2]              |            | LVCMOS33_OUT | PL24A | SPI_SO           |
+| 15/1     | rgb[5]              |            | LVCMOS33_OUT | PL25A | SPISCK           |
+| 16/1     | rgb[3]              |            | LVCMOS33_OUT | PL25B | SPI_SS           |
+| 17/1     | rgb[0]              |            | LVCMOS33_OUT | PL24B | SPI_SI           |
+| 18/1     | rgb[4]              |            | LVCMOS33_OUT | PL23B |                  |
+| 19/1     | rgb[1]              |            | LVCMOS33_OUT | PL22B |                  |
 | 20/1     | oscillatorin        | LOCATED    | LVCMOS33_IN  | PL20B | PCLKT1_0         |
-| 21/1     | rgb[3]              |            | LVCMOS33_OUT | PL19B |                  |
+| 21/1     |     unused, PULL:UP |            |              | PL19B |                  |
 | 23/0     | VSYNCout            | LOCATED    | LVCMOS33_OUT | PR20A |                  |
 | 25/0     | HSYNCout            | LOCATED    | LVCMOS33_OUT | PR20B |                  |
 | 26/0     |     unused, PULL:UP |            |              | PR19A |                  |
-| 27/0     | RGBout[5]           | LOCATED    | LVCMOS33_OUT | PR19B |                  |
-| 28/0     | RGBout[4]           | LOCATED    | LVCMOS33_OUT | PR18A |                  |
-| 31/0     | RGBout[0]           | LOCATED    | LVCMOS33_OUT | PR17B |                  |
+| 27/0     | RGBout[1]           | LOCATED    | LVCMOS33_OUT | PR19B |                  |
+| 28/0     | RGBout[0]           | LOCATED    | LVCMOS33_OUT | PR18A |                  |
+| 31/0     | RGBout[4]           | LOCATED    | LVCMOS33_OUT | PR17B |                  |
 | 32/0     | RGBout[2]           | LOCATED    | LVCMOS33_OUT | PR17A |                  |
-| 34/0     | rgb[2]              |            | LVCMOS33_OUT | PR14B |                  |
+| 34/0     |     unused, PULL:UP |            |              | PR14B |                  |
 | 35/0     | RGBout[3]           | LOCATED    | LVCMOS33_OUT | PR13B | GPLL_IN/PCLKT0_1 |
 | 36/0     |     unused, PULL:UP |            |              | PR10B |                  |
-| 37/0     | RGBout[1]           | LOCATED    | LVCMOS33_OUT | PR14A | PCLKT0_0         |
+| 37/0     | RGBout[5]           | LOCATED    | LVCMOS33_OUT | PR14A | PCLKT0_0         |
 | 38/0     |     unused, PULL:UP |            |              | PR9B  |                  |
 | 39/0     |                     |            |              | PR5A  | RGB0             |
 | 40/0     |                     |            |              | PR6A  | RGB1             |
@@ -145,27 +145,27 @@ Vccio by Bank:
 Locate Constraints for each Pin: 
 
 ldc_set_location -site {25} [ get_ports {HSYNCout} ]
-ldc_set_location -site {31} [ get_ports {RGBout[0]} ]
-ldc_set_location -site {37} [ get_ports {RGBout[1]} ]
+ldc_set_location -site {28} [ get_ports {RGBout[0]} ]
+ldc_set_location -site {27} [ get_ports {RGBout[1]} ]
 ldc_set_location -site {32} [ get_ports {RGBout[2]} ]
 ldc_set_location -site {35} [ get_ports {RGBout[3]} ]
-ldc_set_location -site {28} [ get_ports {RGBout[4]} ]
-ldc_set_location -site {27} [ get_ports {RGBout[5]} ]
+ldc_set_location -site {31} [ get_ports {RGBout[4]} ]
+ldc_set_location -site {37} [ get_ports {RGBout[5]} ]
 ldc_set_location -site {23} [ get_ports {VSYNCout} ]
 ldc_set_location -site {20} [ get_ports {oscillatorin} ]
-ldc_set_location -site {10} [ get_ports {rgb[0]} ]
-ldc_set_location -site {9} [ get_ports {rgb[1]} ]
-ldc_set_location -site {34} [ get_ports {rgb[2]} ]
-ldc_set_location -site {21} [ get_ports {rgb[3]} ]
-ldc_set_location -site {12} [ get_ports {rgb[4]} ]
-ldc_set_location -site {6} [ get_ports {rgb[5]} ]
+ldc_set_location -site {17} [ get_ports {rgb[0]} ]
+ldc_set_location -site {19} [ get_ports {rgb[1]} ]
+ldc_set_location -site {14} [ get_ports {rgb[2]} ]
+ldc_set_location -site {16} [ get_ports {rgb[3]} ]
+ldc_set_location -site {18} [ get_ports {rgb[4]} ]
+ldc_set_location -site {15} [ get_ports {rgb[5]} ]
 
 
 
 
 
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Sat Dec 11 23:48:42 2021
+Sun Dec 12 20:29:25 2021
 
 
 

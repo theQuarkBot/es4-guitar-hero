@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Dec 11 23:48:45 2021
+Sun Dec 12 20:29:28 2021
 
 
 Command: bitgen -w -freq 0 -gui proj_guitar_hero_impl_1.udb 
@@ -21,5 +21,5 @@ Preference Summary:
 
 
 Creating bit map...
-Saving bit stream in "C:\Users\Philip Lengyel\Documents\ES4Final\es4-guitar-hero\proj_guitar_hero\impl_1\proj_guitar_hero_impl_1.bin".
+Saving bit stream in "\\vs-home\npower03\es4\es4-guitar-hero\proj_guitar_hero\impl_1\proj_guitar_hero_impl_1.bin".
 Bitstream generation complete!

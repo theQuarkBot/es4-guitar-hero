@@ -46,7 +46,7 @@ if (a)
 <A name="timing_rpt_top">Timing Report</A><B><U><big></big></U></B>
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Sat Dec 11 23:48:44 2021
+Sun Dec 12 20:29:27 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -170,22 +170,24 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-vgaout/row_137__i9/D                    |    No arrival or required
-vgaout/row_137__i9/SR                   |    No arrival or required
-vgaout/row_137__i8/D                    |    No arrival or required
-vgaout/row_137__i7/D                    |    No arrival or required
-{vgaout/row_137__i7/SR   vgaout/row_137__i8/SR}                           
+vgaout/column_187__i8/D                 |    No arrival or required
+vgaout/column_187__i7/D                 |    No arrival or required
+{vgaout/column_187__i7/SP   vgaout/column_187__i8/SP}                           
                                         |    No arrival or required
-vgaout/row_137__i6/D                    |    No arrival or required
-vgaout/row_137__i5/D                    |    No arrival or required
-{vgaout/row_137__i5/SR   vgaout/row_137__i6/SR}                           
+{vgaout/column_187__i7/SR   vgaout/column_187__i8/SR}                           
                                         |    No arrival or required
-vgaout/row_137__i4/D                    |    No arrival or required
-vgaout/row_137__i3/D                    |    No arrival or required
+vgaout/row_188__i8/D                    |    No arrival or required
+vgaout/row_188__i7/D                    |    No arrival or required
+{vgaout/row_188__i7/SR   vgaout/row_188__i8/SR}                           
+                                        |    No arrival or required
+vgaout/row_188__i2/D                    |    No arrival or required
+vgaout/row_188__i1/D                    |    No arrival or required
+{vgaout/row_188__i1/SR   vgaout/row_188__i2/SR}                           
+                                        |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
-ts                                      |                        44
+ts                                      |                        55
                                         |                          
 -------------------------------------------------------------------
 
@@ -213,10 +215,10 @@ pressing[1]                             |                     input
 pressing[0]                             |                     input
 reset                                   |                     input
 start                                   |                     input
-RGBout[0]                               |                    output
+RGBout[4]                               |                    output
 -------------------------------------------------------------------
                                         |                          
-Number of I/O ports without constraint  |                        12
+Number of I/O ports without constraint  |                        17
                                         |                          
 -------------------------------------------------------------------
 
