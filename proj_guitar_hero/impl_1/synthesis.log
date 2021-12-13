@@ -5,10 +5,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Dec 12 21:34:52 2021
+Mon Dec 13 10:22:20 2021
 
 
-Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f proj_guitar_hero_impl_1_lattice.synproj -gui -msgset //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/promote.xml 
+Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f proj_guitar_hero_impl_1_lattice.synproj -gui -msgset //vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/promote.xml 
 
 Synthesis options:
 The -a option is iCE40UP.
@@ -70,23 +70,25 @@ The -syn option is FALSE.
 -sdc option: SDC file input is proj_guitar_hero_impl_1_cpe.ldc.
 -vh2008
 
--path //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero (searchpath added)
--path //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1 (searchpath added)
--path //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll (searchpath added)
+-path //vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero (searchpath added)
+-path //vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/impl_1 (searchpath added)
+-path //vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/mypll (searchpath added)
 -path C:/Program Files/lscc/radiant/3.0/ispfpga/ice40tp/data (searchpath added)
 Mixed language design
 Verilog design file = C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v
-Verilog design file = //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v
+Verilog design file = //vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v
 VHDL library = pmi
 VHDL design file = C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd
 VHDL library = work
-VHDL design file = //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd
+VHDL design file = //vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd
 VHDL library = work
-VHDL design file = //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd
+VHDL design file = //vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd
 VHDL library = work
-VHDL design file = //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd
+VHDL design file = //vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd
 VHDL library = work
-VHDL design file = //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd
+VHDL design file = //vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd
+VHDL library = work
+VHDL design file = //vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
 Compile design.
 Compile Design Begin
@@ -124,32 +126,37 @@ INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dp_be.v(49): 
 INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(16): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v. VERI-1328
 INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ram_dq_be.v(45): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/../common/ram_dq/rtl/lscc_ram_dq.v. VERI-1328
 INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_dsp.v. VERI-1328
-Analyzing Verilog file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v. VERI-1482
+Analyzing Verilog file //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v. VERI-1482
 Analyzing VHDL file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd. VHDL-1481
 Analyzing VHDL file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd
 
 INFO - synthesis: c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd(4): analyzing package components. VHDL-1014
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd
+Analyzing VHDL file //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd. VHDL-1481
+Analyzing VHDL file //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd
 
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(10): analyzing entity top. VHDL-1012
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd
+INFO - synthesis: //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(10): analyzing entity top. VHDL-1012
+INFO - synthesis: //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd. VHDL-1481
+Analyzing VHDL file //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd
 
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10): analyzing entity draw_game. VHDL-1012
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(27): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd
+INFO - synthesis: //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10): analyzing entity draw_game. VHDL-1012
+INFO - synthesis: //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(29): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd. VHDL-1481
+Analyzing VHDL file //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd
 
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(9): analyzing entity generate_notes. VHDL-1012
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(18): analyzing architecture synth. VHDL-1010
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd
+INFO - synthesis: //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(9): analyzing entity generate_notes. VHDL-1012
+INFO - synthesis: //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(18): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd. VHDL-1481
+Analyzing VHDL file //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd
 
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
-INFO - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): analyzing architecture synth. VHDL-1010
-INFO - synthesis: The default VHDL library search path is now "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1". VHDL-1504
+INFO - synthesis: //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(5): analyzing entity vga. VHDL-1012
+INFO - synthesis: //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): analyzing architecture synth. VHDL-1010
+Analyzing VHDL file //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd. VHDL-1481
+Analyzing VHDL file //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd
+
+INFO - synthesis: //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd(6): analyzing entity game_score. VHDL-1012
+INFO - synthesis: //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd(17): analyzing architecture synth. VHDL-1010
+INFO - synthesis: The default VHDL library search path is now "//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/impl_1". VHDL-1504
 Top module language type = VHDL.
 unit top is not yet analyzed. VHDL-1485
 Top module name (VHDL, mixed language): top
@@ -182,12 +189,7 @@ WARNING - synthesis: Initial value found on net gen_r will be ignored due to unr
 WARNING - synthesis: Initial value found on net gen_y will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net gen_b will be ignored due to unrecognized driver type
 WARNING - synthesis: Initial value found on net gen_o will be ignored due to unrecognized driver type
-WARNING - synthesis: I/O Port pressing[5] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port pressing[4] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port pressing[3] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port pressing[2] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port pressing[1] 's net has no driver and is unused.
-WARNING - synthesis: I/O Port pressing[0] 's net has no driver and is unused.
+WARNING - synthesis: //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(127): net curr_color[5] does not have a driver. VDB-1002
 WARNING - synthesis: I/O Port reset 's net has no driver and is unused.
 WARNING - synthesis: I/O Port start 's net has no driver and is unused.
 WARNING - synthesis: I/O Port rgb[5] 's net has no driver and is unused.
@@ -196,8 +198,8 @@ WARNING - synthesis: I/O Port rgb[3] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port rgb[2] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port rgb[1] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port rgb[0] 's net has no driver and is unused.
-WARNING - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(139): net \vgaout/clock/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
-WARNING - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(140): net \vgaout/clock/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
+WARNING - synthesis: //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(139): net \vgaout/clock/lscc_pll_inst/sclk_i does not have a driver. VDB-1002
+WARNING - synthesis: //vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(140): net \vgaout/clock/lscc_pll_inst/sdi_i does not have a driver. VDB-1002
 ######## Missing driver on net rgb[5]. Patching with GND.
 ######## Missing driver on net rgb[4]. Patching with GND.
 ######## Missing driver on net rgb[3]. Patching with GND.
@@ -209,7 +211,6 @@ WARNING - synthesis: //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/myp
 
 
 
-WARNING - synthesis: I/O Port pressing[5] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port pressing[4] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port pressing[3] 's net has no driver and is unused.
 WARNING - synthesis: I/O Port pressing[2] 's net has no driver and is unused.
@@ -247,7 +248,7 @@ Combinational loop found : 5
 
 	Instance rand2_I_0_2 
 
-	Net rand2_N_209 
+	Net rand2_N_215 
 
 	Instance rand2_I_0 
 
@@ -257,11 +258,11 @@ Combinational loop found : 6
 
 	Instance rand3_I_0_2 
 
-	Net rand3_N_211 
+	Net rand3_N_217 
 
-	Instance rand3_I_1 
+	Instance rand3_I_161 
 
-	Net rand3_N_212 
+	Net rand3_N_218 
 
 	Instance rand3_I_0 
 
@@ -269,17 +270,17 @@ Combinational loop found : 7
 
 	Net rand4 
 
-	Instance mux_234_i1 
+	Instance mux_243_i1 
 
 Combinational loop found : 8
 
 	Net rand5 
 
-	Instance i229 
+	Instance i238 
 
 Duplicate register/latch removal. data_i17 is a one-to-one match with data_i2.
-Duplicate register/latch removal. data_i31 is a one-to-one match with data_i46.
 Duplicate register/latch removal. data_i35 is a one-to-one match with data_i7.
+Duplicate register/latch removal. data_i31 is a one-to-one match with data_i46.
 Duplicate register/latch removal. data_i44 is a one-to-one match with data_i1.
 Duplicate register/latch removal. data_i41 is a one-to-one match with data_i35.
 Duplicate register/latch removal. data_i14 is a one-to-one match with data_i13.
@@ -298,7 +299,7 @@ Duplicate register/latch removal. data_i27 is a one-to-one match with data_i8.
 Duplicate register/latch removal. data_i25 is a one-to-one match with data_i20.
 Duplicate register/latch removal. data_i24 is a one-to-one match with data_i49.
 Duplicate register/latch removal. data_i36 is a one-to-one match with data_i11.
-Duplicate register/latch removal. data_i40 is a one-to-one match with data_i34.
+Duplicate register/latch removal. data_i34 is a one-to-one match with data_i40.
 Duplicate register/latch removal. data_i32 is a one-to-one match with data_i4.
 Duplicate register/latch removal. data_i30 is a one-to-one match with data_i6.
 Duplicate register/latch removal. data_i19 is a one-to-one match with data_i9.
@@ -308,7 +309,7 @@ Number of register bits => 2536 of 5280 (48 % )
 CCU2 => 44
 FD1P3XZ => 2536
 HSOSC_CORE => 1
-IB => 1
+IB => 2
 LUT4 => 1919
 OB => 14
 PLL_B => 1
@@ -327,19 +328,19 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : vgaout/col[1], loads : 882
-  Net : vgaout/col[0], loads : 812
-  Net : vgaout/col[2], loads : 334
-  Net : vgaout/col[3], loads : 187
-  Net : vgaout/col[4], loads : 93
-  Net : vgaout/col[5], loads : 57
-  Net : to_next_note_31__N_174, loads : 33
+  Net : vgaout/col[1], loads : 870
+  Net : vgaout/col[0], loads : 820
+  Net : vgaout/col[2], loads : 332
+  Net : vgaout/col[3], loads : 198
+  Net : vgaout/col[4], loads : 85
+  Net : vgaout/col[5], loads : 60
+  Net : to_next_note_31__N_180, loads : 33
   Net : addr[2], loads : 27
   Net : addr[1], loads : 26
   Net : addr[0], loads : 25
 ################### End Clock Report ##################
 
-Peak Memory Usage: 128 MB
+Peak Memory Usage: 130 MB
 
 --------------------------------------------------------------
 Total CPU Time: 5 secs 

@@ -1,13 +1,13 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
 Register bits:  2536 of 5280 (48.030%)
-I/O cells:      15
+I/O cells:      16
                                   Cell usage:
                                cell     count   Res Usage(%)
                                CCU2        44          100.0
                             FD1P3XZ      2536          100.0
                          HSOSC_CORE         1          100.0
-                                 IB         1          100.0
+                                 IB         2          100.0
                                LUT4      1919          100.0
                                  OB        14          100.0
                               PLL_B         1          100.0
@@ -21,7 +21,7 @@ SUB MODULES
                               mypll         1
 mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
                                 vga         1
-                              TOTAL      4525
+                              TOTAL      4526
 ----------------------------------------------------------------------
 Report for cell vga.v1
 Instance Path : vgaout
@@ -29,12 +29,12 @@ Instance Path : vgaout
                                cell     count   Res Usage(%)
                                 FA2        12           27.3
                             FD1P3XZ        46            1.8
-                               LUT4        20            1.0
+                               LUT4        27            1.4
                               PLL_B         1          100.0
 SUB MODULES
                               mypll         1
 mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
-                              TOTAL        81
+                              TOTAL        88
 ----------------------------------------------------------------------
 Report for cell mypll.v1
 Instance Path : vgaout.clock
@@ -72,8 +72,8 @@ Report for cell draw_game.v1
 Instance Path : get_color
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4      1795           93.5
-                              TOTAL      1795
+                               LUT4      1790           93.3
+                              TOTAL      1790
 ----------------------------------------------------------------------
 Report for cell generate_notes_U0.v1
 Instance Path : make_red_note

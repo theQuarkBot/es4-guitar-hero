@@ -6,7 +6,7 @@ Performance Grade:      High-Performance_1.2V
 PACKAGE:          SG48
 Package Status:                     Preliminary    Version 1.5
 
-Sun Dec 12 21:35:52 2021
+Mon Dec 13 10:25:02 2021
 
 Pinout by Port Name:
 +--------------+----------+--------------+-------+--------------------+
@@ -21,12 +21,13 @@ Pinout by Port Name:
 | RGBout[5]    | 37/0     | LVCMOS33_OUT | PR14A | DRIVE:8mA PULL:NA  |
 | VSYNCout     | 23/0     | LVCMOS33_OUT | PR20A | DRIVE:8mA PULL:NA  |
 | oscillatorin | 20/1     | LVCMOS33_IN  | PL20B | PULL:100K          |
-| rgb[0]       | 16/1     | LVCMOS33_OUT | PL25B | DRIVE:8mA PULL:NA  |
-| rgb[1]       | 15/1     | LVCMOS33_OUT | PL25A | DRIVE:8mA PULL:NA  |
-| rgb[2]       | 18/1     | LVCMOS33_OUT | PL23B | DRIVE:8mA PULL:NA  |
-| rgb[3]       | 14/1     | LVCMOS33_OUT | PL24A | DRIVE:8mA PULL:NA  |
-| rgb[4]       | 17/1     | LVCMOS33_OUT | PL24B | DRIVE:8mA PULL:NA  |
-| rgb[5]       | 19/1     | LVCMOS33_OUT | PL22B | DRIVE:8mA PULL:NA  |
+| pressing[5]  | 4/2      | LVCMOS33_IN  | PL10A | PULL:100K          |
+| rgb[0]       | 17/1     | LVCMOS33_OUT | PL24B | DRIVE:8mA PULL:NA  |
+| rgb[1]       | 14/1     | LVCMOS33_OUT | PL24A | DRIVE:8mA PULL:NA  |
+| rgb[2]       | 12/1     | LVCMOS33_OUT | PL19A | DRIVE:8mA PULL:NA  |
+| rgb[3]       | 19/1     | LVCMOS33_OUT | PL22B | DRIVE:8mA PULL:NA  |
+| rgb[4]       | 18/1     | LVCMOS33_OUT | PL23B | DRIVE:8mA PULL:NA  |
+| rgb[5]       | 13/1     | LVCMOS33_OUT | PL20A | DRIVE:8mA PULL:NA  |
 +--------------+----------+--------------+-------+--------------------+
 
 Vccio by Bank:
@@ -35,6 +36,7 @@ Vccio by Bank:
 +------+-------+
 | 0    | 3.3V  |
 | 1    | 3.3V  |
+| 2    | 3.3V  |
 +------+-------+
 
 Pinout by Pin Number:
@@ -43,19 +45,19 @@ Pinout by Pin Number:
 +----------+---------------------+------------+--------------+-------+------------------+
 | 2/2      |     unused, PULL:UP |            |              | PL9A  |                  |
 | 3/2      |     unused, PULL:UP |            |              | PL10B |                  |
-| 4/2      |     unused, PULL:UP |            |              | PL10A |                  |
+| 4/2      | pressing[5]         | LOCATED    | LVCMOS33_IN  | PL10A |                  |
 | 6/1      |     unused, PULL:UP |            |              | PL14B |                  |
 | 9/1      |     unused, PULL:UP |            |              | PL16A |                  |
 | 10/1     |     unused, PULL:UP |            |              | PL17A |                  |
 | 11/1     |     unused, PULL:UP |            |              | PL18A |                  |
-| 12/1     |     unused, PULL:UP |            |              | PL19A |                  |
-| 13/1     |     unused, PULL:UP |            |              | PL20A |                  |
-| 14/1     | rgb[3]              |            | LVCMOS33_OUT | PL24A | SPI_SO           |
-| 15/1     | rgb[1]              |            | LVCMOS33_OUT | PL25A | SPISCK           |
-| 16/1     | rgb[0]              |            | LVCMOS33_OUT | PL25B | SPI_SS           |
-| 17/1     | rgb[4]              |            | LVCMOS33_OUT | PL24B | SPI_SI           |
-| 18/1     | rgb[2]              |            | LVCMOS33_OUT | PL23B |                  |
-| 19/1     | rgb[5]              |            | LVCMOS33_OUT | PL22B |                  |
+| 12/1     | rgb[2]              |            | LVCMOS33_OUT | PL19A |                  |
+| 13/1     | rgb[5]              |            | LVCMOS33_OUT | PL20A |                  |
+| 14/1     | rgb[1]              |            | LVCMOS33_OUT | PL24A | SPI_SO           |
+| 15/1     |     unused, PULL:UP |            |              | PL25A | SPISCK           |
+| 16/1     |     unused, PULL:UP |            |              | PL25B | SPI_SS           |
+| 17/1     | rgb[0]              |            | LVCMOS33_OUT | PL24B | SPI_SI           |
+| 18/1     | rgb[4]              |            | LVCMOS33_OUT | PL23B |                  |
+| 19/1     | rgb[3]              |            | LVCMOS33_OUT | PL22B |                  |
 | 20/1     | oscillatorin        | LOCATED    | LVCMOS33_IN  | PL20B | PCLKT1_0         |
 | 21/1     |     unused, PULL:UP |            |              | PL19B |                  |
 | 23/0     | VSYNCout            | LOCATED    | LVCMOS33_OUT | PR20A |                  |
@@ -111,17 +113,18 @@ ldc_set_location -site {31} [ get_ports {RGBout[4]} ]
 ldc_set_location -site {37} [ get_ports {RGBout[5]} ]
 ldc_set_location -site {23} [ get_ports {VSYNCout} ]
 ldc_set_location -site {20} [ get_ports {oscillatorin} ]
-ldc_set_location -site {16} [ get_ports {rgb[0]} ]
-ldc_set_location -site {15} [ get_ports {rgb[1]} ]
-ldc_set_location -site {18} [ get_ports {rgb[2]} ]
-ldc_set_location -site {14} [ get_ports {rgb[3]} ]
-ldc_set_location -site {17} [ get_ports {rgb[4]} ]
-ldc_set_location -site {19} [ get_ports {rgb[5]} ]
+ldc_set_location -site {4} [ get_ports {pressing[5]} ]
+ldc_set_location -site {17} [ get_ports {rgb[0]} ]
+ldc_set_location -site {14} [ get_ports {rgb[1]} ]
+ldc_set_location -site {12} [ get_ports {rgb[2]} ]
+ldc_set_location -site {19} [ get_ports {rgb[3]} ]
+ldc_set_location -site {18} [ get_ports {rgb[4]} ]
+ldc_set_location -site {13} [ get_ports {rgb[5]} ]
 
 
 
 
 
 Copyright 2015 Lattice Semiconductor Corporation, All Rights Reserved
-Sun Dec 12 21:35:52 2021
+Mon Dec 13 10:25:02 2021
 

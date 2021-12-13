@@ -3,24 +3,24 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	       4429        100.0
-                                 IOBUF	         15        100.0
+                                  LUT4	       4428        100.0
+                                 IOBUF	         16        100.0
                                 PFUREG	       2536        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                             draw_game	          1        40.5
+                             draw_game	          1        40.4
                         generate_notes	          1         0.0
                      generate_notes_U0	          1         0.0
                      generate_notes_U1	          1         0.0
                      generate_notes_U2	          1         0.0
                      generate_notes_U3	          1         0.0
-                                   vga	          1         1.0
+                                   vga	          1         1.2
 ---------------------------------------------------
 Report for cell vga
    Instance path: top/vgaout
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         44         1.0
+                                  LUT4	         51         1.2
                                 PFUREG	         46         1.8
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
@@ -57,7 +57,7 @@ Report for cell draw_game
    Instance path: top/get_color
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	       1795        40.5
+                                  LUT4	       1788        40.4
 ---------------------------------------------------
 Report for cell generate_notes_U0
    Instance path: top/make_red_note

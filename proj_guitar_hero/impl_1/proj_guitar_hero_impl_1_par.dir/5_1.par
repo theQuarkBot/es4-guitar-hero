@@ -1,6 +1,6 @@
 
 Lattice Place and Route Report for Design "proj_guitar_hero_impl_1_map.udb"
-Sun Dec 12 21:35:27 2021
+Mon Dec 13 10:24:37 2021
 
 PAR: Place And Route Radiant Software (64-bit) 3.0.0.24.1.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
@@ -18,10 +18,49 @@ Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
+WARNING - par: Unable to find the instance/port 'pressing[0]' in the constraint 'ldc_set_location -site {2} [get_ports {pressing[0]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {2} [get_ports {pressing[0]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[1]' in the constraint 'ldc_set_location -site {46} [get_ports {pressing[1]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {46} [get_ports {pressing[1]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[2]' in the constraint 'ldc_set_location -site {47} [get_ports {pressing[2]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {47} [get_ports {pressing[2]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[3]' in the constraint 'ldc_set_location -site {45} [get_ports {pressing[3]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {45} [get_ports {pressing[3]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[4]' in the constraint 'ldc_set_location -site {48} [get_ports {pressing[4]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {48} [get_ports {pressing[4]}]', the locate object is not specified
+
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: Missing master pin for instance 'vgaout.clock.lscc_pll_inst.u_PLL_B'.
-WARNING - par: Top module port 'pressing[5]' does not connect to anything.
+WARNING - par: Unable to find the instance/port 'pressing[0]' in the constraint 'ldc_set_location -site {2} [get_ports {pressing[0]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {2} [get_ports {pressing[0]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[1]' in the constraint 'ldc_set_location -site {46} [get_ports {pressing[1]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {46} [get_ports {pressing[1]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[2]' in the constraint 'ldc_set_location -site {47} [get_ports {pressing[2]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {47} [get_ports {pressing[2]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[3]' in the constraint 'ldc_set_location -site {45} [get_ports {pressing[3]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {45} [get_ports {pressing[3]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[4]' in the constraint 'ldc_set_location -site {48} [get_ports {pressing[4]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {48} [get_ports {pressing[4]}]', the locate object is not specified
+
 WARNING - par: Top module port 'pressing[4]' does not connect to anything.
 WARNING - par: Top module port 'pressing[3]' does not connect to anything.
 WARNING - par: Top module port 'pressing[2]' does not connect to anything.
@@ -29,7 +68,6 @@ WARNING - par: Top module port 'pressing[1]' does not connect to anything.
 WARNING - par: Top module port 'pressing[0]' does not connect to anything.
 WARNING - par: Top module port 'reset' does not connect to anything.
 WARNING - par: Top module port 'start' does not connect to anything.
-WARNING - par: Top module port 'pressing[5]' does not connect to anything.
 WARNING - par: Top module port 'pressing[4]' does not connect to anything.
 WARNING - par: Top module port 'pressing[3]' does not connect to anything.
 WARNING - par: Top module port 'pressing[2]' does not connect to anything.
@@ -37,7 +75,6 @@ WARNING - par: Top module port 'pressing[1]' does not connect to anything.
 WARNING - par: Top module port 'pressing[0]' does not connect to anything.
 WARNING - par: Top module port 'reset' does not connect to anything.
 WARNING - par: Top module port 'start' does not connect to anything.
-WARNING - par: Top module port 'pressing[5]' does not connect to anything.
 WARNING - par: Top module port 'pressing[4]' does not connect to anything.
 WARNING - par: Top module port 'pressing[3]' does not connect to anything.
 WARNING - par: Top module port 'pressing[2]' does not connect to anything.
@@ -45,7 +82,6 @@ WARNING - par: Top module port 'pressing[1]' does not connect to anything.
 WARNING - par: Top module port 'pressing[0]' does not connect to anything.
 WARNING - par: Top module port 'reset' does not connect to anything.
 WARNING - par: Top module port 'start' does not connect to anything.
-WARNING - par: Top module port 'pressing[5]' does not connect to anything.
 WARNING - par: Top module port 'pressing[4]' does not connect to anything.
 WARNING - par: Top module port 'pressing[3]' does not connect to anything.
 WARNING - par: Top module port 'pressing[2]' does not connect to anything.
@@ -57,11 +93,11 @@ Number of Signals: 7042
 Number of Connections: 14824
 Device utilization summary:
 
-   SLICE (est.)    2284/2640         86% used
-     LUT           4429/5280         83% used
+   SLICE (est.)    2287/2640         86% used
+     LUT           4428/5280         83% used
      REG           2536/5280         48% used
-   PIO               15/56           26% used
-                     15/36           41% bonded
+   PIO               16/56           28% used
+                     16/36           44% bonded
    IOLOGIC            0/56            0% used
    DSP                0/8             0% used
    I2C                0/2             0% used
@@ -80,10 +116,10 @@ Device utilization summary:
    OPENDRAIN          0/3             0% used
 
 Pin Constraint Summary:
-   9 out of 15 pins locked (60% locked).
+   10 out of 16 pins locked (62% locked).
 .
 ..........
-Finished Placer Phase 0 (HIER). CPU time: 8 secs , REAL time: 9 secs 
+Finished Placer Phase 0 (HIER). CPU time: 9 secs , REAL time: 9 secs 
 
 
 ................
@@ -91,9 +127,9 @@ Finished Placer Phase 0 (AP).  CPU time: 12 secs , REAL time: 13 secs
 
 Starting Placer Phase 1. CPU time: 12 secs , REAL time: 13 secs 
 ..  ..
-.....................
+......................
 
-Placer score = 467168.
+Placer score = 475297.
 
 Device SLICE utilization summary after final SLICE packing:
    SLICE           2290/2640         86% used
@@ -101,12 +137,32 @@ Device SLICE utilization summary after final SLICE packing:
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: Missing master pin for instance 'vgaout.clock.lscc_pll_inst.u_PLL_B'.
+WARNING - par: Unable to find the instance/port 'pressing[0]' in the constraint 'ldc_set_location -site {2} [get_ports {pressing[0]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {2} [get_ports {pressing[0]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[1]' in the constraint 'ldc_set_location -site {46} [get_ports {pressing[1]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {46} [get_ports {pressing[1]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[2]' in the constraint 'ldc_set_location -site {47} [get_ports {pressing[2]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {47} [get_ports {pressing[2]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[3]' in the constraint 'ldc_set_location -site {45} [get_ports {pressing[3]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {45} [get_ports {pressing[3]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[4]' in the constraint 'ldc_set_location -site {48} [get_ports {pressing[4]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {48} [get_ports {pressing[4]}]', the locate object is not specified
+
 Finished Placer Phase 1. CPU time: 22 secs , REAL time: 23 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  574305
+Placer score =  563910
 Finished Placer Phase 2.  CPU time: 24 secs , REAL time: 25 secs 
 
 
@@ -115,7 +171,7 @@ Finished Placer Phase 2.  CPU time: 24 secs , REAL time: 25 secs
 Global Clocks :
   PRIMARY "vgaout.clk" from OUTGLOBAL on comp "vgaout.clock.lscc_pll_inst.u_PLL_B" on site "PLL_R13C32", clk load = 26, ce load = 0, sr load = 0
   PRIMARY "clk" from comp "clock" on site "HFOSC_R1C32", clk load = 27, ce load = 0, sr load = 0
-  PRIMARY "update" from Q0 on comp "SLICE_31" on site "R13C5C", clk load = 1226, ce load = 0, sr load = 0
+  PRIMARY "update" from Q0 on comp "SLICE_21" on site "R13C5C", clk load = 1226, ce load = 0, sr load = 0
 
   PRIMARY  : 3 out of 8 (37%)
 
@@ -123,9 +179,9 @@ Global Clocks :
 
 
 I/O Usage Summary (final):
-   15 out of 56 (26.8%) I/O sites used.
-   15 out of 36 (41.7%) bonded I/O sites used.
-   Number of I/O comps: 15; differential: 0
+   16 out of 56 (28.6%) I/O sites used.
+   16 out of 36 (44.4%) bonded I/O sites used.
+   Number of I/O comps: 16; differential: 0
    Number of Vref pins used: 0
 
 I/O Bank Usage Summary:
@@ -134,15 +190,35 @@ I/O Bank Usage Summary:
 +----------+---------------+------------+------------+------------+
 | 0        | 8 / 14 ( 57%) | 3.3V       |            |            |
 | 1        | 7 / 14 ( 50%) | 3.3V       |            |            |
-| 2        | 0 / 8 (  0%)  | OFF        |            |            |
+| 2        | 1 / 8 ( 12%)  | 3.3V       |            |            |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 24 secs , REAL time: 25 secs 
+Total Placer CPU time: 25 secs , REAL time: 25 secs 
 
 Writing design to file proj_guitar_hero_impl_1_par.dir/5_1.udb ...
 
+WARNING - par: Unable to find the instance/port 'pressing[0]' in the constraint 'ldc_set_location -site {2} [get_ports {pressing[0]}]'
 
-Start NBR router at 21:35:52 12/12/21
+WARNING - par: In the constraint 'ldc_set_location -site {2} [get_ports {pressing[0]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[1]' in the constraint 'ldc_set_location -site {46} [get_ports {pressing[1]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {46} [get_ports {pressing[1]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[2]' in the constraint 'ldc_set_location -site {47} [get_ports {pressing[2]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {47} [get_ports {pressing[2]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[3]' in the constraint 'ldc_set_location -site {45} [get_ports {pressing[3]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {45} [get_ports {pressing[3]}]', the locate object is not specified
+
+WARNING - par: Unable to find the instance/port 'pressing[4]' in the constraint 'ldc_set_location -site {48} [get_ports {pressing[4]}]'
+
+WARNING - par: In the constraint 'ldc_set_location -site {48} [get_ports {pressing[4]}]', the locate object is not specified
+
+
+Start NBR router at 10:25:02 12/13/21
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -185,27 +261,30 @@ WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: Missing master pin for instance 'vgaout.clock.lscc_pll_inst.u_PLL_B'.
 
-Start NBR section for initial routing at 21:35:53 12/12/21
+Start NBR section for initial routing at 10:25:03 12/13/21
 Level 4, iteration 1
-109(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 9.618ns/0.000ns; real time: 5 secs 
+119(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 9.618ns/0.000ns; real time: 6 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 21:35:57 12/12/21
+Start NBR section for normal routing at 10:25:08 12/13/21
 Level 4, iteration 1
 4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 9.618ns/0.000ns; real time: 6 secs 
 Level 4, iteration 2
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 9.618ns/0.000ns; real time: 7 secs 
+Level 4, iteration 3
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 9.618ns/0.000ns; real time: 6 secs 
+Estimated worst slack/total negative slack<setup>: 9.618ns/0.000ns; real time: 7 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 21:35:58 12/12/21
+Start NBR section for setup/hold timing optimization with effort level 3 at 10:25:09 12/13/21
 
 Starting full timing analysis...
 
-Start NBR section for post-routing at 21:35:59 12/12/21
+Start NBR section for post-routing at 10:25:10 12/13/21
 WARNING - par: No master clock for
 	generated clock	create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] .
 WARNING - par: Missing master pin for instance 'vgaout.clock.lscc_pll_inst.u_PLL_B'.
@@ -225,7 +304,7 @@ Notes: The timing info is calculated for SETUP only.
 
 Starting full timing analysis...
 Total CPU time 10 secs 
-Total REAL time: 10 secs 
+Total REAL time: 11 secs 
 Completely routed.
 End of route.  13599 routed (100.00%); 0 unrouted.
 
@@ -243,9 +322,9 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = 1.887
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 35 secs 
-Total REAL Time: 36 secs 
-Peak Memory Usage: 198 MB
+Total CPU  Time: 36 secs 
+Total REAL Time: 37 secs 
+Peak Memory Usage: 197 MB
 
 
 par done!

@@ -1,360 +1,5 @@
 
-"C:/Program Files/lscc/radiant/3.0/tcltk/windows/bin/tclsh" "proj_guitar_hero_impl_1_synthesize.tcl"
-
-cpe -f proj_guitar_hero_impl_1.cprj mypll.cprj -a iCE40UP -o proj_guitar_hero_impl_1_cpe.ldc
-WARNING - No LDC/SDC file specified.Analyzing Verilog file C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v. VERI-1482
-INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328INFO - "C:/Programanalyzing included file . VERI-1328Analyzing Verilog file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v. VERI-1482
-Analyzing Verilog file C:/Program Files/lscc/radiant/3.0/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v. VERI-1482
-Top module name (Verilog): mypll
-INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(11):compiling module . VERI-1018INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(105):compiling module . VERI-1018INFO - "C:/Programcompiling module . VERI-1018Last elaborated design is mypll()
-Source compile complete.
-INFO - Setting top as top module.WARNING - No LDC/SDC file specified.Analyzing Verilog file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v. VERI-1482
-INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328Analyzing Verilog file mypll.v. VERI-1482
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd
-
-INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(10):analyzing entity . VHDL-1012INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28):analyzing architecture . VHDL-1010Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd
-
-INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10):analyzing entity . VHDL-1012INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(27):analyzing architecture . VHDL-1010Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd
-
-INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(9):analyzing entity . VHDL-1012INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(18):analyzing architecture . VHDL-1010Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd
-
-INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(5):analyzing entity . VHDL-1012INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18):analyzing architecture . VHDL-1010INFO - The default VHDL library search path is now "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1". VHDL-1504Top module language type = VHDL.
-unit top is not yet analyzed. VHDL-1485
-Top module name (VHDL, mixed language): top
-Source compile complete.
-Starting IP constraint check for mypll.
-Writing output files.
-CPE Completed. proj_guitar_hero_impl_1_cpe.ldc and CPEReport.txt produced.
-
-
-synthesis -f proj_guitar_hero_impl_1_lattice.synproj
-synthesis:  version Radiant Software (64-bit) 3.0.0.24.1
-
-Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
-Copyright (c) 1995 AT&T Corp.   All rights reserved.
-Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
-Copyright (c) 2001 Agere Systems   All rights reserved.
-Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Dec 12 21:34:52 2021
-
-
-Command Line:  C:\Program Files\lscc\radiant\3.0\ispfpga\bin\nt64\synthesis.exe -f proj_guitar_hero_impl_1_lattice.synproj -gui -msgset //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/promote.xml 
-
-INFO - synthesis: Lattice Synthesis Engine Launched.
-Synthesis options:
-The -a option is iCE40UP.
-The -t option is SG48.
-The -sp option is High-Performance_1.2V.
-The -p option is iCE40UP5K.
-                                                          
-
-
-##########################################################
-
-
-### Lattice Family     : iCE40UP
-
-
-### Device             : iCE40UP5K
-
-
-### Package            : SG48
-
-
-### Performance Grade  : High-Performance_1.2V
-
-
-                                                         
-
-
-INFO - User-Selected Strategy SettingsOptimization goal = Area
-Top-level module name = top.
-Target frequency = 200.000000 MHz.
-Maximum fanout = 1000.
-Timing path count = 3
-RWCheckOnRam = 0
-
-BRAM utilization = 100.000000 %
-DSP usage = true
-DSP utilization = 100.000000 %
-fsm_encoding_style = auto
-resolve_mixed_drivers = 0
-fix_gated_clocks = 1
-
-
-Mux style = auto (Default)
-Use Carry Chain = true
-carry_chain_length = 0
-Loop Limit = 1950.
-Use IO Insertion = TRUE
-Use IO Reg = AUTO
-
-Resource Sharing = TRUE
-Propagate Constants = TRUE
-Remove Duplicate Registers = TRUE
-Output HDL file name = proj_guitar_hero_impl_1.vm.
-ROM style = auto
-RAM style = auto
-The -comp option is FALSE.
-The -syn option is FALSE.
--sdc option: SDC file input is proj_guitar_hero_impl_1_cpe.ldc.
--vh2008
-
--path //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero (searchpath added)
--path //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1 (searchpath added)
--path //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll (searchpath added)
--path C:/Program Files/lscc/radiant/3.0/ispfpga/ice40tp/data (searchpath added)
-Mixed language design
-Verilog design file = C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.v
-Verilog design file = //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v
-VHDL library = pmi
-VHDL design file = C:/Program Files/lscc/radiant/3.0/ip/pmi/pmi_iCE40UP.vhd
-VHDL library = work
-VHDL design file = //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd
-VHDL library = work
-VHDL design file = //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd
-VHDL library = work
-VHDL design file = //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd
-VHDL library = work
-VHDL design file = //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd
-The -r option is OFF. [ Remove LOC Properties is OFF. ]
-Compile design.
-Compile Design Begin
-Analyzing Verilog file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.v. VERI-1482
-INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328INFO - "c:/programanalyzing included file . VERI-1328Analyzing Verilog file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v. VERI-1482
-Analyzing VHDL file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd. VHDL-1481
-Analyzing VHDL file c:/program files/lscc/radiant/3.0/ip/pmi/pmi_ice40up.vhd
-
-INFO - "c:/programanalyzing package . VHDL-1014Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd
-
-INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(10):analyzing entity . VHDL-1012INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28):analyzing architecture . VHDL-1010Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd
-
-INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10):analyzing entity . VHDL-1012INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(27):analyzing architecture . VHDL-1010Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd
-
-INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(9):analyzing entity . VHDL-1012INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(18):analyzing architecture . VHDL-1010Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd. VHDL-1481
-Analyzing VHDL file //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd
-
-INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(5):analyzing entity . VHDL-1012INFO - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18):analyzing architecture . VHDL-1010INFO - The default VHDL library search path is now "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1". VHDL-1504Top module language type = VHDL.
-unit top is not yet analyzed. VHDL-1485
-Top module name (VHDL, mixed language): top
-                                                         
-
-
-### Number of Logic Cells: 5280
-
-
-### Number of RAM Blocks: 30
-
-
-### Number of DSP Blocks: 8
-
-
-### Number of PLLs: 1
-
-
-### Number of IO Pins: 56
-
-
-##########################################################
-
-
-                                                         
-
-
-WARNING - Initial value found on net gen_g will be ignored due to unrecognized driver typeWARNING - Initial value found on net gen_r will be ignored due to unrecognized driver typeWARNING - Initial value found on net gen_y will be ignored due to unrecognized driver typeWARNING - Initial value found on net gen_b will be ignored due to unrecognized driver typeWARNING - Initial value found on net gen_o will be ignored due to unrecognized driver typeWARNING - I/O Port pressing[5] 's net has no driver and is unused.WARNING - I/O Port pressing[4] 's net has no driver and is unused.WARNING - I/O Port pressing[3] 's net has no driver and is unused.WARNING - I/O Port pressing[2] 's net has no driver and is unused.WARNING - I/O Port pressing[1] 's net has no driver and is unused.WARNING - I/O Port pressing[0] 's net has no driver and is unused.WARNING - I/O Port reset 's net has no driver and is unused.WARNING - I/O Port start 's net has no driver and is unused.WARNING - I/O Port rgb[5] 's net has no driver and is unused.WARNING - I/O Port rgb[4] 's net has no driver and is unused.WARNING - I/O Port rgb[3] 's net has no driver and is unused.WARNING - I/O Port rgb[2] 's net has no driver and is unused.WARNING - I/O Port rgb[1] 's net has no driver and is unused.WARNING - I/O Port rgb[0] 's net has no driver and is unused.WARNING - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(139):net  does not have a driver. VDB-1002WARNING - "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(140):net  does not have a driver. VDB-1002######## Missing driver on net rgb[5]. Patching with GND.
-######## Missing driver on net rgb[4]. Patching with GND.
-######## Missing driver on net rgb[3]. Patching with GND.
-######## Missing driver on net rgb[2]. Patching with GND.
-######## Missing driver on net rgb[1]. Patching with GND.
-######## Missing driver on net rgb[0]. Patching with GND.
-######## Missing driver on net \vgaout/clock/lscc_pll_inst/sclk_i. Patching with GND.
-######## Missing driver on net \vgaout/clock/lscc_pll_inst/sdi_i. Patching with GND.
-
-
-
-WARNING - I/O Port pressing[5] 's net has no driver and is unused.WARNING - I/O Port pressing[4] 's net has no driver and is unused.WARNING - I/O Port pressing[3] 's net has no driver and is unused.WARNING - I/O Port pressing[2] 's net has no driver and is unused.WARNING - I/O Port pressing[1] 's net has no driver and is unused.WARNING - I/O Port pressing[0] 's net has no driver and is unused.WARNING - I/O Port reset 's net has no driver and is unused.WARNING - I/O Port start 's net has no driver and is unused.Combinational loop found : 1
-
-	Net addr[2] 
-
-	Instance addr_2__I_0_2_i3 
-
-Combinational loop found : 2
-
-	Net addr[0] 
-
-	Instance addr_2__I_0_2_i1 
-
-Combinational loop found : 3
-
-	Net addr[1] 
-
-	Instance addr_2__I_0_2_i2 
-
-Combinational loop found : 4
-
-	Net rand1 
-
-	Instance rand1_I_0 
-
-Combinational loop found : 5
-
-	Net rand2 
-
-	Instance rand2_I_0_2 
-
-	Net rand2_N_209 
-
-	Instance rand2_I_0 
-
-Combinational loop found : 6
-
-	Net rand3 
-
-	Instance rand3_I_0_2 
-
-	Net rand3_N_211 
-
-	Instance rand3_I_1 
-
-	Net rand3_N_212 
-
-	Instance rand3_I_0 
-
-Combinational loop found : 7
-
-	Net rand4 
-
-	Instance mux_234_i1 
-
-Combinational loop found : 8
-
-	Net rand5 
-
-	Instance i229 
-
-Duplicate register/latch removal. data_i17 is a one-to-one match with data_i2.
-Duplicate register/latch removal. data_i31 is a one-to-one match with data_i46.
-Duplicate register/latch removal. data_i35 is a one-to-one match with data_i7.
-Duplicate register/latch removal. data_i44 is a one-to-one match with data_i1.
-Duplicate register/latch removal. data_i41 is a one-to-one match with data_i35.
-Duplicate register/latch removal. data_i14 is a one-to-one match with data_i13.
-Duplicate register/latch removal. data_i39 is a one-to-one match with data_i37.
-Duplicate register/latch removal. data_i33 is a one-to-one match with data_i18.
-Duplicate register/latch removal. data_i21 is a one-to-one match with data_i0.
-Duplicate register/latch removal. \vgaout/RGB__i1 is a one-to-one match with \vgaout/RGB__i2.
-Duplicate register/latch removal. data_i20 is a one-to-one match with data_i12.
-Duplicate register/latch removal. data_i34 is a one-to-one match with data_i33.
-Duplicate register/latch removal. data_i32 is a one-to-one match with data_i16.
-Duplicate register/latch removal. data_i28 is a one-to-one match with data_i47.
-Duplicate register/latch removal. data_i26 is a one-to-one match with data_i10.
-Duplicate register/latch removal. \vgaout/RGB__i5 is a one-to-one match with \vgaout/RGB__i6.
-Duplicate register/latch removal. data_i32 is a one-to-one match with data_i26.
-Duplicate register/latch removal. data_i27 is a one-to-one match with data_i8.
-Duplicate register/latch removal. data_i25 is a one-to-one match with data_i20.
-Duplicate register/latch removal. data_i24 is a one-to-one match with data_i49.
-Duplicate register/latch removal. data_i36 is a one-to-one match with data_i11.
-Duplicate register/latch removal. data_i40 is a one-to-one match with data_i34.
-Duplicate register/latch removal. data_i32 is a one-to-one match with data_i4.
-Duplicate register/latch removal. data_i30 is a one-to-one match with data_i6.
-Duplicate register/latch removal. data_i19 is a one-to-one match with data_i9.
-
-################### Begin Area Report (top)######################
-Number of register bits => 2536 of 5280 (48 % )
-CCU2 => 44
-FD1P3XZ => 2536
-HSOSC_CORE => 1
-IB => 1
-LUT4 => 1919
-OB => 14
-PLL_B => 1
-################### End Area Report ##################
-Number of odd-length carry chains : 0
-Number of even-length carry chains : 5
-
-################### Begin Clock Report ######################
-Clock Nets
-Number of Clocks: 4
-  Net : update, loads : 1
-  Net : clk, loads : 0
-  Net : oscillatorin_c, loads : 1
-  Net : vgaout/clock/lscc_pll_inst/clk, loads : 0
-Clock Enable Nets
-Number of Clock Enables: 0
-Highest fanout non-clock nets
-Top 10 highest fanout non-clock nets:
-  Net : vgaout/col[1], loads : 882
-  Net : vgaout/col[0], loads : 812
-  Net : vgaout/col[2], loads : 334
-  Net : vgaout/col[3], loads : 187
-  Net : vgaout/col[4], loads : 93
-  Net : vgaout/col[5], loads : 57
-  Net : to_next_note_31__N_174, loads : 33
-  Net : addr[2], loads : 27
-  Net : addr[1], loads : 26
-  Net : addr[0], loads : 25
-################### End Clock Report ##################
-
-Peak Memory Usage: 128 MB
-
---------------------------------------------------------------
-Total CPU Time: 5 secs 
-Total REAL Time: 13 secs 
---------------------------------------------------------------
-
-
-postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o proj_guitar_hero_impl_1_syn.udb proj_guitar_hero_impl_1.vm -ldc //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1/proj_guitar_hero_impl_1.ldc
-POSTSYN: Post Synthesis Process Radiant Software (64-bit) 3.0.0.24.1
-Command Line: postsyn -a iCE40UP -p iCE40UP5K -t SG48 -sp High-Performance_1.2V -oc Industrial -top -w -o proj_guitar_hero_impl_1_syn.udb -ldc //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1/proj_guitar_hero_impl_1.ldc -gui -msgset //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/promote.xml proj_guitar_hero_impl_1.vm 
-   Architecture:     iCE40UP
-   Device:           iCE40UP5K
-   Package:          SG48
-   Performance:      High-Performance_1.2V
-Reading input file 'proj_guitar_hero_impl_1.vm' ...
-CPU Time to convert: 0.53125
-REAL Time to convert: 1
-convert PEAK Memory Usage: 58 MB
-convert CURRENT Memory Usage: 55 MB
-Reading constraint file '//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1/proj_guitar_hero_impl_1.ldc' ...
-Removing unused logic ...
-Starting design annotation....
-WARNING - No master clock for
-	generated clock	"create_generated_clock.WARNING - Missing master pin for instance 'u_PLL_B'.Writing output file 'proj_guitar_hero_impl_1_syn.udb'.
-POSTSYN finished successfully.
-Total CPU Time: 0 secs 
-Total REAL Time: 0 secs 
-Peak Memory Usage: 58 MB
-
-
-timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1  -html -rpt "proj_guitar_hero_impl_1.tws" "proj_guitar_hero_impl_1_syn.udb" 
-timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -html -rpt proj_guitar_hero_impl_1.tws proj_guitar_hero_impl_1_syn.udb -gui
-Starting design reading...
-Initializing timer
-Starting design annotation....
-WARNING - No master clock for
-	generated clock	"create_generated_clock.WARNING - Missing master pin for instance 'u_PLL_B'.5255 pins removed from timing;  check file logicalTimingIgnoredPins.log
-High-Performance_1.2V
-
-Starting full timing analysis...
-Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/Program Files/lscc/radiant/3.0/ispfpga.
-Package Status:                     Preliminary    Version 1.5.
-Connections ignored  2506  counted  9939  covered  76
-
-STA Runtime and Peak Memory Usage :
-Total CPU Time: 1 secs 
-Total REAL Time: 9 secs 
-Peak Memory Usage: 83 MB
-
- 8.842455s wall, 0.828125s user + 0.390625s system = 1.218750s CPU (13.8%)
-
-
-map "proj_guitar_hero_impl_1_syn.udb" "//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/vga.pdc" -o "proj_guitar_hero_impl_1_map.udb" -mp "proj_guitar_hero_impl_1.mrp" -hierrpt     
+map "proj_guitar_hero_impl_1_syn.udb" "//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/vga.pdc" -o "proj_guitar_hero_impl_1_map.udb" -mp "proj_guitar_hero_impl_1.mrp" -hierrpt     
 map:  version Radiant Software (64-bit) 3.0.0.24.1
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
@@ -363,7 +8,7 @@ Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2021 Lattice Semiconductor Corporation,  All rights reserved.
 
-Command line:   map proj_guitar_hero_impl_1_syn.udb //vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/vga.pdc -o proj_guitar_hero_impl_1_map.udb -mp proj_guitar_hero_impl_1.mrp -hierrpt -gui 
+Command line:   map proj_guitar_hero_impl_1_syn.udb //vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/vga.pdc -o proj_guitar_hero_impl_1_map.udb -mp proj_guitar_hero_impl_1.mrp -hierrpt -gui 
 
 Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/Program Files/lscc/radiant/3.0/ispfpga.
 Package Status:                     Preliminary    Version 1.5.
@@ -376,7 +21,7 @@ Package Status:                     Preliminary    Version 1.5.
 
 Running general design DRC...
 
-WARNING - Top module port 'pressing[5]' does not connect to anything.WARNING - Top module port 'pressing[4]' does not connect to anything.WARNING - Top module port 'pressing[3]' does not connect to anything.WARNING - Top module port 'pressing[2]' does not connect to anything.WARNING - Top module port 'pressing[1]' does not connect to anything.WARNING - Top module port 'pressing[0]' does not connect to anything.WARNING - Top module port 'reset' does not connect to anything.WARNING - Top module port 'start' does not connect to anything.Removing unused logic...
+WARNING - Top module port 'pressing[4]' does not connect to anything.WARNING - Top module port 'pressing[3]' does not connect to anything.WARNING - Top module port 'pressing[2]' does not connect to anything.WARNING - Top module port 'pressing[1]' does not connect to anything.WARNING - Top module port 'pressing[0]' does not connect to anything.WARNING - Top module port 'reset' does not connect to anything.WARNING - Top module port 'start' does not connect to anything.Removing unused logic...
 
 Optimizing...
 
@@ -386,19 +31,19 @@ Optimizing...
 Design Summary:
    Number of slice registers: 2536 out of  5280 (48%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           4429 out of  5280 (84%)
-      Number of logic LUT4s:             1921
+   Number of LUT4s:           4428 out of  5280 (84%)
+      Number of logic LUT4s:             1920
       Number of inserted feedthru LUT4s: 2420
       Number of ripple logic:             44 (88 LUT4s)
-   Number of IO sites used:   15 out of 39 (38%)
-      Number of IO sites used for general PIO: 15
+   Number of IO sites used:   16 out of 39 (41%)
+      Number of IO sites used for general PIO: 16
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 15 out of 36 (42%)
+      Number of IO sites used for PIO+I3C: 16 out of 36 (44%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 15 out of 39 (38%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 16 out of 39 (41%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  1 out of 1 (100%)
@@ -414,19 +59,19 @@ Design Summary:
    Number of Clocks:  4
       Net vgaout.clk: 38 loads, 38 rising, 0 falling (Driver: Pin vgaout.clock.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
       Net oscillatorin_c: 1 loads, 1 rising, 0 falling (Driver: Port oscillatorin)
-      Net update: 2426 loads, 2426 rising, 0 falling (Driver: Pin counter_287_336__i20/Q)
+      Net update: 2426 loads, 2426 rising, 0 falling (Driver: Pin counter_296_348__i20/Q)
       Net clk: 38 loads, 38 rising, 0 falling (Driver: Pin clock/CLKHF)
    Number of Clock Enables:  2
       Net VCC_net: 1 loads, 0 SLICEs
-      Net vgaout.column_9__N_259: 7 loads, 7 SLICEs
+      Net vgaout.column_9__N_265: 7 loads, 7 SLICEs
    Number of LSRs:  13
-      Net vgaout.n27: 1 loads, 1 SLICEs
-      Net vgaout.n10425: 6 loads, 6 SLICEs
-      Net vgaout.n11433: 6 loads, 6 SLICEs
-      Net vgaout.n10431: 4 loads, 4 SLICEs
-      Net vgaout.n16120: 1 loads, 1 SLICEs
+      Net vgaout.n155: 1 loads, 1 SLICEs
+      Net vgaout.n10520: 6 loads, 6 SLICEs
+      Net vgaout.n11543: 6 loads, 6 SLICEs
+      Net vgaout.n16550: 1 loads, 1 SLICEs
+      Net vgaout.n10526: 4 loads, 4 SLICEs
       Net make_yellow_note.new_box: 1 loads, 1 SLICEs
-      Net to_next_note_31__N_174: 17 loads, 17 SLICEs
+      Net to_next_note_31__N_180: 17 loads, 17 SLICEs
       Net addr[2]: 2 loads, 2 SLICEs
       Net addr[1]: 1 loads, 1 SLICEs
       Net make_green_note.new_box: 1 loads, 1 SLICEs
@@ -434,21 +79,21 @@ Design Summary:
       Net make_orange_note.new_box: 1 loads, 1 SLICEs
       Net make_blue_note.new_box: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net col[1]: 883 loads
-      Net col[0]: 813 loads
-      Net col[2]: 335 loads
-      Net col[3]: 188 loads
-      Net col[4]: 94 loads
-      Net col[5]: 58 loads
+      Net col[1]: 871 loads
+      Net col[0]: 821 loads
+      Net col[2]: 333 loads
+      Net col[3]: 199 loads
+      Net col[4]: 86 loads
+      Net col[5]: 61 loads
       Net addr[2]: 27 loads
       Net addr[1]: 26 loads
       Net addr[0]: 25 loads
-      Net cur_note[0]: 23 loads
+      Net col[7]: 21 loads
 Running physical design DRC...
 
-WARNING - Top module port 'pressing[5]' does not connect to anything.WARNING - Top module port 'pressing[4]' does not connect to anything.WARNING - Top module port 'pressing[3]' does not connect to anything.WARNING - Top module port 'pressing[2]' does not connect to anything.WARNING - Top module port 'pressing[1]' does not connect to anything.WARNING - Top module port 'pressing[0]' does not connect to anything.WARNING - Top module port 'reset' does not connect to anything.WARNING - Top module port 'start' does not connect to anything. 
+WARNING - Top module port 'pressing[4]' does not connect to anything.WARNING - Top module port 'pressing[3]' does not connect to anything.WARNING - Top module port 'pressing[2]' does not connect to anything.WARNING - Top module port 'pressing[1]' does not connect to anything.WARNING - Top module port 'pressing[0]' does not connect to anything.WARNING - Top module port 'reset' does not connect to anything.WARNING - Top module port 'start' does not connect to anything. 
 
-   Number of warnings:  16
+   Number of warnings:  14
    Number of errors:    0
 
 
@@ -473,7 +118,7 @@ Performance Grade:   High-Performance_1.2V
 
 
 
-Successfully loading udb, 0.17 seconds
+Successfully loading udb, 0.19 seconds
 
 Initializing timer
 Starting design annotation....
@@ -490,16 +135,16 @@ Starting full timing analysis...
 
 STA Runtime and Peak Memory Usage :
 Total CPU Time: 2 secs 
-Total REAL Time: 10 secs 
+Total REAL Time: 11 secs 
 Peak Memory Usage: 114 MB
 
- 9.898598s wall, 1.640625s user + 0.500000s system = 2.140625s CPU (21.6%)
+ 10.144956s wall, 1.515625s user + 0.531250s system = 2.046875s CPU (20.2%)
 
 
 par -f "proj_guitar_hero_impl_1.p2t" "proj_guitar_hero_impl_1_map.udb" "proj_guitar_hero_impl_1.udb"
 
 Lattice Place and Route Report for Design "proj_guitar_hero_impl_1_map.udb"
-Sun Dec 12 21:35:27 2021
+Mon Dec 13 10:24:37 2021
 
 PAR: Place And Route Radiant Software (64-bit) 3.0.0.24.1.
 Command Line: par -w -t 1 -cores 1 -exp parPathBased=ON \
@@ -517,16 +162,36 @@ Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
+WARNING - Unable to find the instance/port 'pressing[0]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[1]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[2]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[3]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[4]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
 WARNING - No master clock for
-	generated clock	"create_generated_clock.WARNING - Missing master pin for instance 'vgaout.clock.lscc_pll_inst.u_PLL_B'.WARNING - Top module port 'pressing[5]' does not connect to anything.WARNING - Top module port 'pressing[4]' does not connect to anything.WARNING - Top module port 'pressing[3]' does not connect to anything.WARNING - Top module port 'pressing[2]' does not connect to anything.WARNING - Top module port 'pressing[1]' does not connect to anything.WARNING - Top module port 'pressing[0]' does not connect to anything.WARNING - Top module port 'reset' does not connect to anything.WARNING - Top module port 'start' does not connect to anything.WARNING - Top module port 'pressing[5]' does not connect to anything.WARNING - Top module port 'pressing[4]' does not connect to anything.WARNING - Top module port 'pressing[3]' does not connect to anything.WARNING - Top module port 'pressing[2]' does not connect to anything.WARNING - Top module port 'pressing[1]' does not connect to anything.WARNING - Top module port 'pressing[0]' does not connect to anything.WARNING - Top module port 'reset' does not connect to anything.WARNING - Top module port 'start' does not connect to anything.WARNING - Top module port 'pressing[5]' does not connect to anything.WARNING - Top module port 'pressing[4]' does not connect to anything.WARNING - Top module port 'pressing[3]' does not connect to anything.WARNING - Top module port 'pressing[2]' does not connect to anything.WARNING - Top module port 'pressing[1]' does not connect to anything.WARNING - Top module port 'pressing[0]' does not connect to anything.WARNING - Top module port 'reset' does not connect to anything.WARNING - Top module port 'start' does not connect to anything.WARNING - Top module port 'pressing[5]' does not connect to anything.WARNING - Top module port 'pressing[4]' does not connect to anything.WARNING - Top module port 'pressing[3]' does not connect to anything.WARNING - Top module port 'pressing[2]' does not connect to anything.WARNING - Top module port 'pressing[1]' does not connect to anything.WARNING - Top module port 'pressing[0]' does not connect to anything.WARNING - Top module port 'reset' does not connect to anything.WARNING - Top module port 'start' does not connect to anything.Number of Signals: 7042
+	generated clock	"create_generated_clock.WARNING - Missing master pin for instance 'vgaout.clock.lscc_pll_inst.u_PLL_B'.WARNING - Unable to find the instance/port 'pressing[0]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[1]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[2]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[3]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[4]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Top module port 'pressing[4]' does not connect to anything.WARNING - Top module port 'pressing[3]' does not connect to anything.WARNING - Top module port 'pressing[2]' does not connect to anything.WARNING - Top module port 'pressing[1]' does not connect to anything.WARNING - Top module port 'pressing[0]' does not connect to anything.WARNING - Top module port 'reset' does not connect to anything.WARNING - Top module port 'start' does not connect to anything.WARNING - Top module port 'pressing[4]' does not connect to anything.WARNING - Top module port 'pressing[3]' does not connect to anything.WARNING - Top module port 'pressing[2]' does not connect to anything.WARNING - Top module port 'pressing[1]' does not connect to anything.WARNING - Top module port 'pressing[0]' does not connect to anything.WARNING - Top module port 'reset' does not connect to anything.WARNING - Top module port 'start' does not connect to anything.WARNING - Top module port 'pressing[4]' does not connect to anything.WARNING - Top module port 'pressing[3]' does not connect to anything.WARNING - Top module port 'pressing[2]' does not connect to anything.WARNING - Top module port 'pressing[1]' does not connect to anything.WARNING - Top module port 'pressing[0]' does not connect to anything.WARNING - Top module port 'reset' does not connect to anything.WARNING - Top module port 'start' does not connect to anything.WARNING - Top module port 'pressing[4]' does not connect to anything.WARNING - Top module port 'pressing[3]' does not connect to anything.WARNING - Top module port 'pressing[2]' does not connect to anything.WARNING - Top module port 'pressing[1]' does not connect to anything.WARNING - Top module port 'pressing[0]' does not connect to anything.WARNING - Top module port 'reset' does not connect to anything.WARNING - Top module port 'start' does not connect to anything.Number of Signals: 7042
 Number of Connections: 14824
 Device utilization summary:
 
-   SLICE (est.)    2284/2640         86% used
-     LUT           4429/5280         83% used
+   SLICE (est.)    2287/2640         86% used
+     LUT           4428/5280         83% used
      REG           2536/5280         48% used
-   PIO               15/56           26% used
-                     15/36           41% bonded
+   PIO               16/56           28% used
+                     16/36           44% bonded
    IOLOGIC            0/56            0% used
    DSP                0/8             0% used
    I2C                0/2             0% used
@@ -545,10 +210,10 @@ Device utilization summary:
    OPENDRAIN          0/3             0% used
 
 Pin Constraint Summary:
-   9 out of 15 pins locked (60% locked).
+   10 out of 16 pins locked (62% locked).
 .
 ..........
-Finished Placer Phase 0 (HIER). CPU time: 8 secs , REAL time: 9 secs 
+Finished Placer Phase 0 (HIER). CPU time: 9 secs , REAL time: 9 secs 
 
 
 ................
@@ -556,20 +221,30 @@ Finished Placer Phase 0 (AP).  CPU time: 12 secs , REAL time: 13 secs
 
 Starting Placer Phase 1. CPU time: 12 secs , REAL time: 13 secs 
 ..  ..
-.....................
+......................
 
-Placer score = 467168.
+Placer score = 475297.
 
 Device SLICE utilization summary after final SLICE packing:
    SLICE           2290/2640         86% used
 
 WARNING - No master clock for
-	generated clock	"create_generated_clock.WARNING - Missing master pin for instance 'vgaout.clock.lscc_pll_inst.u_PLL_B'.Finished Placer Phase 1. CPU time: 22 secs , REAL time: 23 secs 
+	generated clock	"create_generated_clock.WARNING - Missing master pin for instance 'vgaout.clock.lscc_pll_inst.u_PLL_B'.WARNING - Unable to find the instance/port 'pressing[0]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[1]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[2]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[3]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[4]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+Finished Placer Phase 1. CPU time: 22 secs , REAL time: 23 secs 
 
 Starting Placer Phase 2.
 .
 
-Placer score =  574305
+Placer score =  563910
 Finished Placer Phase 2.  CPU time: 24 secs , REAL time: 25 secs 
 
 
@@ -578,7 +253,7 @@ Finished Placer Phase 2.  CPU time: 24 secs , REAL time: 25 secs
 Global Clocks :
   PRIMARY "vgaout.clk" from OUTGLOBAL on comp "vgaout.clock.lscc_pll_inst.u_PLL_B" on site "PLL_R13C32", clk load = 26, ce load = 0, sr load = 0
   PRIMARY "clk" from comp "clock" on site "HFOSC_R1C32", clk load = 27, ce load = 0, sr load = 0
-  PRIMARY "update" from Q0 on comp "SLICE_31" on site "R13C5C", clk load = 1226, ce load = 0, sr load = 0
+  PRIMARY "update" from Q0 on comp "SLICE_21" on site "R13C5C", clk load = 1226, ce load = 0, sr load = 0
 
   PRIMARY  : 3 out of 8 (37%)
 
@@ -586,9 +261,9 @@ Global Clocks :
 
 
 I/O Usage Summary (final):
-   15 out of 56 (26.8%) I/O sites used.
-   15 out of 36 (41.7%) bonded I/O sites used.
-   Number of I/O comps: 15; differential: 0
+   16 out of 56 (28.6%) I/O sites used.
+   16 out of 36 (44.4%) bonded I/O sites used.
+   Number of I/O comps: 16; differential: 0
    Number of Vref pins used: 0
 
 I/O Bank Usage Summary:
@@ -597,15 +272,25 @@ I/O Bank Usage Summary:
 +----------+---------------+------------+------------+------------+
 | 0        | 8 / 14 ( 57%) | 3.3V       |            |            |
 | 1        | 7 / 14 ( 50%) | 3.3V       |            |            |
-| 2        | 0 / 8 (  0%)  | OFF        |            |            |
+| 2        | 1 / 8 ( 12%)  | 3.3V       |            |            |
 +----------+---------------+------------+------------+------------+
 
-Total Placer CPU time: 24 secs , REAL time: 25 secs 
+Total Placer CPU time: 25 secs , REAL time: 25 secs 
 
 Writing design to file proj_guitar_hero_impl_1_par.dir/5_1.udb ...
 
+WARNING - Unable to find the instance/port 'pressing[0]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[1]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[2]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[3]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[4]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
 
-Start NBR router at 21:35:52 12/12/21
+Start NBR router at 10:25:02 12/13/21
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -647,29 +332,32 @@ Completed routing resource preassignment
 WARNING - No master clock for
 	generated clock	"create_generated_clock.WARNING - Missing master pin for instance 'vgaout.clock.lscc_pll_inst.u_PLL_B'.    TimerIf::skewscore 0
 
-Start NBR section for initial routing at 21:35:53 12/12/21
+Start NBR section for initial routing at 10:25:03 12/13/21
 Level 4, iteration 1
-109(0.04%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 9.618ns/0.000ns; real time: 5 secs 
+119(0.05%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 9.618ns/0.000ns; real time: 6 secs 
 
 Info: Initial congestion level at 75.00% usage is 0
 Info: Initial congestion area  at 75.00% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 21:35:57 12/12/21
+Start NBR section for normal routing at 10:25:08 12/13/21
 Level 4, iteration 1
 4(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
 Estimated worst slack/total negative slack<setup>: 9.618ns/0.000ns; real time: 6 secs 
 Level 4, iteration 2
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 9.618ns/0.000ns; real time: 7 secs 
+Level 4, iteration 3
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 9.618ns/0.000ns; real time: 6 secs 
+Estimated worst slack/total negative slack<setup>: 9.618ns/0.000ns; real time: 7 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 21:35:58 12/12/21
+Start NBR section for setup/hold timing optimization with effort level 3 at 10:25:09 12/13/21
 Changing speed to M
 
 Starting full timing analysis...
 Changing speed to 6
 
-Start NBR section for post-routing at 21:35:59 12/12/21
+Start NBR section for post-routing at 10:25:10 12/13/21
 WARNING - No master clock for
 	generated clock	"create_generated_clock.WARNING - Missing master pin for instance 'vgaout.clock.lscc_pll_inst.u_PLL_B'.
 End NBR router with 0 unrouted connection
@@ -689,7 +377,7 @@ Changing speed to M
 Starting full timing analysis...
 Changing speed to 6
 Total CPU time 10 secs 
-Total REAL time: 10 secs 
+Total REAL time: 11 secs 
 Completely routed.
 End of route.  13599 routed (100.00%); 0 unrouted.
 
@@ -704,9 +392,9 @@ PAR_SUMMARY::Worst  slack<hold /<ns>> = 1.887
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  Time: 35 secs 
-Total REAL Time: 36 secs 
-Peak Memory Usage: 198 MB
+Total CPU  Time: 36 secs 
+Total REAL Time: 37 secs 
+Peak Memory Usage: 197 MB
 
 
 par done!
@@ -754,7 +442,7 @@ Total CPU Time: 4 secs
 Total REAL Time: 13 secs 
 Peak Memory Usage: 136 MB
 
- 12.865879s wall, 4.265625s user + 0.500000s system = 4.765625s CPU (37.0%)
+ 13.024997s wall, 4.312500s user + 0.453125s system = 4.765625s CPU (36.6%)
 
 
 tmcheck -par "proj_guitar_hero_impl_1.par" 
@@ -772,6 +460,26 @@ Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
+WARNING - bitgen: Unable to find the instance/port 'pressing[0]' in the constraint 'ldc_set_location -site {2} [get_ports {pressing[0]}]'
+
+WARNING - bitgen: In the constraint 'ldc_set_location -site {2} [get_ports {pressing[0]}]', the locate object is not specified
+
+WARNING - bitgen: Unable to find the instance/port 'pressing[1]' in the constraint 'ldc_set_location -site {46} [get_ports {pressing[1]}]'
+
+WARNING - bitgen: In the constraint 'ldc_set_location -site {46} [get_ports {pressing[1]}]', the locate object is not specified
+
+WARNING - bitgen: Unable to find the instance/port 'pressing[2]' in the constraint 'ldc_set_location -site {47} [get_ports {pressing[2]}]'
+
+WARNING - bitgen: In the constraint 'ldc_set_location -site {47} [get_ports {pressing[2]}]', the locate object is not specified
+
+WARNING - bitgen: Unable to find the instance/port 'pressing[3]' in the constraint 'ldc_set_location -site {45} [get_ports {pressing[3]}]'
+
+WARNING - bitgen: In the constraint 'ldc_set_location -site {45} [get_ports {pressing[3]}]', the locate object is not specified
+
+WARNING - bitgen: Unable to find the instance/port 'pressing[4]' in the constraint 'ldc_set_location -site {48} [get_ports {pressing[4]}]'
+
+WARNING - bitgen: In the constraint 'ldc_set_location -site {48} [get_ports {pressing[4]}]', the locate object is not specified
+
 Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
 
 
@@ -796,7 +504,7 @@ Preference Summary:
 
 
 Creating bit map...
-Saving bit stream in "\\vs-home\npower03\es4\es4-guitar-hero\proj_guitar_hero\impl_1\proj_guitar_hero_impl_1.bin".
+Saving bit stream in "\\vs-home\npower03\GitHub\es4-guitar-hero\proj_guitar_hero\impl_1\proj_guitar_hero_impl_1.bin".
 Bitstream generation complete!
 
 Total CPU Time: 1 secs 
@@ -807,7 +515,7 @@ Peak Memory Usage: 142 MB
 ibisgen "proj_guitar_hero_impl_1.udb" "C:/Program Files/lscc/radiant/3.0/cae_library/ibis/iCE40UP.ibs"
 IBIS Models Generator: Lattice Radiant Software (64-bit) 3.0.0.24.1
 
-Sun Dec 12 21:36:18 2021
+Mon Dec 13 10:25:29 2021
 
 Loading proj_guitar_hero_impl_1.udb ...
 Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/Program Files/lscc/radiant/3.0/ispfpga.
@@ -821,12 +529,22 @@ Family:  iCE40UP
 Device:  iCE40UP5K
 Package: SG48
 Performance Grade:   High-Performance_1.2V
+WARNING - Unable to find the instance/port 'pressing[0]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[1]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[2]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[3]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
+WARNING - Unable to find the instance/port 'pressing[4]' in the constraint '"ldc_set_location'
+WARNING - In the constraint '"ldc_set_location', the locate object is not specified
 Successfully loading design udb and device data from disks and to up-layer in CPU time: 0 secs , REAL time: 0 secs 
 
 Created design models.
 
 
-Generating: \\vs-home\npower03\es4\es4-guitar-hero\proj_guitar_hero\impl_1\IBIS\proj_guitar_hero_impl_1.ibs
+Generating: \\vs-home\npower03\GitHub\es4-guitar-hero\proj_guitar_hero\impl_1\IBIS\proj_guitar_hero_impl_1.ibs
 
 
 INFO - Design IBIS models are generated for board level analysis.

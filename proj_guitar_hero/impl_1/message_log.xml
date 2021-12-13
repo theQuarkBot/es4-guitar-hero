@@ -1,97 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Map">
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>reset</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>start</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>reset</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>start</Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001934</ID>
-            <Severity>16</Severity>
-            <Dynamic>vgaout.clock.lscc_pll_inst.u_PLL_B</Dynamic>
-        </Message>
-    </Task>
     <Task name="Synthesis">
         <Message>
             <ID>35831026</ID>
@@ -364,17 +272,17 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(11): </Dynamic>
+            <Dynamic>//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(11): </Dynamic>
             <Dynamic>mypll</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
+            <Navigation>//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
             <Navigation>11</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(105): </Dynamic>
+            <Dynamic>//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(105): </Dynamic>
             <Dynamic>mypll_ipgen_lscc_pll(DIVR=&quot;0&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;)</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
+            <Navigation>//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
             <Navigation>105</Navigation>
         </Message>
         <Message>
@@ -661,72 +569,88 @@
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(10): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(10): </Dynamic>
             <Dynamic>top</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
             <Navigation>10</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
             <Navigation>28</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10): </Dynamic>
             <Dynamic>draw_game</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
             <Navigation>10</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(27): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(29): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
-            <Navigation>27</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
+            <Navigation>29</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(9): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(9): </Dynamic>
             <Dynamic>generate_notes</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
             <Navigation>9</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(18): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(18): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
             <Navigation>18</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(5): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(5): </Dynamic>
             <Dynamic>vga</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
             <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
             <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd(6): </Dynamic>
+            <Dynamic>game_score</Dynamic>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd(17): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd</Navigation>
+            <Navigation>17</Navigation>
         </Message>
         <Message>
             <ID>35921504</ID>
             <Severity>1</Severity>
             <Dynamic></Dynamic>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1</Dynamic>
+            <Dynamic>//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/impl_1</Dynamic>
         </Message>
         <Message>
             <ID>35001786</ID>
@@ -1007,72 +931,88 @@
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(10): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(10): </Dynamic>
             <Dynamic>top</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
             <Navigation>10</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
             <Navigation>28</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10): </Dynamic>
             <Dynamic>draw_game</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
             <Navigation>10</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(27): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(29): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
-            <Navigation>27</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
+            <Navigation>29</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(9): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(9): </Dynamic>
             <Dynamic>generate_notes</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
             <Navigation>9</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(18): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(18): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
             <Navigation>18</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(5): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(5): </Dynamic>
             <Dynamic>vga</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
             <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
             <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd(6): </Dynamic>
+            <Dynamic>game_score</Dynamic>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>1</Severity>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd(17): </Dynamic>
+            <Dynamic>synth</Dynamic>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd</Navigation>
+            <Navigation>17</Navigation>
         </Message>
         <Message>
             <ID>35921504</ID>
             <Severity>1</Severity>
             <Dynamic></Dynamic>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1</Dynamic>
+            <Dynamic>//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/impl_1</Dynamic>
         </Message>
         <Message>
             <ID>35001771</ID>
@@ -1100,34 +1040,12 @@
             <Dynamic>gen_o</Dynamic>
         </Message>
         <Message>
-            <ID>35002028</ID>
+            <ID>35931002</ID>
             <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[0]</Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(127): </Dynamic>
+            <Dynamic>curr_color[5]</Dynamic>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>127</Navigation>
         </Message>
         <Message>
             <ID>35002028</ID>
@@ -1172,27 +1090,22 @@
         <Message>
             <ID>35931002</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(139): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(139): </Dynamic>
             <Dynamic>\vgaout/clock/lscc_pll_inst/sclk_i</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
             <Navigation>139</Navigation>
         </Message>
         <Message>
             <ID>35931002</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(140): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(140): </Dynamic>
             <Dynamic>\vgaout/clock/lscc_pll_inst/sdi_i</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
             <Navigation>140</Navigation>
         </Message>
         <Message>
             <ID>35002028</ID>
             <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
             <Dynamic>pressing[4]</Dynamic>
         </Message>
         <Message>
@@ -1244,224 +1157,631 @@
             <ID>70001934</ID>
             <Severity>16</Severity>
             <Dynamic>u_PLL_B</Dynamic>
-        </Message>
-    </Task>
-    <Task name="PAR">
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001934</ID>
-            <Severity>16</Severity>
-            <Dynamic>vgaout.clock.lscc_pll_inst.u_PLL_B</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>reset</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>start</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>reset</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>start</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>reset</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>start</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>reset</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>start</Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001934</ID>
-            <Severity>16</Severity>
-            <Dynamic>vgaout.clock.lscc_pll_inst.u_PLL_B</Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001934</ID>
-            <Severity>16</Severity>
-            <Dynamic>vgaout.clock.lscc_pll_inst.u_PLL_B</Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001934</ID>
-            <Severity>16</Severity>
-            <Dynamic>vgaout.clock.lscc_pll_inst.u_PLL_B</Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001934</ID>
-            <Severity>16</Severity>
-            <Dynamic>vgaout.clock.lscc_pll_inst.u_PLL_B</Dynamic>
         </Message>
     </Task>
     <Task name="Export">
         <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>bitgen: Unable to find the instance/port 'pressing[0]' in the constraint 'ldc_set_location -site {2} [get_ports {pressing[0]}]'</Dynamic>
+            <Navigation>WARNING</Navigation>
+            <Navigation>bitgen: Unable to find the instance/port 'pressing[0]' in the constraint 'ldc_set_location -site {2} [get_ports {pressing[0]}]'</Navigation>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>bitgen: In the constraint 'ldc_set_location -site {2} [get_ports {pressing[0]}]', the locate object is not specified</Dynamic>
+            <Navigation>WARNING</Navigation>
+            <Navigation>bitgen: In the constraint 'ldc_set_location -site {2} [get_ports {pressing[0]}]', the locate object is not specified</Navigation>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>bitgen: Unable to find the instance/port 'pressing[1]' in the constraint 'ldc_set_location -site {46} [get_ports {pressing[1]}]'</Dynamic>
+            <Navigation>WARNING</Navigation>
+            <Navigation>bitgen: Unable to find the instance/port 'pressing[1]' in the constraint 'ldc_set_location -site {46} [get_ports {pressing[1]}]'</Navigation>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>bitgen: In the constraint 'ldc_set_location -site {46} [get_ports {pressing[1]}]', the locate object is not specified</Dynamic>
+            <Navigation>WARNING</Navigation>
+            <Navigation>bitgen: In the constraint 'ldc_set_location -site {46} [get_ports {pressing[1]}]', the locate object is not specified</Navigation>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>bitgen: Unable to find the instance/port 'pressing[2]' in the constraint 'ldc_set_location -site {47} [get_ports {pressing[2]}]'</Dynamic>
+            <Navigation>WARNING</Navigation>
+            <Navigation>bitgen: Unable to find the instance/port 'pressing[2]' in the constraint 'ldc_set_location -site {47} [get_ports {pressing[2]}]'</Navigation>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>bitgen: In the constraint 'ldc_set_location -site {47} [get_ports {pressing[2]}]', the locate object is not specified</Dynamic>
+            <Navigation>WARNING</Navigation>
+            <Navigation>bitgen: In the constraint 'ldc_set_location -site {47} [get_ports {pressing[2]}]', the locate object is not specified</Navigation>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>bitgen: Unable to find the instance/port 'pressing[3]' in the constraint 'ldc_set_location -site {45} [get_ports {pressing[3]}]'</Dynamic>
+            <Navigation>WARNING</Navigation>
+            <Navigation>bitgen: Unable to find the instance/port 'pressing[3]' in the constraint 'ldc_set_location -site {45} [get_ports {pressing[3]}]'</Navigation>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>bitgen: In the constraint 'ldc_set_location -site {45} [get_ports {pressing[3]}]', the locate object is not specified</Dynamic>
+            <Navigation>WARNING</Navigation>
+            <Navigation>bitgen: In the constraint 'ldc_set_location -site {45} [get_ports {pressing[3]}]', the locate object is not specified</Navigation>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>bitgen: Unable to find the instance/port 'pressing[4]' in the constraint 'ldc_set_location -site {48} [get_ports {pressing[4]}]'</Dynamic>
+            <Navigation>WARNING</Navigation>
+            <Navigation>bitgen: Unable to find the instance/port 'pressing[4]' in the constraint 'ldc_set_location -site {48} [get_ports {pressing[4]}]'</Navigation>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>16</Severity>
+            <Dynamic>bitgen: In the constraint 'ldc_set_location -site {48} [get_ports {pressing[4]}]', the locate object is not specified</Dynamic>
+            <Navigation>WARNING</Navigation>
+            <Navigation>bitgen: In the constraint 'ldc_set_location -site {48} [get_ports {pressing[4]}]', the locate object is not specified</Navigation>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[0]</Dynamic>
+            <Dynamic>ldc_set_location -site {2} [get_ports {pressing[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {2} [get_ports {pressing[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[1]</Dynamic>
+            <Dynamic>ldc_set_location -site {46} [get_ports {pressing[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {46} [get_ports {pressing[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[2]</Dynamic>
+            <Dynamic>ldc_set_location -site {47} [get_ports {pressing[2]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {47} [get_ports {pressing[2]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[3]</Dynamic>
+            <Dynamic>ldc_set_location -site {45} [get_ports {pressing[3]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {45} [get_ports {pressing[3]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[4]</Dynamic>
+            <Dynamic>ldc_set_location -site {48} [get_ports {pressing[4]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {48} [get_ports {pressing[4]}]</Dynamic>
+        </Message>
+        <Message>
             <ID>1191031</ID>
             <Severity>1</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[0]</Dynamic>
+            <Dynamic>ldc_set_location -site {2} [get_ports {pressing[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {2} [get_ports {pressing[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[1]</Dynamic>
+            <Dynamic>ldc_set_location -site {46} [get_ports {pressing[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {46} [get_ports {pressing[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[2]</Dynamic>
+            <Dynamic>ldc_set_location -site {47} [get_ports {pressing[2]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {47} [get_ports {pressing[2]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[3]</Dynamic>
+            <Dynamic>ldc_set_location -site {45} [get_ports {pressing[3]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {45} [get_ports {pressing[3]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[4]</Dynamic>
+            <Dynamic>ldc_set_location -site {48} [get_ports {pressing[4]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {48} [get_ports {pressing[4]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001934</ID>
+            <Severity>16</Severity>
+            <Dynamic>vgaout.clock.lscc_pll_inst.u_PLL_B</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[0]</Dynamic>
+            <Dynamic>ldc_set_location -site {2} [get_ports {pressing[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {2} [get_ports {pressing[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[1]</Dynamic>
+            <Dynamic>ldc_set_location -site {46} [get_ports {pressing[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {46} [get_ports {pressing[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[2]</Dynamic>
+            <Dynamic>ldc_set_location -site {47} [get_ports {pressing[2]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {47} [get_ports {pressing[2]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[3]</Dynamic>
+            <Dynamic>ldc_set_location -site {45} [get_ports {pressing[3]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {45} [get_ports {pressing[3]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[4]</Dynamic>
+            <Dynamic>ldc_set_location -site {48} [get_ports {pressing[4]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {48} [get_ports {pressing[4]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>start</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>start</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>start</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>start</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001934</ID>
+            <Severity>16</Severity>
+            <Dynamic>vgaout.clock.lscc_pll_inst.u_PLL_B</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[0]</Dynamic>
+            <Dynamic>ldc_set_location -site {2} [get_ports {pressing[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {2} [get_ports {pressing[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[1]</Dynamic>
+            <Dynamic>ldc_set_location -site {46} [get_ports {pressing[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {46} [get_ports {pressing[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[2]</Dynamic>
+            <Dynamic>ldc_set_location -site {47} [get_ports {pressing[2]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {47} [get_ports {pressing[2]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[3]</Dynamic>
+            <Dynamic>ldc_set_location -site {45} [get_ports {pressing[3]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {45} [get_ports {pressing[3]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[4]</Dynamic>
+            <Dynamic>ldc_set_location -site {48} [get_ports {pressing[4]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {48} [get_ports {pressing[4]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[0]</Dynamic>
+            <Dynamic>ldc_set_location -site {2} [get_ports {pressing[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {2} [get_ports {pressing[0]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[1]</Dynamic>
+            <Dynamic>ldc_set_location -site {46} [get_ports {pressing[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {46} [get_ports {pressing[1]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[2]</Dynamic>
+            <Dynamic>ldc_set_location -site {47} [get_ports {pressing[2]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {47} [get_ports {pressing[2]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[3]</Dynamic>
+            <Dynamic>ldc_set_location -site {45} [get_ports {pressing[3]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {45} [get_ports {pressing[3]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001032</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[4]</Dynamic>
+            <Dynamic>ldc_set_location -site {48} [get_ports {pressing[4]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>77001031</ID>
+            <Severity>16</Severity>
+            <Dynamic>ldc_set_location -site {48} [get_ports {pressing[4]}]</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001934</ID>
+            <Severity>16</Severity>
+            <Dynamic>vgaout.clock.lscc_pll_inst.u_PLL_B</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001934</ID>
+            <Severity>16</Severity>
+            <Dynamic>vgaout.clock.lscc_pll_inst.u_PLL_B</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001934</ID>
+            <Severity>16</Severity>
+            <Dynamic>vgaout.clock.lscc_pll_inst.u_PLL_B</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>start</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[4]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[3]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[2]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[1]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>pressing[0]</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>start</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001934</ID>
+            <Severity>16</Severity>
+            <Dynamic>vgaout.clock.lscc_pll_inst.u_PLL_B</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>
