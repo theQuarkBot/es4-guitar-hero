@@ -58,7 +58,9 @@ component draw_game
 		col_red     : in std_logic_vector(479 downto 0);
 		col_yellow  : in std_logic_vector(479 downto 0);
 		col_blue    : in std_logic_vector(479 downto 0);
-		col_orange  : in std_logic_vector(479 downto 0)
+		col_orange  : in std_logic_vector(479 downto 0);
+		progress : in integer;
+		pressing : in std_logic_vector(5 downto 0)
     );
 end component;
 
@@ -88,15 +90,21 @@ component generate_notes
 end component;
 
 ------------------------------------------------------------------------------------------
+
+component game_score
+	port (
+	    pressing : in std_logic_vector(5 downto 0);
+		curr_color : in std_logic_vector(5 downto 0);
+        clk : in std_logic;
+        progress : out integer
+	);
+end component;
+
+------------------------------------------------------------------------------------------
+
 --VGA pins
 
 -- Which buttons are being pressed
-signal press_green  : std_logic;
-signal press_red    : std_logic;
-signal press_yellow : std_logic;
-signal press_blue   : std_logic;
-signal press_orange : std_logic;
-signal press_strum  : std_logic;
 
 -- signal to "randomly" generate notes
 signal rand1 : std_logic;
@@ -115,6 +123,8 @@ signal col_red     : std_logic_vector(479 downto 0) := 480b"0";
 signal col_yellow  : std_logic_vector(479 downto 0) := 480b"0";
 signal col_blue   : std_logic_vector(479 downto 0) := 480b"0";
 signal col_orange  : std_logic_vector(479 downto 0) := 480b"0";
+signal progress : integer;
+signal curr_color : std_logic_vector(5 downto 0);
 
 -- Signals to determine whether a box should be generated for each column
 signal gen_g : std_logic := '0';
@@ -125,8 +135,6 @@ signal gen_o : std_logic := '0';
 
 signal cur_note : integer := 0;
 signal to_next_note : integer := 0;
-
-signal counterzz  : unsigned(479 downto 0) := 480d"0";
 
 -- Output color
 --signal rgb_out : std_logic_vector(5 downto 0); TODO: Is this needed?
@@ -140,9 +148,7 @@ signal addr : std_logic_vector(2 downto 0);
 signal addrcounter : unsigned(2 downto 0);
 signal addrcountlogic : std_logic_vector(2 downto 0);
 
-begin
-	addrcountlogic <= std_logic_vector(addrcounter);
-	
+begin	
 	clock : HSOSC port map('1', '1', clk);
 	update <= counter(19);
 	
@@ -160,22 +166,29 @@ begin
 		col_red=>    col_red,
 		col_yellow=> col_yellow,
 		col_blue=>   col_blue,
-		col_orange=> col_orange
+		col_orange=> col_orange,
+		progress => progress,
+		pressing => pressing
+	);
+	
+	get_score : game_score port map(
+		pressing => not pressing,
+		curr_color => curr_color,
+		clk => clk,
+		progress => progress
 	);
 	------------------------------------------------------------------------------------------
-	
 	
 	process (clk) begin
 		if rising_edge(clk) then
 			counter <= counter + 26b"1";
 			
-			-- Get button presses
-			press_green  <= not pressing(0);
-			press_red    <= not pressing(1);
-			press_yellow <= not pressing(2);
-			press_blue   <= not pressing(3);
-			press_orange <= not pressing(4);
-			press_strum  <= not pressing(5);
+			-- Get button presses			
+			curr_color(0)  <= col_green(440);
+			curr_color(1)  <= col_red(440);
+			curr_color(2)  <= col_yellow(440);
+			curr_color(3)  <= col_blue(440);
+			curr_color(4)  <= col_orange(440);
 		end if;
 	end process;
 	
@@ -239,19 +252,6 @@ begin
 	make_orange_note : generate_notes port map(col_orange, rand5, gen_o, update);
 
 	------------------------------------------------------------------------------------------
-	
-	-- TODO: logic to determine which buttons are being pressed
-
-	-- TODO: logic to determine whether a box should be drawn in each column
-	
-	-- TODO: logic to draw on VGA
-	-- TODO: determine constants to define how screen should be drawn
-
 	-- TODO: make game logic
 		-- Check user input and determine new score (how to do this)
-	
-		-- Generate new line of boxes, shifting all old ones down one
-			-- If there is a 1 in the line below, check how big that box is, and give 1 or 0 depending on size\
-			-- If there is a 0: Check that there has been a sufficient delay for another box to be drawn;
-				-- If so, run random number generator to determine whether a new box should be placed
 end;
