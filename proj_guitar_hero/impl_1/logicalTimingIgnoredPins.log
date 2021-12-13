@@ -13,36 +13,10 @@ PLL_B/SDI input u_PLL_Bis connected to a constant net
 PLL_B/LATCH input u_PLL_Bis connected to a constant net
 PLL_B/INTFBOUT output  u_PLL_B has no incoming device arc
      *** vgaout/clock/lscc_pll_inst/u_PLL_B/FEEDBACK is driven by constant or a pin on an incomplete path
-FA2/A0 input column_290_add_4_5is connected to a constant net
-FA2/A1 input column_290_add_4_5is connected to a constant net
-FA2/A0 input column_290_add_4_3is connected to a constant net
-FA2/A1 input column_290_add_4_3is connected to a constant net
-FA2/A0 input column_290_add_4_1is connected to a constant net
-FA2/A1 input column_290_add_4_1is connected to a constant net
-FA2/A0 input column_290_add_4_11is connected to a constant net
-FA2/A1 input column_290_add_4_11is connected to a constant net
-FA2/B1 input column_290_add_4_11is connected to a constant net
-FA2/C1 input column_290_add_4_11is connected to a constant net
-FA2/D1 input column_290_add_4_11 has no outgoing device arc
-FA2/CI1 input column_290_add_4_11 has no outgoing device arc
-     ** vgaout/column_290_add_4_11/CO0 is driving a pin on an incomplete path
-FA2/B0 input column_290_add_4_11is connected to a constant net
-FA2/C0 input column_290_add_4_11 is on an incomplete path
-FA2/CI0 input column_290_add_4_11 is on an incomplete path
-FA2/A0 input column_290_add_4_9is connected to a constant net
-FA2/A1 input column_290_add_4_9is connected to a constant net
-FA2/A0 input column_290_add_4_7is connected to a constant net
-FA2/A1 input column_290_add_4_7is connected to a constant net
-FA2/A0 input row_291_add_4_11is connected to a constant net
-FA2/A1 input row_291_add_4_11is connected to a constant net
-FA2/B1 input row_291_add_4_11is connected to a constant net
-FA2/C1 input row_291_add_4_11is connected to a constant net
-FA2/D1 input row_291_add_4_11 has no outgoing device arc
-FA2/CI1 input row_291_add_4_11 has no outgoing device arc
-     ** vgaout/row_291_add_4_11/CO0 is driving a pin on an incomplete path
-FA2/B0 input row_291_add_4_11is connected to a constant net
-FA2/C0 input row_291_add_4_11 is on an incomplete path
-FA2/CI0 input row_291_add_4_11 is on an incomplete path
+FA2/A0 input to_next_note_345_add_4_1is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_1is connected to a constant net
+FA2/A0 input to_next_note_345_add_4_21is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_21is connected to a constant net
 VHI/Z VCC  i2
      *** make_blue_note/gen/SP is driven by constant or a pin on an incomplete path
      *** make_orange_note/gen/SP is driven by constant or a pin on an incomplete path
@@ -51,7 +25,7 @@ VHI/Z VCC  i2
      *** make_yellow_note/gen/SP is driven by constant or a pin on an incomplete path
      *** vgaout/rowout_i0/SP is driven by constant or a pin on an incomplete path
      *** vgaout/HSYNC/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291__i0/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349__i0/SP is driven by constant or a pin on an incomplete path
      *** vgaout/colout_i1/SP is driven by constant or a pin on an incomplete path
      *** vgaout/colout_i2/SP is driven by constant or a pin on an incomplete path
      *** vgaout/colout_i3/SP is driven by constant or a pin on an incomplete path
@@ -71,27 +45,66 @@ VHI/Z VCC  i2
      *** vgaout/rowout_i8/SP is driven by constant or a pin on an incomplete path
      *** vgaout/rowout_i9/SP is driven by constant or a pin on an incomplete path
      *** vgaout/RGB__i1/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/column_348_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349_add_4_1/B1 is driven by constant or a pin on an incomplete path
      *** vgaout/RGB__i3/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291_add_4_1/B1 is driven by constant or a pin on an incomplete path
      *** vgaout/RGB__i4/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291__i1/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291__i2/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/column_290_add_4_1/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291__i3/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291__i4/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291__i5/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291__i6/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291__i7/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291__i8/SP is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291__i9/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349__i1/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349__i2/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349__i3/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349__i4/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349__i5/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349__i6/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349__i7/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349__i8/SP is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349__i9/SP is driven by constant or a pin on an incomplete path
      *** vgaout/RGB__i5/SP is driven by constant or a pin on an incomplete path
      *** vgaout/colout_i0/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i241/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i240/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i274/SP is driven by constant or a pin on an incomplete path
+     *** data_i36/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i273/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i272/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i271/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i270/SP is driven by constant or a pin on an incomplete path
+     *** data_i38/SP is driven by constant or a pin on an incomplete path
+     *** col_green_i0/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i269/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i268/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i267/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i266/SP is driven by constant or a pin on an incomplete path
      *** col_red_i0/SP is driven by constant or a pin on an incomplete path
      *** col_yellow_i0/SP is driven by constant or a pin on an incomplete path
      *** col_blue_i0/SP is driven by constant or a pin on an incomplete path
      *** col_orange_i0/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i265/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i264/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i263/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i262/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i261/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i260/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i259/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i258/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i257/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i256/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i255/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i254/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i253/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i252/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i251/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i250/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i277/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i249/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i248/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i247/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i246/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i245/SP is driven by constant or a pin on an incomplete path
+     *** clock/CLKHFPU is driven by constant or a pin on an incomplete path
+     *** clock/CLKHFEN is driven by constant or a pin on an incomplete path
+     *** col_red_i244/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i243/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i242/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i241/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i240/SP is driven by constant or a pin on an incomplete path
      *** col_red_i239/SP is driven by constant or a pin on an incomplete path
      *** col_red_i238/SP is driven by constant or a pin on an incomplete path
      *** col_red_i237/SP is driven by constant or a pin on an incomplete path
@@ -100,7 +113,6 @@ VHI/Z VCC  i2
      *** col_red_i234/SP is driven by constant or a pin on an incomplete path
      *** col_red_i233/SP is driven by constant or a pin on an incomplete path
      *** col_red_i232/SP is driven by constant or a pin on an incomplete path
-     *** data_i38/SP is driven by constant or a pin on an incomplete path
      *** col_red_i231/SP is driven by constant or a pin on an incomplete path
      *** col_red_i230/SP is driven by constant or a pin on an incomplete path
      *** col_red_i229/SP is driven by constant or a pin on an incomplete path
@@ -113,14 +125,9 @@ VHI/Z VCC  i2
      *** col_red_i222/SP is driven by constant or a pin on an incomplete path
      *** col_red_i221/SP is driven by constant or a pin on an incomplete path
      *** col_red_i220/SP is driven by constant or a pin on an incomplete path
-     *** data_i48/SP is driven by constant or a pin on an incomplete path
-     *** clock/CLKHFPU is driven by constant or a pin on an incomplete path
-     *** clock/CLKHFEN is driven by constant or a pin on an incomplete path
-     *** col_red_i243/SP is driven by constant or a pin on an incomplete path
      *** col_red_i219/SP is driven by constant or a pin on an incomplete path
      *** col_red_i218/SP is driven by constant or a pin on an incomplete path
      *** col_red_i217/SP is driven by constant or a pin on an incomplete path
-     *** data_i36/SP is driven by constant or a pin on an incomplete path
      *** col_red_i216/SP is driven by constant or a pin on an incomplete path
      *** col_red_i215/SP is driven by constant or a pin on an incomplete path
      *** col_red_i214/SP is driven by constant or a pin on an incomplete path
@@ -186,6 +193,7 @@ VHI/Z VCC  i2
      *** col_red_i154/SP is driven by constant or a pin on an incomplete path
      *** col_red_i153/SP is driven by constant or a pin on an incomplete path
      *** col_red_i152/SP is driven by constant or a pin on an incomplete path
+     *** data_i28/SP is driven by constant or a pin on an incomplete path
      *** col_red_i151/SP is driven by constant or a pin on an incomplete path
      *** col_red_i150/SP is driven by constant or a pin on an incomplete path
      *** col_red_i149/SP is driven by constant or a pin on an incomplete path
@@ -220,7 +228,6 @@ VHI/Z VCC  i2
      *** col_red_i120/SP is driven by constant or a pin on an incomplete path
      *** col_red_i119/SP is driven by constant or a pin on an incomplete path
      *** col_red_i118/SP is driven by constant or a pin on an incomplete path
-     *** data_i28/SP is driven by constant or a pin on an incomplete path
      *** col_red_i117/SP is driven by constant or a pin on an incomplete path
      *** col_red_i116/SP is driven by constant or a pin on an incomplete path
      *** col_red_i115/SP is driven by constant or a pin on an incomplete path
@@ -231,7 +238,6 @@ VHI/Z VCC  i2
      *** col_red_i110/SP is driven by constant or a pin on an incomplete path
      *** col_red_i109/SP is driven by constant or a pin on an incomplete path
      *** col_red_i108/SP is driven by constant or a pin on an incomplete path
-     *** data_i21/SP is driven by constant or a pin on an incomplete path
      *** col_red_i107/SP is driven by constant or a pin on an incomplete path
      *** col_red_i106/SP is driven by constant or a pin on an incomplete path
      *** col_red_i105/SP is driven by constant or a pin on an incomplete path
@@ -262,6 +268,7 @@ VHI/Z VCC  i2
      *** col_red_i80/SP is driven by constant or a pin on an incomplete path
      *** col_red_i79/SP is driven by constant or a pin on an incomplete path
      *** col_red_i78/SP is driven by constant or a pin on an incomplete path
+     *** data_i27/SP is driven by constant or a pin on an incomplete path
      *** col_red_i77/SP is driven by constant or a pin on an incomplete path
      *** col_red_i76/SP is driven by constant or a pin on an incomplete path
      *** col_red_i75/SP is driven by constant or a pin on an incomplete path
@@ -291,7 +298,6 @@ VHI/Z VCC  i2
      *** col_red_i51/SP is driven by constant or a pin on an incomplete path
      *** col_red_i50/SP is driven by constant or a pin on an incomplete path
      *** col_red_i49/SP is driven by constant or a pin on an incomplete path
-     *** data_i27/SP is driven by constant or a pin on an incomplete path
      *** col_red_i48/SP is driven by constant or a pin on an incomplete path
      *** col_red_i47/SP is driven by constant or a pin on an incomplete path
      *** col_red_i46/SP is driven by constant or a pin on an incomplete path
@@ -328,12 +334,16 @@ VHI/Z VCC  i2
      *** col_red_i15/SP is driven by constant or a pin on an incomplete path
      *** col_red_i14/SP is driven by constant or a pin on an incomplete path
      *** col_red_i13/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i0/SP is driven by constant or a pin on an incomplete path
+     *** data_i24/SP is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389__i1/SP is driven by constant or a pin on an incomplete path
      *** col_red_i12/SP is driven by constant or a pin on an incomplete path
      *** col_red_i11/SP is driven by constant or a pin on an incomplete path
      *** col_red_i10/SP is driven by constant or a pin on an incomplete path
      *** col_red_i9/SP is driven by constant or a pin on an incomplete path
      *** col_red_i8/SP is driven by constant or a pin on an incomplete path
      *** col_red_i7/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i1/SP is driven by constant or a pin on an incomplete path
      *** col_red_i6/SP is driven by constant or a pin on an incomplete path
      *** col_red_i5/SP is driven by constant or a pin on an incomplete path
      *** col_red_i4/SP is driven by constant or a pin on an incomplete path
@@ -345,6 +355,7 @@ VHI/Z VCC  i2
      *** col_green_i477/SP is driven by constant or a pin on an incomplete path
      *** col_green_i476/SP is driven by constant or a pin on an incomplete path
      *** col_green_i475/SP is driven by constant or a pin on an incomplete path
+     *** data_i23/SP is driven by constant or a pin on an incomplete path
      *** col_green_i474/SP is driven by constant or a pin on an incomplete path
      *** col_green_i473/SP is driven by constant or a pin on an incomplete path
      *** col_green_i472/SP is driven by constant or a pin on an incomplete path
@@ -361,16 +372,12 @@ VHI/Z VCC  i2
      *** col_green_i461/SP is driven by constant or a pin on an incomplete path
      *** col_green_i460/SP is driven by constant or a pin on an incomplete path
      *** col_green_i459/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i0/SP is driven by constant or a pin on an incomplete path
-     *** data_i24/SP is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332__i1/SP is driven by constant or a pin on an incomplete path
      *** col_green_i458/SP is driven by constant or a pin on an incomplete path
      *** col_green_i457/SP is driven by constant or a pin on an incomplete path
      *** col_green_i456/SP is driven by constant or a pin on an incomplete path
      *** col_green_i455/SP is driven by constant or a pin on an incomplete path
      *** col_green_i454/SP is driven by constant or a pin on an incomplete path
      *** col_green_i453/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i1/SP is driven by constant or a pin on an incomplete path
      *** col_green_i452/SP is driven by constant or a pin on an incomplete path
      *** col_green_i451/SP is driven by constant or a pin on an incomplete path
      *** col_green_i450/SP is driven by constant or a pin on an incomplete path
@@ -383,7 +390,6 @@ VHI/Z VCC  i2
      *** col_green_i443/SP is driven by constant or a pin on an incomplete path
      *** col_green_i442/SP is driven by constant or a pin on an incomplete path
      *** col_green_i441/SP is driven by constant or a pin on an incomplete path
-     *** data_i23/SP is driven by constant or a pin on an incomplete path
      *** col_green_i440/SP is driven by constant or a pin on an incomplete path
      *** col_green_i439/SP is driven by constant or a pin on an incomplete path
      *** col_green_i438/SP is driven by constant or a pin on an incomplete path
@@ -475,6 +481,7 @@ VHI/Z VCC  i2
      *** col_green_i352/SP is driven by constant or a pin on an incomplete path
      *** col_green_i351/SP is driven by constant or a pin on an incomplete path
      *** col_green_i350/SP is driven by constant or a pin on an incomplete path
+     *** data_i19/SP is driven by constant or a pin on an incomplete path
      *** col_green_i349/SP is driven by constant or a pin on an incomplete path
      *** col_green_i348/SP is driven by constant or a pin on an incomplete path
      *** col_green_i347/SP is driven by constant or a pin on an incomplete path
@@ -505,7 +512,6 @@ VHI/Z VCC  i2
      *** col_green_i322/SP is driven by constant or a pin on an incomplete path
      *** col_green_i321/SP is driven by constant or a pin on an incomplete path
      *** col_green_i320/SP is driven by constant or a pin on an incomplete path
-     *** data_i19/SP is driven by constant or a pin on an incomplete path
      *** col_green_i319/SP is driven by constant or a pin on an incomplete path
      *** col_green_i318/SP is driven by constant or a pin on an incomplete path
      *** col_green_i317/SP is driven by constant or a pin on an incomplete path
@@ -831,40 +837,7 @@ VHI/Z VCC  i2
      *** data_i15/SP is driven by constant or a pin on an incomplete path
      *** data_i14/SP is driven by constant or a pin on an incomplete path
      *** data_i3/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i244/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i245/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i246/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i247/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i248/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i249/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i250/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i251/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i252/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i253/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i254/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i255/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i256/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i257/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i258/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i259/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i260/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i261/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i262/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i263/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i264/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i265/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i266/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i267/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i268/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i269/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i270/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i271/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i272/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i273/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i274/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i275/SP is driven by constant or a pin on an incomplete path
      *** col_red_i276/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i277/SP is driven by constant or a pin on an incomplete path
      *** col_red_i278/SP is driven by constant or a pin on an incomplete path
      *** col_red_i279/SP is driven by constant or a pin on an incomplete path
      *** col_red_i280/SP is driven by constant or a pin on an incomplete path
@@ -2504,83 +2477,85 @@ VHI/Z VCC  i2
      *** col_orange_i477/SP is driven by constant or a pin on an incomplete path
      *** col_orange_i478/SP is driven by constant or a pin on an incomplete path
      *** col_orange_i479/SP is driven by constant or a pin on an incomplete path
-     *** col_green_i0/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_1/B1 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_1/B1 is driven by constant or a pin on an incomplete path
-     *** data_i22/SP is driven by constant or a pin on an incomplete path
-     *** data_i25/SP is driven by constant or a pin on an incomplete path
-     *** data_i30/SP is driven by constant or a pin on an incomplete path
-     *** data_i31/SP is driven by constant or a pin on an incomplete path
-     *** data_i40/SP is driven by constant or a pin on an incomplete path
-     *** data_i39/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i1/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i2/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i3/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i4/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i5/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i6/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i7/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i8/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i9/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i10/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i11/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i12/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i13/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i14/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i15/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i16/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i17/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i18/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i19/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i20/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i21/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i22/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i23/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i24/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i25/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i26/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i27/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i28/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i29/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i30/SP is driven by constant or a pin on an incomplete path
-     *** to_next_note_289__i31/SP is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332__i2/SP is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332__i3/SP is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332__i4/SP is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332__i5/SP is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332__i6/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i2/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i3/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i4/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i5/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i6/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i7/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i8/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i9/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i10/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i11/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i12/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i13/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i14/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i15/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i16/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i17/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i18/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i19/SP is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i20/SP is driven by constant or a pin on an incomplete path
-     *** data_i32/SP is driven by constant or a pin on an incomplete path
-     *** data_i29/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i1/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i2/SP is driven by constant or a pin on an incomplete path
+     *** cur_score_347_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i3/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_1/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i4/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i5/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i6/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i7/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i8/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i9/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i10/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i11/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i12/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i13/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i14/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i15/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i16/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i17/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i18/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i19/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i20/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i21/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i22/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i23/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i24/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i25/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i26/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i27/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i28/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i29/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i30/SP is driven by constant or a pin on an incomplete path
+     *** to_next_note_345__i31/SP is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389__i2/SP is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389__i3/SP is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389__i4/SP is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389__i5/SP is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389__i6/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i2/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i3/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i4/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i5/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i6/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i7/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i8/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i9/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i10/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i11/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i12/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i13/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i14/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i15/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i16/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i17/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i18/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i19/SP is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i20/SP is driven by constant or a pin on an incomplete path
      *** data_i5/SP is driven by constant or a pin on an incomplete path
      *** data_i17/SP is driven by constant or a pin on an incomplete path
      *** data_i43/SP is driven by constant or a pin on an incomplete path
      *** data_i44/SP is driven by constant or a pin on an incomplete path
-     *** col_red_i242/SP is driven by constant or a pin on an incomplete path
+     *** data_i32/SP is driven by constant or a pin on an incomplete path
+     *** data_i48/SP is driven by constant or a pin on an incomplete path
+     *** data_i21/SP is driven by constant or a pin on an incomplete path
+     *** data_i29/SP is driven by constant or a pin on an incomplete path
+     *** data_i22/SP is driven by constant or a pin on an incomplete path
+     *** data_i25/SP is driven by constant or a pin on an incomplete path
+     *** data_i30/SP is driven by constant or a pin on an incomplete path
+     *** data_i31/SP is driven by constant or a pin on an incomplete path
+     *** data_i34/SP is driven by constant or a pin on an incomplete path
+     *** data_i37/SP is driven by constant or a pin on an incomplete path
+     *** col_red_i275/SP is driven by constant or a pin on an incomplete path
+     *** RGBout_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** RGBout_pad[1].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** RGBout_pad[2].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** RGBout_pad[3].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** RGBout_pad[4].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** RGBout_pad[5].bb_inst/T_N is driven by constant or a pin on an incomplete path
-     *** RGBout_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** rgb_pad[5].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** rgb_pad[4].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** rgb_pad[3].bb_inst/T_N is driven by constant or a pin on an incomplete path
@@ -2589,16 +2564,46 @@ VHI/Z VCC  i2
      *** rgb_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** HSYNCout_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** VSYNCout_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path
-FA2/A0 input row_291_add_4_9is connected to a constant net
-FA2/A1 input row_291_add_4_9is connected to a constant net
-FA2/A0 input row_291_add_4_7is connected to a constant net
-FA2/A1 input row_291_add_4_7is connected to a constant net
-FA2/A0 input row_291_add_4_1is connected to a constant net
-FA2/A1 input row_291_add_4_1is connected to a constant net
-FA2/A0 input row_291_add_4_3is connected to a constant net
-FA2/A1 input row_291_add_4_3is connected to a constant net
-FA2/A0 input row_291_add_4_5is connected to a constant net
-FA2/A1 input row_291_add_4_5is connected to a constant net
+FA2/A0 input column_348_add_4_11is connected to a constant net
+FA2/A1 input column_348_add_4_11is connected to a constant net
+FA2/B1 input column_348_add_4_11is connected to a constant net
+FA2/C1 input column_348_add_4_11is connected to a constant net
+FA2/D1 input column_348_add_4_11 has no outgoing device arc
+FA2/CI1 input column_348_add_4_11 has no outgoing device arc
+     ** vgaout/column_348_add_4_11/CO0 is driving a pin on an incomplete path
+FA2/B0 input column_348_add_4_11is connected to a constant net
+FA2/C0 input column_348_add_4_11 is on an incomplete path
+FA2/CI0 input column_348_add_4_11 is on an incomplete path
+FA2/A0 input column_348_add_4_7is connected to a constant net
+FA2/A1 input column_348_add_4_7is connected to a constant net
+FA2/A0 input column_348_add_4_9is connected to a constant net
+FA2/A1 input column_348_add_4_9is connected to a constant net
+FA2/A0 input column_348_add_4_5is connected to a constant net
+FA2/A1 input column_348_add_4_5is connected to a constant net
+FA2/A0 input row_349_add_4_11is connected to a constant net
+FA2/A1 input row_349_add_4_11is connected to a constant net
+FA2/B1 input row_349_add_4_11is connected to a constant net
+FA2/C1 input row_349_add_4_11is connected to a constant net
+FA2/D1 input row_349_add_4_11 has no outgoing device arc
+FA2/CI1 input row_349_add_4_11 has no outgoing device arc
+     ** vgaout/row_349_add_4_11/CO0 is driving a pin on an incomplete path
+FA2/B0 input row_349_add_4_11is connected to a constant net
+FA2/C0 input row_349_add_4_11 is on an incomplete path
+FA2/CI0 input row_349_add_4_11 is on an incomplete path
+FA2/A0 input row_349_add_4_7is connected to a constant net
+FA2/A1 input row_349_add_4_7is connected to a constant net
+FA2/A0 input column_348_add_4_1is connected to a constant net
+FA2/A1 input column_348_add_4_1is connected to a constant net
+FA2/A0 input column_348_add_4_3is connected to a constant net
+FA2/A1 input column_348_add_4_3is connected to a constant net
+FA2/A0 input row_349_add_4_9is connected to a constant net
+FA2/A1 input row_349_add_4_9is connected to a constant net
+FA2/A0 input row_349_add_4_3is connected to a constant net
+FA2/A1 input row_349_add_4_3is connected to a constant net
+FA2/A0 input row_349_add_4_5is connected to a constant net
+FA2/A1 input row_349_add_4_5is connected to a constant net
+FA2/A0 input row_349_add_4_1is connected to a constant net
+FA2/A1 input row_349_add_4_1is connected to a constant net
 HSOSC_CORE/TRIM9 input clockis connected to a constant net
 HSOSC_CORE/TRIM8 input clockis connected to a constant net
 HSOSC_CORE/TRIM7 input clockis connected to a constant net
@@ -2609,96 +2614,105 @@ HSOSC_CORE/TRIM3 input clockis connected to a constant net
 HSOSC_CORE/TRIM2 input clockis connected to a constant net
 HSOSC_CORE/TRIM1 input clockis connected to a constant net
 HSOSC_CORE/TRIM0 input clockis connected to a constant net
-FA2/A0 input counter_287_336_add_4_13is connected to a constant net
-FA2/A1 input counter_287_336_add_4_13is connected to a constant net
-FA2/A0 input to_next_note_289_add_4_23is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_23is connected to a constant net
-FA2/A0 input counter_287_336_add_4_11is connected to a constant net
-FA2/A1 input counter_287_336_add_4_11is connected to a constant net
-FA2/A0 input counter_287_336_add_4_7is connected to a constant net
-FA2/A1 input counter_287_336_add_4_7is connected to a constant net
-FA2/A0 input to_next_note_289_add_4_5is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_5is connected to a constant net
-FA2/A0 input cur_note_288_332_add_4_5is connected to a constant net
-FA2/A1 input cur_note_288_332_add_4_5is connected to a constant net
-FA2/A0 input counter_287_336_add_4_9is connected to a constant net
-FA2/A1 input counter_287_336_add_4_9is connected to a constant net
-FA2/A0 input to_next_note_289_add_4_25is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_25is connected to a constant net
-FA2/A0 input counter_287_336_add_4_5is connected to a constant net
-FA2/A1 input counter_287_336_add_4_5is connected to a constant net
-FA2/A0 input to_next_note_289_add_4_27is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_27is connected to a constant net
-FA2/A0 input cur_note_288_332_add_4_3is connected to a constant net
-FA2/A1 input cur_note_288_332_add_4_3is connected to a constant net
-FA2/A0 input to_next_note_289_add_4_19is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_19is connected to a constant net
-FA2/A0 input to_next_note_289_add_4_21is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_21is connected to a constant net
-FA2/A0 input cur_note_288_332_add_4_1is connected to a constant net
-FA2/A1 input cur_note_288_332_add_4_1is connected to a constant net
-FA2/A0 input to_next_note_289_add_4_3is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_3is connected to a constant net
-FA2/A0 input to_next_note_289_add_4_31is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_31is connected to a constant net
-FA2/A0 input to_next_note_289_add_4_33is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_33is connected to a constant net
-FA2/B1 input to_next_note_289_add_4_33is connected to a constant net
-FA2/C1 input to_next_note_289_add_4_33is connected to a constant net
-FA2/D1 input to_next_note_289_add_4_33 has no outgoing device arc
-FA2/CI1 input to_next_note_289_add_4_33 has no outgoing device arc
-     ** to_next_note_289_add_4_33/CO0 is driving a pin on an incomplete path
-FA2/B0 input to_next_note_289_add_4_33is connected to a constant net
-FA2/C0 input to_next_note_289_add_4_33 is on an incomplete path
-FA2/CI0 input to_next_note_289_add_4_33 is on an incomplete path
-FA2/A0 input to_next_note_289_add_4_1is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_1is connected to a constant net
-FA2/A0 input counter_287_336_add_4_21is connected to a constant net
-FA2/A1 input counter_287_336_add_4_21is connected to a constant net
-FA2/B1 input counter_287_336_add_4_21is connected to a constant net
-FA2/C1 input counter_287_336_add_4_21is connected to a constant net
-FA2/D1 input counter_287_336_add_4_21 has no outgoing device arc
-FA2/CI1 input counter_287_336_add_4_21 has no outgoing device arc
-     ** counter_287_336_add_4_21/CO0 is driving a pin on an incomplete path
-FA2/B0 input counter_287_336_add_4_21is connected to a constant net
-FA2/C0 input counter_287_336_add_4_21 is on an incomplete path
-FA2/CI0 input counter_287_336_add_4_21 is on an incomplete path
-FA2/A0 input counter_287_336_add_4_3is connected to a constant net
-FA2/A1 input counter_287_336_add_4_3is connected to a constant net
-FA2/A0 input counter_287_336_add_4_1is connected to a constant net
-FA2/A1 input counter_287_336_add_4_1is connected to a constant net
-FA2/A0 input counter_287_336_add_4_19is connected to a constant net
-FA2/A1 input counter_287_336_add_4_19is connected to a constant net
-FA2/A0 input to_next_note_289_add_4_15is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_15is connected to a constant net
-FA2/A0 input to_next_note_289_add_4_17is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_17is connected to a constant net
-FA2/A0 input to_next_note_289_add_4_29is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_29is connected to a constant net
-FA2/A0 input counter_287_336_add_4_17is connected to a constant net
-FA2/A1 input counter_287_336_add_4_17is connected to a constant net
-FA2/A0 input to_next_note_289_add_4_13is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_13is connected to a constant net
-FA2/A0 input counter_287_336_add_4_15is connected to a constant net
-FA2/A1 input counter_287_336_add_4_15is connected to a constant net
-FA2/A0 input cur_note_288_332_add_4_7is connected to a constant net
-FA2/A1 input cur_note_288_332_add_4_7is connected to a constant net
-FA2/B1 input cur_note_288_332_add_4_7is connected to a constant net
-FA2/C1 input cur_note_288_332_add_4_7is connected to a constant net
-FA2/D1 input cur_note_288_332_add_4_7 has no outgoing device arc
-FA2/CI1 input cur_note_288_332_add_4_7 has no outgoing device arc
-     ** cur_note_288_332_add_4_7/CO0 is driving a pin on an incomplete path
-FA2/B0 input cur_note_288_332_add_4_7is connected to a constant net
-FA2/C0 input cur_note_288_332_add_4_7 is on an incomplete path
-FA2/CI0 input cur_note_288_332_add_4_7 is on an incomplete path
-FA2/A0 input to_next_note_289_add_4_11is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_11is connected to a constant net
-FA2/A0 input to_next_note_289_add_4_9is connected to a constant net
-FA2/A1 input to_next_note_289_add_4_9is connected to a constant net
+FA2/A0 input cur_note_344_389_add_4_1is connected to a constant net
+FA2/A1 input cur_note_344_389_add_4_1is connected to a constant net
+FA2/A0 input cur_score_347_add_4_1is connected to a constant net
+FA2/A1 input cur_score_347_add_4_1is connected to a constant net
+FA2/A0 input counter_343_390_add_4_19is connected to a constant net
+FA2/A1 input counter_343_390_add_4_19is connected to a constant net
+FA2/A0 input to_next_note_345_add_4_33is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_33is connected to a constant net
+FA2/B1 input to_next_note_345_add_4_33is connected to a constant net
+FA2/C1 input to_next_note_345_add_4_33is connected to a constant net
+FA2/D1 input to_next_note_345_add_4_33 has no outgoing device arc
+FA2/CI1 input to_next_note_345_add_4_33 has no outgoing device arc
+     ** to_next_note_345_add_4_33/CO0 is driving a pin on an incomplete path
+FA2/B0 input to_next_note_345_add_4_33is connected to a constant net
+FA2/C0 input to_next_note_345_add_4_33 is on an incomplete path
+FA2/CI0 input to_next_note_345_add_4_33 is on an incomplete path
+FA2/A0 input counter_343_390_add_4_13is connected to a constant net
+FA2/A1 input counter_343_390_add_4_13is connected to a constant net
+FA2/A0 input counter_343_390_add_4_15is connected to a constant net
+FA2/A1 input counter_343_390_add_4_15is connected to a constant net
+FA2/A0 input counter_343_390_add_4_17is connected to a constant net
+FA2/A1 input counter_343_390_add_4_17is connected to a constant net
+FA2/A0 input counter_343_390_add_4_11is connected to a constant net
+FA2/A1 input counter_343_390_add_4_11is connected to a constant net
+FA2/A0 input counter_343_390_add_4_5is connected to a constant net
+FA2/A1 input counter_343_390_add_4_5is connected to a constant net
+FA2/A0 input counter_343_390_add_4_7is connected to a constant net
+FA2/A1 input counter_343_390_add_4_7is connected to a constant net
+FA2/A0 input counter_343_390_add_4_9is connected to a constant net
+FA2/A1 input counter_343_390_add_4_9is connected to a constant net
+FA2/A0 input counter_343_390_add_4_3is connected to a constant net
+FA2/A1 input counter_343_390_add_4_3is connected to a constant net
+FA2/A0 input counter_343_390_add_4_1is connected to a constant net
+FA2/A1 input counter_343_390_add_4_1is connected to a constant net
+FA2/A0 input to_next_note_345_add_4_17is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_17is connected to a constant net
+FA2/A0 input cur_note_344_389_add_4_7is connected to a constant net
+FA2/A1 input cur_note_344_389_add_4_7is connected to a constant net
+FA2/B1 input cur_note_344_389_add_4_7is connected to a constant net
+FA2/C1 input cur_note_344_389_add_4_7is connected to a constant net
+FA2/D1 input cur_note_344_389_add_4_7 has no outgoing device arc
+FA2/CI1 input cur_note_344_389_add_4_7 has no outgoing device arc
+     ** cur_note_344_389_add_4_7/CO0 is driving a pin on an incomplete path
+FA2/B0 input cur_note_344_389_add_4_7is connected to a constant net
+FA2/C0 input cur_note_344_389_add_4_7 is on an incomplete path
+FA2/CI0 input cur_note_344_389_add_4_7 is on an incomplete path
+FA2/A0 input cur_score_347_add_4_11is connected to a constant net
+FA2/A1 input cur_score_347_add_4_11is connected to a constant net
+FA2/CI1 input cur_score_347_add_4_11 has no outgoing device arc
+FA2/A0 input to_next_note_345_add_4_31is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_31is connected to a constant net
+FA2/A0 input cur_score_347_add_4_9is connected to a constant net
+FA2/A1 input cur_score_347_add_4_9is connected to a constant net
+FA2/A0 input to_next_note_345_add_4_15is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_15is connected to a constant net
+FA2/A0 input cur_note_344_389_add_4_5is connected to a constant net
+FA2/A1 input cur_note_344_389_add_4_5is connected to a constant net
+FA2/A0 input to_next_note_345_add_4_29is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_29is connected to a constant net
+FA2/A0 input cur_score_347_add_4_7is connected to a constant net
+FA2/A1 input cur_score_347_add_4_7is connected to a constant net
+FA2/A0 input to_next_note_345_add_4_27is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_27is connected to a constant net
+FA2/A0 input to_next_note_345_add_4_13is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_13is connected to a constant net
+FA2/A0 input cur_note_344_389_add_4_3is connected to a constant net
+FA2/A1 input cur_note_344_389_add_4_3is connected to a constant net
+FA2/A0 input cur_score_347_add_4_5is connected to a constant net
+FA2/A1 input cur_score_347_add_4_5is connected to a constant net
+FA2/A0 input cur_score_347_add_4_3is connected to a constant net
+FA2/A1 input cur_score_347_add_4_3is connected to a constant net
+FA2/A0 input to_next_note_345_add_4_11is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_11is connected to a constant net
+FA2/A0 input to_next_note_345_add_4_7is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_7is connected to a constant net
+FA2/A0 input to_next_note_345_add_4_25is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_25is connected to a constant net
+FA2/A0 input to_next_note_345_add_4_9is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_9is connected to a constant net
+FA2/A0 input counter_343_390_add_4_21is connected to a constant net
+FA2/A1 input counter_343_390_add_4_21is connected to a constant net
+FA2/B1 input counter_343_390_add_4_21is connected to a constant net
+FA2/C1 input counter_343_390_add_4_21is connected to a constant net
+FA2/D1 input counter_343_390_add_4_21 has no outgoing device arc
+FA2/CI1 input counter_343_390_add_4_21 has no outgoing device arc
+     ** counter_343_390_add_4_21/CO0 is driving a pin on an incomplete path
+FA2/B0 input counter_343_390_add_4_21is connected to a constant net
+FA2/C0 input counter_343_390_add_4_21 is on an incomplete path
+FA2/CI0 input counter_343_390_add_4_21 is on an incomplete path
+FA2/A0 input to_next_note_345_add_4_23is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_23is connected to a constant net
+FA2/A0 input to_next_note_345_add_4_5is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_5is connected to a constant net
+FA2/A0 input to_next_note_345_add_4_3is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_3is connected to a constant net
+FA2/A0 input to_next_note_345_add_4_19is connected to a constant net
+FA2/A1 input to_next_note_345_add_4_19is connected to a constant net
 VLO/Z GND  i1
      *** vgaout/rowout_i0/SR is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291_add_4_9/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291_add_4_9/B1 is driven by constant or a pin on an incomplete path
      *** vgaout/colout_i1/SR is driven by constant or a pin on an incomplete path
      *** vgaout/colout_i2/SR is driven by constant or a pin on an incomplete path
      *** vgaout/colout_i3/SR is driven by constant or a pin on an incomplete path
@@ -2717,31 +2731,70 @@ VLO/Z GND  i1
      *** vgaout/rowout_i7/SR is driven by constant or a pin on an incomplete path
      *** vgaout/rowout_i8/SR is driven by constant or a pin on an incomplete path
      *** vgaout/rowout_i9/SR is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291_add_4_7/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291_add_4_7/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291_add_4_5/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291_add_4_5/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291_add_4_3/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291_add_4_3/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291_add_4_1/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/row_291_add_4_1/C0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_290_add_4_9/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_290_add_4_9/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_290_add_4_7/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_290_add_4_7/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_290_add_4_5/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_290_add_4_5/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_290_add_4_3/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_290_add_4_3/B1 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_290_add_4_1/B0 is driven by constant or a pin on an incomplete path
-     *** vgaout/column_290_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_348_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_348_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_348_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_348_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_348_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_348_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_348_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_348_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_348_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/column_348_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** vgaout/row_349_add_4_1/C0 is driven by constant or a pin on an incomplete path
      *** vgaout/colout_i0/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i241/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i240/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i274/SR is driven by constant or a pin on an incomplete path
+     *** data_i36/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i273/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i272/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i271/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i270/SR is driven by constant or a pin on an incomplete path
+     *** data_i38/SR is driven by constant or a pin on an incomplete path
+     *** col_green_i0/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i269/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i268/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i267/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i266/SR is driven by constant or a pin on an incomplete path
      *** col_red_i0/SR is driven by constant or a pin on an incomplete path
      *** col_yellow_i0/SR is driven by constant or a pin on an incomplete path
      *** col_blue_i0/SR is driven by constant or a pin on an incomplete path
      *** col_orange_i0/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i265/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i264/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i263/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i262/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i261/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i260/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i259/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i258/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i257/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i256/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i255/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i254/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i253/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i252/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i251/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i250/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i277/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i249/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i248/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i247/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i246/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i245/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i244/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i243/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i242/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i241/SR is driven by constant or a pin on an incomplete path
+     *** col_red_i240/SR is driven by constant or a pin on an incomplete path
      *** col_red_i239/SR is driven by constant or a pin on an incomplete path
      *** col_red_i238/SR is driven by constant or a pin on an incomplete path
      *** col_red_i237/SR is driven by constant or a pin on an incomplete path
@@ -2750,7 +2803,6 @@ VLO/Z GND  i1
      *** col_red_i234/SR is driven by constant or a pin on an incomplete path
      *** col_red_i233/SR is driven by constant or a pin on an incomplete path
      *** col_red_i232/SR is driven by constant or a pin on an incomplete path
-     *** data_i38/SR is driven by constant or a pin on an incomplete path
      *** col_red_i231/SR is driven by constant or a pin on an incomplete path
      *** col_red_i230/SR is driven by constant or a pin on an incomplete path
      *** col_red_i229/SR is driven by constant or a pin on an incomplete path
@@ -2763,12 +2815,9 @@ VLO/Z GND  i1
      *** col_red_i222/SR is driven by constant or a pin on an incomplete path
      *** col_red_i221/SR is driven by constant or a pin on an incomplete path
      *** col_red_i220/SR is driven by constant or a pin on an incomplete path
-     *** data_i48/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i243/SR is driven by constant or a pin on an incomplete path
      *** col_red_i219/SR is driven by constant or a pin on an incomplete path
      *** col_red_i218/SR is driven by constant or a pin on an incomplete path
      *** col_red_i217/SR is driven by constant or a pin on an incomplete path
-     *** data_i36/SR is driven by constant or a pin on an incomplete path
      *** col_red_i216/SR is driven by constant or a pin on an incomplete path
      *** col_red_i215/SR is driven by constant or a pin on an incomplete path
      *** col_red_i214/SR is driven by constant or a pin on an incomplete path
@@ -2795,8 +2844,6 @@ VLO/Z GND  i1
      *** col_red_i193/SR is driven by constant or a pin on an incomplete path
      *** col_red_i192/SR is driven by constant or a pin on an incomplete path
      *** col_red_i191/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_13/B0 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_13/B1 is driven by constant or a pin on an incomplete path
      *** col_red_i190/SR is driven by constant or a pin on an incomplete path
      *** col_red_i189/SR is driven by constant or a pin on an incomplete path
      *** col_red_i188/SR is driven by constant or a pin on an incomplete path
@@ -2836,6 +2883,7 @@ VLO/Z GND  i1
      *** col_red_i154/SR is driven by constant or a pin on an incomplete path
      *** col_red_i153/SR is driven by constant or a pin on an incomplete path
      *** col_red_i152/SR is driven by constant or a pin on an incomplete path
+     *** data_i28/SR is driven by constant or a pin on an incomplete path
      *** col_red_i151/SR is driven by constant or a pin on an incomplete path
      *** col_red_i150/SR is driven by constant or a pin on an incomplete path
      *** col_red_i149/SR is driven by constant or a pin on an incomplete path
@@ -2870,7 +2918,6 @@ VLO/Z GND  i1
      *** col_red_i120/SR is driven by constant or a pin on an incomplete path
      *** col_red_i119/SR is driven by constant or a pin on an incomplete path
      *** col_red_i118/SR is driven by constant or a pin on an incomplete path
-     *** data_i28/SR is driven by constant or a pin on an incomplete path
      *** col_red_i117/SR is driven by constant or a pin on an incomplete path
      *** col_red_i116/SR is driven by constant or a pin on an incomplete path
      *** col_red_i115/SR is driven by constant or a pin on an incomplete path
@@ -2881,7 +2928,6 @@ VLO/Z GND  i1
      *** col_red_i110/SR is driven by constant or a pin on an incomplete path
      *** col_red_i109/SR is driven by constant or a pin on an incomplete path
      *** col_red_i108/SR is driven by constant or a pin on an incomplete path
-     *** data_i21/SR is driven by constant or a pin on an incomplete path
      *** col_red_i107/SR is driven by constant or a pin on an incomplete path
      *** col_red_i106/SR is driven by constant or a pin on an incomplete path
      *** col_red_i105/SR is driven by constant or a pin on an incomplete path
@@ -2912,6 +2958,7 @@ VLO/Z GND  i1
      *** col_red_i80/SR is driven by constant or a pin on an incomplete path
      *** col_red_i79/SR is driven by constant or a pin on an incomplete path
      *** col_red_i78/SR is driven by constant or a pin on an incomplete path
+     *** data_i27/SR is driven by constant or a pin on an incomplete path
      *** col_red_i77/SR is driven by constant or a pin on an incomplete path
      *** col_red_i76/SR is driven by constant or a pin on an incomplete path
      *** col_red_i75/SR is driven by constant or a pin on an incomplete path
@@ -2941,7 +2988,6 @@ VLO/Z GND  i1
      *** col_red_i51/SR is driven by constant or a pin on an incomplete path
      *** col_red_i50/SR is driven by constant or a pin on an incomplete path
      *** col_red_i49/SR is driven by constant or a pin on an incomplete path
-     *** data_i27/SR is driven by constant or a pin on an incomplete path
      *** col_red_i48/SR is driven by constant or a pin on an incomplete path
      *** col_red_i47/SR is driven by constant or a pin on an incomplete path
      *** col_red_i46/SR is driven by constant or a pin on an incomplete path
@@ -2978,12 +3024,15 @@ VLO/Z GND  i1
      *** col_red_i15/SR is driven by constant or a pin on an incomplete path
      *** col_red_i14/SR is driven by constant or a pin on an incomplete path
      *** col_red_i13/SR is driven by constant or a pin on an incomplete path
+     *** data_i24/SR is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389__i1/SR is driven by constant or a pin on an incomplete path
      *** col_red_i12/SR is driven by constant or a pin on an incomplete path
      *** col_red_i11/SR is driven by constant or a pin on an incomplete path
      *** col_red_i10/SR is driven by constant or a pin on an incomplete path
      *** col_red_i9/SR is driven by constant or a pin on an incomplete path
      *** col_red_i8/SR is driven by constant or a pin on an incomplete path
      *** col_red_i7/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i1/SR is driven by constant or a pin on an incomplete path
      *** col_red_i6/SR is driven by constant or a pin on an incomplete path
      *** col_red_i5/SR is driven by constant or a pin on an incomplete path
      *** col_red_i4/SR is driven by constant or a pin on an incomplete path
@@ -3011,15 +3060,12 @@ VLO/Z GND  i1
      *** col_green_i461/SR is driven by constant or a pin on an incomplete path
      *** col_green_i460/SR is driven by constant or a pin on an incomplete path
      *** col_green_i459/SR is driven by constant or a pin on an incomplete path
-     *** data_i24/SR is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332__i1/SR is driven by constant or a pin on an incomplete path
      *** col_green_i458/SR is driven by constant or a pin on an incomplete path
      *** col_green_i457/SR is driven by constant or a pin on an incomplete path
      *** col_green_i456/SR is driven by constant or a pin on an incomplete path
      *** col_green_i455/SR is driven by constant or a pin on an incomplete path
      *** col_green_i454/SR is driven by constant or a pin on an incomplete path
      *** col_green_i453/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i1/SR is driven by constant or a pin on an incomplete path
      *** col_green_i452/SR is driven by constant or a pin on an incomplete path
      *** col_green_i451/SR is driven by constant or a pin on an incomplete path
      *** col_green_i450/SR is driven by constant or a pin on an incomplete path
@@ -3123,6 +3169,7 @@ VLO/Z GND  i1
      *** col_green_i352/SR is driven by constant or a pin on an incomplete path
      *** col_green_i351/SR is driven by constant or a pin on an incomplete path
      *** col_green_i350/SR is driven by constant or a pin on an incomplete path
+     *** data_i19/SR is driven by constant or a pin on an incomplete path
      *** col_green_i349/SR is driven by constant or a pin on an incomplete path
      *** col_green_i348/SR is driven by constant or a pin on an incomplete path
      *** col_green_i347/SR is driven by constant or a pin on an incomplete path
@@ -3153,7 +3200,6 @@ VLO/Z GND  i1
      *** col_green_i322/SR is driven by constant or a pin on an incomplete path
      *** col_green_i321/SR is driven by constant or a pin on an incomplete path
      *** col_green_i320/SR is driven by constant or a pin on an incomplete path
-     *** data_i19/SR is driven by constant or a pin on an incomplete path
      *** col_green_i319/SR is driven by constant or a pin on an incomplete path
      *** col_green_i318/SR is driven by constant or a pin on an incomplete path
      *** col_green_i317/SR is driven by constant or a pin on an incomplete path
@@ -3477,40 +3523,7 @@ VLO/Z GND  i1
      *** data_i42/SR is driven by constant or a pin on an incomplete path
      *** data_i15/SR is driven by constant or a pin on an incomplete path
      *** data_i3/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i244/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i245/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i246/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i247/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i248/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i249/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i250/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i251/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i252/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i253/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i254/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i255/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i256/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i257/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i258/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i259/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i260/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i261/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i262/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i263/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i264/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i265/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i266/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i267/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i268/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i269/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i270/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i271/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i272/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i273/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i274/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i275/SR is driven by constant or a pin on an incomplete path
      *** col_red_i276/SR is driven by constant or a pin on an incomplete path
-     *** col_red_i277/SR is driven by constant or a pin on an incomplete path
      *** col_red_i278/SR is driven by constant or a pin on an incomplete path
      *** col_red_i279/SR is driven by constant or a pin on an incomplete path
      *** col_red_i280/SR is driven by constant or a pin on an incomplete path
@@ -5150,106 +5163,125 @@ VLO/Z GND  i1
      *** col_orange_i477/SR is driven by constant or a pin on an incomplete path
      *** col_orange_i478/SR is driven by constant or a pin on an incomplete path
      *** col_orange_i479/SR is driven by constant or a pin on an incomplete path
-     *** col_green_i0/SR is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_23/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_23/B1 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_11/B0 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_11/B1 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_9/B0 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_9/B1 is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332_add_4_5/B0 is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332_add_4_5/B1 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_7/B0 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_7/B1 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_5/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_5/B1 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_27/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_27/B1 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_25/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_25/B1 is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332_add_4_3/B0 is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332_add_4_3/B1 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_5/B0 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_5/B1 is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332_add_4_1/B0 is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332_add_4_1/C0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_21/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_21/B1 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_3/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_3/B1 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_19/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_19/B1 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_3/B0 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_3/B1 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_1/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_1/C0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_31/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_31/B1 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_17/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_17/B1 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_15/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_15/B1 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_1/B0 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_1/C0 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_19/B0 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_19/B1 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_29/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_29/B1 is driven by constant or a pin on an incomplete path
-     *** data_i22/SR is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_13/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_13/B1 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_17/B0 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_17/B1 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_15/B0 is driven by constant or a pin on an incomplete path
-     *** counter_287_336_add_4_15/B1 is driven by constant or a pin on an incomplete path
-     *** data_i25/SR is driven by constant or a pin on an incomplete path
-     *** data_i30/SR is driven by constant or a pin on an incomplete path
-     *** data_i31/SR is driven by constant or a pin on an incomplete path
-     *** data_i40/SR is driven by constant or a pin on an incomplete path
-     *** data_i39/SR is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_11/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_11/B1 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_9/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_9/B1 is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332__i2/SR is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332__i3/SR is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332__i4/SR is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332__i5/SR is driven by constant or a pin on an incomplete path
-     *** cur_note_288_332__i6/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i2/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i3/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i4/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i5/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i6/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i7/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i8/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i9/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i10/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i11/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i12/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i13/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i14/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i15/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i16/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i17/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i18/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i19/SR is driven by constant or a pin on an incomplete path
-     *** counter_287_336__i20/SR is driven by constant or a pin on an incomplete path
-     *** data_i32/SR is driven by constant or a pin on an incomplete path
-     *** data_i29/SR is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** cur_score_347_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** cur_score_347_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_19/B0 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_19/B1 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_17/B0 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_17/B1 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_15/B0 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_15/B1 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_13/B0 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_13/B1 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_11/B0 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_11/B1 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** counter_343_390_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** cur_score_347_add_4_11/B0 is driven by constant or a pin on an incomplete path
+     *** cur_score_347_add_4_11/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_17/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_17/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_31/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_31/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_15/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_15/B1 is driven by constant or a pin on an incomplete path
+     *** cur_score_347_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** cur_score_347_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_29/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_29/B1 is driven by constant or a pin on an incomplete path
+     *** cur_score_347_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** cur_score_347_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_27/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_27/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_13/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_13/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_11/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_11/B1 is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** cur_score_347_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** cur_score_347_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** cur_score_347_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** cur_score_347_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_9/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_9/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_7/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_7/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_25/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_25/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_5/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_5/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_23/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_23/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_3/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_3/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_21/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_21/B1 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_1/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_1/C0 is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389__i2/SR is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389__i3/SR is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389__i4/SR is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389__i5/SR is driven by constant or a pin on an incomplete path
+     *** cur_note_344_389__i6/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i2/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i3/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i4/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i5/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i6/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i7/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i8/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i9/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i10/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i11/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i12/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i13/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i14/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i15/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i16/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i17/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i18/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i19/SR is driven by constant or a pin on an incomplete path
+     *** counter_343_390__i20/SR is driven by constant or a pin on an incomplete path
      *** data_i5/SR is driven by constant or a pin on an incomplete path
      *** data_i17/SR is driven by constant or a pin on an incomplete path
      *** data_i43/SR is driven by constant or a pin on an incomplete path
      *** data_i44/SR is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_7/A0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_7/B0 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_7/A1 is driven by constant or a pin on an incomplete path
-     *** to_next_note_289_add_4_7/B1 is driven by constant or a pin on an incomplete path
-     *** col_red_i242/SR is driven by constant or a pin on an incomplete path
+     *** data_i32/SR is driven by constant or a pin on an incomplete path
+     *** data_i48/SR is driven by constant or a pin on an incomplete path
+     *** data_i21/SR is driven by constant or a pin on an incomplete path
+     *** data_i29/SR is driven by constant or a pin on an incomplete path
+     *** data_i22/SR is driven by constant or a pin on an incomplete path
+     *** data_i25/SR is driven by constant or a pin on an incomplete path
+     *** data_i30/SR is driven by constant or a pin on an incomplete path
+     *** data_i31/SR is driven by constant or a pin on an incomplete path
+     *** data_i34/SR is driven by constant or a pin on an incomplete path
+     *** data_i37/SR is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_19/B0 is driven by constant or a pin on an incomplete path
+     *** to_next_note_345_add_4_19/B1 is driven by constant or a pin on an incomplete path
+     *** col_red_i275/SR is driven by constant or a pin on an incomplete path
      *** rgb_pad[5].bb_inst/I is driven by constant or a pin on an incomplete path
      *** rgb_pad[4].bb_inst/I is driven by constant or a pin on an incomplete path
      *** rgb_pad[3].bb_inst/I is driven by constant or a pin on an incomplete path
      *** rgb_pad[2].bb_inst/I is driven by constant or a pin on an incomplete path
      *** rgb_pad[1].bb_inst/I is driven by constant or a pin on an incomplete path
      *** rgb_pad[0].bb_inst/I is driven by constant or a pin on an incomplete path
+     *** pressing_pad[5].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** pressing_pad[4].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** pressing_pad[3].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** pressing_pad[2].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** pressing_pad[1].bb_inst/T_N is driven by constant or a pin on an incomplete path
+     *** pressing_pad[0].bb_inst/T_N is driven by constant or a pin on an incomplete path
      *** oscillatorin_pad.bb_inst/T_N is driven by constant or a pin on an incomplete path

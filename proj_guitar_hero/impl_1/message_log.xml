@@ -1,97 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BaliMessageLog>
-    <Task name="Map">
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>reset</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>start</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>reset</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>start</Dynamic>
-        </Message>
-        <Message>
-            <ID>70001944</ID>
-            <Severity>16</Severity>
-            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
-        </Message>
-        <Message>
-            <ID>70001934</ID>
-            <Severity>16</Severity>
-            <Dynamic>vgaout.clock.lscc_pll_inst.u_PLL_B</Dynamic>
-        </Message>
-    </Task>
     <Task name="Synthesis">
         <Message>
             <ID>35831026</ID>
@@ -364,17 +272,17 @@
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(11): </Dynamic>
+            <Dynamic>//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(11): </Dynamic>
             <Dynamic>mypll</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
+            <Navigation>//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
             <Navigation>11</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(105): </Dynamic>
+            <Dynamic>//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(105): </Dynamic>
             <Dynamic>mypll_ipgen_lscc_pll(DIVR=&quot;0&quot;,DIVF=&quot;66&quot;,DIVQ=&quot;5&quot;,FILTER_RANGE=&quot;1&quot;,PLLOUT_SELECT_PORTA=&quot;GENCLK&quot;,PLLOUT_SELECT_PORTB=&quot;GENCLK&quot;,FREQUENCY_PIN_REFERENCECLK=&quot;12.000000&quot;)</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
+            <Navigation>//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
             <Navigation>105</Navigation>
         </Message>
         <Message>
@@ -386,9 +294,8 @@
             <Navigation>428</Navigation>
         </Message>
         <Message>
-            <ID>35831038</ID>
-            <Severity>1</Severity>
-            <Dynamic>top</Dynamic>
+            <ID>35831036</ID>
+            <Severity>16</Severity>
         </Message>
         <Message>
             <ID>35831026</ID>
@@ -661,76 +568,93 @@
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(10): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(10): </Dynamic>
             <Dynamic>top</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
             <Navigation>10</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
             <Navigation>28</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10): </Dynamic>
             <Dynamic>draw_game</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
             <Navigation>10</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(27): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(30): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
-            <Navigation>27</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
+            <Navigation>30</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(9): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(9): </Dynamic>
             <Dynamic>generate_notes</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
             <Navigation>9</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(18): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(18): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
             <Navigation>18</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(5): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(5): </Dynamic>
             <Dynamic>vga</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
             <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
             <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35001200</ID>
+            <Severity>16</Severity>
+            <Dynamic>mypll</Dynamic>
         </Message>
         <Message>
             <ID>35921504</ID>
             <Severity>1</Severity>
             <Dynamic></Dynamic>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1</Dynamic>
+            <Dynamic>//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/impl_1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>mypll.v(60): </Dynamic>
+            <Dynamic>mypll</Dynamic>
+            <Navigation>mypll.v</Navigation>
+            <Navigation>60</Navigation>
         </Message>
         <Message>
             <ID>35001786</ID>
             <Severity>1</Severity>
+        </Message>
+        <Message>
+            <ID>35001476</ID>
+            <Severity>16</Severity>
         </Message>
         <Message>
             <ID>35901328</ID>
@@ -1007,72 +931,77 @@
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(10): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(10): </Dynamic>
             <Dynamic>top</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
             <Navigation>10</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(28): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
             <Navigation>28</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(10): </Dynamic>
             <Dynamic>draw_game</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
             <Navigation>10</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(27): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd(30): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
-            <Navigation>27</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/draw_game.vhd</Navigation>
+            <Navigation>30</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(9): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(9): </Dynamic>
             <Dynamic>generate_notes</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
             <Navigation>9</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(18): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd(18): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd</Navigation>
             <Navigation>18</Navigation>
         </Message>
         <Message>
             <ID>35921012</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(5): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(5): </Dynamic>
             <Dynamic>vga</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
             <Navigation>5</Navigation>
         </Message>
         <Message>
             <ID>35921010</ID>
             <Severity>1</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd(18): </Dynamic>
             <Dynamic>synth</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd</Navigation>
             <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35001200</ID>
+            <Severity>16</Severity>
+            <Dynamic>top</Dynamic>
         </Message>
         <Message>
             <ID>35921504</ID>
             <Severity>1</Severity>
             <Dynamic></Dynamic>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/impl_1</Dynamic>
+            <Dynamic>//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/impl_1</Dynamic>
         </Message>
         <Message>
             <ID>35001771</ID>
@@ -1100,34 +1029,12 @@
             <Dynamic>gen_o</Dynamic>
         </Message>
         <Message>
-            <ID>35002028</ID>
+            <ID>35931002</ID>
             <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[0]</Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(128): </Dynamic>
+            <Dynamic>curr_color[5]</Dynamic>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>128</Navigation>
         </Message>
         <Message>
             <ID>35002028</ID>
@@ -1170,50 +1077,28 @@
             <Dynamic>rgb[0]</Dynamic>
         </Message>
         <Message>
+            <ID>35935034</ID>
+            <Severity>16</Severity>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd(177): </Dynamic>
+            <Dynamic>get_score</Dynamic>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/source/impl_1/top.vhd</Navigation>
+            <Navigation>177</Navigation>
+        </Message>
+        <Message>
             <ID>35931002</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(139): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(139): </Dynamic>
             <Dynamic>\vgaout/clock/lscc_pll_inst/sclk_i</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
             <Navigation>139</Navigation>
         </Message>
         <Message>
             <ID>35931002</ID>
             <Severity>16</Severity>
-            <Dynamic>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(140): </Dynamic>
+            <Dynamic>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v(140): </Dynamic>
             <Dynamic>\vgaout/clock/lscc_pll_inst/sdi_i</Dynamic>
-            <Navigation>//vs-home/npower03/es4/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
+            <Navigation>//vs-home/npower03/github/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v</Navigation>
             <Navigation>140</Navigation>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002028</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[0]</Dynamic>
         </Message>
         <Message>
             <ID>35002028</ID>
@@ -1244,6 +1129,12 @@
             <ID>70001934</ID>
             <Severity>16</Severity>
             <Dynamic>u_PLL_B</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Export">
+        <Message>
+            <ID>1191031</ID>
+            <Severity>1</Severity>
         </Message>
     </Task>
     <Task name="PAR">
@@ -1260,32 +1151,12 @@
         <Message>
             <ID>71003020</ID>
             <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
+            <Dynamic>reset</Dynamic>
         </Message>
         <Message>
             <ID>71003020</ID>
             <Severity>16</Severity>
-            <Dynamic>pressing[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[0]</Dynamic>
+            <Dynamic>start</Dynamic>
         </Message>
         <Message>
             <ID>71003020</ID>
@@ -1300,112 +1171,12 @@
         <Message>
             <ID>71003020</ID>
             <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
             <Dynamic>reset</Dynamic>
         </Message>
         <Message>
             <ID>71003020</ID>
             <Severity>16</Severity>
             <Dynamic>start</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>reset</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>start</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>pressing[0]</Dynamic>
         </Message>
         <Message>
             <ID>71003020</ID>
@@ -1458,10 +1229,36 @@
             <Dynamic>vgaout.clock.lscc_pll_inst.u_PLL_B</Dynamic>
         </Message>
     </Task>
-    <Task name="Export">
+    <Task name="Map">
         <Message>
-            <ID>1191031</ID>
-            <Severity>1</Severity>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>start</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>reset</Dynamic>
+        </Message>
+        <Message>
+            <ID>71003020</ID>
+            <Severity>16</Severity>
+            <Dynamic>start</Dynamic>
+        </Message>
+        <Message>
+            <ID>70001944</ID>
+            <Severity>16</Severity>
+            <Dynamic>create_generated_clock -name {vgaout/clk} -source [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/REFERENCECLK}] -multiply_by 67 -divide_by 32 [get_pins {vgaout/clock/lscc_pll_inst/u_PLL_B/OUTGLOBAL }] </Dynamic>
+        </Message>
+        <Message>
+            <ID>70001934</ID>
+            <Severity>16</Severity>
+            <Dynamic>vgaout.clock.lscc_pll_inst.u_PLL_B</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>

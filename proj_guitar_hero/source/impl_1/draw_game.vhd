@@ -20,7 +20,10 @@ entity draw_game is
 		col_red     : in std_logic_vector(479 downto 0);
 		col_yellow  : in std_logic_vector(479 downto 0);
 		col_blue    : in std_logic_vector(479 downto 0);
-		col_orange  : in std_logic_vector(479 downto 0)
+		col_orange  : in std_logic_vector(479 downto 0);
+		progress : in integer;
+		pressing : in std_logic_vector(5 downto 0);
+		cur_score : in unsigned(10 downto 0)
     );
 end draw_game;
 
@@ -31,12 +34,15 @@ constant BOX_WIDTH  : unsigned(9 downto 0) := 10d"40";
 constant BOX_RAD    : unsigned(9 downto 0) := 10d"20";
 
 constant BOTTOM_BAR_ROW : unsigned(9 downto 0) := 10d"440";
+constant TOP_BAR_ROW : unsigned(9 downto 0) := 10d"40";
 
 signal draw_green  : std_logic;
 signal draw_red    : std_logic;
 signal draw_yellow : std_logic;
 signal draw_blue   : std_logic;
 signal draw_orange : std_logic;
+signal draw_score_line : std_logic;
+
 
 begin
 	-- Indicate a box should be drawn based on current position
@@ -46,15 +52,18 @@ begin
 	draw_yellow <= '1' when (col_yellow(to_integer(row)) = '1' and (10d"320" - BOX_RAD <= col and col <= 10d"320" + BOX_RAD)) else '0';
 	draw_blue   <= '1' when (col_blue  (to_integer(row)) = '1' and (10d"448" - BOX_RAD <= col and col <= 10d"448" + BOX_RAD)) else '0';
 	draw_orange <= '1' when (col_orange(to_integer(row)) = '1' and (10d"576" - BOX_RAD <= col and col <= 10d"576" + BOX_RAD)) else '0';
+	draw_score_line <= '1' when (row < "0000000100" and (col <= cur_score)) else '0';
 	
 	 --Add draw score to beginning
 	rgb <= "000000" when valid = '0' else
+		   "111111" when draw_score_line else
 		   "111111" when row = BOTTOM_BAR_ROW else    -- Draw where user hits
 		   "001100" when draw_green else		      -- Draw boxes
 		   "110000" when draw_red else
 		   "111100" when draw_yellow else
 		   "000011" when draw_blue else
 		   "110100" when draw_orange else
+		   
 		   "000000";
 end;
 
