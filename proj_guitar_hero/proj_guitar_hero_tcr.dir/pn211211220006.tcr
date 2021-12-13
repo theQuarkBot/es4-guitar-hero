@@ -1,0 +1,8 @@
+#Start recording tcl command: 12/11/2021 21:58:15
+#Project Location: C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero; Project name: proj_guitar_hero
+prj_open "C:/Users/Philip Lengyel/Documents/ES4Final/es4-guitar-hero/proj_guitar_hero/proj_guitar_hero.rdf"
+prj_run Synthesis -impl impl_1
+prj_run Map -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 12/11/2021 22:00:06

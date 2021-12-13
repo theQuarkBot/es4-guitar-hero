@@ -1,0 +1,81 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       4429        100.0
+                                 IOBUF	         15        100.0
+                                PFUREG	       2536        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                             draw_game	          1        40.5
+                        generate_notes	          1         0.0
+                     generate_notes_U0	          1         0.0
+                     generate_notes_U1	          1         0.0
+                     generate_notes_U2	          1         0.0
+                     generate_notes_U3	          1         0.0
+                                   vga	          1         1.0
+---------------------------------------------------
+Report for cell vga
+   Instance path: top/vgaout
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         44         1.0
+                                PFUREG	         46         1.8
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                                 mypll	          1         0.0
+---------------------------------------------------
+Report for cell mypll
+   Instance path: top/vgaout/clock
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")	          1         0.0
+---------------------------------------------------
+Report for cell mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")
+   Instance path: top/vgaout/clock/lscc_pll_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell generate_notes
+   Instance path: top/make_yellow_note
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell generate_notes_U2
+   Instance path: top/make_green_note
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell draw_game
+   Instance path: top/get_color
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	       1795        40.5
+---------------------------------------------------
+Report for cell generate_notes_U0
+   Instance path: top/make_red_note
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell generate_notes_U1
+   Instance path: top/make_orange_note
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                                PFUREG	          1         0.0
+---------------------------------------------------
+Report for cell generate_notes_U3
+   Instance path: top/make_blue_note
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          2         0.0
+                                PFUREG	          1         0.0

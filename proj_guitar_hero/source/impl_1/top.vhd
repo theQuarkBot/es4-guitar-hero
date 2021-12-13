@@ -10,11 +10,18 @@ use IEEE.std_logic_unsigned.all;
 entity top is
 	port (
 		-- Which buttons are being pressewd
-		pressing : in std_logic_vector(4 downto 0);
+		pressing : in std_logic_vector(5 downto 0);
 		
 		reset : in std_logic;
 		start : in std_logic;
-		rgb   : out std_logic_vector(5 downto 0)
+		
+		--VGA
+		RGBout   : out std_logic_vector(5 downto 0);
+		rgb   : out std_logic_vector(5 downto 0);
+		oscillatorin : in std_logic;
+		HSYNCout : out std_logic;
+		VSYNCout : out std_logic
+		
 	);
 end top;
 
@@ -57,23 +64,31 @@ end component;
 
 ------------------------------------------------------------------------------------------
 
--- TODO: COMPONENT FOR VGA DISPLAY
--------------------------------
--------------------------------
--------------------------------
+component vga
+  port(
+	  pllin : in std_logic;
+	  RGB : out std_logic_vector(5 downto 0);
+	  RGBin : in std_logic_vector(5 downto 0);
+	  HSYNC : out std_logic;
+	  VSYNC : out std_logic;
+	  rowout : out unsigned(9 downto 0);
+	  colout : out unsigned(9 downto 0)
+  );
+end component;
 
 ------------------------------------------------------------------------------------------
 
 component generate_notes
 	port (
 		col_state : in std_logic_vector(479 downto 0);
-		rand 	  : in std_logic_vector(7 downto 0);
+		rand 	  : in std_logic;
 		gen		  : out std_logic;
 		update    : in std_logic
 	);
 end component;
 
 ------------------------------------------------------------------------------------------
+--VGA pins
 
 -- Which buttons are being pressed
 signal press_green  : std_logic;
@@ -81,18 +96,24 @@ signal press_red    : std_logic;
 signal press_yellow : std_logic;
 signal press_blue   : std_logic;
 signal press_orange : std_logic;
+signal press_strum  : std_logic;
 
 -- signal to "randomly" generate notes
-signal rand : std_logic_vector(63 downto 0) := 64x"100000";
+signal rand1 : std_logic;
+signal rand2 : std_logic;
+signal rand3 : std_logic;
+signal rand4 : std_logic;
+signal rand5 : std_logic;
 
 signal clk : std_logic;
 signal counter : std_logic_vector(25 downto 0);
+signal update : std_logic;
 
 -- Game state (arrays to represent where boxes are)
 signal col_green   : std_logic_vector(479 downto 0) := 480b"0";
 signal col_red     : std_logic_vector(479 downto 0) := 480b"0";
 signal col_yellow  : std_logic_vector(479 downto 0) := 480b"0";
-signal col_blue    : std_logic_vector(479 downto 0) := 480b"0";
+signal col_blue   : std_logic_vector(479 downto 0) := 480b"0";
 signal col_orange  : std_logic_vector(479 downto 0) := 480b"0";
 
 -- Signals to determine whether a box should be generated for each column
@@ -102,21 +123,39 @@ signal gen_y : std_logic := '0';
 signal gen_b : std_logic := '0';
 signal gen_o : std_logic := '0';
 
+signal cur_note : integer := 0;
+signal to_next_note : integer := 0;
+
+signal counterzz  : unsigned(479 downto 0) := 480d"0";
+
 -- Output color
 --signal rgb_out : std_logic_vector(5 downto 0); TODO: Is this needed?
 signal row : unsigned(9 downto 0);
 signal col : unsigned(9 downto 0);
+signal intergb : std_logic_vector(5 downto 0);
+
+--memory vars
+signal data : std_logic_vector(49 downto 0);
+signal addr : std_logic_vector(2 downto 0);
+signal addrcounter : unsigned(2 downto 0);
+signal addrcountlogic : std_logic_vector(2 downto 0);
 
 begin
-	clock : HSOSC port map('1', '1', clk);
+	addrcountlogic <= std_logic_vector(addrcounter);
 	
+	clock : HSOSC port map('1', '1', clk);
+	update <= counter(19);
+	
+	--vgaout : vga port map(pllin => oscillatorin, RGB => RGBout, HSYNC => HSYNCout, VSYNC => VSYNCout, RGBin => rgbi, rowout => row, colout => col);
+	vgaout : vga port map(pllin => oscillatorin, RGB => RGBout, HSYNC => HSYNCout, VSYNC => VSYNCout, RGBin => intergb, rowout => row, colout => col);
 	------------------------------------------------------------------------------------------
+	
 	-- Given the current game state and a row/column. Give the color of the current pixel
 	get_color : draw_game port map(
-		row=> row,
-		col=> col,
+		row=> col,
+		col=> row,
 		valid=> '1',    -- TODO: Make sure this is right
-		rgb=> rgb,
+		rgb=> intergb,
 		col_green=>  col_green,
 		col_red=>    col_red,
 		col_yellow=> col_yellow,
@@ -125,10 +164,10 @@ begin
 	);
 	------------------------------------------------------------------------------------------
 	
+	
 	process (clk) begin
 		if rising_edge(clk) then
 			counter <= counter + 26b"1";
-			rand <= (rand(62) xor rand(0)) & rand(63 downto 1);
 			
 			-- Get button presses
 			press_green  <= not pressing(0);
@@ -136,29 +175,69 @@ begin
 			press_yellow <= not pressing(2);
 			press_blue   <= not pressing(3);
 			press_orange <= not pressing(4);
+			press_strum  <= not pressing(5);
 		end if;
 	end process;
 	
-	-- Generate new row when needed
-	make_green_note  : generate_notes port map(col_green , rand(7 downto 0), gen_g, counter(20));
-	make_red_note    : generate_notes port map(col_red   , rand(7 downto 0), gen_r, counter(20));
-	make_yellow_note : generate_notes port map(col_yellow, rand(7 downto 0), gen_y, counter(20));
-	make_blue_note   : generate_notes port map(col_blue  , rand(7 downto 0), gen_b, counter(20));
-	make_orange_note : generate_notes port map(col_orange, rand(7 downto 0), gen_o, counter(20));
-	
-	------------------------------------------------------------------------------------------
-	-- Shift the notes down one row
-	process (counter(20)) begin
-		if rising_edge(counter(20)) then
+	-- Generate new data
+	process(clk) is
+	begin
+		if rising_edge(clk) then
+			case addr is
+				when "000" => data <= "10100001011110011001011011111101001001000101000001"; -- Assumes 2-bit address and 16-bit data
+				when "001" => data <= "10110101110001111010010001011011101110101010000111"; -- You can make these any size you want
+				when "010" => data <= "01000111110000111101000100100011011000011011011010";
+				when "011" => data <= "10001011101011100000101001110000100000100110001100";
+				when "100" => data <= "10101000000101000101011101000010011110111101111000";
+				when others => data <= 50b"0"; -- Don't forget the "others" case!
+			end case;
+		end if;
+	end process;
+
+	process (update) begin
+		if rising_edge(update) then
+			if (to_next_note >= 80) then
+				to_next_note <= 0;
+				cur_note <= cur_note + 1;
+			else
+				to_next_note <= to_next_note + 1;
+			end if;
 			
-		
-			col_green  <= gen_g & col_green(479 downto 1);
-			col_red    <= gen_r & col_red(479 downto 1);
-			col_yellow <= gen_y & col_yellow(479 downto 1);
-			col_blue   <= gen_b & col_blue(479 downto 1);
-			col_orange <= gen_o & col_orange(479 downto 1);
+			col_green  <= col_green(478 downto 0)  & gen_g;
+			col_red    <= col_red(478 downto 0)    & gen_r;
+			col_yellow <= col_yellow(478 downto 0) & gen_y;
+			col_blue   <= col_blue(478 downto 0)   & gen_b;
+			col_orange <= col_orange(478 downto 0) & gen_o;
 		end if;
 	end process;
+
+	process (to_next_note) begin
+		if to_next_note < 5 then
+			addr <= std_logic_vector(to_unsigned(to_next_note, 3));
+		end if;
+	end process;
+	
+	process (data) begin
+		if (to_next_note = 0) then
+			rand1 <= data(cur_note);
+		elsif (to_next_note = 1) then
+			rand2 <= data(cur_note);
+		elsif (to_next_note = 2) then
+			rand3 <= data(cur_note);
+		elsif (to_next_note = 3) then
+			rand4 <= data(cur_note);
+		elsif (to_next_note = 4) then
+			rand5 <= data(cur_note);
+		end if;
+	end process;
+
+	-- Generate new row when needed
+	make_green_note  : generate_notes port map(col_green , rand1, gen_g, update);
+	make_red_note    : generate_notes port map(col_red   , rand2, gen_r, update);
+	make_yellow_note : generate_notes port map(col_yellow, rand3, gen_y, update);
+	make_blue_note   : generate_notes port map(col_blue  , rand4, gen_b, update);
+	make_orange_note : generate_notes port map(col_orange, rand5, gen_o, update);
+
 	------------------------------------------------------------------------------------------
 	
 	-- TODO: logic to determine which buttons are being pressed
