@@ -1,40 +1,40 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
-Register bits:  2536 of 5280 (48.030%)
-I/O cells:      16
+Register bits:  2547 of 5280 (48.239%)
+I/O cells:      21
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        44          100.0
-                            FD1P3XZ      2536          100.0
+                               CCU2        50          100.0
+                            FD1P3XZ      2547          100.0
                          HSOSC_CORE         1          100.0
-                                 IB         2          100.0
-                               LUT4      1919          100.0
+                                 IB         7          100.0
+                               LUT4      1926          100.0
                                  OB        14          100.0
                               PLL_B         1          100.0
 SUB MODULES
-                          draw_game         1
-                     generate_notes         1
-                  generate_notes_U0         1
-                  generate_notes_U1         1
-                  generate_notes_U2         1
-                  generate_notes_U3         1
+                  draw_game_default         1
+             generate_notes_default         1
+          generate_notes_default_U0         1
+          generate_notes_default_U1         1
+          generate_notes_default_U2         1
+          generate_notes_default_U3         1
                               mypll         1
 mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
-                                vga         1
-                              TOTAL      4526
+                        vga_default         1
+                              TOTAL      4555
 ----------------------------------------------------------------------
-Report for cell vga.v1
+Report for cell vga_default.v1
 Instance Path : vgaout
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        12           27.3
+                                FA2        12           24.0
                             FD1P3XZ        46            1.8
-                               LUT4        27            1.4
+                               LUT4        21            1.1
                               PLL_B         1          100.0
 SUB MODULES
                               mypll         1
 mypll_ipgen_lscc_pll(DIVR="0",DIVF="66",DIVQ="5",FILTER_RANGE="1",PLLOUT_SELECT_PORTA="GENCLK",PLLOUT_SELECT_PORTB="GENCLK",FREQUENCY_PIN_REFERENCECLK="12.000000")         1
-                              TOTAL        88
+                              TOTAL        82
 ----------------------------------------------------------------------
 Report for cell mypll.v1
 Instance Path : vgaout.clock
@@ -52,7 +52,7 @@ Instance Path : vgaout.clock.lscc_pll_inst
                               PLL_B         1          100.0
                               TOTAL         1
 ----------------------------------------------------------------------
-Report for cell generate_notes.v1
+Report for cell generate_notes_default.v1
 Instance Path : make_yellow_note
                                   Cell usage:
                                cell     count   Res Usage(%)
@@ -60,7 +60,7 @@ Instance Path : make_yellow_note
                                LUT4         2            0.1
                               TOTAL         3
 ----------------------------------------------------------------------
-Report for cell generate_notes_U2.v1
+Report for cell generate_notes_default_U2.v1
 Instance Path : make_green_note
                                   Cell usage:
                                cell     count   Res Usage(%)
@@ -68,14 +68,14 @@ Instance Path : make_green_note
                                LUT4         2            0.1
                               TOTAL         3
 ----------------------------------------------------------------------
-Report for cell draw_game.v1
+Report for cell draw_game_default.v1
 Instance Path : get_color
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4      1790           93.3
-                              TOTAL      1790
+                               LUT4      1795           93.2
+                              TOTAL      1795
 ----------------------------------------------------------------------
-Report for cell generate_notes_U0.v1
+Report for cell generate_notes_default_U0.v1
 Instance Path : make_red_note
                                   Cell usage:
                                cell     count   Res Usage(%)
@@ -83,7 +83,7 @@ Instance Path : make_red_note
                                LUT4         2            0.1
                               TOTAL         3
 ----------------------------------------------------------------------
-Report for cell generate_notes_U1.v1
+Report for cell generate_notes_default_U1.v1
 Instance Path : make_orange_note
                                   Cell usage:
                                cell     count   Res Usage(%)
@@ -91,7 +91,7 @@ Instance Path : make_orange_note
                                LUT4         2            0.1
                               TOTAL         3
 ----------------------------------------------------------------------
-Report for cell generate_notes_U3.v1
+Report for cell generate_notes_default_U3.v1
 Instance Path : make_blue_note
                                   Cell usage:
                                cell     count   Res Usage(%)

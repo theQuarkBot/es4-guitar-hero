@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 3.0.0.24.1
 
-Mon Dec 13 10:24:28 2021
+Mon Dec 13 12:12:40 2021
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -67,28 +67,28 @@ Operating conditions:
 Combinational Loops
 -------------------
 ++++ Loop1
-addr_2__I_0_2_i3_3_lut/A	->	addr_2__I_0_2_i3_3_lut/Z
+i708_4_lut/B	->	i708_4_lut/Z
 
 ++++ Loop2
-addr_2__I_0_2_i2_3_lut/A	->	addr_2__I_0_2_i2_3_lut/Z
-
-++++ Loop3
-addr_2__I_0_2_i1_3_lut/A	->	addr_2__I_0_2_i1_3_lut/Z
-
-++++ Loop4
 rand1_I_0_4_lut/B	->	rand1_I_0_4_lut/Z
 
+++++ Loop3
+i704_4_lut/B	->	i704_4_lut/Z
+
+++++ Loop4
+mux_288_i1_4_lut/B	->	mux_288_i1_4_lut/Z
+
 ++++ Loop5
-i660_4_lut/B	->	i660_4_lut/Z
+i282_4_lut/B	->	i282_4_lut/Z
 
 ++++ Loop6
-i238_3_lut/B	->	i238_3_lut/Z
+addr_2__I_0_2_i3_3_lut/A	->	addr_2__I_0_2_i3_3_lut/Z
 
 ++++ Loop7
-i664_4_lut/B	->	i664_4_lut/Z
+addr_2__I_0_2_i1_3_lut/A	->	addr_2__I_0_2_i1_3_lut/Z
 
 ++++ Loop8
-mux_243_i1_4_lut/B	->	mux_243_i1_4_lut/Z
+addr_2__I_0_2_i2_3_lut/A	->	addr_2__I_0_2_i2_3_lut/Z
 
 ==============================================
 2  CLOCK SUMMARY
@@ -142,7 +142,7 @@ Clock Domain Crossing
 
 3.1.1  Constraint Coverage
 ---------------------------
-Constraint Coverage: 0.616683%
+Constraint Coverage: 0.611424%
 
 3.1.2  Timing Errors
 ---------------------
@@ -158,16 +158,16 @@ Total Negative Slack: 0.000 ns (setup), 0.000 ns (hold)
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-counter_296_348__i20/D                   |   11.343 ns 
-counter_296_348__i19/D                   |   11.621 ns 
-counter_296_348__i18/D                   |   11.899 ns 
-counter_296_348__i17/D                   |   12.177 ns 
-counter_296_348__i16/D                   |   12.455 ns 
-counter_296_348__i15/D                   |   12.733 ns 
-counter_296_348__i14/D                   |   13.011 ns 
-counter_296_348__i13/D                   |   13.289 ns 
-counter_296_348__i12/D                   |   13.567 ns 
-counter_296_348__i11/D                   |   13.845 ns 
+counter_343_390__i20/D                   |   11.343 ns 
+counter_343_390__i19/D                   |   11.621 ns 
+counter_343_390__i18/D                   |   11.899 ns 
+counter_343_390__i17/D                   |   12.177 ns 
+counter_343_390__i16/D                   |   12.455 ns 
+counter_343_390__i15/D                   |   12.733 ns 
+counter_343_390__i14/D                   |   13.011 ns 
+counter_343_390__i13/D                   |   13.289 ns 
+counter_343_390__i12/D                   |   13.567 ns 
+counter_343_390__i11/D                   |   13.845 ns 
 -------------------------------------------------------
                                          |             
 Setup # of endpoints with negative slack:|           0 
@@ -180,16 +180,16 @@ Setup # of endpoints with negative slack:|           0
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-counter_296_348__i10/D                   |    3.092 ns 
-counter_296_348__i11/D                   |    3.092 ns 
-counter_296_348__i12/D                   |    3.092 ns 
-counter_296_348__i13/D                   |    3.092 ns 
-counter_296_348__i14/D                   |    3.092 ns 
-counter_296_348__i15/D                   |    3.092 ns 
-counter_296_348__i16/D                   |    3.092 ns 
-counter_296_348__i17/D                   |    3.092 ns 
-counter_296_348__i18/D                   |    3.092 ns 
-counter_296_348__i19/D                   |    3.092 ns 
+counter_343_390__i10/D                   |    3.092 ns 
+counter_343_390__i11/D                   |    3.092 ns 
+counter_343_390__i12/D                   |    3.092 ns 
+counter_343_390__i13/D                   |    3.092 ns 
+counter_343_390__i14/D                   |    3.092 ns 
+counter_343_390__i15/D                   |    3.092 ns 
+counter_343_390__i16/D                   |    3.092 ns 
+counter_343_390__i17/D                   |    3.092 ns 
+counter_343_390__i18/D                   |    3.092 ns 
+counter_343_390__i19/D                   |    3.092 ns 
 -------------------------------------------------------
                                          |             
 Hold # of endpoints with negative slack: |           0 
@@ -206,16 +206,16 @@ Clocked but unconstrained timing start points
 -------------------------------------------------------------------
         Listing 10 Start Points         |           Type           
 -------------------------------------------------------------------
-counter_296_348__i20/Q                  |          No required time
-data_i38/Q                              |          No required time
+counter_343_390__i20/Q                  |          No required time
 data_i36/Q                              |          No required time
-data_i48/Q                              |          No required time
+data_i38/Q                              |          No required time
 data_i28/Q                              |          No required time
-data_i21/Q                              |          No required time
 data_i27/Q                              |          No required time
 data_i24/Q                              |          No required time
 data_i23/Q                              |          No required time
 data_i19/Q                              |          No required time
+data_i45/Q                              |          No required time
+data_i42/Q                              |          No required time
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing start po |                          
@@ -227,18 +227,19 @@ Clocked but unconstrained timing end points
 -------------------------------------------------------------------
          Listing 10 End Points          |           Type           
 -------------------------------------------------------------------
-vgaout/row_300__i9/D                    |    No arrival or required
-vgaout/row_300__i9/SR                   |    No arrival or required
-vgaout/row_300__i8/D                    |    No arrival or required
-vgaout/row_300__i7/D                    |    No arrival or required
-{vgaout/row_300__i7/SR   vgaout/row_300__i8/SR}                           
+vgaout/column_348__i9/D                 |    No arrival or required
+vgaout/column_348__i9/SP                |    No arrival or required
+vgaout/column_348__i9/SR                |    No arrival or required
+vgaout/column_348__i8/D                 |    No arrival or required
+vgaout/column_348__i7/D                 |    No arrival or required
+{vgaout/column_348__i7/SP   vgaout/column_348__i8/SP}                           
                                         |    No arrival or required
-vgaout/row_300__i6/D                    |    No arrival or required
-vgaout/row_300__i5/D                    |    No arrival or required
-{vgaout/row_300__i5/SR   vgaout/row_300__i6/SR}                           
+{vgaout/column_348__i7/SR   vgaout/column_348__i8/SR}                           
                                         |    No arrival or required
-vgaout/row_300__i4/D                    |    No arrival or required
-vgaout/row_300__i3/D                    |    No arrival or required
+vgaout/column_348__i6/D                 |    No arrival or required
+vgaout/column_348__i5/D                 |    No arrival or required
+{vgaout/column_348__i5/SP   vgaout/column_348__i6/SP}                           
+                                        |    No arrival or required
 -------------------------------------------------------------------
                                         |                          
 Number of unconstrained timing end poin |                          
@@ -263,15 +264,15 @@ create_generated_clock,
      Listing 10 Start or End Points     |           Type           
 -------------------------------------------------------------------
 pressing[5]                             |                     input
-oscillatorin                            |                     input
 pressing[4]                             |                     input
 pressing[3]                             |                     input
 pressing[2]                             |                     input
 pressing[1]                             |                     input
 pressing[0]                             |                     input
+oscillatorin                            |                     input
 reset                                   |                     input
 start                                   |                     input
-RGBout[1]                               |                    output
+RGBout[0]                               |                    output
 -------------------------------------------------------------------
                                         |                          
 Number of I/O ports without constraint  |                        17
@@ -283,20 +284,20 @@ Define the clock for these registers.
 -------------------------------------------------------------------
          Listing 10 Instance(s)         |           Type           
 -------------------------------------------------------------------
-to_next_note_298__i31                   |                  No Clock
-to_next_note_298__i22                   |                  No Clock
-to_next_note_298__i30                   |                  No Clock
-to_next_note_298__i28                   |                  No Clock
-to_next_note_298__i20                   |                  No Clock
-to_next_note_298__i4                    |                  No Clock
-to_next_note_298__i16                   |                  No Clock
-to_next_note_298__i18                   |                  No Clock
-to_next_note_298__i26                   |                  No Clock
-cur_note_297_346__i6                    |                  No Clock
+to_next_note_345__i31                   |                  No Clock
+cur_note_344_389__i1                    |                  No Clock
+cur_score_347__i0                       |                  No Clock
+cur_score_347__i10                      |                  No Clock
+cur_note_344_389__i6                    |                  No Clock
+to_next_note_345__i16                   |                  No Clock
+to_next_note_345__i30                   |                  No Clock
+to_next_note_345__i28                   |                  No Clock
+to_next_note_345__i14                   |                  No Clock
+cur_note_344_389__i5                    |                  No Clock
 -------------------------------------------------------------------
                                         |                          
 Number of registers without clock defin |                          
-ition                                   |                      9768
+ition                                   |                      9870
                                         |                          
 -------------------------------------------------------------------
 
@@ -320,8 +321,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i1/Q  (SLICE)
-Path End         : counter_296_348__i20/D  (SLICE)
+Path Begin       : counter_343_390__i1/Q  (SLICE)
+Path End         : counter_343_390__i20/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 21
@@ -337,67 +338,67 @@ clk                                                       NET DELAY      2.075  
 
 
 
-counter_296_348__i1/CK->counter_296_348__i1/Q
+counter_343_390__i1/CK->counter_343_390__i1/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  1       
 n20                                                       NET DELAY            2.075         5.541  1       
-counter_296_348_add_4_1/C1->counter_296_348_add_4_1/CO1
+counter_343_390_add_4_1/C1->counter_343_390_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n16176                                                    NET DELAY            0.000         5.885  2       
-counter_296_348_add_4_3/CI0->counter_296_348_add_4_3/CO0
+n17105                                                    NET DELAY            0.000         5.885  2       
+counter_343_390_add_4_3/CI0->counter_343_390_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.163  2       
-n24123                                                    NET DELAY            0.000         6.163  2       
-counter_296_348_add_4_3/CI1->counter_296_348_add_4_3/CO1
+n25421                                                    NET DELAY            0.000         6.163  2       
+counter_343_390_add_4_3/CI1->counter_343_390_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.441  2       
-n16178                                                    NET DELAY            0.000         6.441  2       
-counter_296_348_add_4_5/CI0->counter_296_348_add_4_5/CO0
+n17107                                                    NET DELAY            0.000         6.441  2       
+counter_343_390_add_4_5/CI0->counter_343_390_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.719  2       
-n24126                                                    NET DELAY            0.000         6.719  2       
-counter_296_348_add_4_5/CI1->counter_296_348_add_4_5/CO1
+n25424                                                    NET DELAY            0.000         6.719  2       
+counter_343_390_add_4_5/CI1->counter_343_390_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.997  2       
-n16180                                                    NET DELAY            0.000         6.997  2       
-counter_296_348_add_4_7/CI0->counter_296_348_add_4_7/CO0
+n17109                                                    NET DELAY            0.000         6.997  2       
+counter_343_390_add_4_7/CI0->counter_343_390_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.275  2       
-n24129                                                    NET DELAY            0.000         7.275  2       
-counter_296_348_add_4_7/CI1->counter_296_348_add_4_7/CO1
+n25427                                                    NET DELAY            0.000         7.275  2       
+counter_343_390_add_4_7/CI1->counter_343_390_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         7.553  2       
-n16182                                                    NET DELAY            0.000         7.553  2       
-counter_296_348_add_4_9/CI0->counter_296_348_add_4_9/CO0
+n17111                                                    NET DELAY            0.000         7.553  2       
+counter_343_390_add_4_9/CI0->counter_343_390_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.831  2       
-n24132                                                    NET DELAY            0.000         7.831  2       
-counter_296_348_add_4_9/CI1->counter_296_348_add_4_9/CO1
+n25430                                                    NET DELAY            0.000         7.831  2       
+counter_343_390_add_4_9/CI1->counter_343_390_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.109  2       
-n16184                                                    NET DELAY            0.000         8.109  2       
-counter_296_348_add_4_11/CI0->counter_296_348_add_4_11/CO0
+n17113                                                    NET DELAY            0.000         8.109  2       
+counter_343_390_add_4_11/CI0->counter_343_390_add_4_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.387  2       
-n24135                                                    NET DELAY            0.000         8.387  2       
-counter_296_348_add_4_11/CI1->counter_296_348_add_4_11/CO1
+n25433                                                    NET DELAY            0.000         8.387  2       
+counter_343_390_add_4_11/CI1->counter_343_390_add_4_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.665  2       
-n16186                                                    NET DELAY            0.000         8.665  2       
-counter_296_348_add_4_13/CI0->counter_296_348_add_4_13/CO0
+n17115                                                    NET DELAY            0.000         8.665  2       
+counter_343_390_add_4_13/CI0->counter_343_390_add_4_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.943  2       
-n24138                                                    NET DELAY            0.000         8.943  2       
-counter_296_348_add_4_13/CI1->counter_296_348_add_4_13/CO1
+n25436                                                    NET DELAY            0.000         8.943  2       
+counter_343_390_add_4_13/CI1->counter_343_390_add_4_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         9.221  2       
-n16188                                                    NET DELAY            0.000         9.221  2       
-counter_296_348_add_4_15/CI0->counter_296_348_add_4_15/CO0
+n17117                                                    NET DELAY            0.000         9.221  2       
+counter_343_390_add_4_15/CI0->counter_343_390_add_4_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         9.499  2       
-n24141                                                    NET DELAY            0.000         9.499  2       
-counter_296_348_add_4_15/CI1->counter_296_348_add_4_15/CO1
+n25439                                                    NET DELAY            0.000         9.499  2       
+counter_343_390_add_4_15/CI1->counter_343_390_add_4_15/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         9.777  2       
-n16190                                                    NET DELAY            0.000         9.777  2       
-counter_296_348_add_4_17/CI0->counter_296_348_add_4_17/CO0
+n17119                                                    NET DELAY            0.000         9.777  2       
+counter_343_390_add_4_17/CI0->counter_343_390_add_4_17/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.055  2       
-n24144                                                    NET DELAY            0.000        10.055  2       
-counter_296_348_add_4_17/CI1->counter_296_348_add_4_17/CO1
+n25442                                                    NET DELAY            0.000        10.055  2       
+counter_343_390_add_4_17/CI1->counter_343_390_add_4_17/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        10.333  2       
-n16192                                                    NET DELAY            0.000        10.333  2       
-counter_296_348_add_4_19/CI0->counter_296_348_add_4_19/CO0
+n17121                                                    NET DELAY            0.000        10.333  2       
+counter_343_390_add_4_19/CI0->counter_343_390_add_4_19/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.611  2       
-n24147                                                    NET DELAY            0.000        10.611  2       
-counter_296_348_add_4_19/CI1->counter_296_348_add_4_19/CO1
+n25445                                                    NET DELAY            0.000        10.611  2       
+counter_343_390_add_4_19/CI1->counter_343_390_add_4_19/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        10.889  2       
-n16194                                                    NET DELAY            0.000        10.889  2       
-counter_296_348_add_4_21/D0->counter_296_348_add_4_21/S0
+n17123                                                    NET DELAY            0.000        10.889  2       
+counter_343_390_add_4_21/D0->counter_343_390_add_4_21/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        11.366  1       
 n86 ( DI0 )                                               NET DELAY            0.000        11.366  1       
 
@@ -418,8 +419,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i1/Q  (SLICE)
-Path End         : counter_296_348__i19/D  (SLICE)
+Path Begin       : counter_343_390__i1/Q  (SLICE)
+Path End         : counter_343_390__i19/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 20
@@ -435,64 +436,64 @@ clk                                                       NET DELAY      2.075  
 
 
 
-counter_296_348__i1/CK->counter_296_348__i1/Q
+counter_343_390__i1/CK->counter_343_390__i1/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  1       
 n20                                                       NET DELAY            2.075         5.541  1       
-counter_296_348_add_4_1/C1->counter_296_348_add_4_1/CO1
+counter_343_390_add_4_1/C1->counter_343_390_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n16176                                                    NET DELAY            0.000         5.885  2       
-counter_296_348_add_4_3/CI0->counter_296_348_add_4_3/CO0
+n17105                                                    NET DELAY            0.000         5.885  2       
+counter_343_390_add_4_3/CI0->counter_343_390_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.163  2       
-n24123                                                    NET DELAY            0.000         6.163  2       
-counter_296_348_add_4_3/CI1->counter_296_348_add_4_3/CO1
+n25421                                                    NET DELAY            0.000         6.163  2       
+counter_343_390_add_4_3/CI1->counter_343_390_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.441  2       
-n16178                                                    NET DELAY            0.000         6.441  2       
-counter_296_348_add_4_5/CI0->counter_296_348_add_4_5/CO0
+n17107                                                    NET DELAY            0.000         6.441  2       
+counter_343_390_add_4_5/CI0->counter_343_390_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.719  2       
-n24126                                                    NET DELAY            0.000         6.719  2       
-counter_296_348_add_4_5/CI1->counter_296_348_add_4_5/CO1
+n25424                                                    NET DELAY            0.000         6.719  2       
+counter_343_390_add_4_5/CI1->counter_343_390_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.997  2       
-n16180                                                    NET DELAY            0.000         6.997  2       
-counter_296_348_add_4_7/CI0->counter_296_348_add_4_7/CO0
+n17109                                                    NET DELAY            0.000         6.997  2       
+counter_343_390_add_4_7/CI0->counter_343_390_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.275  2       
-n24129                                                    NET DELAY            0.000         7.275  2       
-counter_296_348_add_4_7/CI1->counter_296_348_add_4_7/CO1
+n25427                                                    NET DELAY            0.000         7.275  2       
+counter_343_390_add_4_7/CI1->counter_343_390_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         7.553  2       
-n16182                                                    NET DELAY            0.000         7.553  2       
-counter_296_348_add_4_9/CI0->counter_296_348_add_4_9/CO0
+n17111                                                    NET DELAY            0.000         7.553  2       
+counter_343_390_add_4_9/CI0->counter_343_390_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.831  2       
-n24132                                                    NET DELAY            0.000         7.831  2       
-counter_296_348_add_4_9/CI1->counter_296_348_add_4_9/CO1
+n25430                                                    NET DELAY            0.000         7.831  2       
+counter_343_390_add_4_9/CI1->counter_343_390_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.109  2       
-n16184                                                    NET DELAY            0.000         8.109  2       
-counter_296_348_add_4_11/CI0->counter_296_348_add_4_11/CO0
+n17113                                                    NET DELAY            0.000         8.109  2       
+counter_343_390_add_4_11/CI0->counter_343_390_add_4_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.387  2       
-n24135                                                    NET DELAY            0.000         8.387  2       
-counter_296_348_add_4_11/CI1->counter_296_348_add_4_11/CO1
+n25433                                                    NET DELAY            0.000         8.387  2       
+counter_343_390_add_4_11/CI1->counter_343_390_add_4_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.665  2       
-n16186                                                    NET DELAY            0.000         8.665  2       
-counter_296_348_add_4_13/CI0->counter_296_348_add_4_13/CO0
+n17115                                                    NET DELAY            0.000         8.665  2       
+counter_343_390_add_4_13/CI0->counter_343_390_add_4_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.943  2       
-n24138                                                    NET DELAY            0.000         8.943  2       
-counter_296_348_add_4_13/CI1->counter_296_348_add_4_13/CO1
+n25436                                                    NET DELAY            0.000         8.943  2       
+counter_343_390_add_4_13/CI1->counter_343_390_add_4_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         9.221  2       
-n16188                                                    NET DELAY            0.000         9.221  2       
-counter_296_348_add_4_15/CI0->counter_296_348_add_4_15/CO0
+n17117                                                    NET DELAY            0.000         9.221  2       
+counter_343_390_add_4_15/CI0->counter_343_390_add_4_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         9.499  2       
-n24141                                                    NET DELAY            0.000         9.499  2       
-counter_296_348_add_4_15/CI1->counter_296_348_add_4_15/CO1
+n25439                                                    NET DELAY            0.000         9.499  2       
+counter_343_390_add_4_15/CI1->counter_343_390_add_4_15/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         9.777  2       
-n16190                                                    NET DELAY            0.000         9.777  2       
-counter_296_348_add_4_17/CI0->counter_296_348_add_4_17/CO0
+n17119                                                    NET DELAY            0.000         9.777  2       
+counter_343_390_add_4_17/CI0->counter_343_390_add_4_17/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.055  2       
-n24144                                                    NET DELAY            0.000        10.055  2       
-counter_296_348_add_4_17/CI1->counter_296_348_add_4_17/CO1
+n25442                                                    NET DELAY            0.000        10.055  2       
+counter_343_390_add_4_17/CI1->counter_343_390_add_4_17/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        10.333  2       
-n16192                                                    NET DELAY            0.000        10.333  2       
-counter_296_348_add_4_19/CI0->counter_296_348_add_4_19/CO0
+n17121                                                    NET DELAY            0.000        10.333  2       
+counter_343_390_add_4_19/CI0->counter_343_390_add_4_19/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.611  2       
-n24147                                                    NET DELAY            0.000        10.611  2       
-counter_296_348_add_4_19/D1->counter_296_348_add_4_19/S1
+n25445                                                    NET DELAY            0.000        10.611  2       
+counter_343_390_add_4_19/D1->counter_343_390_add_4_19/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        11.088  1       
 n87 ( DI1 )                                               NET DELAY            0.000        11.088  1       
 
@@ -513,8 +514,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i1/Q  (SLICE)
-Path End         : counter_296_348__i18/D  (SLICE)
+Path Begin       : counter_343_390__i1/Q  (SLICE)
+Path End         : counter_343_390__i18/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 19
@@ -530,61 +531,61 @@ clk                                                       NET DELAY      2.075  
 
 
 
-counter_296_348__i1/CK->counter_296_348__i1/Q
+counter_343_390__i1/CK->counter_343_390__i1/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  1       
 n20                                                       NET DELAY            2.075         5.541  1       
-counter_296_348_add_4_1/C1->counter_296_348_add_4_1/CO1
+counter_343_390_add_4_1/C1->counter_343_390_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n16176                                                    NET DELAY            0.000         5.885  2       
-counter_296_348_add_4_3/CI0->counter_296_348_add_4_3/CO0
+n17105                                                    NET DELAY            0.000         5.885  2       
+counter_343_390_add_4_3/CI0->counter_343_390_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.163  2       
-n24123                                                    NET DELAY            0.000         6.163  2       
-counter_296_348_add_4_3/CI1->counter_296_348_add_4_3/CO1
+n25421                                                    NET DELAY            0.000         6.163  2       
+counter_343_390_add_4_3/CI1->counter_343_390_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.441  2       
-n16178                                                    NET DELAY            0.000         6.441  2       
-counter_296_348_add_4_5/CI0->counter_296_348_add_4_5/CO0
+n17107                                                    NET DELAY            0.000         6.441  2       
+counter_343_390_add_4_5/CI0->counter_343_390_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.719  2       
-n24126                                                    NET DELAY            0.000         6.719  2       
-counter_296_348_add_4_5/CI1->counter_296_348_add_4_5/CO1
+n25424                                                    NET DELAY            0.000         6.719  2       
+counter_343_390_add_4_5/CI1->counter_343_390_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.997  2       
-n16180                                                    NET DELAY            0.000         6.997  2       
-counter_296_348_add_4_7/CI0->counter_296_348_add_4_7/CO0
+n17109                                                    NET DELAY            0.000         6.997  2       
+counter_343_390_add_4_7/CI0->counter_343_390_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.275  2       
-n24129                                                    NET DELAY            0.000         7.275  2       
-counter_296_348_add_4_7/CI1->counter_296_348_add_4_7/CO1
+n25427                                                    NET DELAY            0.000         7.275  2       
+counter_343_390_add_4_7/CI1->counter_343_390_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         7.553  2       
-n16182                                                    NET DELAY            0.000         7.553  2       
-counter_296_348_add_4_9/CI0->counter_296_348_add_4_9/CO0
+n17111                                                    NET DELAY            0.000         7.553  2       
+counter_343_390_add_4_9/CI0->counter_343_390_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.831  2       
-n24132                                                    NET DELAY            0.000         7.831  2       
-counter_296_348_add_4_9/CI1->counter_296_348_add_4_9/CO1
+n25430                                                    NET DELAY            0.000         7.831  2       
+counter_343_390_add_4_9/CI1->counter_343_390_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.109  2       
-n16184                                                    NET DELAY            0.000         8.109  2       
-counter_296_348_add_4_11/CI0->counter_296_348_add_4_11/CO0
+n17113                                                    NET DELAY            0.000         8.109  2       
+counter_343_390_add_4_11/CI0->counter_343_390_add_4_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.387  2       
-n24135                                                    NET DELAY            0.000         8.387  2       
-counter_296_348_add_4_11/CI1->counter_296_348_add_4_11/CO1
+n25433                                                    NET DELAY            0.000         8.387  2       
+counter_343_390_add_4_11/CI1->counter_343_390_add_4_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.665  2       
-n16186                                                    NET DELAY            0.000         8.665  2       
-counter_296_348_add_4_13/CI0->counter_296_348_add_4_13/CO0
+n17115                                                    NET DELAY            0.000         8.665  2       
+counter_343_390_add_4_13/CI0->counter_343_390_add_4_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.943  2       
-n24138                                                    NET DELAY            0.000         8.943  2       
-counter_296_348_add_4_13/CI1->counter_296_348_add_4_13/CO1
+n25436                                                    NET DELAY            0.000         8.943  2       
+counter_343_390_add_4_13/CI1->counter_343_390_add_4_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         9.221  2       
-n16188                                                    NET DELAY            0.000         9.221  2       
-counter_296_348_add_4_15/CI0->counter_296_348_add_4_15/CO0
+n17117                                                    NET DELAY            0.000         9.221  2       
+counter_343_390_add_4_15/CI0->counter_343_390_add_4_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         9.499  2       
-n24141                                                    NET DELAY            0.000         9.499  2       
-counter_296_348_add_4_15/CI1->counter_296_348_add_4_15/CO1
+n25439                                                    NET DELAY            0.000         9.499  2       
+counter_343_390_add_4_15/CI1->counter_343_390_add_4_15/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         9.777  2       
-n16190                                                    NET DELAY            0.000         9.777  2       
-counter_296_348_add_4_17/CI0->counter_296_348_add_4_17/CO0
+n17119                                                    NET DELAY            0.000         9.777  2       
+counter_343_390_add_4_17/CI0->counter_343_390_add_4_17/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.055  2       
-n24144                                                    NET DELAY            0.000        10.055  2       
-counter_296_348_add_4_17/CI1->counter_296_348_add_4_17/CO1
+n25442                                                    NET DELAY            0.000        10.055  2       
+counter_343_390_add_4_17/CI1->counter_343_390_add_4_17/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278        10.333  2       
-n16192                                                    NET DELAY            0.000        10.333  2       
-counter_296_348_add_4_19/D0->counter_296_348_add_4_19/S0
+n17121                                                    NET DELAY            0.000        10.333  2       
+counter_343_390_add_4_19/D0->counter_343_390_add_4_19/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        10.810  1       
 n88 ( DI0 )                                               NET DELAY            0.000        10.810  1       
 
@@ -605,8 +606,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i1/Q  (SLICE)
-Path End         : counter_296_348__i17/D  (SLICE)
+Path Begin       : counter_343_390__i1/Q  (SLICE)
+Path End         : counter_343_390__i17/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 18
@@ -622,58 +623,58 @@ clk                                                       NET DELAY      2.075  
 
 
 
-counter_296_348__i1/CK->counter_296_348__i1/Q
+counter_343_390__i1/CK->counter_343_390__i1/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  1       
 n20                                                       NET DELAY            2.075         5.541  1       
-counter_296_348_add_4_1/C1->counter_296_348_add_4_1/CO1
+counter_343_390_add_4_1/C1->counter_343_390_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n16176                                                    NET DELAY            0.000         5.885  2       
-counter_296_348_add_4_3/CI0->counter_296_348_add_4_3/CO0
+n17105                                                    NET DELAY            0.000         5.885  2       
+counter_343_390_add_4_3/CI0->counter_343_390_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.163  2       
-n24123                                                    NET DELAY            0.000         6.163  2       
-counter_296_348_add_4_3/CI1->counter_296_348_add_4_3/CO1
+n25421                                                    NET DELAY            0.000         6.163  2       
+counter_343_390_add_4_3/CI1->counter_343_390_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.441  2       
-n16178                                                    NET DELAY            0.000         6.441  2       
-counter_296_348_add_4_5/CI0->counter_296_348_add_4_5/CO0
+n17107                                                    NET DELAY            0.000         6.441  2       
+counter_343_390_add_4_5/CI0->counter_343_390_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.719  2       
-n24126                                                    NET DELAY            0.000         6.719  2       
-counter_296_348_add_4_5/CI1->counter_296_348_add_4_5/CO1
+n25424                                                    NET DELAY            0.000         6.719  2       
+counter_343_390_add_4_5/CI1->counter_343_390_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.997  2       
-n16180                                                    NET DELAY            0.000         6.997  2       
-counter_296_348_add_4_7/CI0->counter_296_348_add_4_7/CO0
+n17109                                                    NET DELAY            0.000         6.997  2       
+counter_343_390_add_4_7/CI0->counter_343_390_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.275  2       
-n24129                                                    NET DELAY            0.000         7.275  2       
-counter_296_348_add_4_7/CI1->counter_296_348_add_4_7/CO1
+n25427                                                    NET DELAY            0.000         7.275  2       
+counter_343_390_add_4_7/CI1->counter_343_390_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         7.553  2       
-n16182                                                    NET DELAY            0.000         7.553  2       
-counter_296_348_add_4_9/CI0->counter_296_348_add_4_9/CO0
+n17111                                                    NET DELAY            0.000         7.553  2       
+counter_343_390_add_4_9/CI0->counter_343_390_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.831  2       
-n24132                                                    NET DELAY            0.000         7.831  2       
-counter_296_348_add_4_9/CI1->counter_296_348_add_4_9/CO1
+n25430                                                    NET DELAY            0.000         7.831  2       
+counter_343_390_add_4_9/CI1->counter_343_390_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.109  2       
-n16184                                                    NET DELAY            0.000         8.109  2       
-counter_296_348_add_4_11/CI0->counter_296_348_add_4_11/CO0
+n17113                                                    NET DELAY            0.000         8.109  2       
+counter_343_390_add_4_11/CI0->counter_343_390_add_4_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.387  2       
-n24135                                                    NET DELAY            0.000         8.387  2       
-counter_296_348_add_4_11/CI1->counter_296_348_add_4_11/CO1
+n25433                                                    NET DELAY            0.000         8.387  2       
+counter_343_390_add_4_11/CI1->counter_343_390_add_4_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.665  2       
-n16186                                                    NET DELAY            0.000         8.665  2       
-counter_296_348_add_4_13/CI0->counter_296_348_add_4_13/CO0
+n17115                                                    NET DELAY            0.000         8.665  2       
+counter_343_390_add_4_13/CI0->counter_343_390_add_4_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.943  2       
-n24138                                                    NET DELAY            0.000         8.943  2       
-counter_296_348_add_4_13/CI1->counter_296_348_add_4_13/CO1
+n25436                                                    NET DELAY            0.000         8.943  2       
+counter_343_390_add_4_13/CI1->counter_343_390_add_4_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         9.221  2       
-n16188                                                    NET DELAY            0.000         9.221  2       
-counter_296_348_add_4_15/CI0->counter_296_348_add_4_15/CO0
+n17117                                                    NET DELAY            0.000         9.221  2       
+counter_343_390_add_4_15/CI0->counter_343_390_add_4_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         9.499  2       
-n24141                                                    NET DELAY            0.000         9.499  2       
-counter_296_348_add_4_15/CI1->counter_296_348_add_4_15/CO1
+n25439                                                    NET DELAY            0.000         9.499  2       
+counter_343_390_add_4_15/CI1->counter_343_390_add_4_15/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         9.777  2       
-n16190                                                    NET DELAY            0.000         9.777  2       
-counter_296_348_add_4_17/CI0->counter_296_348_add_4_17/CO0
+n17119                                                    NET DELAY            0.000         9.777  2       
+counter_343_390_add_4_17/CI0->counter_343_390_add_4_17/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278        10.055  2       
-n24144                                                    NET DELAY            0.000        10.055  2       
-counter_296_348_add_4_17/D1->counter_296_348_add_4_17/S1
+n25442                                                    NET DELAY            0.000        10.055  2       
+counter_343_390_add_4_17/D1->counter_343_390_add_4_17/S1
                                           SLICE           D1_TO_F1_DELAY       0.477        10.532  1       
 n89 ( DI1 )                                               NET DELAY            0.000        10.532  1       
 
@@ -694,8 +695,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i1/Q  (SLICE)
-Path End         : counter_296_348__i16/D  (SLICE)
+Path Begin       : counter_343_390__i1/Q  (SLICE)
+Path End         : counter_343_390__i16/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 17
@@ -711,55 +712,55 @@ clk                                                       NET DELAY      2.075  
 
 
 
-counter_296_348__i1/CK->counter_296_348__i1/Q
+counter_343_390__i1/CK->counter_343_390__i1/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  1       
 n20                                                       NET DELAY            2.075         5.541  1       
-counter_296_348_add_4_1/C1->counter_296_348_add_4_1/CO1
+counter_343_390_add_4_1/C1->counter_343_390_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n16176                                                    NET DELAY            0.000         5.885  2       
-counter_296_348_add_4_3/CI0->counter_296_348_add_4_3/CO0
+n17105                                                    NET DELAY            0.000         5.885  2       
+counter_343_390_add_4_3/CI0->counter_343_390_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.163  2       
-n24123                                                    NET DELAY            0.000         6.163  2       
-counter_296_348_add_4_3/CI1->counter_296_348_add_4_3/CO1
+n25421                                                    NET DELAY            0.000         6.163  2       
+counter_343_390_add_4_3/CI1->counter_343_390_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.441  2       
-n16178                                                    NET DELAY            0.000         6.441  2       
-counter_296_348_add_4_5/CI0->counter_296_348_add_4_5/CO0
+n17107                                                    NET DELAY            0.000         6.441  2       
+counter_343_390_add_4_5/CI0->counter_343_390_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.719  2       
-n24126                                                    NET DELAY            0.000         6.719  2       
-counter_296_348_add_4_5/CI1->counter_296_348_add_4_5/CO1
+n25424                                                    NET DELAY            0.000         6.719  2       
+counter_343_390_add_4_5/CI1->counter_343_390_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.997  2       
-n16180                                                    NET DELAY            0.000         6.997  2       
-counter_296_348_add_4_7/CI0->counter_296_348_add_4_7/CO0
+n17109                                                    NET DELAY            0.000         6.997  2       
+counter_343_390_add_4_7/CI0->counter_343_390_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.275  2       
-n24129                                                    NET DELAY            0.000         7.275  2       
-counter_296_348_add_4_7/CI1->counter_296_348_add_4_7/CO1
+n25427                                                    NET DELAY            0.000         7.275  2       
+counter_343_390_add_4_7/CI1->counter_343_390_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         7.553  2       
-n16182                                                    NET DELAY            0.000         7.553  2       
-counter_296_348_add_4_9/CI0->counter_296_348_add_4_9/CO0
+n17111                                                    NET DELAY            0.000         7.553  2       
+counter_343_390_add_4_9/CI0->counter_343_390_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.831  2       
-n24132                                                    NET DELAY            0.000         7.831  2       
-counter_296_348_add_4_9/CI1->counter_296_348_add_4_9/CO1
+n25430                                                    NET DELAY            0.000         7.831  2       
+counter_343_390_add_4_9/CI1->counter_343_390_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.109  2       
-n16184                                                    NET DELAY            0.000         8.109  2       
-counter_296_348_add_4_11/CI0->counter_296_348_add_4_11/CO0
+n17113                                                    NET DELAY            0.000         8.109  2       
+counter_343_390_add_4_11/CI0->counter_343_390_add_4_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.387  2       
-n24135                                                    NET DELAY            0.000         8.387  2       
-counter_296_348_add_4_11/CI1->counter_296_348_add_4_11/CO1
+n25433                                                    NET DELAY            0.000         8.387  2       
+counter_343_390_add_4_11/CI1->counter_343_390_add_4_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.665  2       
-n16186                                                    NET DELAY            0.000         8.665  2       
-counter_296_348_add_4_13/CI0->counter_296_348_add_4_13/CO0
+n17115                                                    NET DELAY            0.000         8.665  2       
+counter_343_390_add_4_13/CI0->counter_343_390_add_4_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.943  2       
-n24138                                                    NET DELAY            0.000         8.943  2       
-counter_296_348_add_4_13/CI1->counter_296_348_add_4_13/CO1
+n25436                                                    NET DELAY            0.000         8.943  2       
+counter_343_390_add_4_13/CI1->counter_343_390_add_4_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         9.221  2       
-n16188                                                    NET DELAY            0.000         9.221  2       
-counter_296_348_add_4_15/CI0->counter_296_348_add_4_15/CO0
+n17117                                                    NET DELAY            0.000         9.221  2       
+counter_343_390_add_4_15/CI0->counter_343_390_add_4_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         9.499  2       
-n24141                                                    NET DELAY            0.000         9.499  2       
-counter_296_348_add_4_15/CI1->counter_296_348_add_4_15/CO1
+n25439                                                    NET DELAY            0.000         9.499  2       
+counter_343_390_add_4_15/CI1->counter_343_390_add_4_15/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         9.777  2       
-n16190                                                    NET DELAY            0.000         9.777  2       
-counter_296_348_add_4_17/D0->counter_296_348_add_4_17/S0
+n17119                                                    NET DELAY            0.000         9.777  2       
+counter_343_390_add_4_17/D0->counter_343_390_add_4_17/S0
                                           SLICE           D0_TO_F0_DELAY       0.477        10.254  1       
 n90 ( DI0 )                                               NET DELAY            0.000        10.254  1       
 
@@ -780,8 +781,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i1/Q  (SLICE)
-Path End         : counter_296_348__i15/D  (SLICE)
+Path Begin       : counter_343_390__i1/Q  (SLICE)
+Path End         : counter_343_390__i15/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 16
@@ -797,52 +798,52 @@ clk                                                       NET DELAY      2.075  
 
 
 
-counter_296_348__i1/CK->counter_296_348__i1/Q
+counter_343_390__i1/CK->counter_343_390__i1/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  1       
 n20                                                       NET DELAY            2.075         5.541  1       
-counter_296_348_add_4_1/C1->counter_296_348_add_4_1/CO1
+counter_343_390_add_4_1/C1->counter_343_390_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n16176                                                    NET DELAY            0.000         5.885  2       
-counter_296_348_add_4_3/CI0->counter_296_348_add_4_3/CO0
+n17105                                                    NET DELAY            0.000         5.885  2       
+counter_343_390_add_4_3/CI0->counter_343_390_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.163  2       
-n24123                                                    NET DELAY            0.000         6.163  2       
-counter_296_348_add_4_3/CI1->counter_296_348_add_4_3/CO1
+n25421                                                    NET DELAY            0.000         6.163  2       
+counter_343_390_add_4_3/CI1->counter_343_390_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.441  2       
-n16178                                                    NET DELAY            0.000         6.441  2       
-counter_296_348_add_4_5/CI0->counter_296_348_add_4_5/CO0
+n17107                                                    NET DELAY            0.000         6.441  2       
+counter_343_390_add_4_5/CI0->counter_343_390_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.719  2       
-n24126                                                    NET DELAY            0.000         6.719  2       
-counter_296_348_add_4_5/CI1->counter_296_348_add_4_5/CO1
+n25424                                                    NET DELAY            0.000         6.719  2       
+counter_343_390_add_4_5/CI1->counter_343_390_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.997  2       
-n16180                                                    NET DELAY            0.000         6.997  2       
-counter_296_348_add_4_7/CI0->counter_296_348_add_4_7/CO0
+n17109                                                    NET DELAY            0.000         6.997  2       
+counter_343_390_add_4_7/CI0->counter_343_390_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.275  2       
-n24129                                                    NET DELAY            0.000         7.275  2       
-counter_296_348_add_4_7/CI1->counter_296_348_add_4_7/CO1
+n25427                                                    NET DELAY            0.000         7.275  2       
+counter_343_390_add_4_7/CI1->counter_343_390_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         7.553  2       
-n16182                                                    NET DELAY            0.000         7.553  2       
-counter_296_348_add_4_9/CI0->counter_296_348_add_4_9/CO0
+n17111                                                    NET DELAY            0.000         7.553  2       
+counter_343_390_add_4_9/CI0->counter_343_390_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.831  2       
-n24132                                                    NET DELAY            0.000         7.831  2       
-counter_296_348_add_4_9/CI1->counter_296_348_add_4_9/CO1
+n25430                                                    NET DELAY            0.000         7.831  2       
+counter_343_390_add_4_9/CI1->counter_343_390_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.109  2       
-n16184                                                    NET DELAY            0.000         8.109  2       
-counter_296_348_add_4_11/CI0->counter_296_348_add_4_11/CO0
+n17113                                                    NET DELAY            0.000         8.109  2       
+counter_343_390_add_4_11/CI0->counter_343_390_add_4_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.387  2       
-n24135                                                    NET DELAY            0.000         8.387  2       
-counter_296_348_add_4_11/CI1->counter_296_348_add_4_11/CO1
+n25433                                                    NET DELAY            0.000         8.387  2       
+counter_343_390_add_4_11/CI1->counter_343_390_add_4_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.665  2       
-n16186                                                    NET DELAY            0.000         8.665  2       
-counter_296_348_add_4_13/CI0->counter_296_348_add_4_13/CO0
+n17115                                                    NET DELAY            0.000         8.665  2       
+counter_343_390_add_4_13/CI0->counter_343_390_add_4_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.943  2       
-n24138                                                    NET DELAY            0.000         8.943  2       
-counter_296_348_add_4_13/CI1->counter_296_348_add_4_13/CO1
+n25436                                                    NET DELAY            0.000         8.943  2       
+counter_343_390_add_4_13/CI1->counter_343_390_add_4_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         9.221  2       
-n16188                                                    NET DELAY            0.000         9.221  2       
-counter_296_348_add_4_15/CI0->counter_296_348_add_4_15/CO0
+n17117                                                    NET DELAY            0.000         9.221  2       
+counter_343_390_add_4_15/CI0->counter_343_390_add_4_15/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         9.499  2       
-n24141                                                    NET DELAY            0.000         9.499  2       
-counter_296_348_add_4_15/D1->counter_296_348_add_4_15/S1
+n25439                                                    NET DELAY            0.000         9.499  2       
+counter_343_390_add_4_15/D1->counter_343_390_add_4_15/S1
                                           SLICE           D1_TO_F1_DELAY       0.477         9.976  1       
 n91 ( DI1 )                                               NET DELAY            0.000         9.976  1       
 
@@ -863,8 +864,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i1/Q  (SLICE)
-Path End         : counter_296_348__i14/D  (SLICE)
+Path Begin       : counter_343_390__i1/Q  (SLICE)
+Path End         : counter_343_390__i14/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 15
@@ -880,49 +881,49 @@ clk                                                       NET DELAY      2.075  
 
 
 
-counter_296_348__i1/CK->counter_296_348__i1/Q
+counter_343_390__i1/CK->counter_343_390__i1/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  1       
 n20                                                       NET DELAY            2.075         5.541  1       
-counter_296_348_add_4_1/C1->counter_296_348_add_4_1/CO1
+counter_343_390_add_4_1/C1->counter_343_390_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n16176                                                    NET DELAY            0.000         5.885  2       
-counter_296_348_add_4_3/CI0->counter_296_348_add_4_3/CO0
+n17105                                                    NET DELAY            0.000         5.885  2       
+counter_343_390_add_4_3/CI0->counter_343_390_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.163  2       
-n24123                                                    NET DELAY            0.000         6.163  2       
-counter_296_348_add_4_3/CI1->counter_296_348_add_4_3/CO1
+n25421                                                    NET DELAY            0.000         6.163  2       
+counter_343_390_add_4_3/CI1->counter_343_390_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.441  2       
-n16178                                                    NET DELAY            0.000         6.441  2       
-counter_296_348_add_4_5/CI0->counter_296_348_add_4_5/CO0
+n17107                                                    NET DELAY            0.000         6.441  2       
+counter_343_390_add_4_5/CI0->counter_343_390_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.719  2       
-n24126                                                    NET DELAY            0.000         6.719  2       
-counter_296_348_add_4_5/CI1->counter_296_348_add_4_5/CO1
+n25424                                                    NET DELAY            0.000         6.719  2       
+counter_343_390_add_4_5/CI1->counter_343_390_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.997  2       
-n16180                                                    NET DELAY            0.000         6.997  2       
-counter_296_348_add_4_7/CI0->counter_296_348_add_4_7/CO0
+n17109                                                    NET DELAY            0.000         6.997  2       
+counter_343_390_add_4_7/CI0->counter_343_390_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.275  2       
-n24129                                                    NET DELAY            0.000         7.275  2       
-counter_296_348_add_4_7/CI1->counter_296_348_add_4_7/CO1
+n25427                                                    NET DELAY            0.000         7.275  2       
+counter_343_390_add_4_7/CI1->counter_343_390_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         7.553  2       
-n16182                                                    NET DELAY            0.000         7.553  2       
-counter_296_348_add_4_9/CI0->counter_296_348_add_4_9/CO0
+n17111                                                    NET DELAY            0.000         7.553  2       
+counter_343_390_add_4_9/CI0->counter_343_390_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.831  2       
-n24132                                                    NET DELAY            0.000         7.831  2       
-counter_296_348_add_4_9/CI1->counter_296_348_add_4_9/CO1
+n25430                                                    NET DELAY            0.000         7.831  2       
+counter_343_390_add_4_9/CI1->counter_343_390_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.109  2       
-n16184                                                    NET DELAY            0.000         8.109  2       
-counter_296_348_add_4_11/CI0->counter_296_348_add_4_11/CO0
+n17113                                                    NET DELAY            0.000         8.109  2       
+counter_343_390_add_4_11/CI0->counter_343_390_add_4_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.387  2       
-n24135                                                    NET DELAY            0.000         8.387  2       
-counter_296_348_add_4_11/CI1->counter_296_348_add_4_11/CO1
+n25433                                                    NET DELAY            0.000         8.387  2       
+counter_343_390_add_4_11/CI1->counter_343_390_add_4_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.665  2       
-n16186                                                    NET DELAY            0.000         8.665  2       
-counter_296_348_add_4_13/CI0->counter_296_348_add_4_13/CO0
+n17115                                                    NET DELAY            0.000         8.665  2       
+counter_343_390_add_4_13/CI0->counter_343_390_add_4_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.943  2       
-n24138                                                    NET DELAY            0.000         8.943  2       
-counter_296_348_add_4_13/CI1->counter_296_348_add_4_13/CO1
+n25436                                                    NET DELAY            0.000         8.943  2       
+counter_343_390_add_4_13/CI1->counter_343_390_add_4_13/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         9.221  2       
-n16188                                                    NET DELAY            0.000         9.221  2       
-counter_296_348_add_4_15/D0->counter_296_348_add_4_15/S0
+n17117                                                    NET DELAY            0.000         9.221  2       
+counter_343_390_add_4_15/D0->counter_343_390_add_4_15/S0
                                           SLICE           D0_TO_F0_DELAY       0.477         9.698  1       
 n92 ( DI0 )                                               NET DELAY            0.000         9.698  1       
 
@@ -943,8 +944,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i1/Q  (SLICE)
-Path End         : counter_296_348__i13/D  (SLICE)
+Path Begin       : counter_343_390__i1/Q  (SLICE)
+Path End         : counter_343_390__i13/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 14
@@ -960,46 +961,46 @@ clk                                                       NET DELAY      2.075  
 
 
 
-counter_296_348__i1/CK->counter_296_348__i1/Q
+counter_343_390__i1/CK->counter_343_390__i1/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  1       
 n20                                                       NET DELAY            2.075         5.541  1       
-counter_296_348_add_4_1/C1->counter_296_348_add_4_1/CO1
+counter_343_390_add_4_1/C1->counter_343_390_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n16176                                                    NET DELAY            0.000         5.885  2       
-counter_296_348_add_4_3/CI0->counter_296_348_add_4_3/CO0
+n17105                                                    NET DELAY            0.000         5.885  2       
+counter_343_390_add_4_3/CI0->counter_343_390_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.163  2       
-n24123                                                    NET DELAY            0.000         6.163  2       
-counter_296_348_add_4_3/CI1->counter_296_348_add_4_3/CO1
+n25421                                                    NET DELAY            0.000         6.163  2       
+counter_343_390_add_4_3/CI1->counter_343_390_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.441  2       
-n16178                                                    NET DELAY            0.000         6.441  2       
-counter_296_348_add_4_5/CI0->counter_296_348_add_4_5/CO0
+n17107                                                    NET DELAY            0.000         6.441  2       
+counter_343_390_add_4_5/CI0->counter_343_390_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.719  2       
-n24126                                                    NET DELAY            0.000         6.719  2       
-counter_296_348_add_4_5/CI1->counter_296_348_add_4_5/CO1
+n25424                                                    NET DELAY            0.000         6.719  2       
+counter_343_390_add_4_5/CI1->counter_343_390_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.997  2       
-n16180                                                    NET DELAY            0.000         6.997  2       
-counter_296_348_add_4_7/CI0->counter_296_348_add_4_7/CO0
+n17109                                                    NET DELAY            0.000         6.997  2       
+counter_343_390_add_4_7/CI0->counter_343_390_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.275  2       
-n24129                                                    NET DELAY            0.000         7.275  2       
-counter_296_348_add_4_7/CI1->counter_296_348_add_4_7/CO1
+n25427                                                    NET DELAY            0.000         7.275  2       
+counter_343_390_add_4_7/CI1->counter_343_390_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         7.553  2       
-n16182                                                    NET DELAY            0.000         7.553  2       
-counter_296_348_add_4_9/CI0->counter_296_348_add_4_9/CO0
+n17111                                                    NET DELAY            0.000         7.553  2       
+counter_343_390_add_4_9/CI0->counter_343_390_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.831  2       
-n24132                                                    NET DELAY            0.000         7.831  2       
-counter_296_348_add_4_9/CI1->counter_296_348_add_4_9/CO1
+n25430                                                    NET DELAY            0.000         7.831  2       
+counter_343_390_add_4_9/CI1->counter_343_390_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.109  2       
-n16184                                                    NET DELAY            0.000         8.109  2       
-counter_296_348_add_4_11/CI0->counter_296_348_add_4_11/CO0
+n17113                                                    NET DELAY            0.000         8.109  2       
+counter_343_390_add_4_11/CI0->counter_343_390_add_4_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.387  2       
-n24135                                                    NET DELAY            0.000         8.387  2       
-counter_296_348_add_4_11/CI1->counter_296_348_add_4_11/CO1
+n25433                                                    NET DELAY            0.000         8.387  2       
+counter_343_390_add_4_11/CI1->counter_343_390_add_4_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.665  2       
-n16186                                                    NET DELAY            0.000         8.665  2       
-counter_296_348_add_4_13/CI0->counter_296_348_add_4_13/CO0
+n17115                                                    NET DELAY            0.000         8.665  2       
+counter_343_390_add_4_13/CI0->counter_343_390_add_4_13/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.943  2       
-n24138                                                    NET DELAY            0.000         8.943  2       
-counter_296_348_add_4_13/D1->counter_296_348_add_4_13/S1
+n25436                                                    NET DELAY            0.000         8.943  2       
+counter_343_390_add_4_13/D1->counter_343_390_add_4_13/S1
                                           SLICE           D1_TO_F1_DELAY       0.477         9.420  1       
 n93 ( DI1 )                                               NET DELAY            0.000         9.420  1       
 
@@ -1020,8 +1021,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i1/Q  (SLICE)
-Path End         : counter_296_348__i12/D  (SLICE)
+Path Begin       : counter_343_390__i1/Q  (SLICE)
+Path End         : counter_343_390__i12/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 13
@@ -1037,43 +1038,43 @@ clk                                                       NET DELAY      2.075  
 
 
 
-counter_296_348__i1/CK->counter_296_348__i1/Q
+counter_343_390__i1/CK->counter_343_390__i1/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  1       
 n20                                                       NET DELAY            2.075         5.541  1       
-counter_296_348_add_4_1/C1->counter_296_348_add_4_1/CO1
+counter_343_390_add_4_1/C1->counter_343_390_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n16176                                                    NET DELAY            0.000         5.885  2       
-counter_296_348_add_4_3/CI0->counter_296_348_add_4_3/CO0
+n17105                                                    NET DELAY            0.000         5.885  2       
+counter_343_390_add_4_3/CI0->counter_343_390_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.163  2       
-n24123                                                    NET DELAY            0.000         6.163  2       
-counter_296_348_add_4_3/CI1->counter_296_348_add_4_3/CO1
+n25421                                                    NET DELAY            0.000         6.163  2       
+counter_343_390_add_4_3/CI1->counter_343_390_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.441  2       
-n16178                                                    NET DELAY            0.000         6.441  2       
-counter_296_348_add_4_5/CI0->counter_296_348_add_4_5/CO0
+n17107                                                    NET DELAY            0.000         6.441  2       
+counter_343_390_add_4_5/CI0->counter_343_390_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.719  2       
-n24126                                                    NET DELAY            0.000         6.719  2       
-counter_296_348_add_4_5/CI1->counter_296_348_add_4_5/CO1
+n25424                                                    NET DELAY            0.000         6.719  2       
+counter_343_390_add_4_5/CI1->counter_343_390_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.997  2       
-n16180                                                    NET DELAY            0.000         6.997  2       
-counter_296_348_add_4_7/CI0->counter_296_348_add_4_7/CO0
+n17109                                                    NET DELAY            0.000         6.997  2       
+counter_343_390_add_4_7/CI0->counter_343_390_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.275  2       
-n24129                                                    NET DELAY            0.000         7.275  2       
-counter_296_348_add_4_7/CI1->counter_296_348_add_4_7/CO1
+n25427                                                    NET DELAY            0.000         7.275  2       
+counter_343_390_add_4_7/CI1->counter_343_390_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         7.553  2       
-n16182                                                    NET DELAY            0.000         7.553  2       
-counter_296_348_add_4_9/CI0->counter_296_348_add_4_9/CO0
+n17111                                                    NET DELAY            0.000         7.553  2       
+counter_343_390_add_4_9/CI0->counter_343_390_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.831  2       
-n24132                                                    NET DELAY            0.000         7.831  2       
-counter_296_348_add_4_9/CI1->counter_296_348_add_4_9/CO1
+n25430                                                    NET DELAY            0.000         7.831  2       
+counter_343_390_add_4_9/CI1->counter_343_390_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.109  2       
-n16184                                                    NET DELAY            0.000         8.109  2       
-counter_296_348_add_4_11/CI0->counter_296_348_add_4_11/CO0
+n17113                                                    NET DELAY            0.000         8.109  2       
+counter_343_390_add_4_11/CI0->counter_343_390_add_4_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.387  2       
-n24135                                                    NET DELAY            0.000         8.387  2       
-counter_296_348_add_4_11/CI1->counter_296_348_add_4_11/CO1
+n25433                                                    NET DELAY            0.000         8.387  2       
+counter_343_390_add_4_11/CI1->counter_343_390_add_4_11/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.665  2       
-n16186                                                    NET DELAY            0.000         8.665  2       
-counter_296_348_add_4_13/D0->counter_296_348_add_4_13/S0
+n17115                                                    NET DELAY            0.000         8.665  2       
+counter_343_390_add_4_13/D0->counter_343_390_add_4_13/S0
                                           SLICE           D0_TO_F0_DELAY       0.477         9.142  1       
 n94 ( DI0 )                                               NET DELAY            0.000         9.142  1       
 
@@ -1094,8 +1095,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i1/Q  (SLICE)
-Path End         : counter_296_348__i11/D  (SLICE)
+Path Begin       : counter_343_390__i1/Q  (SLICE)
+Path End         : counter_343_390__i11/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 12
@@ -1111,40 +1112,40 @@ clk                                                       NET DELAY      2.075  
 
 
 
-counter_296_348__i1/CK->counter_296_348__i1/Q
+counter_343_390__i1/CK->counter_343_390__i1/Q
                                           SLICE           CLK_TO_Q1_DELAY      1.391         3.466  1       
 n20                                                       NET DELAY            2.075         5.541  1       
-counter_296_348_add_4_1/C1->counter_296_348_add_4_1/CO1
+counter_343_390_add_4_1/C1->counter_343_390_add_4_1/CO1
                                           SLICE           C1_TO_COUT1_DELAY    0.344         5.885  2       
-n16176                                                    NET DELAY            0.000         5.885  2       
-counter_296_348_add_4_3/CI0->counter_296_348_add_4_3/CO0
+n17105                                                    NET DELAY            0.000         5.885  2       
+counter_343_390_add_4_3/CI0->counter_343_390_add_4_3/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.163  2       
-n24123                                                    NET DELAY            0.000         6.163  2       
-counter_296_348_add_4_3/CI1->counter_296_348_add_4_3/CO1
+n25421                                                    NET DELAY            0.000         6.163  2       
+counter_343_390_add_4_3/CI1->counter_343_390_add_4_3/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.441  2       
-n16178                                                    NET DELAY            0.000         6.441  2       
-counter_296_348_add_4_5/CI0->counter_296_348_add_4_5/CO0
+n17107                                                    NET DELAY            0.000         6.441  2       
+counter_343_390_add_4_5/CI0->counter_343_390_add_4_5/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         6.719  2       
-n24126                                                    NET DELAY            0.000         6.719  2       
-counter_296_348_add_4_5/CI1->counter_296_348_add_4_5/CO1
+n25424                                                    NET DELAY            0.000         6.719  2       
+counter_343_390_add_4_5/CI1->counter_343_390_add_4_5/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         6.997  2       
-n16180                                                    NET DELAY            0.000         6.997  2       
-counter_296_348_add_4_7/CI0->counter_296_348_add_4_7/CO0
+n17109                                                    NET DELAY            0.000         6.997  2       
+counter_343_390_add_4_7/CI0->counter_343_390_add_4_7/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.275  2       
-n24129                                                    NET DELAY            0.000         7.275  2       
-counter_296_348_add_4_7/CI1->counter_296_348_add_4_7/CO1
+n25427                                                    NET DELAY            0.000         7.275  2       
+counter_343_390_add_4_7/CI1->counter_343_390_add_4_7/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         7.553  2       
-n16182                                                    NET DELAY            0.000         7.553  2       
-counter_296_348_add_4_9/CI0->counter_296_348_add_4_9/CO0
+n17111                                                    NET DELAY            0.000         7.553  2       
+counter_343_390_add_4_9/CI0->counter_343_390_add_4_9/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         7.831  2       
-n24132                                                    NET DELAY            0.000         7.831  2       
-counter_296_348_add_4_9/CI1->counter_296_348_add_4_9/CO1
+n25430                                                    NET DELAY            0.000         7.831  2       
+counter_343_390_add_4_9/CI1->counter_343_390_add_4_9/CO1
                                           SLICE           CIN1_TO_COUT1_DELAY  0.278         8.109  2       
-n16184                                                    NET DELAY            0.000         8.109  2       
-counter_296_348_add_4_11/CI0->counter_296_348_add_4_11/CO0
+n17113                                                    NET DELAY            0.000         8.109  2       
+counter_343_390_add_4_11/CI0->counter_343_390_add_4_11/CO0
                                           SLICE           CIN0_TO_COUT0_DELAY  0.278         8.387  2       
-n24135                                                    NET DELAY            0.000         8.387  2       
-counter_296_348_add_4_11/D1->counter_296_348_add_4_11/S1
+n25433                                                    NET DELAY            0.000         8.387  2       
+counter_343_390_add_4_11/D1->counter_343_390_add_4_11/S1
                                           SLICE           D1_TO_F1_DELAY       0.477         8.864  1       
 n95 ( DI1 )                                               NET DELAY            0.000         8.864  1       
 
@@ -1185,8 +1186,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i10/Q  (SLICE)
-Path End         : counter_296_348__i10/D  (SLICE)
+Path Begin       : counter_343_390__i10/Q  (SLICE)
+Path End         : counter_343_390__i10/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 2
@@ -1202,10 +1203,10 @@ clk ( CLK )                                               NET DELAY      2.075  
 
 
 
-counter_296_348__i10/CK->counter_296_348__i10/Q
+counter_343_390__i10/CK->counter_343_390__i10/Q
                                           SLICE           CLK_TO_Q0_DELAY  0.768         2.843  1       
 n11                                                       NET DELAY        2.075         4.918  1       
-counter_296_348_add_4_11/C0->counter_296_348_add_4_11/S0
+counter_343_390_add_4_11/C0->counter_343_390_add_4_11/S0
                                           SLICE           C0_TO_F0_DELAY   0.249         5.167  1       
 n96 ( DI0 )                                               NET DELAY        0.000         5.167  1       
 
@@ -1226,8 +1227,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i11/Q  (SLICE)
-Path End         : counter_296_348__i11/D  (SLICE)
+Path Begin       : counter_343_390__i11/Q  (SLICE)
+Path End         : counter_343_390__i11/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 2
@@ -1243,10 +1244,10 @@ clk ( CLK )                                               NET DELAY      2.075  
 
 
 
-counter_296_348__i11/CK->counter_296_348__i11/Q
+counter_343_390__i11/CK->counter_343_390__i11/Q
                                           SLICE           CLK_TO_Q1_DELAY  0.768         2.843  1       
 n10                                                       NET DELAY        2.075         4.918  1       
-counter_296_348_add_4_11/C1->counter_296_348_add_4_11/S1
+counter_343_390_add_4_11/C1->counter_343_390_add_4_11/S1
                                           SLICE           C1_TO_F1_DELAY   0.249         5.167  1       
 n95 ( DI1 )                                               NET DELAY        0.000         5.167  1       
 
@@ -1267,8 +1268,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i12/Q  (SLICE)
-Path End         : counter_296_348__i12/D  (SLICE)
+Path Begin       : counter_343_390__i12/Q  (SLICE)
+Path End         : counter_343_390__i12/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 2
@@ -1284,10 +1285,10 @@ clk ( CLK )                                               NET DELAY      2.075  
 
 
 
-counter_296_348__i12/CK->counter_296_348__i12/Q
+counter_343_390__i12/CK->counter_343_390__i12/Q
                                           SLICE           CLK_TO_Q0_DELAY  0.768         2.843  1       
 n9                                                        NET DELAY        2.075         4.918  1       
-counter_296_348_add_4_13/C0->counter_296_348_add_4_13/S0
+counter_343_390_add_4_13/C0->counter_343_390_add_4_13/S0
                                           SLICE           C0_TO_F0_DELAY   0.249         5.167  1       
 n94 ( DI0 )                                               NET DELAY        0.000         5.167  1       
 
@@ -1308,8 +1309,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i13/Q  (SLICE)
-Path End         : counter_296_348__i13/D  (SLICE)
+Path Begin       : counter_343_390__i13/Q  (SLICE)
+Path End         : counter_343_390__i13/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 2
@@ -1325,10 +1326,10 @@ clk ( CLK )                                               NET DELAY      2.075  
 
 
 
-counter_296_348__i13/CK->counter_296_348__i13/Q
+counter_343_390__i13/CK->counter_343_390__i13/Q
                                           SLICE           CLK_TO_Q1_DELAY  0.768         2.843  1       
 n8                                                        NET DELAY        2.075         4.918  1       
-counter_296_348_add_4_13/C1->counter_296_348_add_4_13/S1
+counter_343_390_add_4_13/C1->counter_343_390_add_4_13/S1
                                           SLICE           C1_TO_F1_DELAY   0.249         5.167  1       
 n93 ( DI1 )                                               NET DELAY        0.000         5.167  1       
 
@@ -1349,8 +1350,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i14/Q  (SLICE)
-Path End         : counter_296_348__i14/D  (SLICE)
+Path Begin       : counter_343_390__i14/Q  (SLICE)
+Path End         : counter_343_390__i14/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 2
@@ -1366,10 +1367,10 @@ clk ( CLK )                                               NET DELAY      2.075  
 
 
 
-counter_296_348__i14/CK->counter_296_348__i14/Q
+counter_343_390__i14/CK->counter_343_390__i14/Q
                                           SLICE           CLK_TO_Q0_DELAY  0.768         2.843  1       
 n7                                                        NET DELAY        2.075         4.918  1       
-counter_296_348_add_4_15/C0->counter_296_348_add_4_15/S0
+counter_343_390_add_4_15/C0->counter_343_390_add_4_15/S0
                                           SLICE           C0_TO_F0_DELAY   0.249         5.167  1       
 n92 ( DI0 )                                               NET DELAY        0.000         5.167  1       
 
@@ -1390,8 +1391,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i15/Q  (SLICE)
-Path End         : counter_296_348__i15/D  (SLICE)
+Path Begin       : counter_343_390__i15/Q  (SLICE)
+Path End         : counter_343_390__i15/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 2
@@ -1407,10 +1408,10 @@ clk ( CLK )                                               NET DELAY      2.075  
 
 
 
-counter_296_348__i15/CK->counter_296_348__i15/Q
+counter_343_390__i15/CK->counter_343_390__i15/Q
                                           SLICE           CLK_TO_Q1_DELAY  0.768         2.843  1       
 n6                                                        NET DELAY        2.075         4.918  1       
-counter_296_348_add_4_15/C1->counter_296_348_add_4_15/S1
+counter_343_390_add_4_15/C1->counter_343_390_add_4_15/S1
                                           SLICE           C1_TO_F1_DELAY   0.249         5.167  1       
 n91 ( DI1 )                                               NET DELAY        0.000         5.167  1       
 
@@ -1431,8 +1432,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i16/Q  (SLICE)
-Path End         : counter_296_348__i16/D  (SLICE)
+Path Begin       : counter_343_390__i16/Q  (SLICE)
+Path End         : counter_343_390__i16/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 2
@@ -1448,10 +1449,10 @@ clk ( CLK )                                               NET DELAY      2.075  
 
 
 
-counter_296_348__i16/CK->counter_296_348__i16/Q
+counter_343_390__i16/CK->counter_343_390__i16/Q
                                           SLICE           CLK_TO_Q0_DELAY  0.768         2.843  1       
 n5                                                        NET DELAY        2.075         4.918  1       
-counter_296_348_add_4_17/C0->counter_296_348_add_4_17/S0
+counter_343_390_add_4_17/C0->counter_343_390_add_4_17/S0
                                           SLICE           C0_TO_F0_DELAY   0.249         5.167  1       
 n90 ( DI0 )                                               NET DELAY        0.000         5.167  1       
 
@@ -1472,8 +1473,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i17/Q  (SLICE)
-Path End         : counter_296_348__i17/D  (SLICE)
+Path Begin       : counter_343_390__i17/Q  (SLICE)
+Path End         : counter_343_390__i17/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 2
@@ -1489,10 +1490,10 @@ clk ( CLK )                                               NET DELAY      2.075  
 
 
 
-counter_296_348__i17/CK->counter_296_348__i17/Q
+counter_343_390__i17/CK->counter_343_390__i17/Q
                                           SLICE           CLK_TO_Q1_DELAY  0.768         2.843  1       
 n4                                                        NET DELAY        2.075         4.918  1       
-counter_296_348_add_4_17/C1->counter_296_348_add_4_17/S1
+counter_343_390_add_4_17/C1->counter_343_390_add_4_17/S1
                                           SLICE           C1_TO_F1_DELAY   0.249         5.167  1       
 n89 ( DI1 )                                               NET DELAY        0.000         5.167  1       
 
@@ -1513,8 +1514,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i18/Q  (SLICE)
-Path End         : counter_296_348__i18/D  (SLICE)
+Path Begin       : counter_343_390__i18/Q  (SLICE)
+Path End         : counter_343_390__i18/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 2
@@ -1530,10 +1531,10 @@ clk ( CLK )                                               NET DELAY      2.075  
 
 
 
-counter_296_348__i18/CK->counter_296_348__i18/Q
+counter_343_390__i18/CK->counter_343_390__i18/Q
                                           SLICE           CLK_TO_Q0_DELAY  0.768         2.843  1       
 n3                                                        NET DELAY        2.075         4.918  1       
-counter_296_348_add_4_19/C0->counter_296_348_add_4_19/S0
+counter_343_390_add_4_19/C0->counter_343_390_add_4_19/S0
                                           SLICE           C0_TO_F0_DELAY   0.249         5.167  1       
 n88 ( DI0 )                                               NET DELAY        0.000         5.167  1       
 
@@ -1554,8 +1555,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : counter_296_348__i19/Q  (SLICE)
-Path End         : counter_296_348__i19/D  (SLICE)
+Path Begin       : counter_343_390__i19/Q  (SLICE)
+Path End         : counter_343_390__i19/D  (SLICE)
 Source Clock     : clk (R)
 Destination Clock: clk (R)
 Logic Level      : 2
@@ -1571,10 +1572,10 @@ clk ( CLK )                                               NET DELAY      2.075  
 
 
 
-counter_296_348__i19/CK->counter_296_348__i19/Q
+counter_343_390__i19/CK->counter_343_390__i19/Q
                                           SLICE           CLK_TO_Q1_DELAY  0.768         2.843  1       
 n2                                                        NET DELAY        2.075         4.918  1       
-counter_296_348_add_4_19/C1->counter_296_348_add_4_19/S1
+counter_343_390_add_4_19/C1->counter_343_390_add_4_19/S1
                                           SLICE           C1_TO_F1_DELAY   0.249         5.167  1       
 n87 ( DI1 )                                               NET DELAY        0.000         5.167  1       
 

@@ -44,11 +44,9 @@
 "//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/source/impl_1/generate_notes.vhd"
 "//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/source/impl_1/vga.vhd"
 -ver "//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/mypll/rtl/mypll.v"
--lib "work" -vhd "//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero/source/impl_1/game_score.vhd"
 
 
 -path "//vs-home/npower03/GitHub/es4-guitar-hero/proj_guitar_hero"
--top top
 -udb "proj_guitar_hero_impl_1_rtl.udb"
 -output_hdl "proj_guitar_hero_impl_1.vm"
 

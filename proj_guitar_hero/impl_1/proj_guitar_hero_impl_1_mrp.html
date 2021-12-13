@@ -47,7 +47,7 @@ Target Device:        iCE40UP5KSG48
 Target Performance:   High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 3.0.0.24.1
-Mapped on: Mon Dec 13 10:24:25 2021
+Mapped on: Mon Dec 13 12:12:37 2021
 
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
@@ -58,21 +58,21 @@ Command line:   map proj_guitar_hero_impl_1_syn.udb
      -gui
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of slice registers: 2536 out of  5280 (48%)
+   Number of slice registers: 2547 out of  5280 (48%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           4428 out of  5280 (84%)
-      Number of logic LUT4s:             1920
+   Number of LUT4s:           4447 out of  5280 (84%)
+      Number of logic LUT4s:             1927
       Number of inserted feedthru LUT4s: 2420
-      Number of ripple logic:             44 (88 LUT4s)
-   Number of IO sites used:   16 out of 39 (41%)
-      Number of IO sites used for general PIO: 16
+      Number of ripple logic:             50 (100 LUT4s)
+   Number of IO sites used:   21 out of 39 (54%)
+      Number of IO sites used for general PIO: 21
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 16 out of 36 (44%)
+      Number of IO sites used for PIO+I3C: 21 out of 36 (58%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 16 out of 39 (41%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 21 out of 39 (54%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  1 out of 1 (100%)
@@ -90,43 +90,45 @@ Command line:   map proj_guitar_hero_impl_1_syn.udb
      vgaout.clock.lscc_pll_inst.u_PLL_B/OUTGLOBAL)
       Net oscillatorin_c: 1 loads, 1 rising, 0 falling (Driver: Port
      oscillatorin)
-      Net update: 2426 loads, 2426 rising, 0 falling (Driver: Pin
-     counter_296_348__i20/Q)
+      Net update: 2432 loads, 2432 rising, 0 falling (Driver: Pin
+     counter_343_390__i20/Q)
       Net clk: 38 loads, 38 rising, 0 falling (Driver: Pin clock/CLKHF)
-   Number of Clock Enables:  2
+   Number of Clock Enables:  3
       Net VCC_net: 1 loads, 0 SLICEs
-      Net vgaout.column_9__N_265: 7 loads, 7 SLICEs
-   Number of LSRs:  13
-      Net vgaout.n155: 1 loads, 1 SLICEs
-      Net vgaout.n10520: 6 loads, 6 SLICEs
-      Net vgaout.n11543: 6 loads, 6 SLICEs
+      Net vgaout.column_9__N_301: 7 loads, 7 SLICEs
+      Net n11636: 6 loads, 6 SLICEs
+   Number of LSRs:  14
+      Net vgaout.n17977: 1 loads, 1 SLICEs
+      Net vgaout.n10730: 6 loads, 6 SLICEs
 
-      Net vgaout.n16550: 1 loads, 1 SLICEs
-      Net vgaout.n10526: 4 loads, 4 SLICEs
+      Net vgaout.n11792: 6 loads, 6 SLICEs
+      Net vgaout.n17529: 1 loads, 1 SLICEs
+      Net vgaout.n10736: 4 loads, 4 SLICEs
       Net make_yellow_note.new_box: 1 loads, 1 SLICEs
-      Net to_next_note_31__N_180: 17 loads, 17 SLICEs
+      Net to_next_note_31__N_191: 17 loads, 17 SLICEs
       Net addr[2]: 2 loads, 2 SLICEs
+      Net n16897: 6 loads, 6 SLICEs
       Net addr[1]: 1 loads, 1 SLICEs
       Net make_green_note.new_box: 1 loads, 1 SLICEs
       Net make_red_note.new_box: 1 loads, 1 SLICEs
       Net make_orange_note.new_box: 1 loads, 1 SLICEs
       Net make_blue_note.new_box: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net col[1]: 871 loads
-      Net col[0]: 821 loads
-      Net col[2]: 333 loads
-      Net col[3]: 199 loads
-      Net col[4]: 86 loads
-      Net col[5]: 61 loads
+      Net col[1]: 925 loads
+      Net col[0]: 785 loads
+      Net col[2]: 319 loads
+      Net col[3]: 198 loads
+      Net col[4]: 85 loads
+      Net col[5]: 63 loads
       Net addr[2]: 27 loads
       Net addr[1]: 26 loads
       Net addr[0]: 25 loads
-      Net col[7]: 21 loads
+      Net col[7]: 22 loads
 
 
 
 
-   Number of warnings:  14
+   Number of warnings:  4
    Number of errors:    0
 
 
@@ -134,18 +136,8 @@ Command line:   map proj_guitar_hero_impl_1_syn.udb
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: Top module port 'pressing[4]' does not connect to anything.
-WARNING - map: Top module port 'pressing[3]' does not connect to anything.
-WARNING - map: Top module port 'pressing[2]' does not connect to anything.
-WARNING - map: Top module port 'pressing[1]' does not connect to anything.
-WARNING - map: Top module port 'pressing[0]' does not connect to anything.
 WARNING - map: Top module port 'reset' does not connect to anything.
 WARNING - map: Top module port 'start' does not connect to anything.
-WARNING - map: Top module port 'pressing[4]' does not connect to anything.
-WARNING - map: Top module port 'pressing[3]' does not connect to anything.
-WARNING - map: Top module port 'pressing[2]' does not connect to anything.
-WARNING - map: Top module port 'pressing[1]' does not connect to anything.
-WARNING - map: Top module port 'pressing[0]' does not connect to anything.
 WARNING - map: Top module port 'reset' does not connect to anything.
 WARNING - map: Top module port 'start' does not connect to anything.
 
@@ -157,19 +149,19 @@ WARNING - map: Top module port 'start' does not connect to anything.
 | IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
 |                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
 +---------------------+-----------+-----------+-------+-------+-----------+
+| RGBout[0]           | OUTPUT    | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
 | RGBout[1]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGBout[2]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-
 | RGBout[3]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGBout[4]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | RGBout[5]           | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| RGBout[0]           | OUTPUT    | LVCMOS33  |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
+
 | rgb[5]              | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | rgb[4]              | OUTPUT    | LVCMOS33  |       |       |           |
@@ -187,6 +179,16 @@ WARNING - map: Top module port 'start' does not connect to anything.
 | VSYNCout            | OUTPUT    | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | pressing[5]         | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| pressing[4]         | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| pressing[3]         | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| pressing[2]         | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| pressing[1]         | INPUT     | LVCMOS33  |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| pressing[0]         | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | oscillatorin        | INPUT     | LVCMOS33  |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -219,9 +221,9 @@ PLL 1:                                 Pin/Node Value
   ENABLE_ICEGATE_PORTB:                         0
   PLLOUT_SELECT_PORTA:                          SHIFTREG_0deg
   PLLOUT_SELECT_PORTB:                          SHIFTREG_0deg
+
   SHIFTREG_DIV_MODE:                            0
   DELAY_ADJUSTMENT_MODE_RELATIVE:               FIXED
-
   FDA_RELATIVE:                                 0
   FEEDBACK_PATH:                                SIMPLE
   DELAY_ADJUSTMENT_MODE_FEEDBACK:               FIXED
@@ -258,8 +260,6 @@ Instance Name: clock
    Total CPU Time: 1 secs
    Total REAL Time: 2 secs
    Peak Memory Usage: 116 MB
-
-
 
 
 

@@ -60,7 +60,8 @@ component draw_game
 		col_blue    : in std_logic_vector(479 downto 0);
 		col_orange  : in std_logic_vector(479 downto 0);
 		progress : in integer;
-		pressing : in std_logic_vector(5 downto 0)
+		pressing : in std_logic_vector(5 downto 0);
+		cur_score : in unsigned(10 downto 0)
     );
 end component;
 
@@ -147,11 +148,12 @@ signal data : std_logic_vector(49 downto 0);
 signal addr : std_logic_vector(2 downto 0);
 signal addrcounter : unsigned(2 downto 0);
 signal addrcountlogic : std_logic_vector(2 downto 0);
+--scoring
+signal cur_score : unsigned(10 downto 0);
 
 begin	
 	clock : HSOSC port map('1', '1', clk);
 	update <= counter(19);
-	
 	--vgaout : vga port map(pllin => oscillatorin, RGB => RGBout, HSYNC => HSYNCout, VSYNC => VSYNCout, RGBin => rgbi, rowout => row, colout => col);
 	vgaout : vga port map(pllin => oscillatorin, RGB => RGBout, HSYNC => HSYNCout, VSYNC => VSYNCout, RGBin => intergb, rowout => row, colout => col);
 	------------------------------------------------------------------------------------------
@@ -168,7 +170,8 @@ begin
 		col_blue=>   col_blue,
 		col_orange=> col_orange,
 		progress => progress,
-		pressing => pressing
+		pressing => pressing,
+		cur_score => cur_score
 	);
 	
 	get_score : game_score port map(
@@ -189,6 +192,8 @@ begin
 			curr_color(2)  <= col_yellow(440);
 			curr_color(3)  <= col_blue(440);
 			curr_color(4)  <= col_orange(440);
+			
+			
 		end if;
 	end process;
 	
@@ -209,7 +214,7 @@ begin
 
 	process (update) begin
 		if rising_edge(update) then
-			if (to_next_note >= 80) then
+			if (to_next_note >= 50) then
 				to_next_note <= 0;
 				cur_note <= cur_note + 1;
 			else
@@ -221,6 +226,20 @@ begin
 			col_yellow <= col_yellow(478 downto 0) & gen_y;
 			col_blue   <= col_blue(478 downto 0)   & gen_b;
 			col_orange <= col_orange(478 downto 0) & gen_o;
+			
+			if not pressing(0) and col_orange(440) then
+				cur_score <= cur_score + '1';
+			elsif (not pressing(1) and col_yellow(440)) then
+				cur_score <= cur_score + '1';
+			elsif (not pressing(2) and col_green(440)) then
+				cur_score <= cur_score + '1';
+			elsif (not pressing(3) and col_blue(440)) then
+				cur_score <= cur_score + '1';
+			elsif (not pressing(4) and col_red(440)) then
+				cur_score <= cur_score + '1';
+			elsif (not pressing(5) and col_red(440)) then
+				cur_score <= "00000000000";
+			end if;
 		end if;
 	end process;
 
