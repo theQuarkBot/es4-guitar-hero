@@ -1,7 +1,3 @@
-To directly modify the project, add this repo to your computer.
-Then, open the project (with the .rdf project file) to begin editing in radiant.
+# Project Files Found Here: [VHDL Project Files](https://github.com/theQuarkBot/es4-guitar-hero/tree/main/proj_guitar_hero/source/impl_1)
 
-If you need an easy way to get this repo on your machine, download Github Desktop, 
-sign in, and clone this project to your machine. 
-Then you can make any changes you want to it, commit, 
-and push while keeping up with version history.
+A relatively basic guitar hero game. Allows you to make patterns of notes to play. Playing notes correctly will increase your score on a project bar. If you miss a note, your score will go down.
